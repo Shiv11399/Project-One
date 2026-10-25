@@ -25,6 +25,23 @@ const server = http.createServer(async (request, response) => {
         return;
     }
 
+    if ((request.method === "GET" || request.method === "HEAD") && /^\/assets\/[a-z0-9-]+\.jpg$/.test(requestUrl.pathname)) {
+        try {
+            const image = await readFile(path.join(__dirname, requestUrl.pathname.slice(1)));
+            response.writeHead(200, {
+                "Content-Type": "image/jpeg",
+                "Cache-Control": "public, max-age=86400",
+                "X-Content-Type-Options": "nosniff"
+            });
+            response.end(request.method === "HEAD" ? undefined : image);
+        } catch (error) {
+            console.error(`Unable to read election card image ${requestUrl.pathname}:`, error);
+            response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+            response.end("Image not found.");
+        }
+        return;
+    }
+
     if ((request.method === "GET" || request.method === "HEAD") && ["/", "/index.html"].includes(requestUrl.pathname)) {
         try {
             const page = await readFile(path.join(__dirname, "index.html"));

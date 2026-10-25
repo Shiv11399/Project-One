@@ -46,9 +46,10 @@ jobs:
 
       - name: Prepare GitHub Pages site
         run: |
-          mkdir -p _site/data
+          mkdir -p _site/data _site/assets
           cp index.html CNAME _site/
           cp data/elections.json _site/data/
+          cp assets/*.jpg _site/assets/
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3

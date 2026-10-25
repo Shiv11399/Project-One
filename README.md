@@ -20,6 +20,10 @@ The workflow fetches ECI's latest announcements, commits changes to `data/electi
 
 The **Check for updates** button reloads the most recently published feed. It does not start a GitHub Actions run; use the workflow's manual dispatch for an immediate feed refresh and deployment.
 
+## Election card photography
+
+The election cards use locally stored Wikimedia Commons thumbnails. Artist credits, source pages, and the applicable Creative Commons licenses are listed in the page's **Photo credits and reuse licenses** section.
+
 ## Data notes
 
 The feed contains up to 100 of ECI's latest public press-release entries related to elections, with publication dates and links to official notices. Expected election windows and assembly seat counts are curated reference data. Polling dates are not inferred from notice titles; open an official notice for its full details.

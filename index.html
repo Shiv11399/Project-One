@@ -177,89 +177,203 @@
         }
 
         .content-grid {
-            display: grid;
-            grid-template-columns: minmax(310px, 0.85fr) minmax(0, 1.35fr);
-            gap: 20px;
-            align-items: start;
+            display: block;
         }
 
         .event-list {
             display: grid;
-            gap: 10px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px 20px;
         }
 
         .event-tab {
-            display: grid;
+            display: flex;
             width: 100%;
-            grid-template-columns: 49px minmax(0, 1fr) auto;
-            align-items: center;
-            gap: 13px;
-            padding: 15px;
+            min-width: 0;
+            flex-direction: column;
+            padding: 0;
+            overflow: hidden;
             border: 1px solid var(--line);
-            border-radius: 13px;
-            background: var(--panel);
+            border-radius: 9px;
+            background: #101722;
             color: var(--text);
             cursor: pointer;
             text-align: left;
-            transition: border-color 150ms ease, background 150ms ease, transform 150ms ease;
+            transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
         }
 
         .event-tab:hover {
-            transform: translateY(-1px);
-            border-color: #50627a;
-            background: var(--panel-raised);
+            transform: translateY(-3px);
+            border-color: #687b91;
+        }
+
+        .event-tab:focus-visible {
+            outline: 3px solid var(--saffron);
+            outline-offset: 3px;
         }
 
         .event-tab[aria-selected="true"] {
             border-color: var(--saffron);
-            background: linear-gradient(110deg, rgba(255, 159, 67, 0.14), var(--panel) 68%);
-            box-shadow: inset 3px 0 var(--saffron);
+            box-shadow: 0 0 0 1px var(--saffron), 0 16px 38px rgba(0, 0, 0, 0.24);
+        }
+
+        .event-image-wrap {
+            position: relative;
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            aspect-ratio: 1.85 / 1;
+            background:
+                radial-gradient(ellipse at 72% 24%, rgba(255, 181, 93, 0.35), transparent 42%),
+                linear-gradient(135deg, #29394d, #111a28 72%);
+        }
+
+        .event-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.79;
+            transition: opacity 180ms ease, transform 350ms ease;
+        }
+
+        .event-image-wrap::after {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(7, 12, 20, 0.1) 24%, rgba(7, 12, 20, 0.08) 49%, rgba(7, 12, 20, 0.76));
+            content: "";
+            pointer-events: none;
+        }
+
+        .event-tab:hover .event-image {
+            opacity: 0.96;
+            transform: scale(1.035);
+        }
+
+        .round-number,
+        .event-arrow {
+            position: absolute;
+            z-index: 1;
+            top: 14px;
+            display: grid;
+            width: 37px;
+            height: 37px;
+            place-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.36);
+            border-radius: 50%;
+            background: rgba(9, 14, 22, 0.55);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 800;
+            backdrop-filter: blur(8px);
         }
 
         .round-number {
-            display: grid;
-            width: 42px;
-            height: 42px;
-            place-items: center;
-            border: 1px solid var(--line);
-            border-radius: 11px;
-            color: var(--muted);
-            font-size: 12px;
-            font-weight: 800;
+            left: 15px;
         }
 
-        .event-tab[aria-selected="true"] .round-number {
-            border-color: rgba(255, 159, 67, 0.35);
-            color: var(--saffron);
+        .event-arrow {
+            right: 15px;
+            font-size: 19px;
+        }
+
+        .image-location {
+            position: absolute;
+            z-index: 1;
+            bottom: 15px;
+            left: 17px;
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+        }
+
+        .event-card-content {
+            display: block;
+            padding: 17px 18px 16px;
+        }
+
+        .event-card-heading,
+        .event-card-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
         }
 
         .event-name {
             display: block;
             overflow: hidden;
-            font-size: 15px;
-            font-weight: 750;
+            font-size: 19px;
+            font-weight: 800;
+            letter-spacing: -0.025em;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
         .event-window {
             display: block;
-            margin-top: 5px;
+            color: var(--muted);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.075em;
+            text-align: right;
+            text-transform: uppercase;
+        }
+
+        .event-card-meta {
+            margin-top: 11px;
+            padding-top: 11px;
+            border-top: 1px solid rgba(155, 169, 186, 0.14);
+            color: #98a7b9;
+            font-size: 12px;
+        }
+
+        .event-card-link {
+            color: #d9e1eb;
+            font-weight: 700;
+        }
+
+        .image-credits {
+            margin-top: 25px;
+            border-top: 1px solid var(--line);
             color: var(--muted);
             font-size: 12px;
         }
 
-        .event-arrow {
-            color: #748398;
-            font-size: 20px;
+        .image-credits summary {
+            width: fit-content;
+            padding: 14px 0;
+            color: #c8d2df;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .image-credit-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 9px 20px;
+            margin: 0;
+            padding: 0 0 16px 18px;
+        }
+
+        .image-credit-list a {
+            color: #c8d2df;
+        }
+
+        .image-credit-list a:hover {
+            color: var(--saffron);
         }
 
         .detail-card {
-            min-height: 440px;
+            min-height: 320px;
+            margin-top: 32px;
             overflow: hidden;
             border: 1px solid var(--line);
             border-radius: 16px;
             background: var(--panel);
+            scroll-margin-top: 24px;
         }
 
         .detail-banner {
@@ -469,23 +583,9 @@
                 gap: 20px;
             }
 
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-
             .event-list {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .event-tab {
-                grid-template-columns: 39px minmax(0, 1fr) 12px;
-                gap: 9px;
-                padding: 11px;
-            }
-
-            .round-number {
-                width: 36px;
-                height: 36px;
+                gap: 16px 12px;
             }
 
             .season-strip {
@@ -502,6 +602,24 @@
             }
 
             .event-list {
+                grid-template-columns: 1fr;
+            }
+
+            .event-image-wrap {
+                aspect-ratio: 1.75 / 1;
+            }
+
+            .event-card-heading {
+                align-items: start;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .event-window {
+                text-align: left;
+            }
+
+            .image-credit-list {
                 grid-template-columns: 1fr;
             }
 
@@ -557,6 +675,17 @@
             </div>
             <div class="content-grid">
                 <div class="event-list" id="event-list" role="tablist" aria-label="Upcoming elections"></div>
+                <details class="image-credits">
+                    <summary>Photo credits and reuse licenses</summary>
+                    <ul class="image-credit-list">
+                        <li>Goa: Vyacheslav Argenberg and UnpetitproleX, <a href="https://commons.wikimedia.org/wiki/File:Mandrem_Beach_and_Mandrem_River,_Mandrem,_Goa,_India_(edit).jpg" target="_blank" rel="noopener noreferrer">Mandrem Beach</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.</li>
+                        <li>Manipur: ch_15march, <a href="https://commons.wikimedia.org/wiki/File:Loktak_Lake_Manipur_01.jpg" target="_blank" rel="noopener noreferrer">Loktak Lake</a>, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>.</li>
+                        <li>Punjab: Oleg Yunakov, <a href="https://commons.wikimedia.org/wiki/File:Hamandir_Sahib_(Golden_Temple).jpg" target="_blank" rel="noopener noreferrer">Golden Temple</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</li>
+                        <li>Uttarakhand: Harshit SR and UnpetitproleX, <a href="https://commons.wikimedia.org/wiki/File:Panorama_of_Himalayas_from_Ranikhet,_Uttarakhand,_India.jpg" target="_blank" rel="noopener noreferrer">Himalayas from Ranikhet</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+                        <li>Uttar Pradesh: Marcin Białek, <a href="https://commons.wikimedia.org/wiki/File:Varanasi_Munshi_Ghat3.jpg" target="_blank" rel="noopener noreferrer">Munshi Ghat, Varanasi</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</li>
+                        <li>Gujarat: Snehrashmi, <a href="https://commons.wikimedia.org/wiki/File:Statue_of_Unity.jpg" target="_blank" rel="noopener noreferrer">Statue of Unity</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+                    </ul>
+                </details>
                 <section class="detail-card" id="event-detail" role="tabpanel" aria-live="polite" aria-labelledby="detail-title"></section>
             </div>
         </section>
@@ -573,37 +702,55 @@
                 state: "Goa",
                 window: "Early 2027 · expected",
                 seats: "40 seats",
-                timing: "Early 2027"
+                timing: "Early 2027",
+                image: "./assets/goa-mandrem-beach.jpg",
+                imageAlt: "Aerial view of Mandrem beach and river in Goa",
+                place: "Goa · West coast"
             },
             {
                 state: "Manipur",
                 window: "Early 2027 · expected",
                 seats: "60 seats",
-                timing: "Early 2027"
+                timing: "Early 2027",
+                image: "./assets/manipur-loktak-lake.jpg",
+                imageAlt: "Loktak Lake in Manipur",
+                place: "Manipur · Northeast"
             },
             {
                 state: "Punjab",
                 window: "Early 2027 · expected",
                 seats: "117 seats",
-                timing: "Early 2027"
+                timing: "Early 2027",
+                image: "./assets/punjab-golden-temple.jpg",
+                imageAlt: "The Golden Temple in Amritsar, Punjab",
+                place: "Punjab · North India"
             },
             {
                 state: "Uttarakhand",
                 window: "Early 2027 · expected",
                 seats: "70 seats",
-                timing: "Early 2027"
+                timing: "Early 2027",
+                image: "./assets/uttarakhand-himalaya.jpg",
+                imageAlt: "A panoramic view of the Himalayas from Ranikhet",
+                place: "Uttarakhand · Himalayas"
             },
             {
                 state: "Uttar Pradesh",
                 window: "Spring 2027 · expected",
                 seats: "403 seats",
-                timing: "Spring 2027"
+                timing: "Spring 2027",
+                image: "./assets/uttar-pradesh-varanasi.jpg",
+                imageAlt: "Historic buildings along Munshi Ghat in Varanasi",
+                place: "Uttar Pradesh · Gangetic plain"
             },
             {
                 state: "Gujarat",
                 window: "Late 2027 · expected",
                 seats: "182 seats",
-                timing: "Late 2027"
+                timing: "Late 2027",
+                image: "./assets/gujarat-statue-of-unity.jpg",
+                imageAlt: "The Statue of Unity in Gujarat",
+                place: "Gujarat · West India"
             }
         ];
 
@@ -770,16 +917,30 @@
             tab.setAttribute("aria-selected", String(index === 0));
             tab.tabIndex = index === 0 ? 0 : -1;
             tab.innerHTML = `
-                <span class="round-number">${String(index + 1).padStart(2, "0")}</span>
-                <span>
-                    <span class="event-name">${election.state}</span>
-                    <span class="event-window">${election.window}</span>
+                <span class="event-image-wrap">
+                    <img class="event-image" src="${election.image}" alt="${election.imageAlt}" loading="${index < 2 ? "eager" : "lazy"}" decoding="async">
+                    <span class="round-number">${String(index + 1).padStart(2, "0")}</span>
+                    <span class="image-location">${election.place}</span>
+                    <span class="event-arrow" aria-hidden="true">↗</span>
                 </span>
-                <span class="event-arrow" aria-hidden="true">›</span>
+                <span class="event-card-content">
+                    <span class="event-card-heading">
+                        <span class="event-name">${election.state}</span>
+                        <span class="event-window">${election.window}</span>
+                    </span>
+                    <span class="event-card-meta">
+                        <span>${election.seats} · Assembly election</span>
+                        <span class="event-card-link">Explore event ↗</span>
+                    </span>
+                </span>
             `;
 
             tab.addEventListener("click", () => {
                 selectElection(index);
+                eventDetail.scrollIntoView({
+                    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+                    block: "start"
+                });
             });
 
             tab.addEventListener("keydown", (event) => {
