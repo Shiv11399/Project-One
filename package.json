@@ -5,7 +5,8 @@
   "description": "An India election calendar with live Election Commission announcements",
   "scripts": {
     "start": "node server.js",
-    "update-feed": "node scripts/update-eci-feed.js"
+    "update-feed": "node scripts/update-eci-feed.js",
+    "prepare-pages": "node scripts/prepare-pages.js"
   },
   "engines": {
     "node": ">=18"

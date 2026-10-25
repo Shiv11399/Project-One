@@ -10,15 +10,16 @@ An India election calendar with official notices from the Election Commission of
 4. Keep `theballotgrid.in` in the repository's `CNAME` file and verify the custom domain is set in **Settings → Pages**.
 5. In **Settings → Actions → General → Workflow permissions**, allow workflows to deploy GitHub Pages if GitHub asks for that permission.
 
-The workflow fetches ECI's latest announcements, commits changes to `data/elections.json`, and deploys the static page and feed together. Use **Actions → Refresh ECI feed and deploy GitHub Pages → Run workflow** to request an immediate update. Scheduled GitHub Actions may start later than their scheduled time, so updates are not guaranteed to be exactly hourly.
+The workflow fetches ECI's latest announcements, commits changes to `data/elections.json`, and deploys the static page and feed together. If ECI is unavailable or rejects a request, the workflow still deploys the last saved feed and the page identifies it as older data. Use **Actions → Refresh ECI feed and deploy GitHub Pages → Run workflow** to request an immediate update. Scheduled GitHub Actions may start later than their scheduled time, so updates are not guaranteed to be exactly hourly.
 
 ## Run locally
 
 1. Install Node.js 18 or newer.
 2. Run `npm run update-feed` to download the current ECI announcements into `data/elections.json`.
-3. Run `npm start` and open <http://127.0.0.1:8000>.
+3. Run `npm run prepare-pages` to prepare a static site in `_site` using the saved feed.
+4. Run `npm start` and open <http://127.0.0.1:8000>.
 
-The **Check for updates** button reloads the most recently published feed. It does not start a GitHub Actions run; use the workflow's manual dispatch for an immediate feed refresh and deployment.
+The **Reload published feed** button reloads the most recently published feed. It does not start a GitHub Actions run; use the workflow's manual dispatch for an immediate feed refresh and deployment.
 
 ## Election card photography
 

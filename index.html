@@ -671,7 +671,7 @@
                     <span class="season-strip-title" id="schedule-title">Upcoming assembly elections</span>
                     <span class="season-strip-meta" id="feed-status" aria-live="polite">Loading the latest published ECI updates…</span>
                 </div>
-                <button class="refresh-button" id="refresh-feed" type="button">Check for updates</button>
+                <button class="refresh-button" id="refresh-feed" type="button">Reload published feed</button>
             </div>
             <div class="content-grid">
                 <div class="event-list" id="event-list" role="tablist" aria-label="Upcoming elections"></div>
@@ -957,7 +957,7 @@
 
         async function loadAnnouncements() {
             refreshButton.disabled = true;
-            feedStatus.textContent = "Loading the latest published ECI updates…";
+            feedStatus.textContent = "Loading the published ECI feed…";
             try {
                 const response = await fetch(`./data/elections.json?check=${Date.now()}`, { cache: "no-store" });
                 const data = await response.json();
@@ -974,7 +974,15 @@
                 }
                 announcements = data.announcements;
                 const updateTime = checkedAt.toLocaleString();
-                feedStatus.textContent = `ECI feed updated ${updateTime} · refreshed hourly`;
+                if (data.stale === true) {
+                    const attemptedAt = new Date(data.lastAttempted);
+                    const attemptTime = Number.isNaN(attemptedAt.getTime())
+                        ? "the latest scheduled run"
+                        : attemptedAt.toLocaleString();
+                    feedStatus.textContent = `ECI refresh failed ${attemptTime} · showing saved notices from ${updateTime}`;
+                } else {
+                    feedStatus.textContent = `ECI feed updated ${updateTime} · refreshed hourly`;
+                }
                 renderDetail(elections[selectedElectionIndex], selectedElectionIndex);
             } catch (error) {
                 feedStatus.textContent = `ECI updates unavailable: ${error.message}`;
