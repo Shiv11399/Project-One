@@ -1,0 +1,4674 @@
+{
+  "schemaVersion": 1,
+  "states": {
+    "Gujarat": {
+      "chiefMinister": "Bhupendrabhai Rajnikant Patel",
+      "sources": [
+        {
+          "url": "https://gujarat.neva.gov.in/",
+          "label": "Official Gujarat Assembly portal"
+        },
+        {
+          "url": "https://prsindia.org/mlatrack?assembly_term=15&state=Gujarat",
+          "label": "PRS India Gujarat MLA roster (secondary source)"
+        },
+        {
+          "label": "Official Gujarat Chief Minister portal",
+          "url": "https://cmogujarat.gov.in/en"
+        }
+      ],
+      "asOf": "2026-10-25",
+      "government": "Bharatiya Janata Party government",
+      "members": [
+        {
+          "name": "Jethabhai Ghelabhai Ahir",
+          "constituency": "Shehra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bhupendrabhai Rajnikant Patel",
+          "constituency": "Ghatlodia",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Aniket Girishbhai Thaker",
+          "constituency": "Palanpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bachubhai Maganbhai Khabad",
+          "constituency": "Devgadhbaria",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Balvantsinh Chandansinh Rajput",
+          "constituency": "Sidhpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bhanuben Manoharbhai Babariya",
+          "constituency": "Rajkot Rural",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bhikhusinhji Chatursinhji Parmar",
+          "constituency": "Modasa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Harsh Ramesh Sanghvi",
+          "constituency": "Majura",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jagdish Vishwakarma",
+          "constituency": "Nikol",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kanubhai Mohanlal Desai",
+          "constituency": "Pardi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kuberbhai Mansukhbhai Dindor",
+          "constituency": "Santrampur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kunvarjibhai Mohanbhai Bavaliya",
+          "constituency": "Jasdan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kunvarjibhai Narsinhbhai Halpati",
+          "constituency": "Mandvi (Surat)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mukeshbhai Zinabhai Patel",
+          "constituency": "Olpad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mulubhai Hardasbhai Bera Ayar",
+          "constituency": "Khambhalia",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Parshottambhai O. Solanki",
+          "constituency": "Bhavnagar Rural",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Praful Pansheriya",
+          "constituency": "Kamrej",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Raghavjibhai Hansrajbhai Patel",
+          "constituency": "Jamnagar Rural",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rushikesh Ganeshbhai Patel",
+          "constituency": "Visnagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shankarbhai Lagdhirbhai Chaudhary",
+          "constituency": "Tharad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kaushik Kantibhai Vekariya",
+          "constituency": "Amreli",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Balkrushna Khanderao Shukla",
+          "constituency": "Raopura",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramanbhai Bhikhabhai Solanki",
+          "constituency": "Borsad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jagdishbhai Prabhubhai Makwana",
+          "constituency": "Wadhwan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vijaybhai Rameshbhai Patel",
+          "constituency": "Dangs",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ganpatsinh Vestabhai Vasava",
+          "constituency": "Mangrol (Surat)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sanjay Sukhabhai Koradia",
+          "constituency": "Junagadh",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Amit Thaker",
+          "constituency": "Vejalpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kiritkumar Chimanlal Patel",
+          "constituency": "Patan",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Kalubhai Chanabhai Rathod",
+          "constituency": "Una",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Gautambhai Gopabhai Chauhan",
+          "constituency": "Talaja",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pradhyumansinh Mahipatsinh Jadeja",
+          "constituency": "Abdasa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bhagabhai Dhanabhai Barad",
+          "constituency": "Talala",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Yogendrasinh Parmar",
+          "constituency": "Thasra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Amit Shah",
+          "constituency": "Ellisbridge",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shailesh Manubhai Parmar",
+          "constituency": "Danilimda",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Jayrambhai Chemabhai Gamit",
+          "constituency": "Nizar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mahesh Kaswala",
+          "constituency": "Savarkundla",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mansinh Kohyabhai Chauhan",
+          "constituency": "Balasinor",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Babusinh Sarabhai Jadav",
+          "constituency": "Vatva",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Narayandas Rokadia Keyur",
+          "constituency": "Sayajigunj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Fatesinh Vakhatsinh Chauhan",
+          "constituency": "Kalol (Panchmahals)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Lavingji Muljiji Solanki",
+          "constituency": "Radhanpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kiritsinh Sardarsang Dabhi",
+          "constituency": "Dholka",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pravinbhai Manjibhai Ghoghari",
+          "constituency": "Karanj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shivabhai Jerambhai Gohil",
+          "constituency": "Mahuva (Bhavnagar)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Payal Manojkumar Kukrani",
+          "constituency": "Naroda",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pradyuman Ganubhai Vaja",
+          "constituency": "Kodinar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vipulkumar Vinubhai Patel",
+          "constituency": "Sojitra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jayantibhai Savjibhai Rathwa",
+          "constituency": "Jetpur (Chhota Udepur)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mahendrabhai Padalia",
+          "constituency": "Dhoraji",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Hasmukh Patel",
+          "constituency": "Amraiwadi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shaileshbhai Kanaiyalal Mehta",
+          "constituency": "Dabhoi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramanlal Nanubhai Patkar",
+          "constituency": "Umbergaon",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Chaitanyasinh Pratapsinh Zala",
+          "constituency": "Padra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Divyeshbhai Ranchhodbhai Akbari",
+          "constituency": "Jamnagar South",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mavjibhai Maganbhai Desai",
+          "constituency": "Dhanera",
+          "party": "Independent"
+        },
+        {
+          "name": "Vinendrasinh Dilipsinh Zala",
+          "constituency": "Himatnagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Harshadbhai Govindbhai Parmar",
+          "constituency": "Umreth",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Imran Khedawala",
+          "constituency": "Jamalpur - Khadia",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Aniruddha Bhailal Dave",
+          "constituency": "Mandvi (Kachchh)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Nimishaben Manharsinh Suthar",
+          "constituency": "Morva Hadaf",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Arvindbhai Jinabhai Ladani",
+          "constituency": "Manavadar",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Hardik Bharatbhai Patel",
+          "constituency": "Viramgam",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dineshbhai Ataji Thakor",
+          "constituency": "Chanasma",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Shamajibhai Bhimajibhai Chauhan",
+          "constituency": "Chotila",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anantkumar Hasmukhbhai Patel",
+          "constituency": "Bansda",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Kalpeshbhai Ashabhai Parmar",
+          "constituency": "Matar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bharatbhai Kikubhai Patel",
+          "constituency": "Valsad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mohanbhai Dhedabhai Kokani",
+          "constituency": "Vyara",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Hemantbhai Hardasbhai Ahir",
+          "constituency": "Jamjodhpur",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Chhanga Trikam Bijal",
+          "constituency": "Anjar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jitubhai Harjibhai Chaudhari",
+          "constituency": "Kaprada",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vimalbhai Kanabhai Chudasama",
+          "constituency": "Somnath",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Sanjaysinh Vijaysinh Mahida",
+          "constituency": "Mahudha",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ritaben Ketankumar Patel",
+          "constituency": "Gandhinagar North",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Malti Kishor Maheshwari",
+          "constituency": "Gandhidham",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sudhirbhai Vaghani",
+          "constituency": "Gariadhar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Geetaba Jayrajsinh Jadeja",
+          "constituency": "Gondal",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kamleshbhai Rameshbhai Patel",
+          "constituency": "Petlad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sardarbhai Shamalbhai Chaudhary",
+          "constituency": "Kheralu",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Darshita Shah",
+          "constituency": "Rajkot West",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Amrutiya Kantilal Shivlal",
+          "constituency": "Morbi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "C. K. Raulji",
+          "constituency": "Godhra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jayantibhai Somabhai Patel",
+          "constituency": "Mansa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jignesh Mevani",
+          "constituency": "Vadgam",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Arvind Chhotubhai Patel",
+          "constituency": "Dharampur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Alpesh Khodaji Thakor",
+          "constituency": "Gandhinagar South",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pravinkumar Gordhanji Mali",
+          "constituency": "Deesa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jitendra Kantilal Somani",
+          "constituency": "Wankaner",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sangitaben Rajendra Patil",
+          "constituency": "Limbayat",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "C. J. Chavda",
+          "constituency": "Vijapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kanaiyalal Bachubhai Kishori",
+          "constituency": "Dahod",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Meghjibhai Amarabhai Chavda",
+          "constituency": "Kalavad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Abhesinh Motibhai Tadvi",
+          "constituency": "Sankheda",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Babubhai Jamnadas Patel",
+          "constituency": "Daskroi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Chiragkumar Arvindbhai Patel",
+          "constituency": "Khambhat",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rakesh Gunvantbhai Desai",
+          "constituency": "Navsari",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dhavalsinh Narendrasinh Zala",
+          "constituency": "Bayad",
+          "party": "Independent"
+        },
+        {
+          "name": "Bhikhabhai Ravajibhai Baraiya",
+          "constituency": "Palitana",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kanubhai Karamshibhai Patel",
+          "constituency": "Sanand",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Akshaykumar Ishvarbhai Patel",
+          "constituency": "Karjan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Yogesh R. Patel",
+          "constituency": "Anand",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Uday Kangad",
+          "constituency": "Rajkot East",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Gulabsinh Somsinh Chauhan",
+          "constituency": "Lunawada",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Amul Bhatt",
+          "constituency": "Maninagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Laxmanji Punjaji Thakor",
+          "constituency": "Kalol (Gandhinagar)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "R. C. Patel",
+          "constituency": "Jalalpore",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rameshbhai Narandas Mistry",
+          "constituency": "Bharuch",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kantibhai Kalabhai Kharadi",
+          "constituency": "Danta",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Mukeshkumar D. Patel",
+          "constituency": "Mahesana",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Balrajsinh Kalyansinh Chauhan",
+          "constituency": "Dahegam",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Chaitanya Makarandbhai Desai",
+          "constituency": "Akota",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Janakbhai Talaviya",
+          "constituency": "Lathi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajendrasinh Mohansinh Rathva",
+          "constituency": "Chhota Udaipur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Keshaji Shivaji Chauhan",
+          "constituency": "Deodar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Maheshbhai Somjibhai Bhuriya",
+          "constituency": "Jhalod",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Keshubhai Shivdas Patel",
+          "constituency": "Bhuj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kanchanben Vinubhai Radadiya",
+          "constituency": "Thakkarbapa Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Prakashbhai Parsotambhai Varmora",
+          "constituency": "Dhrangadhra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Chaitarbhai Damjibhai Vasava",
+          "constituency": "Dediapada",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Kalubhai Rupabhai Dabhi",
+          "constituency": "Dhandhuka",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sandip Desai",
+          "constituency": "Choryasi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Devkishordasji Bhaktisvarupdasji Swami",
+          "constituency": "Jambusar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shambhunath Tundiya Mahant",
+          "constituency": "Gadhada",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dineshsinh Rajendrasinh Kushwaha",
+          "constituency": "Bapunagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Darshna M. Vaghela",
+          "constituency": "Asarwa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Darshna Chandubhai Deshmukh",
+          "constituency": "Nandod",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Arunsinh Ajitsinh Rana",
+          "constituency": "Vagra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jaysukhbhai Vallabhbhai Kakadiya",
+          "constituency": "Dhari",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Tushar Amarsinh Chaudhary",
+          "constituency": "Khedbrahma",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Sejalben Rajivkumar Pandya",
+          "constituency": "Bhavnagar East",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kiritkumar Keshavlal Patel",
+          "constituency": "Unjha",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mohanbhai Dhanjibhai Dhodiya",
+          "constituency": "Mahuva (ST)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Amrutji Motiji Thakor",
+          "constituency": "Kankrej",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Arjunbhai Devabhai Modhwadia",
+          "constituency": "Porbandar",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Umeshbhai Naranbhai Makwana",
+          "constituency": "Botad",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Rajeshkumar Maganbhai Zala",
+          "constituency": "Kapadvanj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Harshadbhai Ranchhodbhai Patel",
+          "constituency": "Sabarmati",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "P. C. Baranda",
+          "constituency": "Bhiloda",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bhagvanjibhai Lakhabhai Kargatiya",
+          "constituency": "Mangrol (Junagadh)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rivaba Ravindrasinh Jadeja",
+          "constituency": "Jamnagar North",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rameshbhai Bhurabhai Katara",
+          "constituency": "Fatepura",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sukhaji Somaji Thakor",
+          "constituency": "Becharaji",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Hirabhai Odhavjibhai Solanki",
+          "constituency": "Rajula",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rameshbhai Virjibhai Tilala",
+          "constituency": "Rajkot South",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Arvind Shantilal Rana",
+          "constituency": "Surat East",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Manubhai M. Patel",
+          "constituency": "Udhna",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "P. K. Parmar",
+          "constituency": "Dasada",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Amit Chavda",
+          "constituency": "Anklav",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Jitendrakumar Ramanlal Patel",
+          "constituency": "Naranpura",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Durlabhjibhai Harakhjibhai Dethariya",
+          "constituency": "Tankara",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Gopal Italia",
+          "constituency": "Visavadar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Thakor Swarupji Sardarji",
+          "constituency": "Vav",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajendrakumar (Rajubhai) Daneshwar Chavda",
+          "constituency": "Kadi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ketanbhai Mahendrabhai Inamdar",
+          "constituency": "Savli",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kantibhai Himmatbhai Balar",
+          "constituency": "Surat North",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Riteshkumar Ramanbhai Vasava",
+          "constituency": "Jhagadia",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shaileshbhai Sumanbhai Bhabhor",
+          "constituency": "Limkheda",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Virendrasinh Bahadursinh Jadeja",
+          "constituency": "Rapar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mahendrabhai Rameshbhai Bhabhor",
+          "constituency": "Garbada",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ishwarsinh Thakorbhai Patel",
+          "constituency": "Ankleshwar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pankajbhai Vinubhai Desai",
+          "constituency": "Nadiad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Manisha Vakil",
+          "constituency": "Vadodara City",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Arjunsinh Udesinh Chauhan",
+          "constituency": "Mehmedabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Satendrabhai Govindbhai Patel",
+          "constituency": "Manjalpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ishvarbhai Alias Anilbhai Ramanbhai Parmar",
+          "constituency": "Bardoli",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kishor Kanani",
+          "constituency": "Varachha Road",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jitendrabhai Savajibhai Vaghani",
+          "constituency": "Bhavnagar West",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jaydrathsinhji Parmar",
+          "constituency": "Halol",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Purnesh Modi",
+          "constituency": "Surat West",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramanlal Ishwarlal Vora",
+          "constituency": "Idar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vinodbhai Amarshibhai Moradiya",
+          "constituency": "Katargam",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kaushikbhai Sukhlal Jain",
+          "constituency": "Dariapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Nareshbhai Maganbhai Patel",
+          "constituency": "Gandevi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kiritsinh Jitubha Rana",
+          "constituency": "Limbdi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Devabhai Punjabhai Malam",
+          "constituency": "Keshod",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jayeshbhai Vitthalbhai Radadiya",
+          "constituency": "Jetpur (Rajkot)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Gajendrasinh Udesinh Parmar",
+          "constituency": "Prantij",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dharmendrasinh Ranubha Vaghela",
+          "constituency": "Vaghodia",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pabubha Virambha Manek",
+          "constituency": "Dwarka",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kandhalbhai Sarmanbhai Jadeja",
+          "constituency": "Kutiyana",
+          "party": "Samajwadi Party"
+        }
+      ],
+      "seatCounts": [
+        {
+          "party": "Bharatiya Janata Party",
+          "seats": 160
+        },
+        {
+          "party": "Indian National Congress",
+          "seats": 14
+        },
+        {
+          "party": "Independent",
+          "seats": 2
+        },
+        {
+          "party": "Aam Aadmi Party",
+          "seats": 5
+        },
+        {
+          "party": "Samajwadi Party",
+          "seats": 1
+        }
+      ]
+    },
+    "Punjab": {
+      "chiefMinister": "Bhagwant Mann",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/16th_Punjab_Assembly#By_constituency",
+          "label": "Punjab Assembly constituency roster (secondary source)"
+        },
+        {
+          "url": "https://prsindia.org/mlatrack?assembly_term=16&state=Punjab",
+          "label": "PRS India Punjab MLA roster (secondary source)"
+        },
+        {
+          "label": "Chief Minister of Punjab profile (secondary source)",
+          "url": "https://en.wikipedia.org/wiki/Chief_Minister_of_Punjab,_India"
+        }
+      ],
+      "asOf": "2026-10-25",
+      "notes": "Party classification follows the current constituency table; some suspended or breakaway members may be classified differently by other sources.",
+      "government": "Aam Aadmi Party government",
+      "members": [
+        {
+          "name": "Naresh Puri",
+          "constituency": "Sujanpur",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Lal Chand Kataruchakk",
+          "constituency": "Bhoa",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Ashwani Kumar Sharma",
+          "constituency": "Pathankot",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Barindermeet Singh Pahra",
+          "constituency": "Gurdaspur",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Aruna Chaudhary",
+          "constituency": "Dina Nagar",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Partap Singh Bajwa",
+          "constituency": "Qadian",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Amansher Singh",
+          "constituency": "Batala",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Amarpal Singh",
+          "constituency": "Sri Hargobindpur",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Tripat Rajinder Singh Bajwa",
+          "constituency": "Fatehgarh Churian",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Gurdeep Singh Randhawa",
+          "constituency": "Dera Baba Nanak",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Kuldip Singh Dhaliwal",
+          "constituency": "Ajnala",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Sukhbinder Singh Sarkaria",
+          "constituency": "Rajasansi",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Ganieve Kaur Majithia",
+          "constituency": "Majitha",
+          "party": "Shiromani Akali Dal"
+        },
+        {
+          "name": "Harbhajan Singh E.T.O.",
+          "constituency": "Jandiala",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Kunwar Vijay Pratap Singh",
+          "constituency": "Amritsar North",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jasbir Singh Sandhu",
+          "constituency": "Amritsar West",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Ajay Gupta",
+          "constituency": "Amritsar Central",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jeevan Jyot Kaur",
+          "constituency": "Amritsar East",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Inderbir Singh Nijjar",
+          "constituency": "Amritsar South",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jaswinder Singh",
+          "constituency": "Attari",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Harmeet Singh Sandhu",
+          "constituency": "Tarn Taran",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Sarvan Singh Dhun",
+          "constituency": "Khemkaran",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Laljit Singh Bhullar",
+          "constituency": "Patti",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Manjinder Singh Lalpura",
+          "constituency": "Khadoor Sahib",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Dalbir Singh Tong",
+          "constituency": "Baba Bakala",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Sukhpal Singh Khaira",
+          "constituency": "Bholath",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Rana Gurjeet Singh",
+          "constituency": "Kapurthala",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Rana Inder Partap Singh",
+          "constituency": "Sultanpur Lodhi",
+          "party": "Independent"
+        },
+        {
+          "name": "Balwinder Singh Dhaliwal",
+          "constituency": "Phagwara",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Vikramjit Singh Chaudhary",
+          "constituency": "Phillaur",
+          "party": "Independent"
+        },
+        {
+          "name": "Inderjit Kaur Mann",
+          "constituency": "Nakodar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Hardev Singh Laddi",
+          "constituency": "Shahkot",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Balkar Singh",
+          "constituency": "Kartarpur",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Mohinder Pal Bhagat",
+          "constituency": "Jalandhar West",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Raman Arora",
+          "constituency": "Jalandhar Central",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Avtar Singh Junior",
+          "constituency": "Jalandhar North",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Pargat Singh",
+          "constituency": "Jalandhar Cantonment",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Sukhwinder Singh Kotli",
+          "constituency": "Adampur",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Jangi Lal Mahajan",
+          "constituency": "Mukerian",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Karambir Singh Ghuman",
+          "constituency": "Dasuya",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jasvir Singh Raja Gill",
+          "constituency": "Urmar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Ravjot Singh",
+          "constituency": "Sham Chaurasi",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Bram Shanker",
+          "constituency": "Hoshiarpur",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Ishank Kumar",
+          "constituency": "Chabbewal",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jai Krishan Singh",
+          "constituency": "Garhshankar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Sukhwinder Kumar",
+          "constituency": "Banga",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Nachhatar Pal",
+          "constituency": "Nawanshahr",
+          "party": "Bahujan Samaj Party"
+        },
+        {
+          "name": "Santosh Katariaa",
+          "constituency": "Balachaur",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Harjot Singh Bains",
+          "constituency": "Anandpur Sahib",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Dinesh Chadha",
+          "constituency": "Rupnagar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Charanjit Singh",
+          "constituency": "Chamkaur Sahib",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Anmol Gagan Maan",
+          "constituency": "Kharar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Kulwant Singh",
+          "constituency": "S.A.S. Nagar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Rupinder Singh",
+          "constituency": "Bassi Pathana",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Lakhbir Singh Rai",
+          "constituency": "Fatehgarh Sahib",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Gurinder Singh Garry",
+          "constituency": "Amloh",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Tarunpreet Singh Sond",
+          "constituency": "Khanna",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jagtar Singh",
+          "constituency": "Samrala",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Hardeep Singh Mundian",
+          "constituency": "Sahnewal",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Daljit Singh Grewal",
+          "constituency": "Ludhiana East",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Rajinder Pal Kaur Chhina",
+          "constituency": "Ludhiana South",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Kulwant Singh Sidhu",
+          "constituency": "Atam Nagar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Ashok Prashar Pappi",
+          "constituency": "Ludhiana Central",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Sanjeev Arora",
+          "constituency": "Ludhiana West",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Madan Lal Bagga",
+          "constituency": "Ludhiana North",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jiwan Singh Sangowal",
+          "constituency": "Gill",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Manwinder Singh Gyaspura",
+          "constituency": "Payal",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Manpreet Singh Ayali",
+          "constituency": "Dakha",
+          "party": "Akali Dal (Waris Punjab De)"
+        },
+        {
+          "name": "Hakam Singh Thekedar",
+          "constituency": "Raikot",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Saravjit Kaur Manuke",
+          "constituency": "Jagraon",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Manjit Singh Bilaspur",
+          "constituency": "Nihal Singh Wala",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Amritpal Singh Sukhanand",
+          "constituency": "Bhagha Purana",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Amandeep Kaur Arora",
+          "constituency": "Moga",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Devinder Singh Laddi Dhos",
+          "constituency": "Dharamkot",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Naresh Kataria",
+          "constituency": "Zira",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Ranveer Singh Bhullar",
+          "constituency": "Firozpur City",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Rajnish Dahiya",
+          "constituency": "Firozpur Rural",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Fauja Singh Sarari",
+          "constituency": "Guru Har Sahai",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jagdeep Kamboj Goldy",
+          "constituency": "Jalalabad",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Narinderpal Singh Sawna",
+          "constituency": "Fazilka",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Sandeep Jakhar",
+          "constituency": "Abohar",
+          "party": "Independent"
+        },
+        {
+          "name": "Amandeep Singh “Goldy” Musafir",
+          "constituency": "Balluana",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Gurmeet Singh Khudian",
+          "constituency": "Lambi",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Hardeep Singh Dhillon",
+          "constituency": "Gidderbaha",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Baljit Kaur",
+          "constituency": "Malout",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jagdeep Singh Brar",
+          "constituency": "Muktsar",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Gurdit Singh Sekhon",
+          "constituency": "Faridkot",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Kultar Singh Sandhwan",
+          "constituency": "Kotkapura",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Amolak Singh",
+          "constituency": "Jaitu",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Balkar Singh Sidhu",
+          "constituency": "Rampura Phul",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Master Jagsir Singh",
+          "constituency": "Bhucho Mandi",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jagroop Singh Gill",
+          "constituency": "Bathinda Urban",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Amit Rattan Kotfatta",
+          "constituency": "Bathinda Rural",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Baljinder Kaur",
+          "constituency": "Talwandi Sabo",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Sukhvir Maiser Khana",
+          "constituency": "Maur",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Vijay Singla",
+          "constituency": "Mansa",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Gurpreet Singh Banawali",
+          "constituency": "Sardulgarh",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Budhram Singh",
+          "constituency": "Budhlada",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Barinder Kumar Goyal",
+          "constituency": "Lehragaga",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Harpal Singh Cheema",
+          "constituency": "Dirba",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Aman Arora",
+          "constituency": "Sunam",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Mohammad Jamil Ur Rehman",
+          "constituency": "Malerkotla",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Jaswant Singh Gajjan Majra",
+          "constituency": "Amargarh",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Bhagwant Mann",
+          "constituency": "Dhuri",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Narinder Kaur Bharaj",
+          "constituency": "Sangrur",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Labh Singh Ugoke",
+          "constituency": "Bhadaur",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Kuldeep Singh Dhillon",
+          "constituency": "Barnala",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Kulwant Singh Pandori",
+          "constituency": "Mehal Kalan",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Gurdev Singh Dev Maan",
+          "constituency": "Nabha",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Balbir Singh",
+          "constituency": "Patiala Rural",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Neena Mittal",
+          "constituency": "Rajpura",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Kuljit Singh Randhawa",
+          "constituency": "Dera Bassi",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Gurlal Ghanaur",
+          "constituency": "Ghanaur",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Harmit Singh Pathanmajra",
+          "constituency": "Sanour",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Ajit Pal Singh Kohli",
+          "constituency": "Patiala",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Chetan Singh Jaura Majra",
+          "constituency": "Samana",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Kulwant Singh Bazigar",
+          "constituency": "Shutrana",
+          "party": "Aam Aadmi Party"
+        }
+      ],
+      "seatCounts": [
+        {
+          "party": "Indian National Congress",
+          "seats": 14
+        },
+        {
+          "party": "Aam Aadmi Party",
+          "seats": 95
+        },
+        {
+          "party": "Bharatiya Janata Party",
+          "seats": 2
+        },
+        {
+          "party": "Shiromani Akali Dal",
+          "seats": 1
+        },
+        {
+          "party": "Independent",
+          "seats": 3
+        },
+        {
+          "party": "Bahujan Samaj Party",
+          "seats": 1
+        },
+        {
+          "party": "Akali Dal (Waris Punjab De)",
+          "seats": 1
+        }
+      ]
+    },
+    "Uttar Pradesh": {
+      "chiefMinister": "Yogi Adityanath",
+      "sources": [
+        {
+          "url": "https://uplegisassembly.gov.in/Members/main_members_en.aspx",
+          "label": "Official Uttar Pradesh Assembly member directory"
+        },
+        {
+          "url": "https://prsindia.org/mlatrack?assembly_term=18&state=Uttar+Pradesh",
+          "label": "PRS India Uttar Pradesh MLA roster (secondary source)"
+        },
+        {
+          "label": "Official Uttar Pradesh Assembly overview",
+          "url": "https://upvidhansabhaproceedings.gov.in/la-overview"
+        }
+      ],
+      "asOf": "2026-10-25",
+      "notes": "Four seats (Duddhi, Nizamabad, Faridpur and Ghosi) have no sitting member in the current PRS India roster; listed counts are secondary-source totals.",
+      "government": "BJP-led government",
+      "members": [
+        {
+          "name": "Baby Rani Maurya",
+          "constituency": "Agra Rural",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Yogendra Upadhyaya",
+          "constituency": "Agra South",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pratibha Shukla",
+          "constituency": "Akbarpur - Raniya",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Nand Gopal Gupta Nandi",
+          "constituency": "Allahabad South",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dharmpal Singh (Aonla)",
+          "constituency": "Aonla",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sandeep Kumar Singh",
+          "constituency": "Atrauli",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Daya Shankar Singh",
+          "constituency": "Ballia Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Krishan Pal Malik",
+          "constituency": "Baraut",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Arun Kumar",
+          "constituency": "Bareilly",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rakesh Sachan",
+          "constituency": "Bhognipur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Baldev Singh Aulakh",
+          "constituency": "Bilaspur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Gulab Debi",
+          "constituency": "Chandausi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Laxmi Narayan",
+          "constituency": "Chhata",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Satish Chandra Sharma",
+          "constituency": "Dariyabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Brijesh",
+          "constituency": "Deoband",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Nitin Agarwal",
+          "constituency": "Hardoi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Suresh Rahi",
+          "constituency": "Hargaon",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dinesh Kumar",
+          "constituency": "Hastinapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Girish Chandra Yadav",
+          "constituency": "Jaunpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Asim Arun",
+          "constituency": "Kannauj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Brajesh Pathak",
+          "constituency": "Lucknow Cantt",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jayveer Singh",
+          "constituency": "Mainpuri",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Somendra Singh Tomar",
+          "constituency": "Meerut South",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ketakee Singh",
+          "constituency": "Bansdih",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Manohar Lal",
+          "constituency": "Mehroni",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kapil Dev Agarwal",
+          "constituency": "Muzaffar Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sanjeev Kumar Gond",
+          "constituency": "Obra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Surya Pratap Shahi",
+          "constituency": "Pathardeva",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sanjay Singh Gangwar",
+          "constituency": "Pilibhit",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vijaylaxmi Gautam",
+          "constituency": "Salempur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajni Tiwari",
+          "constituency": "Shahabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Suresh Kumar Khanna",
+          "constituency": "Shahjahanpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anil Rajbhar",
+          "constituency": "Shivpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ajit Singh Pal",
+          "constituency": "Sikandra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rakesh Rathour",
+          "constituency": "Sitapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mayankeshwar Sharan Singh",
+          "constituency": "Tiloi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramkesh Nishad",
+          "constituency": "Tindwari",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ravindra Jaiswal",
+          "constituency": "Varanasi North",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mata Prasad Pandey",
+          "constituency": "Itwa",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Satish Mahana",
+          "constituency": "Maharajpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anil Kumar (Purqazi)",
+          "constituency": "Purqazi",
+          "party": "Rashtriya Lok Dal"
+        },
+        {
+          "name": "Puran Prakash",
+          "constituency": "Baldev",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Yogi Adityanath",
+          "constituency": "Gorakhpur Urban",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Saroj Kureel",
+          "constituency": "Ghatampur",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Manish Kumar Urf Mantu",
+          "constituency": "Padrauna",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anil Parashar",
+          "constituency": "Koil",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mohd. Hasan Roomi",
+          "constituency": "Kanpur Cantt",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Durga Prasad Yadav",
+          "constituency": "Azamgarh",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Ragini",
+          "constituency": "Machhlishahr",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Nahid Hasan",
+          "constituency": "Kairana",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Pradeep Kumar Singh",
+          "constituency": "Sadabad",
+          "party": "Rashtriya Lok Dal"
+        },
+        {
+          "name": "Ommani Varma",
+          "constituency": "Naraini",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anil Kumar Maurya",
+          "constituency": "Ghorawal",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Virendra Kumar Yadav",
+          "constituency": "Jangipur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Ashish Kumar Singh 'Ashu'",
+          "constituency": "Bilgram-Mallanwan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jay Kumar Singh Jaiki",
+          "constituency": "Bindki",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Mohan Verma",
+          "constituency": "Hata",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "M. P. Arya",
+          "constituency": "Nawabganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ataur Rehman",
+          "constituency": "Baheri",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Jai Devi",
+          "constituency": "Malihabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Nand Kishor Gurjar",
+          "constituency": "Loni",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "O. P. Srivastava",
+          "constituency": "Lucknow East",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramkhiladi Singh",
+          "constituency": "Gunnaur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Gauri Shankar",
+          "constituency": "Orai",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Neeraj Bora",
+          "constituency": "Lucknow North",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Harshvardhan Bajpai",
+          "constituency": "Allahabad North",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kavindra Chaudhary",
+          "constituency": "Kaptanganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Jawahar Lal Rajput",
+          "constituency": "Garautha",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Armaan Khan",
+          "constituency": "Lucknow West",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rajeshwar Singh",
+          "constituency": "Sarojini Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Nafees Ahmad",
+          "constituency": "Gopalpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Gaurav Kumar",
+          "constituency": "Zaidpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Manoj Kumar Paras",
+          "constituency": "Nagina",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Zahid",
+          "constituency": "Bhadohi",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Vivek Kumar Verma",
+          "constituency": "Bisalpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Fateh Bahadur",
+          "constituency": "Caimpiyarganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jai Prakash Anchal",
+          "constituency": "Bairia",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Aradhana Mishra, Mona",
+          "constituency": "Rampur Khas",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Prasanna Kumar",
+          "constituency": "Shamli",
+          "party": "Rashtriya Lok Dal"
+        },
+        {
+          "name": "Ziyauddin Rizvi",
+          "constituency": "Sikanderpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Jaikishan Sahu",
+          "constituency": "Ghazipur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Kailash Nath",
+          "constituency": "Tulsipur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Abhay Singh",
+          "constituency": "Goshainganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Ritesh Kumar Gupta",
+          "constituency": "Moradabad Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramesh Chandra Mishra",
+          "constituency": "Badlapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Puja",
+          "constituency": "Mehnagar",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Fareed Mahfooz Kidwai",
+          "constituency": "Ram Nagar",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Dhirendra Singh",
+          "constituency": "Jewar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Hriday Narayan Singh Patel",
+          "constituency": "Sagri",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rakesh Pratap Singh",
+          "constituency": "Gauriganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rajesh Chaudhary",
+          "constituency": "Mant",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Prem Narayan Pandey",
+          "constituency": "Tarabganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Paltoo Ram",
+          "constituency": "Balrampur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Madan Bhaiya",
+          "constituency": "Khatauli",
+          "party": "Rashtriya Lok Dal"
+        },
+        {
+          "name": "Shyam Sunder",
+          "constituency": "Bachhrawan",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Mool Chandra Singh",
+          "constituency": "Madhaugarh",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Amit Singh Chauhan",
+          "constituency": "Bikapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ashu Malik",
+          "constituency": "Saharanpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Sitaram Verma",
+          "constituency": "Lambhua",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mukesh Verma",
+          "constituency": "Shikohabad",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rajpal Singh Baliyan",
+          "constituency": "Budhana",
+          "party": "Rashtriya Lok Dal"
+        },
+        {
+          "name": "Saroj Sonkar",
+          "constituency": "Balha",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Geeta Shastri (Pasi)",
+          "constituency": "Soraon",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Hansu Ram",
+          "constituency": "Belthara Road",
+          "party": "Suheldev Bharatiya Samaj Party"
+        },
+        {
+          "name": "Brijbhushan Rajput",
+          "constituency": "Charkhari",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Himanshu Yadav",
+          "constituency": "Shekhupur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Akhilesh",
+          "constituency": "Mubarakpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Piyush Ranjan Nishad",
+          "constituency": "Karachhana",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Madhavendra Pratap Singh",
+          "constituency": "Sawaijpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shazil Islam Ansari",
+          "constituency": "Bhojipura",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Ganesh Chandra",
+          "constituency": "Dhanghata",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vinod Shankar",
+          "constituency": "Dhaurahra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Atul Pradhan",
+          "constituency": "Sardhana",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Mahendra Nath Yadav",
+          "constituency": "Basti Sadar",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Manish Asija",
+          "constituency": "Firozabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Yogesh Dhama",
+          "constituency": "Baghpat",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Subhash Tripathi",
+          "constituency": "Payagpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Viveka Nand Pandey",
+          "constituency": "Khadda",
+          "party": "Nirbal Indian Shoshit Hamara Apna Dal"
+        },
+        {
+          "name": "Tufani Saroj",
+          "constituency": "Kerakat",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Nirmal Verma",
+          "constituency": "Biswan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dinanath Bhashkar",
+          "constituency": "Aurai",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajendra Kumar",
+          "constituency": "Muhammadabad- Gohna",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Umar Ali Khan",
+          "constituency": "Behat",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rajendra Prasad Chaudhary",
+          "constituency": "Rudhauli",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Ramratan Kushwaha",
+          "constituency": "Lalitpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Saiyada Khatoon",
+          "constituency": "Doomariyaganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rajendra Singh Patel",
+          "constituency": "Jahanabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Surendra Maithani",
+          "constituency": "Govind Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pradeep Kumar Chaudhary",
+          "constituency": "Bulandshahr",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Tejpal Singh Nagar",
+          "constituency": "Dadri",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Manish Rawat",
+          "constituency": "Sidhauli",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ram Singh Patel",
+          "constituency": "Patti",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rampal Verma",
+          "constituency": "Balamau",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Surabhi",
+          "constituency": "Kaimganj",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Manju Shiwach",
+          "constituency": "Modi Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Harish Chandra",
+          "constituency": "Bilsi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pankaj Patel",
+          "constituency": "Mungra Badshahpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Mehboob Ali",
+          "constituency": "Amroha",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Ram Feran Pandey",
+          "constituency": "Shrawasti",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rakesh Kumar Verma Alias R. K. Verma",
+          "constituency": "Raniganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Anurag Singh",
+          "constituency": "Chunar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mohd. Faheem Irfan",
+          "constituency": "Bilari",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Vinod Saroj",
+          "constituency": "Babaganj",
+          "party": "Jansatta Dal Loktantrik"
+        },
+        {
+          "name": "Manoj Kumar Prajapati",
+          "constituency": "Hamirpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sangram Singh",
+          "constituency": "Phephana",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rajeev Singh ''Parichha''",
+          "constituency": "Babina",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anil Kumar Verma",
+          "constituency": "Laharpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Anil Pradhan",
+          "constituency": "Chitrakoot",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Vinay Prakash Gond",
+          "constituency": "Ramkola",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rahul Rajpoot",
+          "constituency": "Harchandpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Mohd. Tahir Khan",
+          "constituency": "Isauli",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Brajesh Katheriya",
+          "constituency": "Kishani",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Vachaspati",
+          "constituency": "Bara",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Ashraf Ali Khan",
+          "constituency": "Thana Bhawan",
+          "party": "Rashtriya Lok Dal"
+        },
+        {
+          "name": "Archana Pandey",
+          "constituency": "Chhibramau",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Guru Prasad Maurya",
+          "constituency": "Phaphamau",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sushil Kumar Shakya",
+          "constituency": "Amritpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ravidas Mehrotra",
+          "constituency": "Lucknow Central",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Tribhuwan Dutt",
+          "constituency": "Alapur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rajeev Singh Urf Babbu Bhaiya",
+          "constituency": "Dataganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pallavi Patel",
+          "constituency": "Sirathu",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Tasleem Ahmad",
+          "constituency": "Najibabad",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Pankaj Kumar Malik",
+          "constituency": "Charthawal",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rekha Verma",
+          "constituency": "Bidhuna",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Ashutosh Maurya Urf Raju",
+          "constituency": "Bisauli",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Bechai Saroj",
+          "constituency": "Lalganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Surendra Chaurasia",
+          "constituency": "Rampur Karkhana",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mahesh Kumar Trivedi",
+          "constituency": "Kidwai Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vinod Chaturvedi",
+          "constituency": "Kalpi",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Asim Kumar",
+          "constituency": "Tamkuhi Raj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ajay Kumar",
+          "constituency": "Chhaprauli",
+          "party": "Rashtriya Lok Dal"
+        },
+        {
+          "name": "Sachin Yadav",
+          "constituency": "Jasrana",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Vijama Yadav",
+          "constituency": "Pratappur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Brajesh Yadav",
+          "constituency": "Sahaswan",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Jagdish Narayan",
+          "constituency": "Zafrabad",
+          "party": "Suheldev Bharatiya Samaj Party"
+        },
+        {
+          "name": "Pankaj Singh",
+          "constituency": "Noida",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anand Kumar Yadav",
+          "constituency": "Kaiserganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Umashankar Singh",
+          "constituency": "Rasara",
+          "party": "Bahujan Samaj Party"
+        },
+        {
+          "name": "Rajbala Singh",
+          "constituency": "Milak",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kamal Akhtar",
+          "constituency": "Kanth",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Sangram Yadav",
+          "constituency": "Atrauliya",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Ravi Sharma",
+          "constituency": "Jhansi Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sarvesh Singh",
+          "constituency": "Sirsaganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Raghvendra Kumar Singh",
+          "constituency": "Bharthana",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Prabhat Kumar Verma",
+          "constituency": "Gaura",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ghulam Mohammad",
+          "constituency": "Siwalkhas",
+          "party": "Rashtriya Lok Dal"
+        },
+        {
+          "name": "Manoj Kumar Pandey",
+          "constituency": "Unchahar",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Pooja Pal",
+          "constituency": "Chail",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Pinki Singh",
+          "constituency": "Asmoli",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Veer Vikram Singh",
+          "constituency": "Katra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pradeep Kumar Yadav",
+          "constituency": "Dibiyapur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Prabhu Narayan Yadav",
+          "constituency": "Sakaldiha",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Samarpal Singh",
+          "constituency": "Naugawan Sadat",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Alka Singh",
+          "constituency": "Sandila",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ram Avatar Singh",
+          "constituency": "Noorpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Lakshmi Raj",
+          "constituency": "Sikandrabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Swami Omvesh",
+          "constituency": "Chandpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Premsagar Patel",
+          "constituency": "Siswa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sandeep Singh",
+          "constituency": "Meja",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Babulal",
+          "constituency": "Fatehpur Sikri",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bedi",
+          "constituency": "Jakhanian",
+          "party": "Suheldev Bharatiya Samaj Party"
+        },
+        {
+          "name": "Devendra Pratap Singh",
+          "constituency": "Sareni",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Bhagwan Singh Kushwaha",
+          "constituency": "Kheragarh",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bawan Singh",
+          "constituency": "Katra Bazar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kamlakant Rajbhar Urf Pappu",
+          "constituency": "Didarganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Lucky Yadav",
+          "constituency": "Malhani",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Amitabh Bajpai",
+          "constituency": "Arya Nagar",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Ram Achal Rajbhar",
+          "constituency": "Akbarpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Hakim Lal Bind",
+          "constituency": "Handia",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Shashank Trivedi",
+          "constituency": "Maholi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sunil Kumar Sharma",
+          "constituency": "Sahibabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Om Prakash Rajbhar",
+          "constituency": "Zahoorabad",
+          "party": "Suheldev Bharatiya Samaj Party"
+        },
+        {
+          "name": "Salona Kushwaha",
+          "constituency": "Tilhar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shalabh Mani Tripathi",
+          "constituency": "Deoria",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dharmpal Singh",
+          "constituency": "Etmadpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Neelkanth Tiwari",
+          "constituency": "Varanasi South",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Devender Kumar Nim",
+          "constituency": "Rampur Maniharan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Gyanendra Singh",
+          "constituency": "Paniyara",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Suchi",
+          "constituency": "Bijnor",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajkumar Sahyogi",
+          "constituency": "Iglas",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anil Kumar Singh",
+          "constituency": "Purwa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Hariom",
+          "constituency": "Amanpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Virendra Chaudhary",
+          "constituency": "Pharenda",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Shashank Verma",
+          "constituency": "Nighasan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sidharth Nath Singh",
+          "constituency": "Allahabad West",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ashok Kumar",
+          "constituency": "Salon",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Manisha",
+          "constituency": "Rath",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "D. C. Verma",
+          "constituency": "Meerganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rampratap Verma Urf Shashikant Verma",
+          "constituency": "Utraula",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Awadhesh Kumar Singh",
+          "constituency": "Pindra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Indrajeet Saroj",
+          "constituency": "Manjhanpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Asha Maurya",
+          "constituency": "Mahmoodabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Nagendra Singh Rathour",
+          "constituency": "Bhojpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bamba Lal",
+          "constituency": "Safipur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Manju Tyagi",
+          "constituency": "Sri Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajeev Tarara",
+          "constituency": "Dhanaura",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shahid Manzoor",
+          "constituency": "Kithore",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Sanjeev Agarwal",
+          "constituency": "Bareilly Cantt",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Nadira Sultan",
+          "constituency": "Patiyali",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Devendra Singh",
+          "constituency": "Kasganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jai Pratap Singh",
+          "constituency": "Bansi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Prem Pal Singh Dhangar",
+          "constituency": "Tundla",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mahendra Singh Khadagvanshi",
+          "constituency": "Hasanpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jai Prakash Nishad",
+          "constituency": "Rudrapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shafeek Ahmed Ansari",
+          "constituency": "Suar",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Rama Shankar Singh",
+          "constituency": "Marihan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vishambhar Singh Yadav",
+          "constituency": "Baberu",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Prakash Dwivedi",
+          "constituency": "Banda",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jaydrath Urf Pravaktanand",
+          "constituency": "Barkhera",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vimlesh Paswan",
+          "constituency": "Bansgaon",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anupma Jaiswal",
+          "constituency": "Bahraich",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Abhijeet Singh Sanga",
+          "constituency": "Bithoor",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vijaypal (Aadhti)",
+          "constituency": "Hapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ankur Tiwari",
+          "constituency": "Khalilabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Usha Maurya",
+          "constituency": "Husainganj",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Vinod Singh",
+          "constituency": "Sultanpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rinki Kol",
+          "constituency": "Chhanbey",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Om Prakash",
+          "constituency": "Zamania",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Vinay Verma",
+          "constituency": "Shohratgarh",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Raj Prasad Upadhyay",
+          "constituency": "Sadar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Birendra Singh Rana",
+          "constituency": "Sikandra Rao",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Iqbal Mehmood",
+          "constituency": "Sambhal",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Kunwar Sushant Singh",
+          "constituency": "Barhapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mariya Ali",
+          "constituency": "Matera",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Mohd. Nasir Qureshi",
+          "constituency": "Moradabad Rural",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Chhotey Lal Verma",
+          "constituency": "Fatehabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Poonam Sankhwar",
+          "constituency": "Rasulabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Aditi Singh",
+          "constituency": "Rae Bareli",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vipul Dubey",
+          "constituency": "Gyanpur",
+          "party": "Nirbal Indian Shoshit Hamara Apna Dal"
+        },
+        {
+          "name": "Virendra Singh Lodhi",
+          "constituency": "Marhara",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rakesh Kumar Yadav",
+          "constituency": "Gainsari",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Aman Giri",
+          "constituency": "Gola Gokrannath",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Avinash Chandra Dwivedi",
+          "constituency": "Manikpur",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Dharmesh Singh Tomar",
+          "constituency": "Dholana",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Minakshi Singh",
+          "constituency": "Khurja",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "R.K. Patel",
+          "constituency": "Mariyahu",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Rajesh Kumar Gautam",
+          "constituency": "Kadipur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Saurabh Singh",
+          "constituency": "Kasta",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Neel Ratan Singh",
+          "constituency": "Sevapuri",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ram Chandra Yadav",
+          "constituency": "Rudauli",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramkrishna Bhargava",
+          "constituency": "Misrikh",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shriram Chauhan",
+          "constituency": "Khajani",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mohit Sonkar",
+          "constituency": "Bilhaur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dudhram",
+          "constituency": "Mahadewa",
+          "party": "Suheldev Bharatiya Samaj Party"
+        },
+        {
+          "name": "Arvind Kumar Singh",
+          "constituency": "Dadraul",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ram Naresh Agnihotri",
+          "constituency": "Bhongaon",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sanjay Kumar Sharma",
+          "constituency": "Anupshahr",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Prateek Bhushan Singh",
+          "constituency": "Gonda",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ravendra Pal Singh",
+          "constituency": "Chharra",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pradeep Shukla",
+          "constituency": "Sahajanwa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sarita Bhadauriya",
+          "constituency": "Etawah",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kailash",
+          "constituency": "Chakia",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Deepak Kumar Mishra",
+          "constituency": "Barhaj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Neelima Katiyar",
+          "constituency": "Kalyanpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ram Niwas Verma",
+          "constituency": "Nanpara",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Vinay Kumar Dwivedi",
+          "constituency": "Mehnaun",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Chandrapal Singh",
+          "constituency": "Debai",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Yogesh Verma",
+          "constituency": "Lakhimpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Suresh Kumar",
+          "constituency": "Jagdishpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Purushottam Khandelwal",
+          "constituency": "Agra North",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sushil Singh",
+          "constituency": "Saiyadraja",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anil Kumar Tripathi",
+          "constituency": "Menhdawal",
+          "party": "Nirbal Indian Shoshit Hamara Apna Dal"
+        },
+        {
+          "name": "Ajay",
+          "constituency": "Colonelganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Surendra Kumar Kushwaha",
+          "constituency": "Fazilnagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sunil Dutt Dwivedi",
+          "constituency": "Farrukhabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Lokendra Pratap Singh",
+          "constituency": "Mohammdi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Panchanand Pathak (P.N. Pathak)",
+          "constituency": "Kushinagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shyam Prakash",
+          "constituency": "Gopamau",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vikas Gupta",
+          "constituency": "Ayah Shah",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Suchismita Maurya",
+          "constituency": "Majhawan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Akash Saxena (Hani)",
+          "constituency": "Rampur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sureshwar Singh",
+          "constituency": "Mahasi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shrikant Katiyar",
+          "constituency": "Bangarmau",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shivpal Singh Yadav",
+          "constituency": "Jaswantnagar",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Indrani Devi",
+          "constituency": "Bhinga",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Mukta Sanjeev Raja",
+          "constituency": "Aligarh",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Satyapal Singh Rathore",
+          "constituency": "Aliganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dinesh Rawat",
+          "constituency": "Haidergarh",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Chetram",
+          "constituency": "Powayan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bipin Singh",
+          "constituency": "Gorakhpur Rural",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Prabhash Kumar",
+          "constituency": "Sandi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Saurabh Srivastava",
+          "constituency": "Varanasi Cantt",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Harendra Singh",
+          "constituency": "Garhmukteshwar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ashok Kumar Rana",
+          "constituency": "Dhampur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sanjeev Kumar Diwakar",
+          "constituency": "Jalesar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rani Pakshalika Singh",
+          "constituency": "Bah",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajendra Kumar Maurya",
+          "constituency": "Pratapgarh",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ratnakar Mishra",
+          "constituency": "Mirzapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Suhaib Alias Mannu Ansari",
+          "constituency": "Mohammadabad",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Chandra Prakash Lodhi",
+          "constituency": "Fatehpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Jeet Lal Patel",
+          "constituency": "Bishwavnathganj",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Amresh Kumar",
+          "constituency": "Mohanlalganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramakant Yadav",
+          "constituency": "Phoolpur Pawai",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Yogesh Shukla",
+          "constituency": "Bakshi Kaa Talab",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramesh Jaiswal",
+          "constituency": "Mughalsarai",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajesh Tripathi",
+          "constituency": "Chillupar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ashutosh Shukla",
+          "constituency": "Bhagwant Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shrikant Sharma",
+          "constituency": "Mathura",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mahesh Chandra Gupta",
+          "constituency": "Badaun",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Devendra Singh Lodhi",
+          "constituency": "Syana",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Brajesh Kumar",
+          "constituency": "Mohan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Krishna Paswan",
+          "constituency": "Khaga",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Naseer Ahmad Khan",
+          "constituency": "Chamraua",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Amit Agarwal",
+          "constituency": "Meerut Cantt",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rishi Tripathi",
+          "constituency": "Nautanwan",
+          "party": "Nirbal Indian Shoshit Hamara Apna Dal"
+        },
+        {
+          "name": "Ankit Bharti",
+          "constituency": "Saidpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Meghshyam",
+          "constituency": "Goverdhan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramesh Singh",
+          "constituency": "Shahganj",
+          "party": "Nirbal Indian Shoshit Hamara Apna Dal"
+        },
+        {
+          "name": "Dharmraj Singh Yadav",
+          "constituency": "Barabanki",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Kirat Singh",
+          "constituency": "Gangoh",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Gudiya Katheriya",
+          "constituency": "Auraiya",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ram Murti Verma",
+          "constituency": "Tanda",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Rashmi Arya",
+          "constituency": "Mauranipur",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Sunil Patel",
+          "constituency": "Rohaniya",
+          "party": "Apna Dal (Soneylal)"
+        },
+        {
+          "name": "Omkumar",
+          "constituency": "Nehtaur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Baburam",
+          "constituency": "Puranpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sarvan Kumar Nishad",
+          "constituency": "Chauri-Chaura",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pankaj Gupta",
+          "constituency": "Unnao",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shyamdhani Rahi",
+          "constituency": "Kapilvastu",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Tribhuwan Ram",
+          "constituency": "Ajagara",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anil Kumar Sharma",
+          "constituency": "Shikarpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Raghavendra Sharma",
+          "constituency": "Bithari Chainpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Gyan Tiwari",
+          "constituency": "Sevata",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ajit Pal Tyagi",
+          "constituency": "Muradnagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Hari Prakash Verma",
+          "constituency": "Jalalabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rakesh Kumar Goswami",
+          "constituency": "Mahoba",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sakendra Pratap",
+          "constituency": "Kursi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bhupesh Chaubey",
+          "constituency": "Robertsganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anjula Singh Mahaur",
+          "constituency": "Hathras",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rafiq Ansari",
+          "constituency": "Meerut",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Kailash Rajput",
+          "constituency": "Tirwa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "G S Dharmesh",
+          "constituency": "Agra Cantt",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mahendra Pal Singh",
+          "constituency": "Pipraich",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Thakur Jaiveer Singh",
+          "constituency": "Barauli",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mukesh Choudhary",
+          "constituency": "Nakur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Jay Mangal",
+          "constituency": "Maharajganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Harvinder Kumar Sahni Alias Romi Sahni",
+          "constituency": "Palia",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ved Prakash Gupta",
+          "constituency": "Ayodhya",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ram Bilash Chauhan",
+          "constituency": "Madhuban",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ajay Singh",
+          "constituency": "Harraiya",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vipin Kumar David",
+          "constituency": "Etah",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajeev Gumber",
+          "constituency": "Saharanpur Nagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sabhakunwar",
+          "constituency": "Bhatpar Rani",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramapati Shastri",
+          "constituency": "Mankapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Abbas Ansari",
+          "constituency": "Mau",
+          "party": "Suheldev Bharatiya Samaj Party"
+        },
+        {
+          "name": "Raj Mani",
+          "constituency": "Koraon",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Navab Jan",
+          "constituency": "Thakurdwara",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Raghuraj Pratap Singh",
+          "constituency": "Kunda",
+          "party": "Jansatta Dal Loktantrik"
+        },
+        {
+          "name": "Rakesh Pandey",
+          "constituency": "Jalalpur",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Maharaji Prajapati",
+          "constituency": "Amethi",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Chandrabhanu Paswan",
+          "constituency": "Milkipur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Surender Diler",
+          "constituency": "Khair",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramveer Singh",
+          "constituency": "Kundarki",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Naseem Solanki",
+          "constituency": "Sishamau",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Sanjeev Sharma",
+          "constituency": "Ghaziabad",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dharmraj Nishad",
+          "constituency": "Katehari",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Tej Pratap Singh",
+          "constituency": "Karhal",
+          "party": "Samajwadi Party"
+        },
+        {
+          "name": "Deepak Patel",
+          "constituency": "Phulpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mithlesh Pal",
+          "constituency": "Meerapur",
+          "party": "Rashtriya Lok Dal"
+        },
+        {
+          "name": "Vacant",
+          "constituency": "Duddhi",
+          "party": "Vacant",
+          "status": "Seat vacant"
+        },
+        {
+          "name": "Vacant",
+          "constituency": "Nizamabad",
+          "party": "Vacant",
+          "status": "Seat vacant"
+        },
+        {
+          "name": "Vacant",
+          "constituency": "Faridpur",
+          "party": "Vacant",
+          "status": "Seat vacant"
+        },
+        {
+          "name": "Vacant",
+          "constituency": "Ghosi",
+          "party": "Vacant",
+          "status": "Seat vacant"
+        }
+      ],
+      "seatCounts": [
+        {
+          "party": "Bharatiya Janata Party",
+          "seats": 257
+        },
+        {
+          "party": "Samajwadi Party",
+          "seats": 104
+        },
+        {
+          "party": "Rashtriya Lok Dal",
+          "seats": 9
+        },
+        {
+          "party": "Apna Dal (Soneylal)",
+          "seats": 13
+        },
+        {
+          "party": "Indian National Congress",
+          "seats": 2
+        },
+        {
+          "party": "Suheldev Bharatiya Samaj Party",
+          "seats": 6
+        },
+        {
+          "party": "Nirbal Indian Shoshit Hamara Apna Dal",
+          "seats": 5
+        },
+        {
+          "party": "Jansatta Dal Loktantrik",
+          "seats": 2
+        },
+        {
+          "party": "Bahujan Samaj Party",
+          "seats": 1
+        },
+        {
+          "party": "Vacant",
+          "seats": 4
+        }
+      ]
+    },
+    "Uttarakhand": {
+      "chiefMinister": "Pushkar Singh Dhami",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/5th_Uttarakhand_Assembly#Members_of_the_Fifth_Uttarakhand_Assembly",
+          "label": "Uttarakhand Assembly constituency roster (secondary source)"
+        },
+        {
+          "url": "https://cm.uk.gov.in/",
+          "label": "Official Uttarakhand Chief Minister portal"
+        }
+      ],
+      "asOf": "2026-10-25",
+      "government": "Bharatiya Janata Party government",
+      "members": [
+        {
+          "name": "Durgeshwar Lal",
+          "constituency": "Purola",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sanjay Dobhal",
+          "constituency": "Yamunotri",
+          "party": "Independent"
+        },
+        {
+          "name": "Suresh Singh Chauhan",
+          "constituency": "Gangotri",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Lakhpat Singh Butola",
+          "constituency": "Badrinath",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Bhupal Ram Tamta",
+          "constituency": "Tharali",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Anil Nautiyal",
+          "constituency": "Karnaprayag",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Asha Nautiyal",
+          "constituency": "Kedarnath",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Bharat Singh Chaudhary",
+          "constituency": "Rudraprayag",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shakti Lal Shah",
+          "constituency": "Ghansali",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vinod Kandari",
+          "constituency": "Devprayag",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Subodh Uniyal",
+          "constituency": "Narendranagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vikram Singh Negi",
+          "constituency": "Pratapnagar",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Kishore Upadhyaya",
+          "constituency": "Tehri",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pritam Singh Panwar",
+          "constituency": "Dhanaulti",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pritam Singh",
+          "constituency": "Chakrata",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Munna Singh Chauhan",
+          "constituency": "Vikasnagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sahdev Singh Pundir",
+          "constituency": "Sahaspur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vinod Chamoli",
+          "constituency": "Dharampur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Umesh Sharma “Kau”",
+          "constituency": "Raipur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Khajan Dass",
+          "constituency": "Rajpur Road",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Savita Kapoor",
+          "constituency": "Dehradun Cantonment",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ganesh Joshi",
+          "constituency": "Mussoorie",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Brij Bhushan Gairola",
+          "constituency": "Doiwala",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Premchand Aggarwal",
+          "constituency": "Rishikesh",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Madan Kaushik",
+          "constituency": "Haridwar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Adesh Chauhan",
+          "constituency": "BHEL Ranipur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ravi Bahadur",
+          "constituency": "Jwalapur",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Mamta Rakesh",
+          "constituency": "Bhagwanpur",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Virendra Kumar",
+          "constituency": "Jhabrera",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Furqan Ahmad",
+          "constituency": "Piran Kaliyar",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Pradip Batra",
+          "constituency": "Roorkee",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Umesh Kumar",
+          "constituency": "Khanpur",
+          "party": "Independent"
+        },
+        {
+          "name": "Muhammad Nizamuddin",
+          "constituency": "Manglaur",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Muhammad Shahzad",
+          "constituency": "Laksar",
+          "party": "Bahujan Samaj Party"
+        },
+        {
+          "name": "Anupama Rawat",
+          "constituency": "Haridwar Rural",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Renu Bisht",
+          "constituency": "Yamkeshwar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajkumar Pori",
+          "constituency": "Pauri",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dhan Singh Rawat",
+          "constituency": "Srinagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Satpal Maharaj",
+          "constituency": "Chaubattakhal",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dilip Singh Rawat",
+          "constituency": "Lansdowne",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ritu Khanduri Bhushan",
+          "constituency": "Kotdwar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Harish Singh Dhami",
+          "constituency": "Dharchula",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Bishan Singh Chuphal",
+          "constituency": "Didihat",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mayukh Singh Mahar",
+          "constituency": "Pithoragarh",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Fakir Ram Tamta",
+          "constituency": "Gangolihat",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Suresh Singh Garhia",
+          "constituency": "Kapkot",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Parwati Das",
+          "constituency": "Bageshwar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Madan Singh Bisht",
+          "constituency": "Dwarahat",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Mahesh Singh Jeena",
+          "constituency": "Salt",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pramod Nainwal",
+          "constituency": "Ranikhet",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rekha Arya",
+          "constituency": "Someshwar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Manoj Tiwari",
+          "constituency": "Almora",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Mohan Singh Mahara",
+          "constituency": "Jageshwar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Khushal Singh Adhikari",
+          "constituency": "Lohaghat",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Pushkar Singh Dhami",
+          "constituency": "Champawat",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mohan Singh Bisht",
+          "constituency": "Lalkuan",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ram Singh Kaira",
+          "constituency": "Bhimtal",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sarita Arya",
+          "constituency": "Nainital",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sumit Hridayesh",
+          "constituency": "Haldwani",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Banshidhar Bhagat",
+          "constituency": "Kaladhungi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Diwan Singh Bisht",
+          "constituency": "Ramnagar",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Adesh Singh Chauhan",
+          "constituency": "Jaspur",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Trilok Singh Cheema",
+          "constituency": "Kashipur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Yashpal Arya",
+          "constituency": "Bajpur",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Arvind Pandey",
+          "constituency": "Gadarpur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Shiv Arora",
+          "constituency": "Rudrapur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Tilak Raj Behar",
+          "constituency": "Kichha",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Saurabh Bahuguna",
+          "constituency": "Sitarganj",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Gopal Singh Rana",
+          "constituency": "Nanakmatta",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Bhuwan Chandra Kapri",
+          "constituency": "Khatima",
+          "party": "Indian National Congress"
+        }
+      ],
+      "seatCounts": [
+        {
+          "party": "Bharatiya Janata Party",
+          "seats": 47
+        },
+        {
+          "party": "Independent",
+          "seats": 2
+        },
+        {
+          "party": "Indian National Congress",
+          "seats": 20
+        },
+        {
+          "party": "Bahujan Samaj Party",
+          "seats": 1
+        }
+      ]
+    },
+    "Goa": {
+      "chiefMinister": "Pramod Sawant",
+      "sources": [
+        {
+          "url": "https://www.goavidhansabha.gov.in/mlas.php",
+          "label": "Official Goa Assembly member directory"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/8th_Goa_Assembly",
+          "label": "Eighth Goa Assembly roster (secondary source)"
+        },
+        {
+          "label": "Official Goa Council of Ministers page",
+          "url": "https://www.goavidhansabha.gov.in/council-of-ministers.php"
+        }
+      ],
+      "asOf": "2026-10-25",
+      "government": "BJP-led government, supported by MGP and Independents",
+      "members": [
+        {
+          "name": "Jit Arolkar",
+          "constituency": "Mandrem",
+          "party": "Maharashtrawadi Gomantak Party"
+        },
+        {
+          "name": "Pravin Arlekar",
+          "constituency": "Pernem",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Chandrakant Shetye",
+          "constituency": "Bicholim",
+          "party": "Independent"
+        },
+        {
+          "name": "Nilkanth Halarnkar",
+          "constituency": "Tivim",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Joshua D'Souza",
+          "constituency": "Mapusa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Delilah Lobo",
+          "constituency": "Siolim",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kedar Naik",
+          "constituency": "Saligao",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Michael Lobo",
+          "constituency": "Calangute",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rohan Khaunte",
+          "constituency": "Porvorim",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Carlos Alvares Ferreira",
+          "constituency": "Aldona",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Atanasio Monserrate",
+          "constituency": "Panaji",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vacant",
+          "constituency": "Taleigao",
+          "party": "Vacant",
+          "status": "VACANT (former MLA Jennifer Monserrate, BJP; died 2026-07-19)"
+        },
+        {
+          "name": "Rodolfo Louis Fernandes",
+          "constituency": "Santa Cruz",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Viresh Borkar",
+          "constituency": "St. Andre",
+          "party": "Revolutionary Goans Party"
+        },
+        {
+          "name": "Rajesh Faldessai",
+          "constituency": "Cumbarjua",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Premendra Shet",
+          "constituency": "Maem",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Pramod Sawant",
+          "constituency": "Sanquelim",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Deviya Rane",
+          "constituency": "Poriem",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vishwajit Pratapsingh Rane",
+          "constituency": "Valpoi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Govind Gaude",
+          "constituency": "Priol",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vacant",
+          "constituency": "Ponda",
+          "party": "Vacant",
+          "status": "VACANT (former MLA Ravi Naik, BJP; died 2025-10-15)"
+        },
+        {
+          "name": "Subhash Shirodkar",
+          "constituency": "Siroda",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sudin Dhavalikar",
+          "constituency": "Marcaim",
+          "party": "Maharashtrawadi Gomantak Party"
+        },
+        {
+          "name": "Sankalp Amonkar",
+          "constituency": "Mormugao",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Krishna Salkar",
+          "constituency": "Vasco da Gama",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mauvin Godinho",
+          "constituency": "Dabolim",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Antonio Vas",
+          "constituency": "Cortalim",
+          "party": "Independent"
+        },
+        {
+          "name": "Aleixo Sequeira",
+          "constituency": "Nuvem",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Aleixo Lourenco",
+          "constituency": "Curtorim",
+          "party": "Independent"
+        },
+        {
+          "name": "Vijai Sardesai",
+          "constituency": "Fatorda",
+          "party": "Goa Forward Party"
+        },
+        {
+          "name": "Digambar Kamat",
+          "constituency": "Margao",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Venzy Viegas",
+          "constituency": "Benaulim",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Ulhas Tuenkar",
+          "constituency": "Navelim",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Yuri Alemao",
+          "constituency": "Cuncolim",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Cruz Silva",
+          "constituency": "Velim",
+          "party": "Aam Aadmi Party"
+        },
+        {
+          "name": "Altone D'Costa",
+          "constituency": "Quepem",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Nilesh Cabral",
+          "constituency": "Curchorem",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ganesh Gaonkar",
+          "constituency": "Sanvordem",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Subhash Phal Desai",
+          "constituency": "Sanguem",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ramesh Tawadkar",
+          "constituency": "Canacona",
+          "party": "Bharatiya Janata Party"
+        }
+      ],
+      "seatCounts": [
+        {
+          "party": "Maharashtrawadi Gomantak Party",
+          "seats": 2
+        },
+        {
+          "party": "Bharatiya Janata Party",
+          "seats": 26
+        },
+        {
+          "party": "Independent",
+          "seats": 3
+        },
+        {
+          "party": "Indian National Congress",
+          "seats": 3
+        },
+        {
+          "party": "Vacant",
+          "seats": 2
+        },
+        {
+          "party": "Revolutionary Goans Party",
+          "seats": 1
+        },
+        {
+          "party": "Goa Forward Party",
+          "seats": 1
+        },
+        {
+          "party": "Aam Aadmi Party",
+          "seats": 2
+        }
+      ]
+    },
+    "Manipur": {
+      "chiefMinister": "Yumnam Khemchand Singh",
+      "sources": [
+        {
+          "url": "https://assembly.mn.gov.in/members",
+          "label": "Official Manipur Assembly member roster"
+        },
+        {
+          "url": "https://assembly.mn.gov.in/",
+          "label": "Official Manipur Assembly homepage"
+        }
+      ],
+      "asOf": "2026-10-25",
+      "notes": "The Assembly homepage party tally conflicts with its detailed member roster (homepage: 37 BJP and one vacancy; roster: 36 BJP and two vacancies). The constituency roster is followed here; verify before treating the tally as definitive.",
+      "government": "BJP-led elected government",
+      "members": [
+        {
+          "name": "Thokchom Lokeshwar Singh",
+          "constituency": "Khundrakpam",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Nongthombam Biren Singh",
+          "constituency": "Heingang",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Leishangthem Susindro Meitei",
+          "constituency": "Khurai",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sheikh Noorul Hassan",
+          "constituency": "Kshetrigao",
+          "party": "National Peoples Party"
+        },
+        {
+          "name": "Thongam Biswajit Singh",
+          "constituency": "Thongju",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Lourembam Rameshwor Meetei",
+          "constituency": "Keirao",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Thounaojam Shyamkumar",
+          "constituency": "Andro",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Khongbantabam Ibomcha",
+          "constituency": "Lamlai",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Khumukcham Joykisan Singh",
+          "constituency": "Thangmeiband",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Khwairakpam Raghumani Singh",
+          "constituency": "Uripok",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Rajkumar Imo Singh",
+          "constituency": "Sagolband",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Nishikant Sapam",
+          "constituency": "Keishamthong",
+          "party": "Independent"
+        },
+        {
+          "name": "Yumnam Khemchand Singh",
+          "constituency": "Singjamei",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Thokchom Satyabrata Singh",
+          "constituency": "Yaiskul",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Thangjam Arunkumar",
+          "constituency": "Wangkhei",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Heikham Dingo Singh",
+          "constituency": "Sekmai (SC)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sorokhaibam Rajen Singh",
+          "constituency": "Lamsang",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Dr. Sapam Ranjan Singh",
+          "constituency": "Konthoujam",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sapam Kunjakeswor (Keba) Singh",
+          "constituency": "Patsoi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Karam Shyam",
+          "constituency": "Langthabal",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sagolshem Kebi Devi",
+          "constituency": "Naoriya Pakhanglakpa",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Khurajam Loken Singh",
+          "constituency": "Wangoi",
+          "party": "National Peoples Party"
+        },
+        {
+          "name": "Kongkham Robindro Singh",
+          "constituency": "Mayang Imphal",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Thounaojam Basanta Kumar Singh",
+          "constituency": "Nambol",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Irengbam Nalini Devi",
+          "constituency": "Oinam",
+          "party": "National Peoples Party"
+        },
+        {
+          "name": "Konthoujam Govindas Singh",
+          "constituency": "Bishnupur",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Thongam Shanti Singh",
+          "constituency": "Moirang",
+          "party": "National Peoples Party"
+        },
+        {
+          "name": "Tongbram Robindro Singh",
+          "constituency": "Thanga",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Sanasam Premchandra Singh",
+          "constituency": "Kumbi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mohd Abdul Nasir",
+          "constituency": "Lilong",
+          "party": "Janata Dal (United)"
+        },
+        {
+          "name": "Okram Ibobi Singh",
+          "constituency": "Thoubal",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Keisham Meghachandra Singh",
+          "constituency": "Wangkhem",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Thokchom Radheshyam Singh",
+          "constituency": "Heirok",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Paonam Brojen Singh",
+          "constituency": "Wangjing Tentha",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Surjakumar Okram",
+          "constituency": "Khangabok",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Dr. Usham Deben Singh",
+          "constituency": "Wabgai",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Mayanglambam Rameshwar Singh",
+          "constituency": "Kakching",
+          "party": "National Peoples Party"
+        },
+        {
+          "name": "Dr. Yumnam Radheshyam Singh",
+          "constituency": "Hiyanglam",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Kangujam Ranjit Singh",
+          "constituency": "Sugnoo",
+          "party": "Indian National Congress"
+        },
+        {
+          "name": "Achab Uddin",
+          "constituency": "Jiribam",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "SS. Olish",
+          "constituency": "Chandel (ST)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Letpao Haokip",
+          "constituency": "Tengnoupal (ST)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Leishiyo Keishing",
+          "constituency": "Phungyar (ST)",
+          "party": "Naga Peoples Front"
+        },
+        {
+          "name": "Ram Muivah",
+          "constituency": "Ukhrul (ST)",
+          "party": "Naga Peoples Front"
+        },
+        {
+          "name": "Khashim Vashum",
+          "constituency": "Chingai (ST)",
+          "party": "Naga Peoples Front"
+        },
+        {
+          "name": "Kimneo Haokip Hangshing",
+          "constituency": "Saikul (ST)",
+          "party": "Kuki Peoples Alliance"
+        },
+        {
+          "name": "J. Kumo Sha",
+          "constituency": "Karong (ST)",
+          "party": "Independent"
+        },
+        {
+          "name": "Losii Dikho",
+          "constituency": "Mao (ST)",
+          "party": "Naga Peoples Front"
+        },
+        {
+          "name": "Vacant",
+          "constituency": "Tadubi (ST)",
+          "party": "Vacant",
+          "status": "VACANT"
+        },
+        {
+          "name": "Nemcha Kipgen",
+          "constituency": "Kangpokpi",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Haokholet Kipgen",
+          "constituency": "Saitu (ST)",
+          "party": "Independent"
+        },
+        {
+          "name": "Awangbow Newmai",
+          "constituency": "Tamei (ST)",
+          "party": "Naga Peoples Front"
+        },
+        {
+          "name": "Janghemlung Panmei",
+          "constituency": "Tamenglong (ST)",
+          "party": "National Peoples Party"
+        },
+        {
+          "name": "Dinganglung Gangmei",
+          "constituency": "Nungba (ST)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Ngursanglur Sanate",
+          "constituency": "Tipaimukh (ST)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Vacant",
+          "constituency": "Thanlon (ST)",
+          "party": "Vacant",
+          "status": "VACANT"
+        },
+        {
+          "name": "Letzamang Haokip",
+          "constituency": "Henglep (ST)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "L.M. Khaute",
+          "constituency": "Churachandpur (ST)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Paolienlal Haokip",
+          "constituency": "Saikot (ST)",
+          "party": "Bharatiya Janata Party"
+        },
+        {
+          "name": "Chinlunthang",
+          "constituency": "Singhat (ST)",
+          "party": "Kuki Peoples Alliance"
+        }
+      ],
+      "seatCounts": [
+        {
+          "party": "Indian National Congress",
+          "seats": 5
+        },
+        {
+          "party": "Bharatiya Janata Party",
+          "seats": 36
+        },
+        {
+          "party": "National Peoples Party",
+          "seats": 6
+        },
+        {
+          "party": "Independent",
+          "seats": 3
+        },
+        {
+          "party": "Janata Dal (United)",
+          "seats": 1
+        },
+        {
+          "party": "Naga Peoples Front",
+          "seats": 5
+        },
+        {
+          "party": "Kuki Peoples Alliance",
+          "seats": 2
+        },
+        {
+          "party": "Vacant",
+          "seats": 2
+        }
+      ]
+    }
+  }
+}

@@ -25,10 +25,135 @@ The **Reload published feed** button reloads the most recently published feed. I
 
 The election cards use locally stored Wikimedia Commons thumbnails. Artist credits, source pages, and the applicable Creative Commons licenses are listed in the page's **Photo credits and reuse licenses** section.
 
-## Data notes
+## Data files and structures
 
-The feed contains up to 100 of ECI's latest public press-release entries related to elections, with publication dates and links to official notices. Expected election windows and assembly seat counts are curated reference data. Polling dates are not inferred from notice titles; open an official notice for its full details.
+The site keeps election announcements, candidate information, and current Assembly information in separate JSON files under `data/`. `scripts/prepare-pages.js` validates the saved data and copies all three files into the static Pages output. The local server exposes them at `/data/elections.json`, `/data/candidates.json`, and `/data/incumbents.json`.
 
-Candidate and party manifesto information is kept separately in `data/candidates.json`; the ECI announcement feed does not provide a reliable candidate/manifesto list. Use ECI records for candidate and constituency details where available; if an official fallback is needed, label it clearly in the source link. Manifesto summaries should be concise, paraphrased, and linked to the party's official publication. Until verified records are entered, the relevant election detail says that candidate and manifesto information is not yet available. The Pages preparation script publishes this file with the site.
+### ECI announcements: `data/elections.json`
 
-Each state entry contains `candidates` and `manifestos` arrays. Candidate records use `name`, `party`, `constituency`, optional `status`, and `sources` (an array of `{ "label", "url" }`). Manifesto records use `party`, optional `title`, `promises` (a short array of summary points), and `source` (`{ "label", "url" }`). All source links must use HTTPS and should identify whether they point to ECI or an official party source.
+This feed is fetched from the Election Commission of India's public announcements and can contain up to 100 election-related notices. It is automatically refreshed by the GitHub Actions workflow and by `npm run update-feed`.
+
+```json
+{
+  "lastChecked": "2026-10-25T11:44:36.447Z",
+  "announcements": [
+    {
+      "title": "Election notice title",
+      "description": "Notice description",
+      "publishedAt": "Thursday 22 Oct 2026, 10:22 AM",
+      "url": "https://www.eci.gov.in/eci/public/api/download?url=..."
+    }
+  ],
+  "stale": false
+}
+```
+
+`lastChecked` is an ISO timestamp; each announcement has a title, description, publication date, and official notice URL. When a refresh fails, the published feed retains the last saved announcements and can include `stale: true`, a `warning`, and `lastAttempted` timestamp. These fields explain feed freshness; they do not indicate a failure to deploy. Notices are not used to infer polling dates.
+
+### Upcoming election cards: `index.html`
+
+The upcoming states and their expected election windows are curated in the page's `elections` array rather than loaded from the ECI feed. Each entry uses:
+
+```js
+{
+  state: "Goa",
+  window: "Early 2027 · expected",
+  seats: "40 seats",
+  timing: "Early 2027",
+  image: "./assets/goa-mandrem-beach.jpg",
+  imageAlt: "Aerial view of Mandrem beach and river in Goa",
+  place: "Goa · West coast"
+}
+```
+
+These windows are estimates, not official polling dates. Update them only with reliable information and keep the expected/official distinction clear.
+
+### Candidates and manifestos: `data/candidates.json`
+
+This is manually curated reference data; the ECI announcement feed does not automatically populate candidate names or party manifestos. The top-level `states` keys must match the state names used by the election cards. Candidate source links should be HTTPS and identify whether the record comes from ECI or a clearly labeled official fallback. Manifesto promises are short paraphrases linked to the party publication.
+
+```json
+{
+  "schemaVersion": 1,
+  "states": {
+    "Goa": {
+      "candidates": [
+        {
+          "name": "Candidate name",
+          "party": "Party name",
+          "constituency": "Constituency name",
+          "status": "Declared",
+          "sources": [
+            {
+              "label": "Official ECI candidate record",
+              "url": "https://example.gov.in/candidate"
+            }
+          ]
+        }
+      ],
+      "manifestos": [
+        {
+          "party": "Party name",
+          "title": "Manifesto title",
+          "promises": ["Short, paraphrased policy summary"],
+          "source": {
+            "label": "Official party manifesto",
+            "url": "https://example.org/manifesto"
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
+`status`, manifesto `title`, and candidate `sources` are optional presentation fields; manifesto `promises` should be a short array. Keep the `candidates` and `manifestos` arrays even when there is no verified data yet. Empty arrays are displayed as unavailable rather than being treated as proof that no announcements exist.
+
+### Current Assembly and incumbents: `data/incumbents.json`
+
+This is a dated, manually maintained snapshot, not a live feed. Each state has an `asOf` date, government and Chief Minister details, party seat totals, source links, and a constituency-by-constituency `members` list. The snapshot currently covers Goa, Manipur, Punjab, Uttarakhand, Uttar Pradesh, and Gujarat.
+
+```json
+{
+  "schemaVersion": 1,
+  "states": {
+    "Example state": {
+      "asOf": "2026-10-25",
+      "government": "Example coalition government",
+      "chiefMinister": "Chief Minister name",
+      "seatCounts": [
+        { "party": "Example party", "seats": 1 },
+        { "party": "Vacant", "seats": 1 }
+      ],
+      "sources": [
+        {
+          "label": "Official Assembly member directory",
+          "url": "https://example.gov.in/members"
+        }
+      ],
+      "members": [
+        {
+          "name": "MLA name",
+          "constituency": "Constituency name",
+          "party": "Example party"
+        },
+        {
+          "name": "Vacant",
+          "constituency": "Second constituency",
+          "party": "Vacant",
+          "status": "Seat vacant"
+        }
+      ],
+      "notes": "Explain material source limitations or discrepancies."
+    }
+  }
+}
+```
+
+Each member's `status` and a state's `notes` are optional. Record a vacancy as a member entry with `name` and `party` set to `Vacant`, so it is included in the total Assembly strength. The sum of `seatCounts[].seats` must equal the number of entries in `members`; each constituency must appear only once. Source links must use HTTPS and labels should make secondary sources explicit. The preparation script checks required fields, duplicate constituencies, tally totals, and source links before deployment.
+
+Known vacancies and source conflicts are documented in the relevant state data. Some rosters rely on secondary sources where a current official roster could not be verified. Check the source links and update `asOf` and the affected data when membership changes. Do not treat current MLAs as candidates for the next election.
+
+## Data maintenance
+
+Expected election windows, candidate/manifesto entries, and current Assembly snapshots are curated separately from the automated ECI feed. Only `data/elections.json` is refreshed by the ECI workflow. It still deploys the last saved announcement feed if a refresh fails, with stale-data metadata shown on the page. Verify official notices and roster sources before updating curated records.

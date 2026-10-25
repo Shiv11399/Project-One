@@ -42,6 +42,23 @@ const server = http.createServer(async (request, response) => {
         return;
     }
 
+    if ((request.method === "GET" || request.method === "HEAD") && requestUrl.pathname === "/data/incumbents.json") {
+        try {
+            const incumbentData = await readFile(path.join(__dirname, "data", "incumbents.json"));
+            response.writeHead(200, {
+                "Content-Type": "application/json; charset=utf-8",
+                "Cache-Control": "no-store",
+                "X-Content-Type-Options": "nosniff"
+            });
+            response.end(request.method === "HEAD" ? undefined : incumbentData);
+        } catch (error) {
+            console.error("Unable to read current Assembly data:", error);
+            response.writeHead(500, { "Content-Type": "application/json; charset=utf-8" });
+            response.end(JSON.stringify({ error: "Unable to load current Assembly data." }));
+        }
+        return;
+    }
+
     if ((request.method === "GET" || request.method === "HEAD") && /^\/assets\/[a-z0-9-]+\.jpg$/.test(requestUrl.pathname)) {
         try {
             const image = await readFile(path.join(__dirname, requestUrl.pathname.slice(1)));
