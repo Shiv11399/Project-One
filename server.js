@@ -25,6 +25,23 @@ const server = http.createServer(async (request, response) => {
         return;
     }
 
+    if ((request.method === "GET" || request.method === "HEAD") && requestUrl.pathname === "/data/candidates.json") {
+        try {
+            const candidateData = await readFile(path.join(__dirname, "data", "candidates.json"));
+            response.writeHead(200, {
+                "Content-Type": "application/json; charset=utf-8",
+                "Cache-Control": "no-store",
+                "X-Content-Type-Options": "nosniff"
+            });
+            response.end(request.method === "HEAD" ? undefined : candidateData);
+        } catch (error) {
+            console.error("Unable to read candidate and manifesto data:", error);
+            response.writeHead(500, { "Content-Type": "application/json; charset=utf-8" });
+            response.end(JSON.stringify({ error: "Unable to load candidate and manifesto data." }));
+        }
+        return;
+    }
+
     if ((request.method === "GET" || request.method === "HEAD") && /^\/assets\/[a-z0-9-]+\.jpg$/.test(requestUrl.pathname)) {
         try {
             const image = await readFile(path.join(__dirname, requestUrl.pathname.slice(1)));

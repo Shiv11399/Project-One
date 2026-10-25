@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "states": {
+    "Goa": {
+      "candidates": [],
+      "manifestos": []
+    },
+    "Manipur": {
+      "candidates": [],
+      "manifestos": []
+    },
+    "Punjab": {
+      "candidates": [],
+      "manifestos": []
+    },
+    "Uttarakhand": {
+      "candidates": [],
+      "manifestos": []
+    },
+    "Uttar Pradesh": {
+      "candidates": [],
+      "manifestos": []
+    },
+    "Gujarat": {
+      "candidates": [],
+      "manifestos": []
+    }
+  }
+}

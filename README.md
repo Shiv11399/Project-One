@@ -28,3 +28,7 @@ The election cards use locally stored Wikimedia Commons thumbnails. Artist credi
 ## Data notes
 
 The feed contains up to 100 of ECI's latest public press-release entries related to elections, with publication dates and links to official notices. Expected election windows and assembly seat counts are curated reference data. Polling dates are not inferred from notice titles; open an official notice for its full details.
+
+Candidate and party manifesto information is kept separately in `data/candidates.json`; the ECI announcement feed does not provide a reliable candidate/manifesto list. Use ECI records for candidate and constituency details where available; if an official fallback is needed, label it clearly in the source link. Manifesto summaries should be concise, paraphrased, and linked to the party's official publication. Until verified records are entered, the relevant election detail says that candidate and manifesto information is not yet available. The Pages preparation script publishes this file with the site.
+
+Each state entry contains `candidates` and `manifestos` arrays. Candidate records use `name`, `party`, `constituency`, optional `status`, and `sources` (an array of `{ "label", "url" }`). Manifesto records use `party`, optional `title`, `promises` (a short array of summary points), and `source` (`{ "label", "url" }`). All source links must use HTTPS and should identify whether they point to ECI or an official party source.

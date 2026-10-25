@@ -523,6 +523,72 @@
             text-decoration: underline;
         }
 
+        .candidate-section {
+            margin-top: 26px;
+            padding-top: 22px;
+            border-top: 1px solid var(--line);
+        }
+
+        .candidate-intro {
+            margin: 0 0 14px;
+            color: #c0cbd8;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .candidate-card {
+            padding: 14px;
+            border: 1px solid var(--line);
+            border-radius: 11px;
+            background: #0e1724;
+        }
+
+        .candidate-card + .candidate-card {
+            margin-top: 8px;
+        }
+
+        .candidate-name,
+        .manifesto-party {
+            margin: 0;
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 750;
+        }
+
+        .candidate-meta,
+        .candidate-empty {
+            margin: 7px 0 0;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.55;
+        }
+
+        .candidate-sources {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            margin-top: 10px;
+        }
+
+        .candidate-source {
+            color: var(--saffron);
+            font-size: 12px;
+            font-weight: 750;
+            text-decoration: none;
+        }
+
+        .candidate-source:hover {
+            text-decoration: underline;
+        }
+
+        .manifesto-points {
+            margin: 9px 0 0;
+            padding-left: 19px;
+            color: #c0cbd8;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
         .detail-footer {
             display: flex;
             align-items: center;
@@ -759,6 +825,8 @@
         const feedStatus = document.querySelector("#feed-status");
         const refreshButton = document.querySelector("#refresh-feed");
         let announcements = [];
+        let candidateData = null;
+        let candidateDataError = "";
         let selectedElectionIndex = 0;
 
         function normalizeText(value) {
@@ -829,6 +897,148 @@
             return card;
         }
 
+        function createSourceLink(source) {
+            try {
+                const sourceUrl = new URL(source.url);
+                if (sourceUrl.protocol !== "https:") {
+                    throw new Error("Source links must use HTTPS.");
+                }
+                const link = document.createElement("a");
+                link.className = "candidate-source";
+                link.href = sourceUrl.href;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.textContent = `${source.label} ↗`;
+                return link;
+            } catch (error) {
+                console.error("Candidate data contains an invalid source link.", error);
+                return null;
+            }
+        }
+
+        function createCandidateCard(candidate) {
+            const card = document.createElement("article");
+            card.className = "candidate-card";
+            const name = document.createElement("h4");
+            name.className = "candidate-name";
+            name.textContent = candidate.name;
+            const details = [candidate.party, candidate.constituency, candidate.status]
+                .filter(Boolean);
+            card.append(name);
+            if (details.length) {
+                const meta = document.createElement("p");
+                meta.className = "candidate-meta";
+                meta.textContent = details.join(" · ");
+                card.append(meta);
+            }
+            if (Array.isArray(candidate.sources) && candidate.sources.length) {
+                const sources = document.createElement("div");
+                sources.className = "candidate-sources";
+                candidate.sources.forEach((source) => {
+                    const link = createSourceLink(source);
+                    if (link) sources.append(link);
+                });
+                if (sources.childElementCount) card.append(sources);
+            }
+            return card;
+        }
+
+        function createManifestoCard(manifesto) {
+            const card = document.createElement("article");
+            card.className = "candidate-card";
+            const party = document.createElement("h4");
+            party.className = "manifesto-party";
+            party.textContent = manifesto.party;
+            card.append(party);
+
+            if (manifesto.title) {
+                const title = document.createElement("p");
+                title.className = "candidate-meta";
+                title.textContent = manifesto.title;
+                card.append(title);
+            }
+
+            if (Array.isArray(manifesto.promises) && manifesto.promises.length) {
+                const promises = document.createElement("ul");
+                promises.className = "manifesto-points";
+                manifesto.promises.forEach((promise) => {
+                    const item = document.createElement("li");
+                    item.textContent = promise;
+                    promises.append(item);
+                });
+                card.append(promises);
+            }
+
+            const source = createSourceLink(manifesto.source);
+            if (source) {
+                const sources = document.createElement("div");
+                sources.className = "candidate-sources";
+                sources.append(source);
+                card.append(sources);
+            }
+            return card;
+        }
+
+        function createCandidateSection(election) {
+            const electionData = candidateData?.states?.[election.state];
+            const candidates = Array.isArray(electionData?.candidates) ? electionData.candidates : [];
+            const manifestos = Array.isArray(electionData?.manifestos) ? electionData.manifestos : [];
+            const section = document.createElement("section");
+            section.className = "candidate-section";
+
+            const heading = document.createElement("h3");
+            heading.className = "announcement-heading";
+            heading.textContent = "Candidates & party manifestos";
+            const intro = document.createElement("p");
+            intro.className = "candidate-intro";
+            intro.textContent = "Candidate and manifesto records are curated from official sources, not fetched automatically. Candidate entries link to ECI records or clearly labeled official fallbacks; manifesto summaries link to official party publications.";
+            section.append(heading, intro);
+
+            if (candidateDataError) {
+                const error = document.createElement("p");
+                error.className = "candidate-empty";
+                error.textContent = `Candidate and manifesto data unavailable: ${candidateDataError}`;
+                section.append(error);
+                return section;
+            }
+
+            if (!candidateData) {
+                const loading = document.createElement("p");
+                loading.className = "candidate-empty";
+                loading.textContent = "Loading candidate and manifesto information…";
+                section.append(loading);
+                return section;
+            }
+
+            const candidateHeading = document.createElement("h4");
+            candidateHeading.className = "announcement-heading";
+            candidateHeading.textContent = "Declared candidates";
+            section.append(candidateHeading);
+            if (candidates.length) {
+                candidates.forEach((candidate) => section.append(createCandidateCard(candidate)));
+            } else {
+                const empty = document.createElement("p");
+                empty.className = "candidate-empty";
+                empty.textContent = "No verified candidate records have been added for this election yet.";
+                section.append(empty);
+            }
+
+            const manifestoHeading = document.createElement("h4");
+            manifestoHeading.className = "announcement-heading";
+            manifestoHeading.style.marginTop = "18px";
+            manifestoHeading.textContent = "Official party promises";
+            section.append(manifestoHeading);
+            if (manifestos.length) {
+                manifestos.forEach((manifesto) => section.append(createManifestoCard(manifesto)));
+            } else {
+                const empty = document.createElement("p");
+                empty.className = "candidate-empty";
+                empty.textContent = "No official party manifesto summaries have been added yet.";
+                section.append(empty);
+            }
+            return section;
+        }
+
         function renderDetail(election, index) {
             const stateAnnouncements = announcements.filter((announcement) => matchesElection(announcement, election));
             const scheduleFound = stateAnnouncements.some((announcement) => /\bschedule\b/i.test(`${announcement.title} ${announcement.description || ""}`));
@@ -892,7 +1102,7 @@
             officialLink.rel = "noopener noreferrer";
             officialLink.textContent = "Election Commission of India ↗";
             footer.append(note, officialLink);
-            content.append(intro, facts, announcementSection, footer);
+            content.append(intro, facts, announcementSection, createCandidateSection(election), footer);
             eventDetail.replaceChildren(banner, content);
         }
 
@@ -991,9 +1201,29 @@
             }
         }
 
+        async function loadCandidateData() {
+            try {
+                const response = await fetch("./data/candidates.json", { cache: "no-store" });
+                if (!response.ok) {
+                    throw new Error(`Candidate data could not be loaded (${response.status}).`);
+                }
+                const data = await response.json();
+                if (data.schemaVersion !== 1 || !data.states || typeof data.states !== "object") {
+                    throw new Error("Candidate data has an invalid format.");
+                }
+                candidateData = data;
+                candidateDataError = "";
+            } catch (error) {
+                console.error("Unable to load candidate and manifesto data:", error);
+                candidateDataError = error.message;
+            }
+            renderDetail(elections[selectedElectionIndex], selectedElectionIndex);
+        }
+
         renderDetail(elections[0], 0);
         refreshButton.addEventListener("click", loadAnnouncements);
         loadAnnouncements();
+        loadCandidateData();
     </script>
 </body>
 </html>

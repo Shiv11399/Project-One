@@ -6,6 +6,8 @@ async function main() {
     const outputDirectory = process.env.PAGES_OUTPUT_DIR || path.join(projectRoot, "_site");
     const feedPath = path.join(projectRoot, "data", "elections.json");
     const feed = JSON.parse(await readFile(feedPath, "utf8"));
+    const candidateDataPath = path.join(projectRoot, "data", "candidates.json");
+    const candidateData = JSON.parse(await readFile(candidateDataPath, "utf8"));
 
     if (
         typeof feed.lastChecked !== "string" ||
@@ -13,6 +15,10 @@ async function main() {
         !Array.isArray(feed.announcements)
     ) {
         throw new Error("The saved ECI feed is invalid; refusing to deploy it.");
+    }
+
+    if (candidateData.schemaVersion !== 1 || !candidateData.states || typeof candidateData.states !== "object") {
+        throw new Error("The saved candidate data is invalid; refusing to deploy it.");
     }
 
     const refreshFailed = process.env.FEED_REFRESH_STATUS === "failure";
@@ -40,7 +46,8 @@ async function main() {
         cp(path.join(projectRoot, "index.html"), path.join(outputDirectory, "index.html")),
         cp(path.join(projectRoot, "CNAME"), path.join(outputDirectory, "CNAME")),
         cp(path.join(projectRoot, "assets"), assetsDirectory, { recursive: true }),
-        writeFile(path.join(dataDirectory, "elections.json"), `${JSON.stringify(pageFeed, null, 2)}\n`, "utf8")
+        writeFile(path.join(dataDirectory, "elections.json"), `${JSON.stringify(pageFeed, null, 2)}\n`, "utf8"),
+        writeFile(path.join(dataDirectory, "candidates.json"), `${JSON.stringify(candidateData, null, 2)}\n`, "utf8")
     ]);
 
     console.log(
