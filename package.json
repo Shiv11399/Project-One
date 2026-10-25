@@ -4,7 +4,8 @@
   "private": true,
   "description": "An India election calendar with live Election Commission announcements",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "update-feed": "node scripts/update-eci-feed.js"
   },
   "engines": {
     "node": ">=18"

@@ -551,9 +551,9 @@
             <div class="season-strip">
                 <div>
                     <span class="season-strip-title" id="schedule-title">Upcoming assembly elections</span>
-                    <span class="season-strip-meta" id="feed-status" aria-live="polite">Checking the Election Commission feed…</span>
+                    <span class="season-strip-meta" id="feed-status" aria-live="polite">Loading the latest published ECI updates…</span>
                 </div>
-                <button class="refresh-button" id="refresh-feed" type="button">Refresh ECI updates</button>
+                <button class="refresh-button" id="refresh-feed" type="button">Check for updates</button>
             </div>
             <div class="content-grid">
                 <div class="event-list" id="event-list" role="tablist" aria-label="Upcoming elections"></div>
@@ -794,29 +794,26 @@
             eventList.append(tab);
         });
 
-        async function loadAnnouncements(forceRefresh = false) {
+        async function loadAnnouncements() {
             refreshButton.disabled = true;
-            feedStatus.textContent = "Checking the Election Commission feed…";
+            feedStatus.textContent = "Loading the latest published ECI updates…";
             try {
-                const refreshParameter = forceRefresh ? "?refresh=1" : "";
-                const response = await fetch(`/api/elections${refreshParameter}`, { signal: AbortSignal.timeout(20000) });
+                const response = await fetch(`./data/elections.json?check=${Date.now()}`, { cache: "no-store" });
                 const data = await response.json();
                 if (!response.ok) {
-                    throw new Error(data.error || `ECI feed request failed (${response.status}).`);
+                    throw new Error(`The published ECI feed could not be loaded (${response.status}).`);
                 }
                 if (!Array.isArray(data.announcements) || typeof data.lastChecked !== "string") {
-                    throw new Error("The election server returned an invalid ECI feed response.");
+                    throw new Error("The published ECI feed has an invalid format.");
                 }
 
                 const checkedAt = new Date(data.lastChecked);
                 if (Number.isNaN(checkedAt.getTime())) {
-                    throw new Error("The election server returned an invalid feed timestamp.");
+                    throw new Error("The published ECI feed has an invalid update time.");
                 }
                 announcements = data.announcements;
                 const updateTime = checkedAt.toLocaleString();
-                feedStatus.textContent = data.stale
-                    ? `Showing cached ECI updates · last checked ${updateTime} · ${data.warning}`
-                    : `Live ECI updates · checked ${updateTime}`;
+                feedStatus.textContent = `ECI feed updated ${updateTime} · refreshed hourly`;
                 renderDetail(elections[selectedElectionIndex], selectedElectionIndex);
             } catch (error) {
                 feedStatus.textContent = `ECI updates unavailable: ${error.message}`;
@@ -826,7 +823,7 @@
         }
 
         renderDetail(elections[0], 0);
-        refreshButton.addEventListener("click", () => loadAnnouncements(true));
+        refreshButton.addEventListener("click", loadAnnouncements);
         loadAnnouncements();
     </script>
 </body>

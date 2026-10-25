@@ -1,37 +1,26 @@
 const http = require("node:http");
 const { readFile } = require("node:fs/promises");
 const path = require("node:path");
-const { getAnnouncements } = require("./eci-feed");
 
 const host = process.env.HOST || "127.0.0.1";
 const port = Number(process.env.PORT || 8000);
 
-function sendJson(response, statusCode, body) {
-    response.writeHead(statusCode, {
-        "Content-Type": "application/json; charset=utf-8",
-        "Cache-Control": "no-store",
-        "X-Content-Type-Options": "nosniff"
-    });
-    response.end(JSON.stringify(body));
-}
-
 const server = http.createServer(async (request, response) => {
     const requestUrl = new URL(request.url, `http://${request.headers.host || `${host}:${port}`}`);
 
-    if (requestUrl.pathname === "/api/elections") {
-        if (request.method !== "GET") {
-            sendJson(response, 405, { error: "Only GET requests are supported." });
-            return;
-        }
-
+    if ((request.method === "GET" || request.method === "HEAD") && requestUrl.pathname === "/data/elections.json") {
         try {
-            const data = await getAnnouncements(requestUrl.searchParams.get("refresh") === "1");
-            sendJson(response, 200, data);
-        } catch (error) {
-            console.error("Unable to retrieve Election Commission announcements:", error);
-            sendJson(response, 502, {
-                error: `Could not retrieve official ECI announcements. ${error.message}`
+            const feed = await readFile(path.join(__dirname, "data", "elections.json"));
+            response.writeHead(200, {
+                "Content-Type": "application/json; charset=utf-8",
+                "Cache-Control": "no-store",
+                "X-Content-Type-Options": "nosniff"
             });
+            response.end(request.method === "HEAD" ? undefined : feed);
+        } catch (error) {
+            console.error("Unable to read the published ECI feed:", error);
+            response.writeHead(500, { "Content-Type": "application/json; charset=utf-8" });
+            response.end(JSON.stringify({ error: "Unable to load the ECI feed. Run npm run update-feed first." }));
         }
         return;
     }
