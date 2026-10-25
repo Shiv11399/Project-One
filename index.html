@@ -154,6 +154,28 @@
             font-size: 13px;
         }
 
+        .refresh-button {
+            flex: 0 0 auto;
+            padding: 8px 11px;
+            border: 1px solid var(--line);
+            border-radius: 9px;
+            background: var(--panel-raised);
+            color: #dbe4ef;
+            cursor: pointer;
+            font: inherit;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .refresh-button:hover:not(:disabled) {
+            border-color: var(--saffron);
+        }
+
+        .refresh-button:disabled {
+            cursor: wait;
+            opacity: 0.6;
+        }
+
         .content-grid {
             display: grid;
             grid-template-columns: minmax(310px, 0.85fr) minmax(0, 1.35fr);
@@ -334,6 +356,59 @@
             font-weight: 700;
         }
 
+        .announcement-section {
+            margin-top: 20px;
+        }
+
+        .announcement-heading {
+            margin: 0 0 10px;
+            color: #dbe4ef;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+        }
+
+        .announcement-card {
+            padding: 14px;
+            border: 1px solid var(--line);
+            border-radius: 11px;
+            background: #0e1724;
+        }
+
+        .announcement-card + .announcement-card {
+            margin-top: 8px;
+        }
+
+        .announcement-title {
+            margin: 0;
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+
+        .announcement-date,
+        .announcement-empty {
+            margin: 7px 0 0;
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.55;
+        }
+
+        .announcement-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--saffron);
+            font-size: 12px;
+            font-weight: 750;
+            text-decoration: none;
+        }
+
+        .announcement-link:hover {
+            text-decoration: underline;
+        }
+
         .detail-footer {
             display: flex;
             align-items: center;
@@ -474,8 +549,11 @@
 
         <section aria-labelledby="schedule-title">
             <div class="season-strip">
-                <span class="season-strip-title" id="schedule-title">Upcoming assembly elections</span>
-                <span class="season-strip-meta">6 events · official dates pending</span>
+                <div>
+                    <span class="season-strip-title" id="schedule-title">Upcoming assembly elections</span>
+                    <span class="season-strip-meta" id="feed-status" aria-live="polite">Checking the Election Commission feed…</span>
+                </div>
+                <button class="refresh-button" id="refresh-feed" type="button">Refresh ECI updates</button>
             </div>
             <div class="content-grid">
                 <div class="event-list" id="event-list" role="tablist" aria-label="Upcoming elections"></div>
@@ -495,82 +573,191 @@
                 state: "Goa",
                 window: "Early 2027 · expected",
                 seats: "40 seats",
-                timing: "Early 2027",
-                detail: "Goa's next Legislative Assembly election is expected in 2027. The polling phases and dates will be added after the official schedule is announced."
+                timing: "Early 2027"
             },
             {
                 state: "Manipur",
                 window: "Early 2027 · expected",
                 seats: "60 seats",
-                timing: "Early 2027",
-                detail: "Manipur is expected to hold its next Legislative Assembly election in 2027. Polling dates and phase details have not been confirmed here."
+                timing: "Early 2027"
             },
             {
                 state: "Punjab",
                 window: "Early 2027 · expected",
                 seats: "117 seats",
-                timing: "Early 2027",
-                detail: "Punjab's next Legislative Assembly election is expected in 2027. Check back for the official announcement of polling dates and phases."
+                timing: "Early 2027"
             },
             {
                 state: "Uttarakhand",
                 window: "Early 2027 · expected",
                 seats: "70 seats",
-                timing: "Early 2027",
-                detail: "Uttarakhand is expected to vote in a Legislative Assembly election in 2027. The official polling schedule is pending."
+                timing: "Early 2027"
             },
             {
                 state: "Uttar Pradesh",
                 window: "Spring 2027 · expected",
                 seats: "403 seats",
-                timing: "Spring 2027",
-                detail: "Uttar Pradesh's next Legislative Assembly election is expected in 2027. The Election Commission will publish the polling phases and dates in its official schedule."
+                timing: "Spring 2027"
             },
             {
                 state: "Gujarat",
                 window: "Late 2027 · expected",
                 seats: "182 seats",
-                timing: "Late 2027",
-                detail: "Gujarat's next Legislative Assembly election is expected later in 2027. Specific dates and polling phases are not included until officially announced."
+                timing: "Late 2027"
             }
         ];
 
         const eventList = document.querySelector("#event-list");
         const eventDetail = document.querySelector("#event-detail");
+        const feedStatus = document.querySelector("#feed-status");
+        const refreshButton = document.querySelector("#refresh-feed");
+        let announcements = [];
+        let selectedElectionIndex = 0;
+
+        function normalizeText(value) {
+            return value.toLocaleLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+        }
+
+        function matchesElection(announcement, election) {
+            const stateName = normalizeText(election.state);
+            const noticeText = ` ${normalizeText(`${announcement.title} ${announcement.description || ""}`)} `;
+            const statePosition = noticeText.indexOf(` ${stateName} `);
+            if (statePosition < 0 || !noticeText.includes(" assembly ")) return false;
+
+            const byeElectionPosition = noticeText.indexOf(" bye election");
+            return byeElectionPosition < 0 || statePosition < byeElectionPosition;
+        }
+
+        function createFact(label, value) {
+            const fact = document.createElement("div");
+            fact.className = "fact";
+            const factLabel = document.createElement("span");
+            factLabel.className = "fact-label";
+            factLabel.textContent = label;
+            const factValue = document.createElement("span");
+            factValue.className = "fact-value";
+            factValue.textContent = value;
+            fact.append(factLabel, factValue);
+            return fact;
+        }
+
+        function createAnnouncement(announcement) {
+            const card = document.createElement("article");
+            card.className = "announcement-card";
+
+            const title = document.createElement("h3");
+            title.className = "announcement-title";
+            title.textContent = announcement.title;
+            card.append(title);
+
+            if (announcement.description && normalizeText(announcement.description) !== normalizeText(announcement.title)) {
+                const description = document.createElement("p");
+                description.className = "announcement-date";
+                description.textContent = announcement.description;
+                card.append(description);
+            }
+
+            if (announcement.publishedAt) {
+                const date = document.createElement("p");
+                date.className = "announcement-date";
+                date.textContent = `Published by ECI: ${announcement.publishedAt}`;
+                card.append(date);
+            }
+
+            try {
+                const officialUrl = new URL(announcement.url);
+                if (officialUrl.protocol === "https:" && officialUrl.hostname === "www.eci.gov.in") {
+                    const link = document.createElement("a");
+                    link.className = "announcement-link";
+                    link.href = officialUrl.href;
+                    link.target = "_blank";
+                    link.rel = "noopener noreferrer";
+                    link.textContent = "Open original ECI notice ↗";
+                    card.append(link);
+                }
+            } catch (error) {
+                console.error("The ECI feed returned an invalid notice link.", error);
+            }
+
+            return card;
+        }
 
         function renderDetail(election, index) {
-            eventDetail.innerHTML = `
-                <div class="detail-banner">
-                    <span class="detail-status">Expected in 2027 · dates TBA</span>
-                    <h2 id="detail-title">${election.state}</h2>
-                    <p class="detail-subtitle">State Legislative Assembly election</p>
-                </div>
-                <div class="detail-content">
-                    <p class="detail-intro">${election.detail}</p>
-                    <div class="facts-grid">
-                        <div class="fact">
-                            <span class="fact-label">Expected window</span>
-                            <span class="fact-value">${election.timing}</span>
-                        </div>
-                        <div class="fact">
-                            <span class="fact-label">Assembly strength</span>
-                            <span class="fact-value">${election.seats}</span>
-                        </div>
-                        <div class="fact">
-                            <span class="fact-label">Election type</span>
-                            <span class="fact-value">State assembly</span>
-                        </div>
-                        <div class="fact">
-                            <span class="fact-label">Schedule status</span>
-                            <span class="fact-value">Not announced</span>
-                        </div>
-                    </div>
-                    <div class="detail-footer">
-                        <p class="date-note">Event ${String(index + 1).padStart(2, "0")} · Dates and phases will be updated when officially notified.</p>
-                        <a class="official-link" href="https://www.eci.gov.in/" target="_blank" rel="noopener noreferrer">Election Commission of India ↗</a>
-                    </div>
-                </div>
-            `;
+            const stateAnnouncements = announcements.filter((announcement) => matchesElection(announcement, election));
+            const scheduleFound = stateAnnouncements.some((announcement) => /\bschedule\b/i.test(`${announcement.title} ${announcement.description || ""}`));
+            const banner = document.createElement("div");
+            banner.className = "detail-banner";
+            const status = document.createElement("span");
+            status.className = "detail-status";
+            status.textContent = scheduleFound ? "Official ECI schedule notice found" : "Expected in 2027 · dates TBA";
+            const heading = document.createElement("h2");
+            heading.id = "detail-title";
+            heading.textContent = election.state;
+            const subtitle = document.createElement("p");
+            subtitle.className = "detail-subtitle";
+            subtitle.textContent = "State Legislative Assembly election";
+            banner.append(status, heading, subtitle);
+
+            const content = document.createElement("div");
+            content.className = "detail-content";
+            const intro = document.createElement("p");
+            intro.className = "detail-intro";
+            intro.textContent = stateAnnouncements.length
+                ? "These notices are retrieved from the Election Commission of India's public announcements. Open the original notice for its full details."
+                : "No state-specific election notice was found in the latest ECI announcements. The timing below is an estimate, not an official polling date.";
+
+            const facts = document.createElement("div");
+            facts.className = "facts-grid";
+            facts.append(
+                createFact("Expected window", election.timing),
+                createFact("Assembly strength", election.seats),
+                createFact("Election type", "State assembly"),
+                createFact("Schedule status", scheduleFound ? "Official notice found" : "Not announced")
+            );
+
+            const announcementSection = document.createElement("section");
+            announcementSection.className = "announcement-section";
+            const announcementHeading = document.createElement("h3");
+            announcementHeading.className = "announcement-heading";
+            announcementHeading.textContent = "Official ECI announcements";
+            announcementSection.append(announcementHeading);
+
+            if (stateAnnouncements.length) {
+                stateAnnouncements.slice(0, 3).forEach((announcement) => {
+                    announcementSection.append(createAnnouncement(announcement));
+                });
+            } else {
+                const empty = document.createElement("p");
+                empty.className = "announcement-empty";
+                empty.textContent = "When ECI publishes an announcement mentioning this state, it will appear here with a link to the original notice.";
+                announcementSection.append(empty);
+            }
+
+            const footer = document.createElement("div");
+            footer.className = "detail-footer";
+            const note = document.createElement("p");
+            note.className = "date-note";
+            note.textContent = `Event ${String(index + 1).padStart(2, "0")} · Expected windows are estimates. Polling dates are not inferred from announcement titles.`;
+            const officialLink = document.createElement("a");
+            officialLink.className = "official-link";
+            officialLink.href = "https://www.eci.gov.in/";
+            officialLink.target = "_blank";
+            officialLink.rel = "noopener noreferrer";
+            officialLink.textContent = "Election Commission of India ↗";
+            footer.append(note, officialLink);
+            content.append(intro, facts, announcementSection, footer);
+            eventDetail.replaceChildren(banner, content);
+        }
+
+        function selectElection(index) {
+            selectedElectionIndex = index;
+            const tabs = eventList.querySelectorAll('[role="tab"]');
+            tabs.forEach((tab, tabIndex) => {
+                const selected = tabIndex === index;
+                tab.setAttribute("aria-selected", String(selected));
+                tab.tabIndex = selected ? 0 : -1;
+            });
+            renderDetail(elections[index], index);
         }
 
         elections.forEach((election, index) => {
@@ -592,13 +779,7 @@
             `;
 
             tab.addEventListener("click", () => {
-                eventList.querySelectorAll('[role="tab"]').forEach((item) => {
-                    item.setAttribute("aria-selected", "false");
-                    item.tabIndex = -1;
-                });
-                tab.setAttribute("aria-selected", "true");
-                tab.tabIndex = 0;
-                renderDetail(election, index);
+                selectElection(index);
             });
 
             tab.addEventListener("keydown", (event) => {
@@ -607,13 +788,46 @@
                 const direction = event.key === "ArrowDown" ? 1 : -1;
                 const nextIndex = (index + direction + elections.length) % elections.length;
                 eventList.querySelectorAll('[role="tab"]')[nextIndex].focus();
-                eventList.querySelectorAll('[role="tab"]')[nextIndex].click();
+                selectElection(nextIndex);
             });
 
             eventList.append(tab);
         });
 
+        async function loadAnnouncements(forceRefresh = false) {
+            refreshButton.disabled = true;
+            feedStatus.textContent = "Checking the Election Commission feed…";
+            try {
+                const refreshParameter = forceRefresh ? "?refresh=1" : "";
+                const response = await fetch(`/api/elections${refreshParameter}`, { signal: AbortSignal.timeout(20000) });
+                const data = await response.json();
+                if (!response.ok) {
+                    throw new Error(data.error || `ECI feed request failed (${response.status}).`);
+                }
+                if (!Array.isArray(data.announcements) || typeof data.lastChecked !== "string") {
+                    throw new Error("The election server returned an invalid ECI feed response.");
+                }
+
+                const checkedAt = new Date(data.lastChecked);
+                if (Number.isNaN(checkedAt.getTime())) {
+                    throw new Error("The election server returned an invalid feed timestamp.");
+                }
+                announcements = data.announcements;
+                const updateTime = checkedAt.toLocaleString();
+                feedStatus.textContent = data.stale
+                    ? `Showing cached ECI updates · last checked ${updateTime} · ${data.warning}`
+                    : `Live ECI updates · checked ${updateTime}`;
+                renderDetail(elections[selectedElectionIndex], selectedElectionIndex);
+            } catch (error) {
+                feedStatus.textContent = `ECI updates unavailable: ${error.message}`;
+            } finally {
+                refreshButton.disabled = false;
+            }
+        }
+
         renderDetail(elections[0], 0);
+        refreshButton.addEventListener("click", () => loadAnnouncements(true));
+        loadAnnouncements();
     </script>
 </body>
 </html>

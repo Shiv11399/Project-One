@@ -1,0 +1,12 @@
+{
+  "name": "the-ballot-grid",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An India election calendar with live Election Commission announcements",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
