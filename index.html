@@ -1456,7 +1456,7 @@
             toolsHeader.append(closeButton);
             const note = document.createElement("p");
             note.className = "candidate-intro";
-            note.textContent = "Compare up to three candidates. Affidavit figures are candidate-declared for the cited election, not current valuations. A pending case is an allegation, not a conviction; only a recorded conviction is labeled as one.";
+            note.textContent = "Compare up to three candidates. Affidavit figures are candidate-declared for the cited election, not current valuations. A pending matter is an allegation, not a conviction; case statuses reflect the cited affidavit record, not live court updates.";
             tools.append(toolsHeader, note);
 
             const verificationLegend = document.createElement("div");
@@ -1520,6 +1520,7 @@
                 const details = profile.profile || {};
                 const verificationSources = profile.verification?.[verificationField]?.sources || [];
                 let sources = [];
+                if (label === "Party" || label === "Constituency") sources = sourceLinks(profile);
                 if (label === "Declared education") sources = [details.education?.source].filter(Boolean);
                 if (label === "Declared assets") sources = [details.assets?.source].filter(Boolean);
                 if (label === "Declared liabilities") sources = [details.liabilities?.source].filter(Boolean);
@@ -1574,7 +1575,7 @@
                     name.textContent = `${profile.name} · ${profile.recordType} ${profile.electionYear}`;
                     candidateHeading.append(name);
                     appendVerification(candidateHeading, profile, "name");
-                    const nameSources = profile.verification?.name?.sources || [];
+                    const nameSources = profile.verification?.name?.sources || sourceLinks(profile);
                     nameSources.forEach((source) => {
                         const link = createSourceLink(source);
                         if (link) candidateHeading.append(link);
@@ -1603,21 +1604,21 @@
                     ["Criminal cases disclosed", "criminalCases", (profile) => {
                         const cases = profile.profile?.criminalCases;
                         if (!cases || !Number.isInteger(cases.declaredCount) || cases.declaredCount < 0) return "Not recorded";
-                        if (cases.declaredCount === 0) return "Candidate declared no criminal cases";
+                        if (cases.declaredCount === 0) return "Affidavit summary reports no declared cases";
                         const caseEntries = Array.isArray(cases.entries) ? cases.entries : [];
                         const details = caseEntries.map((entry) => {
                             const label = entry.status === "convicted"
-                                ? "Conviction recorded"
+                                ? "Conviction reported in affidavit"
                                 : entry.status === "acquitted"
-                                    ? "Acquitted"
+                                    ? "Acquittal reported in affidavit"
                                     : entry.status === "disposed"
-                                        ? "Disposed; outcome requires source context"
+                                        ? "Disposed as reported; outcome requires source context"
                                         : entry.status === "pending"
-                                            ? "Pending allegation"
+                                            ? "Pending allegation (reported in affidavit)"
                                             : "Status not verified";
                             return `${entry.description || "Case details not supplied"} (${label})`;
                         });
-                        return `${cases.declaredCount} declared${details.length ? ` · ${details.join("; ")}` : ""}`;
+                        return `${cases.declaredCount} reported in affidavit summary${details.length ? ` · ${details.join("; ")}` : ""}`;
                     }],
                     ["Election results", "electionResults", (profile) => {
                         const previousResults = Array.isArray(profile.profile?.electionResults)
@@ -1996,6 +1997,7 @@
                     year: entry.year,
                     label: "Previous-election winner",
                     sources: entry.sources || [],
+                    archiveNote: entry.archiveNote || "",
                     candidates: entry.candidacies.map((candidacy) => {
                         const person = people.get(candidacy.candidateId);
                         return {
@@ -2035,7 +2037,7 @@
             heading.textContent = "Candidates & party manifestos";
             const intro = document.createElement("p");
             intro.className = "candidate-intro";
-            intro.textContent = "Candidate and manifesto records are curated from official sources, not fetched automatically. Candidate entries link to ECI records or clearly labeled official fallbacks; manifesto summaries link to official party publications.";
+            intro.textContent = "Candidate and manifesto records are curated, not fetched automatically. Each profile links to its available sources and shows field-level verification; historical archive coverage may be partial.";
             section.append(heading, intro);
 
             if (candidateDataError) {
@@ -2066,6 +2068,22 @@
                 empty.textContent = `No verified candidates have been declared for the ${election.state} ${upcomingElection?.year || "upcoming"} election yet.`;
                 section.append(empty);
             }
+            previousElections.forEach((previousElection) => {
+                const archiveHeading = document.createElement("h4");
+                archiveHeading.className = "announcement-heading";
+                archiveHeading.textContent = `${previousElection.year} ${election.state} election winners`;
+                archiveHeading.style.marginTop = "18px";
+                section.append(archiveHeading);
+                if (previousElection.archiveNote) {
+                    const archiveNote = document.createElement("p");
+                    archiveNote.className = "candidate-empty";
+                    archiveNote.textContent = previousElection.archiveNote;
+                    section.append(archiveNote);
+                }
+                previousElection.candidates.forEach((candidate) => {
+                    section.append(createCandidateCard(candidate));
+                });
+            });
             section.append(createCandidateProfileTools(
                 profileData,
                 election.state,

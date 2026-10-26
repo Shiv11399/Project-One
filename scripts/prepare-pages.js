@@ -73,6 +73,18 @@ async function main() {
         ) {
             throw new Error("The saved candidate election data is incomplete; refusing to deploy it.");
         }
+        if (
+            election.archiveCompleteness !== undefined &&
+            !["complete", "partial"].includes(election.archiveCompleteness)
+        ) {
+            throw new Error(`The archive completeness status for ${election.id} is invalid; refusing to deploy it.`);
+        }
+        if (
+            election.archiveCompleteness === "partial" &&
+            (typeof election.archiveNote !== "string" || !election.archiveNote.trim())
+        ) {
+            throw new Error(`A note is required for the partial archive ${election.id}; refusing to deploy it.`);
+        }
         if (electionIds.has(election.id)) {
             throw new Error(`The saved election ${election.id} is duplicated; refusing to deploy it.`);
         }

@@ -1,6 +1,143 @@
 {
   "schemaVersion": 3,
-  "people": [],
+  "people": [
+    {
+      "id": "goa-carlos-alvares-ferreira",
+      "name": "Carlos Alvares Ferreira"
+    },
+    {
+      "id": "goa-venzy-viegas",
+      "name": "Venzy Viegas"
+    },
+    {
+      "id": "goa-dr-chandrakant-shetye",
+      "name": "Dr. Chandrakant Shetye"
+    },
+    {
+      "id": "goa-michael-vincent-lobo",
+      "name": "Michael Vincent Lobo"
+    },
+    {
+      "id": "goa-ramesh-tawadkar",
+      "name": "Ramesh Tawadkar"
+    },
+    {
+      "id": "goa-antonio-vas",
+      "name": "Antonio Vas"
+    },
+    {
+      "id": "goa-rajesh-faldessai",
+      "name": "Rajesh Faldessai"
+    },
+    {
+      "id": "goa-alemao-yuri",
+      "name": "Alemao Yuri"
+    },
+    {
+      "id": "goa-mauvin-heliodoro-godinho",
+      "name": "Mauvin Heliodoro Godinho"
+    },
+    {
+      "id": "goa-vijai-sardesai",
+      "name": "Vijai Sardesai"
+    },
+    {
+      "id": "goa-premendra-vishnu-shet",
+      "name": "Premendra Vishnu Shet"
+    },
+    {
+      "id": "goa-jit-vinayak-arolkar",
+      "name": "Jit Vinayak Arolkar"
+    },
+    {
+      "id": "goa-joshua-peter-de-souza",
+      "name": "Joshua Peter De Souza"
+    },
+    {
+      "id": "goa-sudin-alias-ramkrishna-dhavalikar",
+      "name": "Sudin Alias Ramkrishna Dhavalikar"
+    },
+    {
+      "id": "goa-digambar-kamat",
+      "name": "Digambar Kamat"
+    },
+    {
+      "id": "goa-sankalp-amonkar",
+      "name": "Sankalp Amonkar"
+    },
+    {
+      "id": "goa-aleixo-sequeira",
+      "name": "Aleixo Sequeira"
+    },
+    {
+      "id": "goa-atanasio-monserrate",
+      "name": "Atanasio Monserrate"
+    },
+    {
+      "id": "goa-pravin-prabhakar-arlekar",
+      "name": "Pravin Prabhakar Arlekar"
+    },
+    {
+      "id": "goa-ravi-naik",
+      "name": "Ravi Naik"
+    },
+    {
+      "id": "goa-deviya-vishwajit-rane",
+      "name": "Deviya Vishwajit Rane"
+    },
+    {
+      "id": "goa-rohan-khaunte",
+      "name": "Rohan Khaunte"
+    },
+    {
+      "id": "goa-govind-shepu-gaude",
+      "name": "Govind Shepu Gaude"
+    },
+    {
+      "id": "goa-altone-d-costa",
+      "name": "Altone D Costa"
+    },
+    {
+      "id": "goa-subhash-uttam-phal-dessai",
+      "name": "Subhash Uttam Phal Dessai"
+    },
+    {
+      "id": "goa-dr-pramod-sawant",
+      "name": "Dr. Pramod Sawant"
+    },
+    {
+      "id": "goa-ganesh-gaonkar",
+      "name": "Ganesh Gaonkar"
+    },
+    {
+      "id": "goa-delilah-michael-lobo",
+      "name": "Delilah Michael Lobo"
+    },
+    {
+      "id": "goa-subhash-shirodkar",
+      "name": "Subhash Shirodkar"
+    },
+    {
+      "id": "goa-viresh-mukesh-borkar",
+      "name": "Viresh Mukesh Borkar"
+    },
+    {
+      "id": "goa-rodolfo-louis-fernandes",
+      "name": "Rodolfo Louis Fernandes"
+    },
+    {
+      "id": "goa-jennifer-monserrate",
+      "name": "Jennifer Monserrate"
+    },
+    {
+      "id": "goa-vishwajit-pratapsingh-rane",
+      "name": "Vishwajit Pratapsingh Rane"
+    },
+    {
+      "id": "goa-cruz-silva",
+      "name": "Cruz Silva"
+    }
+  ],
   "states": {
     "Goa": {
       "manifestos": []
@@ -76,17 +213,2627 @@
       "year": 2022,
       "type": "State Legislative Assembly",
       "candidateScope": "winners_archive",
-      "candidacies": [],
-      "sources": [
+      "candidacies": [
         {
-          "label": "ECI candidate affidavit portal",
-          "url": "https://affidavit.eci.gov.in/"
+          "id": "goa-2022-winner-222",
+          "candidateId": "goa-carlos-alvares-ferreira",
+          "constituency": "ALDONA",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate Professional",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=222",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 21,42,77,799",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=222",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 12,44,176",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=222",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=222",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=222",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
         },
         {
-          "label": "ADR/MyNeta Goa 2022 winners and affidavit summaries (secondary source)",
-          "url": "https://www.myneta.info/Goa2022/index.php?action=show_winners&sort=default"
+          "id": "goa-2022-winner-57",
+          "candidateId": "goa-venzy-viegas",
+          "constituency": "BENAULIM",
+          "party": "AAP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Others",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=57",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 5,12,32,418",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=57",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 5,84,248",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=57",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=57",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=57",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-227",
+          "candidateId": "goa-dr-chandrakant-shetye",
+          "constituency": "BICHOLIM",
+          "party": "IND",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Post Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=227",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 59,63,01,413",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=227",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 3,43,55,590",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=227",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=227",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=227",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-61",
+          "candidateId": "goa-michael-vincent-lobo",
+          "constituency": "CALANGUTE",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "12th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=61",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 92,91,01,865",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=61",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 28,87,35,436",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=61",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 3,
+              "entries": [
+                {
+                  "description": "FIR: 29/2010, Crime Branch Raibander; Case: 73/S/2016; Court: JMFC, A Court, Mapusa; Sections listed: 468, 471, 420, 201, 34; Charges framed: No; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: 31/2015, P.S.- Calangute; Case: 224/2016; Court: JMFC A Court Mapusa; Sections listed: 143, 147, 148, 447, 427, 323, 506, 454, 380, 149; Charges framed: Yes; Charge date: 23 Jul 2019; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: 06/2022, P.S.-Saligao; Sections listed: 269, 188, 34; Charges framed: No; Appeal filed: No",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=61",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=61",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-69",
+          "candidateId": "goa-ramesh-tawadkar",
+          "constituency": "CANACONA",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate Professional",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=69",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 1,68,01,407",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=69",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 40,74,196",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=69",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 1,
+              "entries": [
+                {
+                  "description": "Case: Criminal Misc Application No 198/2016 in Stamp Number Main No 2854/2016; Sections listed: 143, 147, 148, 341, 435, 188, 332, 324, 149; Charges framed: Yes; Charge date: 25 May 2011; Other sections/details: Section 3 & 4 of PDPP Act; Appeal filed: No",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=69",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=69",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-71",
+          "candidateId": "goa-antonio-vas",
+          "constituency": "CORTALIM",
+          "party": "IND",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "10th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=71",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 4,98,82,575",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=71",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 1,34,56,604",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=71",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=71",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=71",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-237",
+          "candidateId": "goa-rajesh-faldessai",
+          "constituency": "CUMBARJUA",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "12th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=237",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 5,73,95,617",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=237",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 2,85,77,010",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=237",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 1,
+              "entries": [
+                {
+                  "description": "FIR: Crime No.37/2012; Case: 156/S/2016/A; Sections listed: 408, 425, 467, 471, 420, 201, 120B; Charges framed: No; Appeal filed: No",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=237",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=237",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-243",
+          "candidateId": "goa-alemao-yuri",
+          "constituency": "CUNCOLIM",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Others",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=243",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 30,16,72,604",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=243",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 0",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=243",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=243",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=243",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-13",
+          "candidateId": "goa-mauvin-heliodoro-godinho",
+          "constituency": "DABOLIM",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=13",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 22,22,11,488",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=13",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 0",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=13",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=13",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=13",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-90",
+          "candidateId": "goa-vijai-sardesai",
+          "constituency": "FATORDA",
+          "party": "Goa Forward Party",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=90",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 37,16,45,465",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=90",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 6,53,09,351",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=90",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 1,
+              "entries": [
+                {
+                  "description": "FIR: 77/2021, Fatorda Police Station, South Goa; Sections listed: 143, 341, 353, 149; Charges framed: No; Other sections/details: Case is under investigation and has not been charge sheeted before any court of law; Appeal filed: No",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=90",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=90",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-44",
+          "candidateId": "goa-premendra-vishnu-shet",
+          "constituency": "MAEM",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=44",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 4,41,01,862",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=44",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 1,61,36,133",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=44",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=44",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=44",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-21",
+          "candidateId": "goa-jit-vinayak-arolkar",
+          "constituency": "MANDREM",
+          "party": "Maharashtrawadi Gomantak",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "10th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=21",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 11,69,93,900",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=21",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 3,10,45,680",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=21",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 2,
+              "entries": [
+                {
+                  "description": "FIR: 22/2022, Pernem PS, Pernem, North Goa; Sections listed: 188, 269; Charges framed: No; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: 177/2020, Pernem PS, Pernem, North Goa; Sections listed: 420; Charges framed: No; Appeal filed: No",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=21",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=21",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-101",
+          "candidateId": "goa-joshua-peter-de-souza",
+          "constituency": "MAPUSA",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=101",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 4,15,97,663",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=101",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 32,92,761",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=101",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=101",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=101",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-4",
+          "candidateId": "goa-sudin-alias-ramkrishna-dhavalikar",
+          "constituency": "MARCAIM",
+          "party": "Maharashtrawadi Gomantak",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=4",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 16,90,67,222",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=4",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 50,62,832",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=4",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=4",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=4",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-108",
+          "candidateId": "goa-digambar-kamat",
+          "constituency": "MARGAO",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=108",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 15,15,65,314",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=108",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 20,45,000",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=108",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 4,
+              "entries": [
+                {
+                  "description": "FIR: ECIR/01/Pjzo/2015, Enforcement Directorate, 1st & 2nd Floor, Jeevan Vishwas, LIC Building; Case: PMLA/1/2018; Court: Additional Sessions Judge, North Goa at Mapusa; Charges framed: Yes; Charge date: 22 Jul 2021; Other sections/details: Section 3/4 and Section 8(5) of the Prevention of Money Laundering Act 2002, Complaint Date 12.07.2018; Appeal filed: Yes",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: 15/2013, CID Crime Branch Police Station, Dona Paula; Case: SPCC/1/2018 (Old Number) SPCC/2/2019 (New Number); Court: Additional Sessions Judge, South Goa, Margao; Sections listed: 120B, 379, 406, 409, 418, 420; Charges framed: No; Other sections/details: Section 13(1)(b), 13(2) of the Prevention of Corruption Act 1988, Section 24(A)(8), 24(A)(10), 37(1)(a)(b) r/w 52 of The Mineral Concession Rules 1960, Section 13 r/w rule 58 Mineral Conservation and Development rules 1988, Section 3 r/w 7 of the Goa (Prevention of Illegal Mining, Transportation and Storage of Minerals) rules 2004, Charge Sheet/Final Report No. 21/2018 Dated 02.02.2018; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: 93/2015, Crime Branch, Ribandar, Tiswadi, Goa; Case: SPCC/6/2015 (Old Number) SPCC/6/2019 (New Number); Court: Additional Sessions Judge, North Goa, Mapusa; Sections listed: 120B, 201; Charges framed: No; Other sections/details: Section 7, 8, 9 and 13 of the Prevention of Corruption Act 1988, Charge Sheet/Final Report No. 149/2016, Dated 27.10.2016; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: 53/2014, CID Crime Branch Police Station Dona Paula; Case: SPCC/1/2018; Court: Additional Sessions Judge-I, South Goa, Margao; Sections listed: 120B, 420; Charges framed: No; Other sections/details: Section 7, 8, 9, 10, 11, 12 and 13 of the Prevention of Corruption Act 1988, Section 4(1)(1-A), 19 r/w 21(1)(2) of Mines & Minerals (Development and Regulation Act 1957 r/w Section 4(1)(1-A) r/w 21(1)(2) Mines Minerals Development and Regulation Act 2015, Charge Sheet/Final Report No. 14/2018, Dated 18.01.2018, I have been discharged in SPCC/1/2018, By the Honble Additional Sessions Judge-I South Goa, Margao vide Judgement and Order Dated 03.11.2020, The State of Goa has filed Criminal Revision Application No. 2/2021, Before the Honble Court of Bombay at Goa, Challenging the Order of Discharge which is pending Adjudication; Appeal filed: Yes",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=108",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=108",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-6",
+          "candidateId": "goa-sankalp-amonkar",
+          "constituency": "MORMUGAO",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=6",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 7,51,45,421",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=6",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 3,04,62,424",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=6",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 5,
+              "entries": [
+                {
+                  "description": "FIR: 11/21 P.S Mormugao PS, Headland Sada Goa; Sections listed: 384, 120B, 354D; Charges framed: No; Other sections/details: Section 66-D, 67(A) IT Act; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: 40/17 Crime Branch P.S Ribandar Panaji Goa; Case: Criminal Case No. PGA 10/2018/D; Court: JMFC Vasco Goa; Charges framed: Yes; Charge date: 14 Aug 2019; Other sections/details: Section- 3&4 of GPG Act; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: 22/16 P.S Mormugao Headland Sada Goa; Case: Criminal Case No. IPC/41/2017/D; Court: JMFC Vasco Goa; Sections listed: 143, 147, 341, 149; Charges framed: No; Other sections/details: Section 8(b) of the National Highway Act 1956; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "Case: Criminal Case No OA/285/2012/B; Court: JMFC Panaji Goa; Other sections/details: Section- 138 of Negotiable Instrument Act; Punishment: Sentenced to undergo simple imprisonment of 3 Month; Conviction date: 16 Jan 2015; Appeal filed: Yes; Appeal status: The order passed by the JMFC Panaji was modified and stands varied in Appeal no. 17/2015 before the District and Session Court at Panaji Goa and directed to pay an amount of Rs 25000/- to the District Legal Services Authority which was accordingly paid",
+                  "status": "convicted"
+                },
+                {
+                  "description": "Case: Criminal Case No 5/S/2007/B; Court: JMFC Vasco Goa; Sections listed: 143, 341, 149; Other sections/details: Section 174(a) of Railways Act; Punishment: Released on admonition under section 3 of Probation of offenders Act 1958 by giving warning at the time of pronouncing the Judgment and order; Conviction date: 30 Nov 2007; Appeal filed: No",
+                  "status": "convicted"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=6",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=6",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-118",
+          "candidateId": "goa-aleixo-sequeira",
+          "constituency": "NUVEM",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=118",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 18,27,58,355",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=118",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 5,97,000",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=118",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=118",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=118",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-124",
+          "candidateId": "goa-atanasio-monserrate",
+          "constituency": "PANAJI",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "12th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=124",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 48,48,54,264",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=124",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 6,46,28,864",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=124",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 2,
+              "entries": [
+                {
+                  "description": "FIR: 100/16, PS Panaji Goa; Case: Session Case No. 45/200; Court: Hon. Court of Addl. Sessions Judge Mapusa; Sections listed: 376, 342, 506, 34; Charges framed: Yes; Charge date: 26 Sep 2019; Other sections/details: Section 4 Of POSCO Act. & Section 67-B (C) of IT Act 2000; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: Crime No.137/19, PS Panaji; Case: Complaint Case Finalization as a Final Vide No. 37/2021, Date 07/07/2021; Sections listed: 326, 354, 504, 506(ii), 509, 34; Charges framed: No; Appeal filed: No",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=124",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=124",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-131",
+          "candidateId": "goa-pravin-prabhakar-arlekar",
+          "constituency": "PERNEM (SC)",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "8th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=131",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 4,73,32,007",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=131",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 47,16,144",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=131",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=131",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=131",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-134",
+          "candidateId": "goa-ravi-naik",
+          "constituency": "PONDA",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Post Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=134",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 14,71,38,000",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=134",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 39,600",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=134",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 1,
+              "entries": [
+                {
+                  "description": "Case: Special Case No 5/2019; Court: Additional Session Judge North Goa At Panjim; Charges framed: No; Other sections/details: Section 135 R/w S-134(3)(O) of the Company Act 2013; Appeal filed: No",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=134",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=134",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-254",
+          "candidateId": "goa-deviya-vishwajit-rane",
+          "constituency": "PORIEM",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate Professional",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=254",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 23,18,10,596",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=254",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 11,62,98,925",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=254",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=254",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=254",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-7",
+          "candidateId": "goa-rohan-khaunte",
+          "constituency": "PORVORIM",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Others",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=7",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 21,63,52,326",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=7",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 3,36,53,814",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=7",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 1,
+              "entries": [
+                {
+                  "description": "FIR: Complaint Cr.no.-15/2015, PS Karnataka Lokayukta Bengaluru City; Case: Spl.C.C.No.-488/2016; Court: XXIII Addi.City Civil and Sessions Judge, Bengaluru City; Sections listed: 409, 420, 120B; Charges framed: No; Other sections/details: Section 21, 23, Section- 4(1), 4(1A) of MMDR Act 1957, Section 165 r/w 144 of the karnataka Forest Rules 1969; Appeal filed: No; Appeal status: Application for Discharge of accused No.-8 (Rohan khunte) has been filed which is pending for disposal Since 07.01.2021.",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=7",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=7",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-1",
+          "candidateId": "goa-govind-shepu-gaude",
+          "constituency": "PRIOL",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Others",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=1",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 2,67,61,955",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=1",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 29,39,405",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=1",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 1,
+              "entries": [
+                {
+                  "description": "FIR: CC No.37/2011, RC-BSI/2011/S/2008 P.S Cuncolim South Goa, Goa; Case: Criminal Misc. Application No. 198/2016 in Stamp Number Main No. 2854/2016; Court: High Court Of Bombay at Goa Panaji; Sections listed: 143, 147, 148, 341, 435, 188, 332, 324, 149; Charges framed: No; Other sections/details: Section 3 & 4 PDPP Act; Appeal filed: Yes; Appeal status: Criminal Revision Application No. 24/2019, In the High Court of Bombay at Goa, Panaji",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=1",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=1",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-144",
+          "candidateId": "goa-altone-d-costa",
+          "constituency": "QUEPEM",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "10th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=144",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 20,87,28,330",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=144",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 30,66,500",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=144",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=144",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=144",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-30",
+          "candidateId": "goa-subhash-uttam-phal-dessai",
+          "constituency": "SANGUEM",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Post Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=30",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 8,76,51,774",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=30",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 1,49,80,668",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=30",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=30",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=30",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-157",
+          "candidateId": "goa-dr-pramod-sawant",
+          "constituency": "SANQUELIM",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Post Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=157",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 9,37,79,584",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=157",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 1,50,14,007",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=157",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=157",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=157",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-34",
+          "candidateId": "goa-ganesh-gaonkar",
+          "constituency": "SANVORDEM",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=34",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 19,57,68,960",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=34",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 4,24,94,120",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=34",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=34",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=34",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-211",
+          "candidateId": "goa-delilah-michael-lobo",
+          "constituency": "SIOLIM",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=211",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 92,91,01,865",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=211",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 28,87,35,436",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=211",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 2,
+              "entries": [
+                {
+                  "description": "FIR: 21/2022 Anjuna Police Station; Sections listed: 188, 269; Charges framed: No; Appeal filed: No",
+                  "status": "pending"
+                },
+                {
+                  "description": "FIR: 22/2022 Anjuna Police Station; Sections listed: 188, 269; Charges framed: No; Appeal filed: No",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=211",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=211",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-5",
+          "candidateId": "goa-subhash-shirodkar",
+          "constituency": "SIRODA",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "12th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=5",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 4,92,31,424",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=5",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 1,69,88,497",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=5",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=5",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=5",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-199",
+          "candidateId": "goa-viresh-mukesh-borkar",
+          "constituency": "ST. ANDRE",
+          "party": "Revolutionary Goans Party",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "12th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=199",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 8,29,155",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=199",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 3,96,719",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=199",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=199",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=199",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-53",
+          "candidateId": "goa-rodolfo-louis-fernandes",
+          "constituency": "ST. CRUZ",
+          "party": "INC",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "10th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=53",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 34,66,61,782",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=53",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 72,16,182",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=53",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 1,
+              "entries": [
+                {
+                  "description": "FIR: 14/2019, Old Goa Police Station; Sections listed: 409, 420, 34; Charges framed: No; Appeal filed: No",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=53",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=53",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-187",
+          "candidateId": "goa-jennifer-monserrate",
+          "constituency": "TALEIGAO",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "Historical case declarations and statuses from the 2022 affidavit summary; not independently checked against the original ECI affidavit or current court records. A pending case is an allegation, not a conviction."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "12th Pass",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=187",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 48,48,54,264",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=187",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 6,46,28,864",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=187",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 1,
+              "entries": [
+                {
+                  "description": "FIR: 57/08 Panaji PS. Panaji (Goa) and re-registered as FIR No. BSI/2008/S/0003 RC03/(S)/2008/MUM, CBI Mumbai; Case: Criminal Case No. 230/09/A Re-Registered as Sessions case No. 4/2014; Court: JMFC, Panaji, re-registered Court Addl. Sessions Judge, Mapusa; Sections listed: 143, 147, 148, 153, 324, 325, 326, 323, 333, 427, 435; Charges framed: Yes; Charge date: 12 Sep 2014; Other sections/details: Section 3 of the Prevention of Damage to Public Property Act. 1984; Appeal filed: Yes; Appeal status: the same has been disposed",
+                  "status": "pending"
+                }
+              ],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=187",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=187",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-177",
+          "candidateId": "goa-vishwajit-pratapsingh-rane",
+          "constituency": "VALPOI",
+          "party": "BJP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=177",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 23,18,10,596",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=177",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 11,62,98,925",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=177",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=177",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=177",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
+        },
+        {
+          "id": "goa-2022-winner-166",
+          "candidateId": "goa-cruz-silva",
+          "constituency": "VELIM",
+          "party": "AAP",
+          "status": "winner (as listed in the ADR/MyNeta archive)",
+          "verification": {
+            "name": {
+              "status": "unverified"
+            },
+            "party": {
+              "status": "unverified"
+            },
+            "constituency": {
+              "status": "unverified"
+            },
+            "education": {
+              "status": "unverified"
+            },
+            "assets": {
+              "status": "unverified"
+            },
+            "liabilities": {
+              "status": "unverified"
+            },
+            "criminalCases": {
+              "status": "unverified",
+              "note": "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+            }
+          },
+          "profile": {
+            "education": {
+              "value": "Graduate Professional",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=166",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "assets": {
+              "value": "INR 12,21,81,868",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=166",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "liabilities": {
+              "value": "INR 95,88,514",
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=166",
+                "retrievedAt": "2026-10-27"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 0,
+              "entries": [],
+              "source": {
+                "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+                "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=166",
+                "retrievedAt": "2026-10-27"
+              }
+            }
+          },
+          "sources": [
+            {
+              "label": "ADR/MyNeta Goa 2022 winner affidavit summary (secondary)",
+              "url": "https://www.myneta.info/Goa2022/candidate.php?candidate_id=166",
+              "retrievedAt": "2026-10-27"
+            }
+          ]
         }
-      ]
+      ],
+      "sources": [
+        {
+          "label": "Goa CEO official General Elections 2022 result and Form 20 selector",
+          "url": "https://ceogoa.nic.in/appln/UIL/Form20n21.aspx?UOlevK=Qb25UcGilDg=",
+          "retrievedAt": "2026-10-27"
+        },
+        {
+          "label": "ADR/MyNeta Goa 2022 winners table (secondary; based on ECI affidavit records)",
+          "url": "https://www.myneta.info/Goa2022/index.php?action=show_winners&sort=default",
+          "retrievedAt": "2026-10-27"
+        },
+        {
+          "label": "ECI Candidate Affidavit Portal (search for original affidavit)",
+          "url": "https://affidavit.eci.gov.in/",
+          "retrievedAt": "2026-10-27"
+        }
+      ],
+      "archiveCompleteness": "partial",
+      "archiveNote": "This is a 34-of-40-seat import. The source summary reports 38 winners analyzed, so reconcile the row discrepancy and six missing seats against official ECI results. Imported fields are unverified, and original affidavits have not yet been individually checked."
     }
   ]
 }
