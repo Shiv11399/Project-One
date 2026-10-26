@@ -698,6 +698,13 @@
             margin-top: 8px;
         }
 
+        .candidate-verification {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 8px;
+        }
+
         .candidate-profile-tools {
             margin-top: 18px;
             padding: 15px;
@@ -812,6 +819,66 @@
             font-size: 10px;
             font-weight: 700;
             text-transform: uppercase;
+        }
+
+        .verification-legend {
+            display: grid;
+            gap: 7px;
+            margin-top: 12px;
+            padding: 11px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            color: #dbe4ef;
+            font-size: 11px;
+        }
+
+        .verification-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .verification-badge {
+            display: inline-flex;
+            align-items: center;
+            width: fit-content;
+            padding: 3px 7px;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            font-size: 10px;
+            font-weight: 750;
+            line-height: 1.3;
+            white-space: nowrap;
+        }
+
+        .verification-badge--verified {
+            border-color: rgba(34, 197, 94, 0.35);
+            background: rgba(34, 197, 94, 0.12);
+            color: #4ade80;
+        }
+
+        .verification-badge--cross-checked {
+            border-color: rgba(59, 130, 246, 0.35);
+            background: rgba(59, 130, 246, 0.12);
+            color: #60a5fa;
+        }
+
+        .verification-badge--needs-review {
+            border-color: rgba(249, 115, 22, 0.35);
+            background: rgba(249, 115, 22, 0.12);
+            color: #fb923c;
+        }
+
+        .verification-badge--unverified {
+            border-color: rgba(148, 163, 184, 0.25);
+            background: rgba(148, 163, 184, 0.12);
+            color: #cbd5e1;
+        }
+
+        .verification-note {
+            margin: 6px 0 0;
+            color: var(--muted);
+            font-size: 11px;
         }
 
         .candidate-comparison {
@@ -1263,6 +1330,37 @@
             }
         }
 
+        const verificationStatusInfo = {
+            verified: {
+                label: "Verified",
+                description: "Checked against the relevant primary source."
+            },
+            cross_checked: {
+                label: "Cross-checked",
+                description: "Compared against an independent secondary source."
+            },
+            needs_review: {
+                label: "Needs review",
+                description: "Sources conflict, or the evidence is incomplete."
+            },
+            unverified: {
+                label: "Unverified",
+                description: "Collected but not yet checked against a reliable source."
+            }
+        };
+
+        function createVerificationBadge(record, fieldLabel = "") {
+            const status = verificationStatusInfo[record?.status];
+            if (!status) return null;
+
+            const badge = document.createElement("span");
+            badge.className = `verification-badge verification-badge--${record.status.replace("_", "-")}`;
+            badge.textContent = fieldLabel ? `${fieldLabel} · ${status.label}` : status.label;
+            badge.title = status.description;
+            badge.setAttribute("aria-label", `${fieldLabel ? `${fieldLabel}: ` : ""}${status.label}. ${status.description}`);
+            return badge;
+        }
+
         function createCandidateCard(candidate) {
             const card = document.createElement("article");
             card.className = "candidate-card";
@@ -1272,6 +1370,17 @@
             const details = [candidate.party, candidate.constituency, candidate.status]
                 .filter(Boolean);
             card.append(name);
+            const verifiedFields = document.createElement("div");
+            verifiedFields.className = "candidate-verification";
+            [
+                ["name", "Name"],
+                ["party", "Party"],
+                ["constituency", "Constituency"]
+            ].forEach(([field, label]) => {
+                const badge = createVerificationBadge(candidate.verification?.[field], label);
+                if (badge) verifiedFields.append(badge);
+            });
+            if (verifiedFields.childElementCount) card.append(verifiedFields);
             if (details.length) {
                 const meta = document.createElement("p");
                 meta.className = "candidate-meta";
@@ -1291,20 +1400,22 @@
         }
 
         function createCandidateProfileTools(electionData, state, stateData) {
-            const previousElection = electionData.previousElection;
-            const previousWinners = Array.isArray(previousElection?.winners)
-                ? previousElection.winners.map((candidate) => ({
-                    ...candidate,
-                    comparisonId: `previous:${previousElection.year}:${normalizeText(candidate.constituency)}`,
-                    electionYear: previousElection.year,
-                    recordType: "Previous election"
-                }))
+            const previousElections = Array.isArray(electionData.previousElections)
+                ? electionData.previousElections
                 : [];
+            const previousWinners = previousElections.flatMap((previousElection) =>
+                previousElection.candidates.map((candidate) => ({
+                    ...candidate,
+                    comparisonId: candidate.candidacyId,
+                    electionYear: previousElection.year,
+                    recordType: previousElection.label
+                }))
+            );
             const declaredCandidates = Array.isArray(electionData.candidates)
                 ? electionData.candidates.map((candidate) => ({
                     ...candidate,
-                    comparisonId: `declared:${normalizeText(candidate.constituency)}:${normalizeText(candidate.name)}`,
-                    electionYear: "Upcoming election",
+                    comparisonId: candidate.candidacyId,
+                    electionYear: candidate.electionYear,
                     recordType: "Declared"
                 }))
                 : [];
@@ -1348,6 +1459,22 @@
             note.textContent = "Compare up to three candidates. Affidavit figures are candidate-declared for the cited election, not current valuations. A pending case is an allegation, not a conviction; only a recorded conviction is labeled as one.";
             tools.append(toolsHeader, note);
 
+            const verificationLegend = document.createElement("div");
+            verificationLegend.className = "verification-legend";
+            verificationLegend.setAttribute("aria-label", "Candidate information verification statuses");
+            Object.entries(verificationStatusInfo).forEach(([status, info]) => {
+                const item = document.createElement("div");
+                item.className = "verification-legend-item";
+                const badge = document.createElement("span");
+                badge.className = `verification-badge verification-badge--${status.replace("_", "-")}`;
+                badge.textContent = info.label;
+                const text = document.createElement("span");
+                text.textContent = info.description;
+                item.append(badge, text);
+                verificationLegend.append(item);
+            });
+            tools.append(verificationLegend);
+
             const searchLabel = document.createElement("label");
             searchLabel.className = "candidate-search-label";
             searchLabel.textContent = "Search candidate, party, or constituency";
@@ -1366,6 +1493,20 @@
             selectionStatus.setAttribute("aria-live", "polite");
             const comparison = document.createElement("div");
             comparison.className = "candidate-comparison";
+
+            function appendVerification(cell, profile, field) {
+                const record = profile.verification?.[field];
+                const badge = createVerificationBadge(record);
+                if (!badge) return;
+                cell.append(badge);
+                if (record.note) {
+                    const note = document.createElement("p");
+                    note.className = "verification-note";
+                    note.textContent = record.note;
+                    cell.append(note);
+                }
+            }
+
             function sourceLinks(profile) {
                 const sources = [
                     profile.affidavit,
@@ -1375,28 +1516,34 @@
                 return uniqueSources;
             }
 
-            function comparisonSources(profile, label) {
+            function comparisonSources(profile, label, verificationField) {
                 const details = profile.profile || {};
-                if (label === "Declared education") return [details.education?.source].filter(Boolean);
-                if (label === "Declared assets") return [details.assets?.source].filter(Boolean);
-                if (label === "Declared liabilities") return [details.liabilities?.source].filter(Boolean);
+                const verificationSources = profile.verification?.[verificationField]?.sources || [];
+                let sources = [];
+                if (label === "Declared education") sources = [details.education?.source].filter(Boolean);
+                if (label === "Declared assets") sources = [details.assets?.source].filter(Boolean);
+                if (label === "Declared liabilities") sources = [details.liabilities?.source].filter(Boolean);
                 if (label === "Criminal cases disclosed") {
-                    return [
+                    sources = [
                         details.criminalCases?.source,
                         ...(details.criminalCases?.entries || []).map((entry) => entry.source)
                     ].filter(Boolean);
                 }
-                if (label === "Previous election results") {
-                    return (details.electionResults || []).map((result) => result.source).filter(Boolean);
+                if (label === "Election results") {
+                    sources = [
+                        profile.result?.source,
+                        ...(details.electionResults || []).map((result) => result.source)
+                    ].filter(Boolean);
                 }
                 if (label === "Previous elected positions") {
-                    return (details.previousPositions || []).map((position) => position.source).filter(Boolean);
+                    sources = (details.previousPositions || []).map((position) => position.source).filter(Boolean);
                 }
-                return label === "Affidavit and sources" ? sourceLinks(profile) : [];
+                if (label === "Affidavit and sources") sources = sourceLinks(profile);
+                return [...sources, ...verificationSources];
             }
 
             function valueWithSource(record) {
-                if (!record || typeof record.value !== "string" || !record.value.trim()) return "Not yet verified";
+                if (!record || typeof record.value !== "string" || !record.value.trim()) return "Not recorded";
                 return record.value;
             }
 
@@ -1408,7 +1555,7 @@
                 } else if (!selected.length) {
                     selectionStatus.textContent = profiles.length
                         ? "Choose profiles to view; select two or three to compare side by side."
-                        : `No verified previous-election profiles have been added for ${state} yet. The previous-election archive is separate from candidates declared for the upcoming election.`;
+                        : `No candidate profiles have been added for ${state} yet. Historical winners and candidates declared for the upcoming election are stored separately.`;
                     return;
                 } else {
                     selectionStatus.textContent = `${selected.length} of 3 profiles selected. Choose two or three for a side-by-side comparison.`;
@@ -1423,7 +1570,15 @@
                 selected.forEach((profile) => {
                     const candidateHeading = document.createElement("th");
                     candidateHeading.scope = "col";
-                    candidateHeading.textContent = `${profile.name} · ${profile.recordType} ${profile.electionYear}`;
+                    const name = document.createElement("div");
+                    name.textContent = `${profile.name} · ${profile.recordType} ${profile.electionYear}`;
+                    candidateHeading.append(name);
+                    appendVerification(candidateHeading, profile, "name");
+                    const nameSources = profile.verification?.name?.sources || [];
+                    nameSources.forEach((source) => {
+                        const link = createSourceLink(source);
+                        if (link) candidateHeading.append(link);
+                    });
                     headerRow.append(candidateHeading);
                 });
                 head.append(headerRow);
@@ -1431,23 +1586,23 @@
 
                 const body = document.createElement("tbody");
                 const rowDefinitions = [
-                    ["Party", (profile) => profile.party || "Not yet verified"],
-                    ["Constituency", (profile) => profile.constituency || "Not yet verified"],
-                    ["Previous elected positions", (profile) => {
+                    ["Party", "party", (profile) => profile.party || "Not recorded"],
+                    ["Constituency", "constituency", (profile) => profile.constituency || "Not recorded"],
+                    ["Previous elected positions", "previousPositions", (profile) => {
                         const positions = profile.profile?.previousPositions;
-                        if (!Array.isArray(positions) || !positions.length) return "Not yet verified";
+                        if (!Array.isArray(positions) || !positions.length) return "Not recorded";
                         return positions.map((position) => [
                             position.title,
                             position.constituency,
                             position.fromYear && position.toYear ? `${position.fromYear}–${position.toYear}` : position.fromYear || position.toYear
                         ].filter(Boolean).join(" · ")).join("; ");
                     }],
-                    ["Declared education", (profile) => valueWithSource(profile.profile?.education)],
-                    ["Declared assets", (profile) => valueWithSource(profile.profile?.assets)],
-                    ["Declared liabilities", (profile) => valueWithSource(profile.profile?.liabilities)],
-                    ["Criminal cases disclosed", (profile) => {
+                    ["Declared education", "education", (profile) => valueWithSource(profile.profile?.education)],
+                    ["Declared assets", "assets", (profile) => valueWithSource(profile.profile?.assets)],
+                    ["Declared liabilities", "liabilities", (profile) => valueWithSource(profile.profile?.liabilities)],
+                    ["Criminal cases disclosed", "criminalCases", (profile) => {
                         const cases = profile.profile?.criminalCases;
-                        if (!cases || !Number.isInteger(cases.declaredCount) || cases.declaredCount < 0) return "Not yet verified";
+                        if (!cases || !Number.isInteger(cases.declaredCount) || cases.declaredCount < 0) return "Not recorded";
                         if (cases.declaredCount === 0) return "Candidate declared no criminal cases";
                         const caseEntries = Array.isArray(cases.entries) ? cases.entries : [];
                         const details = caseEntries.map((entry) => {
@@ -1464,24 +1619,35 @@
                         });
                         return `${cases.declaredCount} declared${details.length ? ` · ${details.join("; ")}` : ""}`;
                     }],
-                    ["Previous election results", (profile) => {
-                        const results = profile.profile?.electionResults;
-                        if (!Array.isArray(results) || !results.length) return "Not yet verified";
+                    ["Election results", "electionResults", (profile) => {
+                        const previousResults = Array.isArray(profile.profile?.electionResults)
+                            ? profile.profile.electionResults
+                            : [];
+                        const results = [
+                            ...(profile.result ? [{
+                                ...profile.result,
+                                year: profile.electionYear,
+                                constituency: profile.constituency
+                            }] : []),
+                            ...previousResults
+                        ];
+                        if (!results.length) return "Not recorded";
                         return results.map((result) => [
                             result.year,
                             result.constituency || profile.constituency,
                             Number.isFinite(result.votes) ? `${result.votes.toLocaleString()} votes` : "",
                             Number.isFinite(result.voteShare) ? `${result.voteShare}% vote share` : "",
-                            result.result
+                            Number.isFinite(result.margin) ? `${result.margin.toLocaleString()} vote margin` : "",
+                            result.result || result.outcome
                         ].filter(Boolean).join(" · ")).join("; ");
                     }],
-                    ["Affidavit and sources", (profile) => {
+                    ["Affidavit and sources", "affidavit", (profile) => {
                         const sources = sourceLinks(profile);
                         return sources.length ? sources.map((source) => source.label).join("; ") : "No source links added";
                     }]
                 ];
 
-                rowDefinitions.forEach(([label, getValue]) => {
+                rowDefinitions.forEach(([label, verificationField, getValue]) => {
                     const row = document.createElement("tr");
                     const rowHeading = document.createElement("th");
                     rowHeading.scope = "row";
@@ -1490,8 +1656,9 @@
                     selected.forEach((profile) => {
                         const cell = document.createElement("td");
                         cell.textContent = getValue(profile);
+                        appendVerification(cell, profile, verificationField);
                         const sources = [...new Map(
-                            comparisonSources(profile, label).map((source) => [`${source.label}|${source.url}`, source])
+                            comparisonSources(profile, label, verificationField).map((source) => [`${source.label}|${source.url}`, source])
                         ).values()];
                         if (sources.length) {
                             const links = document.createElement("div");
@@ -1514,7 +1681,7 @@
                 picker.replaceChildren();
                 const query = normalizeText(search.value);
                 const filtered = profiles.filter((profile) => normalizeText(
-                    `${profile.name || ""} ${profile.party || ""} ${profile.constituency || ""} ${profile.electionYear || ""}`
+                    `${profile.name || ""} ${(profile.aliases || []).join(" ")} ${profile.party || ""} ${profile.constituency || ""} ${profile.electionYear || ""}`
                 ).includes(query));
                 filtered.forEach((profile) => {
                     const option = document.createElement("label");
@@ -1550,8 +1717,8 @@
                 if (!profiles.length) {
                     const empty = document.createElement("p");
                     empty.className = "candidate-empty";
-                    empty.textContent = previousElection
-                        ? `Goa's ${previousElection.year} winner profiles are being researched and verified.`
+                    empty.textContent = previousElections.length
+                        ? `Historical candidate profiles for ${state} are being researched and verified.`
                         : "No verified candidate profiles have been added for this state yet.";
                     picker.append(empty);
                 } else if (!filtered.length) {
@@ -1566,15 +1733,17 @@
             search.addEventListener("input", renderProfileOptions);
             tools.append(picker, selectionStatus, comparison);
 
-            if (Array.isArray(previousElection?.sources) && previousElection.sources.length) {
-                const sources = document.createElement("div");
-                sources.className = "candidate-sources";
-                previousElection.sources.forEach((source) => {
-                    const link = createSourceLink(source);
-                    if (link) sources.append(link);
-                });
-                tools.append(sources);
-            }
+            previousElections.forEach((previousElection) => {
+                if (Array.isArray(previousElection.sources) && previousElection.sources.length) {
+                    const sources = document.createElement("div");
+                    sources.className = "candidate-sources";
+                    previousElection.sources.forEach((source) => {
+                        const link = createSourceLink(source);
+                        if (link) sources.append(link);
+                    });
+                    tools.append(sources);
+                }
+            });
 
             renderProfileOptions();
             return tools;
@@ -1817,9 +1986,47 @@
         }
 
         function createCandidateSection(election) {
-            const electionData = candidateData?.states?.[election.state];
-            const candidates = Array.isArray(electionData?.candidates) ? electionData.candidates : [];
-            const manifestos = Array.isArray(electionData?.manifestos) ? electionData.manifestos : [];
+            const stateData = candidateData?.states?.[election.state];
+            const people = new Map((candidateData?.people || []).map((person) => [person.id, person]));
+            const stateElections = (candidateData?.elections || []).filter((entry) => entry.state === election.state);
+            const upcomingElection = stateElections.find((entry) => entry.candidateScope === "declared_candidates");
+            const previousElections = stateElections
+                .filter((entry) => entry.candidateScope === "winners_archive")
+                .map((entry) => ({
+                    year: entry.year,
+                    label: "Previous-election winner",
+                    sources: entry.sources || [],
+                    candidates: entry.candidacies.map((candidacy) => {
+                        const person = people.get(candidacy.candidateId);
+                        return {
+                            ...candidacy,
+                            name: person?.name || "Candidate identity not verified",
+                            aliases: person?.aliases || [],
+                            candidacyId: candidacy.id,
+                            electionYear: entry.year,
+                            profile: candidacy.profile || {},
+                            recordType: "Previous-election winner"
+                        };
+                    })
+                }));
+            const candidates = upcomingElection
+                ? upcomingElection.candidacies.map((candidacy) => {
+                    const person = people.get(candidacy.candidateId);
+                    return {
+                        ...candidacy,
+                        name: person?.name || "Candidate identity not verified",
+                        aliases: person?.aliases || [],
+                        candidacyId: candidacy.id,
+                        electionYear: upcomingElection.year,
+                        profile: candidacy.profile || {}
+                    };
+                })
+                : [];
+            const profileData = {
+                candidates,
+                previousElections
+            };
+            const manifestos = Array.isArray(stateData?.manifestos) ? stateData.manifestos : [];
             const section = document.createElement("section");
             section.className = "candidate-section";
 
@@ -1849,18 +2056,18 @@
 
             const candidateHeading = document.createElement("h4");
             candidateHeading.className = "announcement-heading";
-            candidateHeading.textContent = "Declared candidates";
+            candidateHeading.textContent = `Declared ${election.state} candidates`;
             section.append(candidateHeading);
             if (candidates.length) {
                 candidates.forEach((candidate) => section.append(createCandidateCard(candidate)));
             } else {
                 const empty = document.createElement("p");
                 empty.className = "candidate-empty";
-                empty.textContent = `No verified candidates have been declared for the ${election.state} election yet.`;
+                empty.textContent = `No verified candidates have been declared for the ${election.state} ${upcomingElection?.year || "upcoming"} election yet.`;
                 section.append(empty);
             }
             section.append(createCandidateProfileTools(
-                electionData,
+                profileData,
                 election.state,
                 incumbentData?.states?.[election.state]
             ));
@@ -2055,7 +2262,13 @@
                     throw new Error(`Candidate data could not be loaded (${response.status}).`);
                 }
                 const data = await response.json();
-                if (data.schemaVersion !== 2 || !data.states || typeof data.states !== "object") {
+                if (
+                    data.schemaVersion !== 3 ||
+                    !Array.isArray(data.people) ||
+                    !data.states ||
+                    typeof data.states !== "object" ||
+                    !Array.isArray(data.elections)
+                ) {
                     throw new Error("Candidate data has an invalid format.");
                 }
                 candidateData = data;

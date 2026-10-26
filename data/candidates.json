@@ -1,43 +1,92 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "people": [],
   "states": {
     "Goa": {
-      "candidates": [],
-      "manifestos": [],
-      "previousElection": {
-        "year": 2022,
-        "winners": [],
-        "sources": [
-          {
-            "label": "ECI candidate affidavit portal",
-            "url": "https://affidavit.eci.gov.in/"
-          },
-          {
-            "label": "ADR/MyNeta Goa 2022 winners and affidavit summaries (secondary source)",
-            "url": "https://www.myneta.info/Goa2022/index.php?action=show_winners&sort=default"
-          }
-        ]
-      }
+      "manifestos": []
     },
     "Manipur": {
-      "candidates": [],
       "manifestos": []
     },
     "Punjab": {
-      "candidates": [],
       "manifestos": []
     },
     "Uttarakhand": {
-      "candidates": [],
       "manifestos": []
     },
     "Uttar Pradesh": {
-      "candidates": [],
       "manifestos": []
     },
     "Gujarat": {
-      "candidates": [],
       "manifestos": []
     }
-  }
+  },
+  "elections": [
+    {
+      "id": "goa-2027-assembly",
+      "state": "Goa",
+      "year": 2027,
+      "type": "State Legislative Assembly",
+      "candidateScope": "declared_candidates",
+      "candidacies": []
+    },
+    {
+      "id": "manipur-2027-assembly",
+      "state": "Manipur",
+      "year": 2027,
+      "type": "State Legislative Assembly",
+      "candidateScope": "declared_candidates",
+      "candidacies": []
+    },
+    {
+      "id": "punjab-2027-assembly",
+      "state": "Punjab",
+      "year": 2027,
+      "type": "State Legislative Assembly",
+      "candidateScope": "declared_candidates",
+      "candidacies": []
+    },
+    {
+      "id": "uttarakhand-2027-assembly",
+      "state": "Uttarakhand",
+      "year": 2027,
+      "type": "State Legislative Assembly",
+      "candidateScope": "declared_candidates",
+      "candidacies": []
+    },
+    {
+      "id": "uttar-pradesh-2027-assembly",
+      "state": "Uttar Pradesh",
+      "year": 2027,
+      "type": "State Legislative Assembly",
+      "candidateScope": "declared_candidates",
+      "candidacies": []
+    },
+    {
+      "id": "gujarat-2027-assembly",
+      "state": "Gujarat",
+      "year": 2027,
+      "type": "State Legislative Assembly",
+      "candidateScope": "declared_candidates",
+      "candidacies": []
+    },
+    {
+      "id": "goa-2022-assembly-winners",
+      "state": "Goa",
+      "year": 2022,
+      "type": "State Legislative Assembly",
+      "candidateScope": "winners_archive",
+      "candidacies": [],
+      "sources": [
+        {
+          "label": "ECI candidate affidavit portal",
+          "url": "https://affidavit.eci.gov.in/"
+        },
+        {
+          "label": "ADR/MyNeta Goa 2022 winners and affidavit summaries (secondary source)",
+          "url": "https://www.myneta.info/Goa2022/index.php?action=show_winners&sort=default"
+        }
+      ]
+    }
+  ]
 }

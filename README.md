@@ -70,25 +70,86 @@ These windows are estimates, not official polling dates. Update them only with r
 
 ### Candidates and manifestos: `data/candidates.json`
 
-This is manually curated reference data; the ECI announcement feed does not automatically populate candidate names or party manifestos. The top-level `states` keys must match the state names used by the election cards. Candidate source links should be HTTPS and identify whether the record comes from ECI or a clearly labeled official fallback. Manifesto promises are short paraphrases linked to the party publication. Candidate data now uses schema version 2.
+This is manually curated reference data; the ECI announcement feed does not automatically populate candidate names or party manifestos. Candidate data uses schema version 3 and separates a stable person identity from each election-specific candidacy. The same candidate can have multiple candidacies over time, including different parties or constituencies. Candidate source links should be HTTPS and identify whether they point to ECI or a clearly labeled secondary source. Manifesto promises are short paraphrases linked to the party publication.
 
 ```json
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
+  "people": [
+    {
+      "id": "person-stable-id",
+      "name": "Candidate name",
+      "aliases": ["Name used in another record"]
+    }
+  ],
   "states": {
     "Goa": {
-      "candidates": [
+      "manifestos": []
+    }
+  },
+  "elections": [
+    {
+      "id": "goa-2027-assembly",
+      "state": "Goa",
+      "year": 2027,
+      "type": "State Legislative Assembly",
+      "candidateScope": "declared_candidates",
+      "candidacies": [
         {
-          "name": "Candidate name",
-          "party": "Party name",
+          "id": "goa-2027-constituency-person",
+          "candidateId": "person-stable-id",
           "constituency": "Constituency name",
-          "status": "Declared",
-          "sources": [
-            {
-              "label": "Official ECI candidate record",
-              "url": "https://example.gov.in/candidate"
+          "party": "Party name",
+          "status": "declared",
+          "verification": {
+            "name": {
+              "status": "verified",
+              "checkedAt": "2026-10-27",
+              "reviewer": "Data editor",
+              "sources": [
+                {
+                  "role": "primary",
+                  "label": "ECI candidate list",
+                  "url": "https://eci.gov.in/"
+                }
+              ]
+            },
+            "party": {
+              "status": "cross_checked",
+              "checkedAt": "2026-10-27",
+              "reviewer": "Data editor",
+              "sources": [
+                {
+                  "role": "primary",
+                  "label": "ECI candidate list",
+                  "url": "https://eci.gov.in/"
+                },
+                {
+                  "role": "secondary",
+                  "label": "Independent party candidate list",
+                  "url": "https://example.org/candidates"
+                }
+              ]
+            },
+            "assets": {
+              "status": "needs_review",
+              "checkedAt": "2026-10-27",
+              "reviewer": "Data editor",
+              "note": "The affidavit and secondary summary report different totals.",
+              "sources": [
+                {
+                  "role": "primary",
+                  "label": "Candidate affidavit",
+                  "url": "https://affidavit.eci.gov.in/"
+                },
+                {
+                  "role": "secondary",
+                  "label": "ADR/MyNeta",
+                  "url": "https://myneta.info/"
+                }
+              ]
             }
-          ],
+          },
           "affidavit": {
             "label": "Original ECI affidavit",
             "url": "https://affidavit.eci.gov.in/"
@@ -106,7 +167,11 @@ This is manually curated reference data; the ECI announcement feed does not auto
               "value": "Candidate-declared education",
               "source": {
                 "label": "Candidate affidavit",
-                "url": "https://affidavit.eci.gov.in/"
+                "url": "https://affidavit.eci.gov.in/",
+                "page": 4,
+                "retrievedAt": "2026-10-27",
+                "reviewer": "Data editor",
+                "corrections": []
               }
             },
             "assets": {
@@ -134,61 +199,52 @@ This is manually curated reference data; the ECI announcement feed does not auto
                     "url": "https://affidavit.eci.gov.in/"
                   }
                 }
-              ],
-              "source": {
-                "label": "Candidate affidavit",
-                "url": "https://affidavit.eci.gov.in/"
-              }
-            },
-            "electionResults": [
-              {
-                "year": 2022,
-                "constituency": "Constituency name",
-                "votes": 12345,
-                "voteShare": 52.3,
-                "result": "Won",
-                "source": {
-                  "label": "Official ECI result",
-                  "url": "https://results.eci.gov.in/"
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "manifestos": [
-        {
-          "party": "Party name",
-          "title": "Manifesto title",
-          "promises": ["Short, paraphrased policy summary"],
-          "source": {
-            "label": "Official party manifesto",
-            "url": "https://example.org/manifesto"
-          }
-        }
-      ],
-      "previousElection": {
-        "year": 2022,
-        "winners": [],
-        "sources": [
-          {
-            "label": "ECI candidate affidavit portal",
-            "url": "https://affidavit.eci.gov.in/"
+              ]
+            }
           },
-          {
-            "label": "ADR/MyNeta Goa 2022 archive (secondary source)",
-            "url": "https://www.myneta.info/Goa2022/index.php?action=show_winners&sort=default"
-          }
-        ]
-      }
+          "result": {
+            "votes": 12345,
+            "voteShare": 52.3,
+            "margin": 1240,
+            "outcome": "won",
+            "source": {
+              "label": "Official ECI result",
+              "url": "https://results.eci.gov.in/"
+            }
+          },
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "goa-2022-assembly-winners",
+      "state": "Goa",
+      "year": 2022,
+      "type": "State Legislative Assembly",
+      "candidateScope": "winners_archive",
+      "candidacies": [],
+      "sources": [
+        {
+          "label": "ECI candidate affidavit portal",
+          "url": "https://affidavit.eci.gov.in/"
+        },
+        {
+          "label": "ADR/MyNeta Goa 2022 winners archive (secondary source)",
+          "url": "https://www.myneta.info/Goa2022/index.php?action=show_winners&sort=default"
+        }
+      ]
     }
-  }
+  ]
 }
 ```
 
-`candidates` is reserved for declared candidates in the upcoming election; `previousElection.winners` is a separate archive and must not be presented as the upcoming candidate list. For Goa, this archive is for the 2022 winners. Each previous-election winner uses the same identity fields (`name`, `party`, and `constituency`) and can include a `profile` with `previousPositions`, candidate-declared `education`, `assets`, `liabilities`, `criminalCases`, and `electionResults`. Keep disclosures tied to source links. Criminal-case `status` is `pending`, `convicted`, `acquitted`, `disposed`, or `unknown`; a disclosed case must not be described as a conviction unless the source records one. Missing values are omitted and shown as not yet verified, never inferred as zero. `affidavit`, `sources`, and each disclosure's `source` use `{ "label", "url" }` and must link to HTTPS pages.
+`people` holds one stable identity per person (`id`, name, optional aliases). Election records hold election metadata and a `candidateScope`: `declared_candidates` for the upcoming candidate list or `winners_archive` for a historical winners-only archive. Each candidacy references a person with `candidateId` and has its own party, constituency, status, affidavit, disclosures, result, and source links. The 2027 placeholder records cover Goa, Manipur, Punjab, Uttarakhand, Uttar Pradesh, and Gujarat. Goa's 2022 archive is kept separate and explicitly covers winners only; it is not a complete list of everyone who contested.
 
-The page provides text search across candidate name, party, and constituency and a side-by-side comparison for up to three profiles. Clicking a sitting MLA's constituency card in the Current Assembly roster selects that person and opens the comparison drawer (right side on desktop, bottom sheet on mobile); vacant seats are not selectable. Current Assembly snapshot profiles are explicitly labeled as such and are not treated as declared candidates or prior-election winners. Goa's 2022 winner profiles are still being researched and verified; the source links are provided, but no profile records are claimed yet. Keep the `candidates` and `manifestos` arrays even when there is no verified data. Empty upcoming-candidate arrays do not mean no one will contest.
+Keep disclosures tied to source links. Criminal-case `status` is `pending`, `convicted`, `acquitted`, `disposed`, or `unknown`; a disclosed case must not be described as a conviction unless the source records one. Missing values are omitted and shown as not recorded, never inferred as zero.
+
+Each candidacy may include a `verification` map keyed by field (`name`, `party`, `constituency`, `affidavit`, `previousPositions`, `education`, `assets`, `liabilities`, `criminalCases`, or `electionResults`). A verification record contains a `status`, checked date and reviewer where applicable, optional explanatory `note`, and evidence `sources`. Each verification source uses `{ "role": "primary", "label": "...", "url": "..." }` or `{ "role": "secondary", "label": "...", "url": "..." }` and must use HTTPS. `verified` requires primary-source evidence; `cross_checked` requires both primary and independent secondary evidence; `needs_review` requires a note explaining the issue; and `unverified` means the value was collected but has not yet been checked against a reliable source. Only attach a verification record when there is a value to assess. Missing information is not the same as an unverified claim. These statuses are displayed per field, alongside evidence links, and are validated before deployment. Field source records can also include `page`, `retrievedAt`, `reviewer`, and `corrections`.
+
+The page provides text search across candidate name, party, and constituency and a side-by-side comparison for up to three profiles. Clicking a sitting MLA's constituency card in the Current Assembly roster selects that person and opens the comparison drawer (right side on desktop, bottom sheet on mobile); vacant seats are not selectable. Current Assembly snapshot profiles are explicitly labeled as such and are not treated as declared candidates or historical election results. No candidate records are currently populated; empty candidacy lists do not mean no one will contest.
 
 ### Current Assembly and incumbents: `data/incumbents.json`
 
