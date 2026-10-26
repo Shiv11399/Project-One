@@ -535,15 +535,38 @@
             border-top: 1px solid var(--line);
         }
 
+        .incumbent-chart-heading {
+            margin: 0 0 12px;
+            color: #dbe4ef;
+            font-size: 14px;
+            font-weight: 750;
+        }
+
+        .incumbent-chart {
+            display: grid;
+            grid-template-columns: minmax(150px, 220px) minmax(0, 1fr);
+            align-items: center;
+            gap: 22px;
+            margin: 0 0 14px;
+        }
+
+        .incumbent-pie {
+            width: min(100%, 220px);
+            aspect-ratio: 1;
+            justify-self: center;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 50%;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+        }
+
         .incumbent-summary {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 10px;
-            margin: 0 0 14px;
+            gap: 8px;
         }
 
         .incumbent-party-row {
             display: flex;
+            align-items: center;
             justify-content: space-between;
             gap: 12px;
             padding: 10px 12px;
@@ -552,6 +575,20 @@
             background: #0e1724;
             color: #dbe4ef;
             font-size: 12px;
+        }
+
+        .incumbent-party-label {
+            display: flex;
+            min-width: 0;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .incumbent-party-swatch {
+            width: 11px;
+            height: 11px;
+            flex: 0 0 auto;
+            border-radius: 50%;
         }
 
         .incumbent-party-seats {
@@ -747,6 +784,17 @@
             }
         }
 
+        @media (max-width: 640px) {
+            .incumbent-chart {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .incumbent-pie {
+                width: min(100%, 180px);
+            }
+        }
+
         @media (max-width: 440px) {
             .topbar-note {
                 max-width: 130px;
@@ -775,7 +823,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .incumbent-summary,
             .incumbent-member-list {
                 grid-template-columns: 1fr;
             }
@@ -1072,6 +1119,75 @@
             return card;
         }
 
+        const partyChartColors = {
+            "Aam Aadmi Party": "#22c55e",
+            "Bharatiya Janata Party": "#f59e0b",
+            "Independent": "#a78bfa",
+            "Indian National Congress": "#3b82f6",
+            "Janata Dal (United)": "#facc15",
+            "Kuki Peoples Alliance": "#f97316",
+            "Maharashtrawadi Gomantak Party": "#06b6d4",
+            "Naga Peoples Front": "#d946ef",
+            "National Peoples Party": "#14b8a6",
+            "Samajwadi Party": "#ef4444",
+            "Vacant": "#64748b"
+        };
+        const fallbackPartyChartColors = ["#38bdf8", "#fb7185", "#a3e635", "#c084fc", "#f97316"];
+
+        function createPartySeatChart(stateData) {
+            const entries = [...stateData.seatCounts]
+                .filter((entry) => Number.isFinite(entry.seats) && entry.seats > 0)
+                .sort((first, second) => second.seats - first.seats);
+            const totalSeats = entries.reduce((total, entry) => total + entry.seats, 0);
+            if (!totalSeats) return null;
+
+            const chart = document.createElement("div");
+            chart.className = "incumbent-chart";
+
+            const pie = document.createElement("div");
+            pie.className = "incumbent-pie";
+            pie.setAttribute("role", "img");
+            let currentPercentage = 0;
+            const segments = entries.map((entry, index) => {
+                const start = currentPercentage;
+                currentPercentage += entry.seats / totalSeats * 100;
+                const color = partyChartColors[entry.party] || fallbackPartyChartColors[index % fallbackPartyChartColors.length];
+                return `${color} ${start}% ${currentPercentage}%`;
+            });
+            pie.style.background = `conic-gradient(${segments.join(", ")})`;
+            pie.setAttribute(
+                "aria-label",
+                `Party seat distribution: ${entries.map((entry) => `${entry.party}, ${entry.seats} of ${totalSeats} seats`).join("; ")}.`
+            );
+
+            const legend = document.createElement("div");
+            legend.className = "incumbent-summary";
+            legend.setAttribute("aria-label", "Party seat totals");
+            entries.forEach((entry, index) => {
+                const percentage = entry.seats / totalSeats * 100;
+                const color = partyChartColors[entry.party] || fallbackPartyChartColors[index % fallbackPartyChartColors.length];
+                const item = document.createElement("div");
+                item.className = "incumbent-party-row";
+                const label = document.createElement("span");
+                label.className = "incumbent-party-label";
+                const swatch = document.createElement("span");
+                swatch.className = "incumbent-party-swatch";
+                swatch.style.backgroundColor = color;
+                swatch.setAttribute("aria-hidden", "true");
+                const party = document.createElement("span");
+                party.textContent = entry.party;
+                label.append(swatch, party);
+                const count = document.createElement("span");
+                count.className = "incumbent-party-seats";
+                count.textContent = `${entry.seats} ${entry.seats === 1 ? "seat" : "seats"} · ${percentage.toFixed(1)}%`;
+                item.append(label, count);
+                legend.append(item);
+            });
+
+            chart.append(pie, legend);
+            return chart;
+        }
+
         function createIncumbentSection(election) {
             const stateData = incumbentData?.states?.[election.state];
             const section = document.createElement("section");
@@ -1126,22 +1242,18 @@
             }
 
             if (Array.isArray(stateData.seatCounts) && stateData.seatCounts.length) {
-                const tally = document.createElement("div");
-                tally.className = "incumbent-summary";
-                [...stateData.seatCounts]
-                    .sort((first, second) => second.seats - first.seats)
-                    .forEach((entry) => {
-                        const item = document.createElement("div");
-                        item.className = "incumbent-party-row";
-                        const party = document.createElement("span");
-                        party.textContent = entry.party;
-                        const count = document.createElement("span");
-                        count.className = "incumbent-party-seats";
-                        count.textContent = `${entry.seats} ${entry.seats === 1 ? "seat" : "seats"}`;
-                        item.append(party, count);
-                        tally.append(item);
-                    });
-                section.append(tally);
+                const chartHeading = document.createElement("h4");
+                chartHeading.className = "incumbent-chart-heading";
+                chartHeading.textContent = "Party seat distribution";
+                const chart = createPartySeatChart(stateData);
+                if (chart) {
+                    section.append(chartHeading, chart);
+                } else {
+                    const unavailable = document.createElement("p");
+                    unavailable.className = "candidate-empty";
+                    unavailable.textContent = "Party seat distribution is unavailable because no valid seat totals were provided.";
+                    section.append(unavailable);
+                }
             }
 
             const stateSources = Array.isArray(stateData.sources)

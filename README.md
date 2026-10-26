@@ -152,6 +152,8 @@ This is a dated, manually maintained snapshot, not a live feed. Each state has a
 
 Each member's `status` and a state's `notes` are optional. Record a vacancy as a member entry with `name` and `party` set to `Vacant`, so it is included in the total Assembly strength. The sum of `seatCounts[].seats` must equal the number of entries in `members`; each constituency must appear only once. Source links must use HTTPS and labels should make secondary sources explicit. The preparation script checks required fields, duplicate constituencies, tally totals, and source links before deployment.
 
+The Current Assembly panel renders `seatCounts` as a party seat-distribution pie chart with a matching legend showing seat totals and percentages. The chart represents state-wide Assembly composition; individual constituency entries remain in the expandable roster below it.
+
 Known vacancies and source conflicts are documented in the relevant state data. Some rosters rely on secondary sources where a current official roster could not be verified. Check the source links and update `asOf` and the affected data when membership changes. Do not treat current MLAs as candidates for the next election.
 
 ## Data maintenance
