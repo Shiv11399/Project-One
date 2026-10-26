@@ -670,6 +670,106 @@
             margin-top: 8px;
         }
 
+        .candidate-profile-tools {
+            margin-top: 18px;
+            padding: 15px;
+            border: 1px solid var(--line);
+            border-radius: 11px;
+            background: #101927;
+        }
+
+        .candidate-profile-tools h4 {
+            margin: 0;
+            color: #dbe4ef;
+            font-size: 14px;
+        }
+
+        .candidate-search-label {
+            display: block;
+            margin-top: 13px;
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .candidate-search {
+            width: 100%;
+            margin-top: 6px;
+            padding: 10px 12px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: #0e1724;
+            color: var(--text);
+            font: inherit;
+            font-size: 13px;
+        }
+
+        .candidate-profile-picker {
+            display: grid;
+            gap: 7px;
+            max-height: 220px;
+            margin-top: 11px;
+            overflow: auto;
+        }
+
+        .candidate-profile-option {
+            display: flex;
+            align-items: start;
+            gap: 9px;
+            padding: 9px 10px;
+            border: 1px solid rgba(155, 169, 186, 0.16);
+            border-radius: 8px;
+            background: #0e1724;
+            color: #dbe4ef;
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .candidate-profile-option input {
+            margin: 2px 0 0;
+            accent-color: var(--saffron);
+        }
+
+        .candidate-profile-tag {
+            display: inline-block;
+            margin-left: 5px;
+            color: var(--muted);
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .candidate-comparison {
+            margin-top: 16px;
+            overflow-x: auto;
+        }
+
+        .candidate-comparison table {
+            width: 100%;
+            min-width: 560px;
+            border-collapse: collapse;
+            color: #dbe4ef;
+            font-size: 12px;
+        }
+
+        .candidate-comparison th,
+        .candidate-comparison td {
+            padding: 10px;
+            border: 1px solid var(--line);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .candidate-comparison th:first-child {
+            width: 150px;
+            color: var(--muted);
+        }
+
+        .candidate-profile-tools .candidate-empty {
+            margin-top: 12px;
+        }
+
         .candidate-name,
         .manifesto-party {
             margin: 0;
@@ -1083,6 +1183,263 @@
             return card;
         }
 
+        function createCandidateProfileTools(electionData, state) {
+            const previousElection = electionData.previousElection;
+            const previousWinners = Array.isArray(previousElection?.winners)
+                ? previousElection.winners.map((candidate) => ({
+                    ...candidate,
+                    electionYear: previousElection.year,
+                    recordType: "Previous election"
+                }))
+                : [];
+            const declaredCandidates = Array.isArray(electionData.candidates)
+                ? electionData.candidates.map((candidate) => ({
+                    ...candidate,
+                    electionYear: "Upcoming election",
+                    recordType: "Declared"
+                }))
+                : [];
+            const profiles = [...previousWinners, ...declaredCandidates];
+            const tools = document.createElement("div");
+            tools.className = "candidate-profile-tools";
+
+            const heading = document.createElement("h4");
+            heading.textContent = `Search and compare ${state} candidate profiles`;
+            const note = document.createElement("p");
+            note.className = "candidate-intro";
+            note.textContent = "Compare up to three candidates. Affidavit figures are candidate-declared for the cited election, not current valuations. A pending case is an allegation, not a conviction; only a recorded conviction is labeled as one.";
+            tools.append(heading, note);
+
+            const searchLabel = document.createElement("label");
+            searchLabel.className = "candidate-search-label";
+            searchLabel.textContent = "Search candidate, party, or constituency";
+            const search = document.createElement("input");
+            search.className = "candidate-search";
+            search.type = "search";
+            search.placeholder = "Type a name, party, or constituency";
+            searchLabel.append(search);
+            tools.append(searchLabel);
+
+            const picker = document.createElement("div");
+            picker.className = "candidate-profile-picker";
+            picker.setAttribute("aria-label", "Candidate profiles to compare");
+            const selectionStatus = document.createElement("p");
+            selectionStatus.className = "candidate-empty";
+            selectionStatus.setAttribute("aria-live", "polite");
+            const comparison = document.createElement("div");
+            comparison.className = "candidate-comparison";
+            const selectedProfiles = new Set();
+
+            function sourceLinks(profile) {
+                const sources = [
+                    profile.affidavit,
+                    ...(Array.isArray(profile.sources) ? profile.sources : [])
+                ].filter(Boolean);
+                const uniqueSources = [...new Map(sources.map((source) => [`${source.label}|${source.url}`, source])).values()];
+                return uniqueSources;
+            }
+
+            function comparisonSources(profile, label) {
+                const details = profile.profile || {};
+                if (label === "Declared education") return [details.education?.source].filter(Boolean);
+                if (label === "Declared assets") return [details.assets?.source].filter(Boolean);
+                if (label === "Declared liabilities") return [details.liabilities?.source].filter(Boolean);
+                if (label === "Criminal cases disclosed") {
+                    return [
+                        details.criminalCases?.source,
+                        ...(details.criminalCases?.entries || []).map((entry) => entry.source)
+                    ].filter(Boolean);
+                }
+                if (label === "Previous election results") {
+                    return (details.electionResults || []).map((result) => result.source).filter(Boolean);
+                }
+                if (label === "Previous elected positions") {
+                    return (details.previousPositions || []).map((position) => position.source).filter(Boolean);
+                }
+                return label === "Affidavit and sources" ? sourceLinks(profile) : [];
+            }
+
+            function valueWithSource(record) {
+                if (!record || typeof record.value !== "string" || !record.value.trim()) return "Not yet verified";
+                return record.value;
+            }
+
+            function renderComparison() {
+                comparison.replaceChildren();
+                const selected = profiles.filter((profile) => selectedProfiles.has(profile));
+                if (!selected.length) {
+                    selectionStatus.textContent = profiles.length
+                        ? "Choose profiles to view; select two or three to compare side by side."
+                        : `No verified previous-election profiles have been added for ${state} yet. The previous-election archive is separate from candidates declared for the upcoming election.`;
+                    return;
+                }
+
+                selectionStatus.textContent = `${selected.length} of 3 profiles selected. Choose two or three for a side-by-side comparison.`;
+                const table = document.createElement("table");
+                const head = document.createElement("thead");
+                const headerRow = document.createElement("tr");
+                const blankHeading = document.createElement("th");
+                blankHeading.scope = "col";
+                blankHeading.textContent = "Profile detail";
+                headerRow.append(blankHeading);
+                selected.forEach((profile) => {
+                    const candidateHeading = document.createElement("th");
+                    candidateHeading.scope = "col";
+                    candidateHeading.textContent = `${profile.name} · ${profile.recordType} ${profile.electionYear}`;
+                    headerRow.append(candidateHeading);
+                });
+                head.append(headerRow);
+                table.append(head);
+
+                const body = document.createElement("tbody");
+                const rowDefinitions = [
+                    ["Party", (profile) => profile.party || "Not yet verified"],
+                    ["Constituency", (profile) => profile.constituency || "Not yet verified"],
+                    ["Previous elected positions", (profile) => {
+                        const positions = profile.profile?.previousPositions;
+                        if (!Array.isArray(positions) || !positions.length) return "Not yet verified";
+                        return positions.map((position) => [
+                            position.title,
+                            position.constituency,
+                            position.fromYear && position.toYear ? `${position.fromYear}–${position.toYear}` : position.fromYear || position.toYear
+                        ].filter(Boolean).join(" · ")).join("; ");
+                    }],
+                    ["Declared education", (profile) => valueWithSource(profile.profile?.education)],
+                    ["Declared assets", (profile) => valueWithSource(profile.profile?.assets)],
+                    ["Declared liabilities", (profile) => valueWithSource(profile.profile?.liabilities)],
+                    ["Criminal cases disclosed", (profile) => {
+                        const cases = profile.profile?.criminalCases;
+                        if (!cases || !Number.isInteger(cases.declaredCount) || cases.declaredCount < 0) return "Not yet verified";
+                        if (cases.declaredCount === 0) return "Candidate declared no criminal cases";
+                        const caseEntries = Array.isArray(cases.entries) ? cases.entries : [];
+                        const details = caseEntries.map((entry) => {
+                            const label = entry.status === "convicted"
+                                ? "Conviction recorded"
+                                : entry.status === "acquitted"
+                                    ? "Acquitted"
+                                    : entry.status === "disposed"
+                                        ? "Disposed; outcome requires source context"
+                                        : entry.status === "pending"
+                                            ? "Pending allegation"
+                                            : "Status not verified";
+                            return `${entry.description || "Case details not supplied"} (${label})`;
+                        });
+                        return `${cases.declaredCount} declared${details.length ? ` · ${details.join("; ")}` : ""}`;
+                    }],
+                    ["Previous election results", (profile) => {
+                        const results = profile.profile?.electionResults;
+                        if (!Array.isArray(results) || !results.length) return "Not yet verified";
+                        return results.map((result) => [
+                            result.year,
+                            result.constituency || profile.constituency,
+                            Number.isFinite(result.votes) ? `${result.votes.toLocaleString()} votes` : "",
+                            Number.isFinite(result.voteShare) ? `${result.voteShare}% vote share` : "",
+                            result.result
+                        ].filter(Boolean).join(" · ")).join("; ");
+                    }],
+                    ["Affidavit and sources", (profile) => {
+                        const sources = sourceLinks(profile);
+                        return sources.length ? sources.map((source) => source.label).join("; ") : "No source links added";
+                    }]
+                ];
+
+                rowDefinitions.forEach(([label, getValue]) => {
+                    const row = document.createElement("tr");
+                    const rowHeading = document.createElement("th");
+                    rowHeading.scope = "row";
+                    rowHeading.textContent = label;
+                    row.append(rowHeading);
+                    selected.forEach((profile) => {
+                        const cell = document.createElement("td");
+                        cell.textContent = getValue(profile);
+                        const sources = [...new Map(
+                            comparisonSources(profile, label).map((source) => [`${source.label}|${source.url}`, source])
+                        ).values()];
+                        if (sources.length) {
+                            const links = document.createElement("div");
+                            links.className = "candidate-sources";
+                            sources.forEach((source) => {
+                                const link = createSourceLink(source);
+                                if (link) links.append(link);
+                            });
+                            cell.append(links);
+                        }
+                        row.append(cell);
+                    });
+                    body.append(row);
+                });
+                table.append(body);
+                comparison.append(table);
+            }
+
+            function renderProfileOptions() {
+                picker.replaceChildren();
+                const query = normalizeText(search.value);
+                const filtered = profiles.filter((profile) => normalizeText(
+                    `${profile.name || ""} ${profile.party || ""} ${profile.constituency || ""} ${profile.electionYear || ""}`
+                ).includes(query));
+                filtered.forEach((profile) => {
+                    const option = document.createElement("label");
+                    option.className = "candidate-profile-option";
+                    const checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    checkbox.checked = selectedProfiles.has(profile);
+                    checkbox.addEventListener("change", () => {
+                        if (checkbox.checked && selectedProfiles.size >= 3) {
+                            checkbox.checked = false;
+                            selectionStatus.textContent = "You can compare no more than three profiles at a time.";
+                            return;
+                        }
+                        if (checkbox.checked) {
+                            selectedProfiles.add(profile);
+                        } else {
+                            selectedProfiles.delete(profile);
+                        }
+                        renderComparison();
+                    });
+                    const label = document.createElement("span");
+                    label.textContent = `${profile.name || "Unnamed candidate"} · ${profile.party || "Party not verified"} · ${profile.constituency || "Constituency not verified"}`;
+                    const tag = document.createElement("span");
+                    tag.className = "candidate-profile-tag";
+                    tag.textContent = `${profile.recordType} ${profile.electionYear}`;
+                    label.append(tag);
+                    option.append(checkbox, label);
+                    picker.append(option);
+                });
+
+                if (!profiles.length) {
+                    const empty = document.createElement("p");
+                    empty.className = "candidate-empty";
+                    empty.textContent = previousElection
+                        ? `Goa's ${previousElection.year} winner profiles are being researched and verified.`
+                        : "No verified candidate profiles have been added for this state yet.";
+                    picker.append(empty);
+                } else if (!filtered.length) {
+                    const empty = document.createElement("p");
+                    empty.className = "candidate-empty";
+                    empty.textContent = "No profiles match this search.";
+                    picker.append(empty);
+                }
+                renderComparison();
+            }
+
+            search.addEventListener("input", renderProfileOptions);
+            tools.append(picker, selectionStatus, comparison);
+
+            if (Array.isArray(previousElection?.sources) && previousElection.sources.length) {
+                const sources = document.createElement("div");
+                sources.className = "candidate-sources";
+                previousElection.sources.forEach((source) => {
+                    const link = createSourceLink(source);
+                    if (link) sources.append(link);
+                });
+                tools.append(sources);
+            }
+
+            renderProfileOptions();
+            return tools;
+        }
+
         function createManifestoCard(manifesto) {
             const card = document.createElement("article");
             card.className = "candidate-card";
@@ -1343,9 +1700,10 @@
             } else {
                 const empty = document.createElement("p");
                 empty.className = "candidate-empty";
-                empty.textContent = "No verified candidate records have been added for this election yet.";
+                empty.textContent = `No verified candidates have been declared for the ${election.state} election yet.`;
                 section.append(empty);
             }
+            section.append(createCandidateProfileTools(electionData, election.state));
 
             const manifestoHeading = document.createElement("h4");
             manifestoHeading.className = "announcement-heading";
@@ -1532,7 +1890,7 @@
                     throw new Error(`Candidate data could not be loaded (${response.status}).`);
                 }
                 const data = await response.json();
-                if (data.schemaVersion !== 1 || !data.states || typeof data.states !== "object") {
+                if (data.schemaVersion !== 2 || !data.states || typeof data.states !== "object") {
                     throw new Error("Candidate data has an invalid format.");
                 }
                 candidateData = data;

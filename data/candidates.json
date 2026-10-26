@@ -1,9 +1,23 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "states": {
     "Goa": {
       "candidates": [],
-      "manifestos": []
+      "manifestos": [],
+      "previousElection": {
+        "year": 2022,
+        "winners": [],
+        "sources": [
+          {
+            "label": "ECI candidate affidavit portal",
+            "url": "https://affidavit.eci.gov.in/"
+          },
+          {
+            "label": "ADR/MyNeta Goa 2022 winners and affidavit summaries (secondary source)",
+            "url": "https://www.myneta.info/Goa2022/index.php?action=show_winners&sort=default"
+          }
+        ]
+      }
     },
     "Manipur": {
       "candidates": [],

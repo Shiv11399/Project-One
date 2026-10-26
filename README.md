@@ -70,11 +70,11 @@ These windows are estimates, not official polling dates. Update them only with r
 
 ### Candidates and manifestos: `data/candidates.json`
 
-This is manually curated reference data; the ECI announcement feed does not automatically populate candidate names or party manifestos. The top-level `states` keys must match the state names used by the election cards. Candidate source links should be HTTPS and identify whether the record comes from ECI or a clearly labeled official fallback. Manifesto promises are short paraphrases linked to the party publication.
+This is manually curated reference data; the ECI announcement feed does not automatically populate candidate names or party manifestos. The top-level `states` keys must match the state names used by the election cards. Candidate source links should be HTTPS and identify whether the record comes from ECI or a clearly labeled official fallback. Manifesto promises are short paraphrases linked to the party publication. Candidate data now uses schema version 2.
 
 ```json
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "states": {
     "Goa": {
       "candidates": [
@@ -88,7 +88,72 @@ This is manually curated reference data; the ECI announcement feed does not auto
               "label": "Official ECI candidate record",
               "url": "https://example.gov.in/candidate"
             }
-          ]
+          ],
+          "affidavit": {
+            "label": "Original ECI affidavit",
+            "url": "https://affidavit.eci.gov.in/"
+          },
+          "profile": {
+            "previousPositions": [
+              {
+                "title": "Member of Legislative Assembly",
+                "constituency": "Constituency name",
+                "fromYear": 2017,
+                "toYear": 2022
+              }
+            ],
+            "education": {
+              "value": "Candidate-declared education",
+              "source": {
+                "label": "Candidate affidavit",
+                "url": "https://affidavit.eci.gov.in/"
+              }
+            },
+            "assets": {
+              "value": "INR amount as declared in affidavit",
+              "source": {
+                "label": "Candidate affidavit",
+                "url": "https://affidavit.eci.gov.in/"
+              }
+            },
+            "liabilities": {
+              "value": "INR amount as declared in affidavit",
+              "source": {
+                "label": "Candidate affidavit",
+                "url": "https://affidavit.eci.gov.in/"
+              }
+            },
+            "criminalCases": {
+              "declaredCount": 1,
+              "entries": [
+                {
+                  "description": "Description from the affidavit",
+                  "status": "pending",
+                  "source": {
+                    "label": "Candidate affidavit",
+                    "url": "https://affidavit.eci.gov.in/"
+                  }
+                }
+              ],
+              "source": {
+                "label": "Candidate affidavit",
+                "url": "https://affidavit.eci.gov.in/"
+              }
+            },
+            "electionResults": [
+              {
+                "year": 2022,
+                "constituency": "Constituency name",
+                "votes": 12345,
+                "voteShare": 52.3,
+                "result": "Won",
+                "source": {
+                  "label": "Official ECI result",
+                  "url": "https://results.eci.gov.in/"
+                }
+              }
+            ]
+          }
         }
       ],
       "manifestos": [
@@ -101,13 +166,29 @@ This is manually curated reference data; the ECI announcement feed does not auto
             "url": "https://example.org/manifesto"
           }
         }
-      ]
+      ],
+      "previousElection": {
+        "year": 2022,
+        "winners": [],
+        "sources": [
+          {
+            "label": "ECI candidate affidavit portal",
+            "url": "https://affidavit.eci.gov.in/"
+          },
+          {
+            "label": "ADR/MyNeta Goa 2022 archive (secondary source)",
+            "url": "https://www.myneta.info/Goa2022/index.php?action=show_winners&sort=default"
+          }
+        ]
+      }
     }
   }
 }
 ```
 
-`status`, manifesto `title`, and candidate `sources` are optional presentation fields; manifesto `promises` should be a short array. Keep the `candidates` and `manifestos` arrays even when there is no verified data yet. Empty arrays are displayed as unavailable rather than being treated as proof that no announcements exist.
+`candidates` is reserved for declared candidates in the upcoming election; `previousElection.winners` is a separate archive and must not be presented as the upcoming candidate list. For Goa, this archive is for the 2022 winners. Each previous-election winner uses the same identity fields (`name`, `party`, and `constituency`) and can include a `profile` with `previousPositions`, candidate-declared `education`, `assets`, `liabilities`, `criminalCases`, and `electionResults`. Keep disclosures tied to source links. Criminal-case `status` is `pending`, `convicted`, `acquitted`, `disposed`, or `unknown`; a disclosed case must not be described as a conviction unless the source records one. Missing values are omitted and shown as not yet verified, never inferred as zero. `affidavit`, `sources`, and each disclosure's `source` use `{ "label", "url" }` and must link to HTTPS pages.
+
+The page provides text search across candidate name, party, and constituency and a side-by-side comparison for up to three profiles. Goa's 2022 winner profiles are still being researched and verified; the source links are provided, but no profile records are claimed yet. Keep the `candidates` and `manifestos` arrays even when there is no verified data. Empty upcoming-candidate arrays do not mean no one will contest.
 
 ### Current Assembly and incumbents: `data/incumbents.json`
 
