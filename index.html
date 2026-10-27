@@ -1084,6 +1084,77 @@
             margin-top: 6px;
         }
 
+        .asset-declared-amount {
+            margin: 0;
+            color: var(--text);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .asset-fortuner-equivalent {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin: 7px 0 0;
+            color: var(--saffron);
+            font-weight: 750;
+        }
+
+        .asset-fortuner-icon {
+            width: 21px;
+            height: 21px;
+            flex: 0 0 auto;
+        }
+
+        .asset-equivalent-note {
+            display: block;
+            margin: 5px 0 0;
+            color: var(--muted);
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 1.45;
+        }
+
+        .asset-benchmark-footnote {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 4px 8px;
+            margin: 10px 0 0;
+            color: var(--muted);
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+        .criminal-case-count {
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .criminal-case-list {
+            display: grid;
+            gap: 9px;
+            margin: 9px 0 0;
+            padding-left: 20px;
+        }
+
+        .criminal-case-list li {
+            padding-left: 2px;
+        }
+
+        .criminal-case-status {
+            display: block;
+            margin-bottom: 3px;
+            color: #f0c27b;
+            font-weight: 700;
+        }
+
+        .criminal-case-description {
+            color: #c0cbd8;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
         @media (max-width: 640px) {
             .candidate-profile-tools.is-open {
                 right: 0;
@@ -1807,6 +1878,68 @@
                 return record.value;
             }
 
+            const fortunerPriceBenchmark = {
+                amountInr: 3_476_000,
+                source: {
+                    label: "CarWale Fortuner base price (Oct 2026)",
+                    url: "https://www.carwale.com/toyota-cars/fortuner/"
+                }
+            };
+
+            function appendDeclaredAssets(cell, profile) {
+                const record = profile.profile?.assets;
+                if (!record || typeof record.value !== "string" || !record.value.trim()) {
+                    cell.textContent = "Not recorded";
+                    return;
+                }
+
+                const amount = document.createElement("p");
+                amount.className = "asset-declared-amount";
+                amount.textContent = record.value;
+                cell.append(amount);
+
+                const parsedAmount = record.value.match(/^\s*INR\s+([\d,]+(?:\.\d+)?)\s*$/i);
+                const amountInr = parsedAmount ? Number(parsedAmount[1].replace(/,/g, "")) : Number.NaN;
+                if (!Number.isFinite(amountInr) || amountInr < 0) {
+                    const unavailable = document.createElement("p");
+                    unavailable.className = "asset-equivalent-note";
+                    unavailable.textContent = "Fortuner comparison unavailable: the declared amount format could not be interpreted.";
+                    cell.append(unavailable);
+                    return;
+                }
+
+                const equivalent = document.createElement("p");
+                equivalent.className = "asset-fortuner-equivalent";
+                const carIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                carIcon.classList.add("asset-fortuner-icon");
+                carIcon.setAttribute("viewBox", "0 0 24 24");
+                carIcon.setAttribute("fill", "none");
+                carIcon.setAttribute("stroke", "currentColor");
+                carIcon.setAttribute("stroke-width", "1.7");
+                carIcon.setAttribute("stroke-linecap", "round");
+                carIcon.setAttribute("stroke-linejoin", "round");
+                carIcon.setAttribute("aria-hidden", "true");
+                const body = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                body.setAttribute("d", "M3 15v-2.2l2-1.2 1.8-4.1A2.5 2.5 0 0 1 9.1 6h6.8a2.5 2.5 0 0 1 2.3 1.5l1.5 3.1 1.3.8V15H3Z");
+                const windows = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                windows.setAttribute("d", "m6.3 11.2 1.3-3a1.6 1.6 0 0 1 1.5-1h6.6a1.6 1.6 0 0 1 1.5 1l1.3 3H6.3Z");
+                const wheels = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                wheels.setAttribute("d", "M6.5 15v1m11-1v1");
+                const wheelCaps = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                wheelCaps.setAttribute("cx", "7");
+                wheelCaps.setAttribute("cy", "16");
+                wheelCaps.setAttribute("r", "1.6");
+                const secondWheelCap = wheelCaps.cloneNode();
+                secondWheelCap.setAttribute("cx", "17");
+                carIcon.append(body, windows, wheels, wheelCaps, secondWheelCap);
+                const equivalentText = document.createElement("span");
+                equivalentText.textContent = `≈ ${(
+                    amountInr / fortunerPriceBenchmark.amountInr
+                ).toLocaleString("en-IN", { minimumFractionDigits: 1, maximumFractionDigits: 1 })} Fortuner base-price equivalents*`;
+                equivalent.append(carIcon, equivalentText);
+                cell.append(equivalent);
+            }
+
             const rowDefinitions = [
                 ["Current Assembly seat", "currentSeat", (profile) => {
                     const seat = profile.currentSeat;
@@ -1831,20 +1964,7 @@
                     const cases = profile.profile?.criminalCases;
                     if (!cases || !Number.isInteger(cases.declaredCount) || cases.declaredCount < 0) return "Not recorded";
                     if (cases.declaredCount === 0) return "Affidavit summary reports no declared cases";
-                    const caseEntries = Array.isArray(cases.entries) ? cases.entries : [];
-                    const details = caseEntries.map((entry) => {
-                        const label = entry.status === "convicted"
-                            ? "Conviction reported in affidavit"
-                            : entry.status === "acquitted"
-                                ? "Acquittal reported in affidavit"
-                                : entry.status === "disposed"
-                                    ? "Disposed as reported; outcome requires source context"
-                                    : entry.status === "pending"
-                                        ? "Pending allegation (reported in affidavit)"
-                                        : "Status not verified";
-                        return `${entry.description || "Case details not supplied"} (${label})`;
-                    });
-                    return `${cases.declaredCount} reported in affidavit summary${details.length ? ` · ${details.join("; ")}` : ""}`;
+                    return `${cases.declaredCount} reported in affidavit summary`;
                 }],
                 ["Election results", "electionResults", (profile) => {
                     const previousResults = Array.isArray(profile.profile?.electionResults)
@@ -1869,6 +1989,53 @@
                     ].filter(Boolean).join(" · ")).join("; ");
                 }]
             ];
+
+            function appendCriminalCases(cell, profile) {
+                const cases = profile.profile?.criminalCases;
+                if (!cases || !Number.isInteger(cases.declaredCount) || cases.declaredCount < 0) {
+                    cell.textContent = "Not recorded";
+                    return;
+                }
+
+                const count = document.createElement("p");
+                count.className = "criminal-case-count";
+                count.textContent = cases.declaredCount === 0
+                    ? "Affidavit summary reports no declared cases"
+                    : `${cases.declaredCount} reported in affidavit summary`;
+                cell.append(count);
+                if (cases.declaredCount === 0) return;
+
+                const entries = Array.isArray(cases.entries) ? cases.entries : [];
+                if (!entries.length) {
+                    const missingDetails = document.createElement("p");
+                    missingDetails.className = "verification-note";
+                    missingDetails.textContent = "Individual case details were not available in the source.";
+                    cell.append(missingDetails);
+                    return;
+                }
+
+                const statusLabels = {
+                    pending: "Pending allegation · as reported in affidavit",
+                    convicted: "Conviction reported in affidavit",
+                    acquitted: "Acquittal reported in affidavit",
+                    disposed: "Disposed · outcome needs source context",
+                    unknown: "Legal status not verified"
+                };
+                const list = document.createElement("ul");
+                list.className = "criminal-case-list";
+                entries.forEach((entry) => {
+                    const item = document.createElement("li");
+                    const status = document.createElement("span");
+                    status.className = "criminal-case-status";
+                    status.textContent = statusLabels[entry.status] || statusLabels.unknown;
+                    const description = document.createElement("span");
+                    description.className = "criminal-case-description";
+                    description.textContent = entry.description || "Case details not supplied.";
+                    item.append(status, description);
+                    list.append(item);
+                });
+                cell.append(list);
+            }
 
             function sourceKey(source) {
                 return `${source.label}|${source.url}`;
@@ -2026,7 +2193,13 @@
                     row.append(rowHeading);
                     columns.forEach(({ profile, columnStatus, headerSourceKeys }) => {
                         const cell = document.createElement("td");
-                        cell.textContent = getValue(profile);
+                        if (label === "Criminal cases disclosed") {
+                            appendCriminalCases(cell, profile);
+                        } else if (label === "Declared assets") {
+                            appendDeclaredAssets(cell, profile);
+                        } else {
+                            cell.textContent = getValue(profile);
+                        }
                         appendVerification(cell, profile, verificationField, columnStatus);
                         const cellSources = uniqueSources(comparisonSources(profile, label, verificationField))
                             .filter((source) => !headerSourceKeys.has(sourceKey(source)));
@@ -2045,6 +2218,14 @@
                 });
                 table.append(body);
                 comparison.append(table);
+                const benchmarkFootnote = document.createElement("p");
+                benchmarkFootnote.className = "asset-benchmark-footnote";
+                benchmarkFootnote.append(document.createTextNode(
+                    "* Fortuner reference: ₹34.76 lakh base-model ex-showroom price (Oct 2026). Affidavit values are not inflation-adjusted; illustrative only, not cash or buying power. "
+                ));
+                const benchmarkLink = createSourceLink(fortunerPriceBenchmark.source);
+                if (benchmarkLink) benchmarkFootnote.append(benchmarkLink);
+                comparison.append(benchmarkFootnote);
             }
 
             function renderProfileOptions() {

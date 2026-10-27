@@ -250,6 +250,8 @@ The Goa 2022 archive currently contains 34 winner records imported from the link
 
 The page provides text search across candidate name, party, and constituency and a side-by-side comparison for up to three profiles. Clicking a sitting MLA's constituency card in the Current Assembly roster selects that person and opens the comparison drawer (right side on desktop, bottom sheet on mobile); vacant seats are not selectable. Current Assembly snapshot profiles are explicitly labeled as such and are not treated as declared candidates or historical election results.
 
+For declared assets in the comparison, the site keeps the affidavit amount visible and adds an illustrative Fortuner price equivalent when the value is parseable as `INR <amount>`. An asterisk links the comparison to a footnote below the table with the ₹34.76 lakh base-model ex-showroom benchmark listed in October 2026 and its source. This is a scale analogy only: affidavit values are not inflation-adjusted, declared assets may include non-cash holdings, and the equivalent is not liquid wealth or purchasing power. Review the benchmark and source when prices change.
+
 ### Current Assembly and incumbents: `data/incumbents.json`
 
 This is a dated, manually maintained snapshot, not a live feed. Each state has an `asOf` date, government and Chief Minister details, party seat totals, source links, and a constituency-by-constituency `members` list. The snapshot currently covers Goa, Manipur, Punjab, Uttarakhand, Uttar Pradesh, and Gujarat.
