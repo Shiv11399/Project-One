@@ -4080,16 +4080,19 @@
       "members": [
         {
           "name": "Jit Arolkar",
+          "personId": "goa-jit-vinayak-arolkar",
           "constituency": "Mandrem",
           "party": "Maharashtrawadi Gomantak Party"
         },
         {
           "name": "Pravin Arlekar",
+          "personId": "goa-pravin-prabhakar-arlekar",
           "constituency": "Pernem",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Chandrakant Shetye",
+          "personId": "goa-dr-chandrakant-shetye",
           "constituency": "Bicholim",
           "party": "Independent"
         },
@@ -4100,11 +4103,13 @@
         },
         {
           "name": "Joshua D'Souza",
+          "personId": "goa-joshua-peter-de-souza",
           "constituency": "Mapusa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Delilah Lobo",
+          "personId": "goa-delilah-michael-lobo",
           "constituency": "Siolim",
           "party": "Bharatiya Janata Party"
         },
@@ -4115,21 +4120,25 @@
         },
         {
           "name": "Michael Lobo",
+          "personId": "goa-michael-vincent-lobo",
           "constituency": "Calangute",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rohan Khaunte",
+          "personId": "goa-rohan-khaunte",
           "constituency": "Porvorim",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Carlos Alvares Ferreira",
+          "personId": "goa-carlos-alvares-ferreira",
           "constituency": "Aldona",
           "party": "Indian National Congress"
         },
         {
           "name": "Atanasio Monserrate",
+          "personId": "goa-atanasio-monserrate",
           "constituency": "Panaji",
           "party": "Bharatiya Janata Party"
         },
@@ -4141,41 +4150,49 @@
         },
         {
           "name": "Rodolfo Louis Fernandes",
+          "personId": "goa-rodolfo-louis-fernandes",
           "constituency": "Santa Cruz",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Viresh Borkar",
+          "personId": "goa-viresh-mukesh-borkar",
           "constituency": "St. Andre",
           "party": "Revolutionary Goans Party"
         },
         {
           "name": "Rajesh Faldessai",
+          "personId": "goa-rajesh-faldessai",
           "constituency": "Cumbarjua",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Premendra Shet",
+          "personId": "goa-premendra-vishnu-shet",
           "constituency": "Maem",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pramod Sawant",
+          "personId": "goa-dr-pramod-sawant",
           "constituency": "Sanquelim",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Deviya Rane",
+          "personId": "goa-deviya-vishwajit-rane",
           "constituency": "Poriem",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vishwajit Pratapsingh Rane",
+          "personId": "goa-vishwajit-pratapsingh-rane",
           "constituency": "Valpoi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Govind Gaude",
+          "personId": "goa-govind-shepu-gaude",
           "constituency": "Priol",
           "party": "Bharatiya Janata Party"
         },
@@ -4187,16 +4204,19 @@
         },
         {
           "name": "Subhash Shirodkar",
+          "personId": "goa-subhash-shirodkar",
           "constituency": "Siroda",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sudin Dhavalikar",
+          "personId": "goa-sudin-alias-ramkrishna-dhavalikar",
           "constituency": "Marcaim",
           "party": "Maharashtrawadi Gomantak Party"
         },
         {
           "name": "Sankalp Amonkar",
+          "personId": "goa-sankalp-amonkar",
           "constituency": "Mormugao",
           "party": "Bharatiya Janata Party"
         },
@@ -4207,16 +4227,19 @@
         },
         {
           "name": "Mauvin Godinho",
+          "personId": "goa-mauvin-heliodoro-godinho",
           "constituency": "Dabolim",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Antonio Vas",
+          "personId": "goa-antonio-vas",
           "constituency": "Cortalim",
           "party": "Independent"
         },
         {
           "name": "Aleixo Sequeira",
+          "personId": "goa-aleixo-sequeira",
           "constituency": "Nuvem",
           "party": "Bharatiya Janata Party"
         },
@@ -4227,16 +4250,19 @@
         },
         {
           "name": "Vijai Sardesai",
+          "personId": "goa-vijai-sardesai",
           "constituency": "Fatorda",
           "party": "Goa Forward Party"
         },
         {
           "name": "Digambar Kamat",
+          "personId": "goa-digambar-kamat",
           "constituency": "Margao",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Venzy Viegas",
+          "personId": "goa-venzy-viegas",
           "constituency": "Benaulim",
           "party": "Aam Aadmi Party"
         },
@@ -4247,16 +4273,19 @@
         },
         {
           "name": "Yuri Alemao",
+          "personId": "goa-alemao-yuri",
           "constituency": "Cuncolim",
           "party": "Indian National Congress"
         },
         {
           "name": "Cruz Silva",
+          "personId": "goa-cruz-silva",
           "constituency": "Velim",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Altone D'Costa",
+          "personId": "goa-altone-d-costa",
           "constituency": "Quepem",
           "party": "Indian National Congress"
         },
@@ -4267,16 +4296,19 @@
         },
         {
           "name": "Ganesh Gaonkar",
+          "personId": "goa-ganesh-gaonkar",
           "constituency": "Sanvordem",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Subhash Phal Desai",
+          "personId": "goa-subhash-uttam-phal-dessai",
           "constituency": "Sanguem",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramesh Tawadkar",
+          "personId": "goa-ramesh-tawadkar",
           "constituency": "Canacona",
           "party": "Bharatiya Janata Party"
         }

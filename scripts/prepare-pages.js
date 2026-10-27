@@ -238,6 +238,7 @@ async function main() {
         }
 
         const constituencies = new Set();
+        const linkedPersonIds = new Set();
         for (const member of snapshot.members) {
             if (
                 typeof member.name !== "string" ||
@@ -254,6 +255,19 @@ async function main() {
                 throw new Error(`The saved constituency list for ${state} contains a duplicate seat; refusing to deploy it.`);
             }
             constituencies.add(constituency);
+
+            if (member.personId !== undefined) {
+                if (typeof member.personId !== "string" || !peopleById.has(member.personId)) {
+                    throw new Error(`The current Assembly member ${member.name} (${state}) links to an unknown candidate identity; refusing to deploy it.`);
+                }
+                if (member.name === "Vacant") {
+                    throw new Error(`The vacant seat ${member.constituency} (${state}) must not link to a candidate identity; refusing to deploy it.`);
+                }
+                if (linkedPersonIds.has(member.personId)) {
+                    throw new Error(`The candidate identity ${member.personId} is linked to more than one ${state} seat; refusing to deploy it.`);
+                }
+                linkedPersonIds.add(member.personId);
+            }
         }
 
         for (const source of snapshot.sources) {
