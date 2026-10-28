@@ -22,291 +22,349 @@
       "members": [
         {
           "name": "Jethabhai Ghelabhai Ahir",
+          "personId": "gujarat-ahir-bharvad-jethabhai",
           "constituency": "Shehra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bhupendrabhai Rajnikant Patel",
+          "personId": "gujarat-bhupendrabhai-rajnikant-patel",
           "constituency": "Ghatlodia",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Aniket Girishbhai Thaker",
+          "personId": "gujarat-aniket-girishbhai-thaker",
           "constituency": "Palanpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bachubhai Maganbhai Khabad",
+          "personId": "gujarat-khabad-bachubhai-maganbhai",
           "constituency": "Devgadhbaria",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Balvantsinh Chandansinh Rajput",
+          "personId": "gujarat-balvantsinh-chandansinh-rajput",
           "constituency": "Sidhpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bhanuben Manoharbhai Babariya",
+          "personId": "gujarat-bhanuben-manoharbhai-babariya",
           "constituency": "Rajkot Rural",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bhikhusinhji Chatursinhji Parmar",
+          "personId": "gujarat-bhikhusinhji-chatursinhji-parmar",
           "constituency": "Modasa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Harsh Ramesh Sanghvi",
+          "personId": "gujarat-harsh-ramesh-sanghvi",
           "constituency": "Majura",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jagdish Vishwakarma",
+          "personId": "gujarat-jagdish-vishwakarma",
           "constituency": "Nikol",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kanubhai Mohanlal Desai",
+          "personId": "gujarat-kanubhai-mohanlal-desai",
           "constituency": "Pardi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kuberbhai Mansukhbhai Dindor",
+          "personId": "gujarat-dr-kuberbhai-mansukhbhai-dindor",
           "constituency": "Santrampur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kunvarjibhai Mohanbhai Bavaliya",
+          "personId": "gujarat-kunvarjibhai-mohanbhai-bavaliya",
           "constituency": "Jasdan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kunvarjibhai Narsinhbhai Halpati",
+          "personId": "gujarat-kunvarjibhai-narsinhbhai-halpati",
           "constituency": "Mandvi (Surat)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mukeshbhai Zinabhai Patel",
+          "personId": "gujarat-mukeshbhai-zinabhai-patel",
           "constituency": "Olpad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mulubhai Hardasbhai Bera Ayar",
+          "personId": "gujarat-ayar-mulubhai-hardasbhai-bera",
           "constituency": "Khambhalia",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Parshottambhai O. Solanki",
+          "personId": "gujarat-parshottam-solanki",
           "constituency": "Bhavnagar Rural",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Praful Pansheriya",
+          "personId": "gujarat-praful-pansheriya",
           "constituency": "Kamrej",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Raghavjibhai Hansrajbhai Patel",
+          "personId": "gujarat-patel-raghavjibhai-hansrajbhai",
           "constituency": "Jamnagar Rural",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rushikesh Ganeshbhai Patel",
+          "personId": "gujarat-rushikesh-ganeshbhai-patel",
           "constituency": "Visnagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shankarbhai Lagdhirbhai Chaudhary",
+          "personId": "gujarat-shankarbhai-lagdhirbhai-chaudhary",
           "constituency": "Tharad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kaushik Kantibhai Vekariya",
+          "personId": "gujarat-kaushik-kantibhai-vekariya",
           "constituency": "Amreli",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Balkrushna Khanderao Shukla",
+          "personId": "gujarat-balkrushna-khanderao-shukla-balu-shukla",
           "constituency": "Raopura",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramanbhai Bhikhabhai Solanki",
+          "personId": "gujarat-solanki-ramanbhai-bhikhabhai",
           "constituency": "Borsad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jagdishbhai Prabhubhai Makwana",
+          "personId": "gujarat-jagdishbhai-prabhubhai-makwana",
           "constituency": "Wadhwan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vijaybhai Rameshbhai Patel",
+          "personId": "gujarat-vijaybhai-rameshbhai-patel",
           "constituency": "Dangs",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ganpatsinh Vestabhai Vasava",
+          "personId": "gujarat-ganpatsinh-vestabhai-vasava",
           "constituency": "Mangrol (Surat)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sanjay Sukhabhai Koradia",
+          "personId": "gujarat-sanjay-sukhabhai-koradia",
           "constituency": "Junagadh",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Amit Thaker",
+          "personId": "gujarat-amit-thaker",
           "constituency": "Vejalpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kiritkumar Chimanlal Patel",
+          "personId": "gujarat-kiritkumar-chimanlal-patel",
           "constituency": "Patan",
           "party": "Indian National Congress"
         },
         {
           "name": "Kalubhai Chanabhai Rathod",
+          "personId": "gujarat-kalubhai-rathod",
           "constituency": "Una",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Gautambhai Gopabhai Chauhan",
+          "personId": "gujarat-gautambhai-chauhan",
           "constituency": "Talaja",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pradhyumansinh Mahipatsinh Jadeja",
+          "personId": "gujarat-jadeja-pradhyumansinh-mahipatsinh",
           "constituency": "Abdasa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bhagabhai Dhanabhai Barad",
+          "personId": "gujarat-bhagabhai-dhanabhai-barad",
           "constituency": "Talala",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Yogendrasinh Parmar",
+          "personId": "gujarat-yogendrasinh-parmar-bakabhai",
           "constituency": "Thasra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Amit Shah",
+          "personId": "gujarat-amit-shah",
           "constituency": "Ellisbridge",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shailesh Manubhai Parmar",
+          "personId": "gujarat-shailesh-manubhai-parmar",
           "constituency": "Danilimda",
           "party": "Indian National Congress"
         },
         {
           "name": "Jayrambhai Chemabhai Gamit",
+          "personId": "gujarat-dr-jayrambhai-chemabhai-gamit",
           "constituency": "Nizar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mahesh Kaswala",
+          "personId": "gujarat-kaswala-mahesh",
           "constituency": "Savarkundla",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mansinh Kohyabhai Chauhan",
+          "personId": "gujarat-mansinh-kohyabhai-chauhan",
           "constituency": "Balasinor",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Babusinh Sarabhai Jadav",
+          "personId": "gujarat-babusinh-sarabhai-jadav",
           "constituency": "Vatva",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Narayandas Rokadia Keyur",
+          "personId": "gujarat-keyur-narayandas-rokadia",
           "constituency": "Sayajigunj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Fatesinh Vakhatsinh Chauhan",
+          "personId": "gujarat-fatesinh-vakhatsinh-chauhan",
           "constituency": "Kalol (Panchmahals)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Lavingji Muljiji Solanki",
+          "personId": "gujarat-lavingji-muljiji-solanki",
           "constituency": "Radhanpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kiritsinh Sardarsang Dabhi",
+          "personId": "gujarat-kiritsinh-dabhi",
           "constituency": "Dholka",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pravinbhai Manjibhai Ghoghari",
+          "personId": "gujarat-pravinbhai-manjibhai-ghoghari",
           "constituency": "Karanj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shivabhai Jerambhai Gohil",
+          "personId": "gujarat-gohil-shivabhai-jerambhai",
           "constituency": "Mahuva (Bhavnagar)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Payal Manojkumar Kukrani",
+          "personId": "gujarat-kukrani-payal-manojkumar",
           "constituency": "Naroda",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pradyuman Ganubhai Vaja",
+          "personId": "gujarat-pradyuman-ganubhai-vaja",
           "constituency": "Kodinar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vipulkumar Vinubhai Patel",
+          "personId": "gujarat-patel-vipulkumar-vinubhai",
           "constituency": "Sojitra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jayantibhai Savjibhai Rathwa",
+          "personId": "gujarat-rathwa-jayantibhai-savjibhai",
           "constituency": "Jetpur (Chhota Udepur)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mahendrabhai Padalia",
+          "personId": "gujarat-dr-mahendrabhai-padalia",
           "constituency": "Dhoraji",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Hasmukh Patel",
+          "personId": "gujarat-dr-hasmukh-patel",
           "constituency": "Amraiwadi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shaileshbhai Kanaiyalal Mehta",
+          "personId": "gujarat-shaileshbhai-kanaiyalal-mehta-shailesh-sotta",
           "constituency": "Dabhoi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramanlal Nanubhai Patkar",
+          "personId": "gujarat-patkar-ramanlal-nanubhai",
           "constituency": "Umbergaon",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Chaitanyasinh Pratapsinh Zala",
+          "personId": "gujarat-chaitanyasinh-pratapsinh-zala",
           "constituency": "Padra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Divyeshbhai Ranchhodbhai Akbari",
+          "personId": "gujarat-akbari-divyeshbhai-ranchhodbhai",
           "constituency": "Jamnagar South",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mavjibhai Maganbhai Desai",
+          "personId": "gujarat-mavjibhai-maganbhai-desai",
           "constituency": "Dhanera",
           "party": "Independent"
         },
         {
           "name": "Vinendrasinh Dilipsinh Zala",
+          "personId": "gujarat-vinendrasinh-dilipsinh-zala",
           "constituency": "Himatnagar",
           "party": "Bharatiya Janata Party"
         },
@@ -317,466 +375,559 @@
         },
         {
           "name": "Imran Khedawala",
+          "personId": "gujarat-imran-khedawala",
           "constituency": "Jamalpur - Khadia",
           "party": "Indian National Congress"
         },
         {
           "name": "Aniruddha Bhailal Dave",
+          "personId": "gujarat-aniruddha-bhailal-dave",
           "constituency": "Mandvi (Kachchh)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Nimishaben Manharsinh Suthar",
+          "personId": "gujarat-nimisha-suthar",
           "constituency": "Morva Hadaf",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Arvindbhai Jinabhai Ladani",
+          "personId": "gujarat-arvindbhai-jinabhai-ladani",
           "constituency": "Manavadar",
           "party": "Indian National Congress"
         },
         {
           "name": "Hardik Bharatbhai Patel",
+          "personId": "gujarat-hardik-bharatbhai-patel",
           "constituency": "Viramgam",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dineshbhai Ataji Thakor",
+          "personId": "gujarat-thakor-dineshbhai-ataji",
           "constituency": "Chanasma",
           "party": "Indian National Congress"
         },
         {
           "name": "Shamajibhai Bhimajibhai Chauhan",
+          "personId": "gujarat-shamji-chauhan",
           "constituency": "Chotila",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anantkumar Hasmukhbhai Patel",
+          "personId": "gujarat-anantkumar-hasmukhbhai-patel",
           "constituency": "Bansda",
           "party": "Indian National Congress"
         },
         {
           "name": "Kalpeshbhai Ashabhai Parmar",
+          "personId": "gujarat-kalpeshbhai-ashabhai-parmar",
           "constituency": "Matar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bharatbhai Kikubhai Patel",
+          "personId": "gujarat-bharatbhai-patel",
           "constituency": "Valsad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mohanbhai Dhedabhai Kokani",
+          "personId": "gujarat-mohan-kokani",
           "constituency": "Vyara",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Hemantbhai Hardasbhai Ahir",
+          "personId": "gujarat-ahir-hemantbhai-hardasbhai",
           "constituency": "Jamjodhpur",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Chhanga Trikam Bijal",
+          "personId": "gujarat-chhanga-trikam-bijal",
           "constituency": "Anjar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jitubhai Harjibhai Chaudhari",
+          "personId": "gujarat-jitubhai-harjibhai-chaudhari",
           "constituency": "Kaprada",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vimalbhai Kanabhai Chudasama",
+          "personId": "gujarat-chudasama-vimalbhai-kanabhai",
           "constituency": "Somnath",
           "party": "Indian National Congress"
         },
         {
           "name": "Sanjaysinh Vijaysinh Mahida",
+          "personId": "gujarat-sanjaysinh-vijaysinh-mahida",
           "constituency": "Mahudha",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ritaben Ketankumar Patel",
+          "personId": "gujarat-ritaben-patel",
           "constituency": "Gandhinagar North",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Malti Kishor Maheshwari",
+          "personId": "gujarat-malti-kishor-maheshwari",
           "constituency": "Gandhidham",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sudhirbhai Vaghani",
+          "personId": "gujarat-sudhirbhai-vaghani",
           "constituency": "Gariadhar",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Geetaba Jayrajsinh Jadeja",
+          "personId": "gujarat-geetaba-jayrajsinh-jadeja",
           "constituency": "Gondal",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kamleshbhai Rameshbhai Patel",
+          "personId": "gujarat-kamleshbhai-rameshbhai-patel",
           "constituency": "Petlad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sardarbhai Shamalbhai Chaudhary",
+          "personId": "gujarat-sardarbhai",
           "constituency": "Kheralu",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Darshita Shah",
+          "personId": "gujarat-dr-darshita-shah",
           "constituency": "Rajkot West",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Amrutiya Kantilal Shivlal",
+          "personId": "gujarat-amrutiya-kantilal-shivlal",
           "constituency": "Morbi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "C. K. Raulji",
+          "personId": "gujarat-c-k-raulji",
           "constituency": "Godhra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jayantibhai Somabhai Patel",
+          "personId": "gujarat-jayantibhai-somabhai-patel-j-s-patel",
           "constituency": "Mansa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jignesh Mevani",
+          "personId": "gujarat-jignesh-mevani",
           "constituency": "Vadgam",
           "party": "Indian National Congress"
         },
         {
           "name": "Arvind Chhotubhai Patel",
+          "personId": "gujarat-arvind-chhotubhai-patel",
           "constituency": "Dharampur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Alpesh Khodaji Thakor",
+          "personId": "gujarat-alpesh-khodaji-thakor",
           "constituency": "Gandhinagar South",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pravinkumar Gordhanji Mali",
+          "personId": "gujarat-pravinkumar-gordhanji-mali",
           "constituency": "Deesa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jitendra Kantilal Somani",
+          "personId": "gujarat-jitendra-kantilal-somani",
           "constituency": "Wankaner",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sangitaben Rajendra Patil",
+          "personId": "gujarat-sangitaben-rajendra-patil",
           "constituency": "Limbayat",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "C. J. Chavda",
+          "personId": "gujarat-dr-c-j-chavda",
           "constituency": "Vijapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kanaiyalal Bachubhai Kishori",
+          "personId": "gujarat-kanaiyalal-bachubhai-kishori",
           "constituency": "Dahod",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Meghjibhai Amarabhai Chavda",
+          "personId": "gujarat-chavda-meghjibhai-amarabhai",
           "constituency": "Kalavad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Abhesinh Motibhai Tadvi",
+          "personId": "gujarat-abhesinh-tadvi",
           "constituency": "Sankheda",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Babubhai Jamnadas Patel",
+          "personId": "gujarat-babubhai-jamnadas",
           "constituency": "Daskroi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Chiragkumar Arvindbhai Patel",
+          "personId": "gujarat-chirag-patel",
           "constituency": "Khambhat",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rakesh Gunvantbhai Desai",
+          "personId": "gujarat-desai-rakesh-gunvantbhai",
           "constituency": "Navsari",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dhavalsinh Narendrasinh Zala",
+          "personId": "gujarat-dhavalsinh-narendrasinh-zala",
           "constituency": "Bayad",
           "party": "Independent"
         },
         {
           "name": "Bhikhabhai Ravajibhai Baraiya",
+          "personId": "gujarat-bhikhabhai-ravajibhai-baraiya",
           "constituency": "Palitana",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kanubhai Karamshibhai Patel",
+          "personId": "gujarat-kanubhai-karamshibhai-patel",
           "constituency": "Sanand",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Akshaykumar Ishvarbhai Patel",
+          "personId": "gujarat-akshaykumar-ishvarbhai-patel",
           "constituency": "Karjan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Yogesh R. Patel",
+          "personId": "gujarat-yogesh-r-patel-bapji",
           "constituency": "Anand",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Uday Kangad",
+          "personId": "gujarat-uday-kangad",
           "constituency": "Rajkot East",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Gulabsinh Somsinh Chauhan",
+          "personId": "gujarat-gulabsinh-chauhan",
           "constituency": "Lunawada",
           "party": "Indian National Congress"
         },
         {
           "name": "Amul Bhatt",
+          "personId": "gujarat-amul-bhatt",
           "constituency": "Maninagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Laxmanji Punjaji Thakor",
+          "personId": "gujarat-thakor-laxmanji-punjaji-bakaji",
           "constituency": "Kalol (Gandhinagar)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "R. C. Patel",
+          "personId": "gujarat-r-c-patel",
           "constituency": "Jalalpore",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rameshbhai Narandas Mistry",
+          "personId": "gujarat-rameshbhai-narandas-mistry",
           "constituency": "Bharuch",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kantibhai Kalabhai Kharadi",
+          "personId": "gujarat-kantibhai-kalabhai-kharadi",
           "constituency": "Danta",
           "party": "Indian National Congress"
         },
         {
           "name": "Mukeshkumar D. Patel",
+          "personId": "gujarat-patel-mukeshkumar-d",
           "constituency": "Mahesana",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Balrajsinh Kalyansinh Chauhan",
+          "personId": "gujarat-chauhan-balrajsinh-kalyansinh",
           "constituency": "Dahegam",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Chaitanya Makarandbhai Desai",
+          "personId": "gujarat-chaitanya-makarandbhai-desai",
           "constituency": "Akota",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Janakbhai Talaviya",
+          "personId": "gujarat-janakbhai-talaviya",
           "constituency": "Lathi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajendrasinh Mohansinh Rathva",
+          "personId": "gujarat-rajendrasinh-mohansinh-rathva",
           "constituency": "Chhota Udaipur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Keshaji Shivaji Chauhan",
+          "personId": "gujarat-keshaji-shivaji-chauhan",
           "constituency": "Deodar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Maheshbhai Somjibhai Bhuriya",
+          "personId": "gujarat-maheshbhai-somjibhai-bhuriya",
           "constituency": "Jhalod",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Keshubhai Shivdas Patel",
+          "personId": "gujarat-keshubhai-shivdas-patel",
           "constituency": "Bhuj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kanchanben Vinubhai Radadiya",
+          "personId": "gujarat-kanchanben-vinubhai-radadiya",
           "constituency": "Thakkarbapa Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Prakashbhai Parsotambhai Varmora",
+          "personId": "gujarat-prakashbhai-parsotambhai-varmora",
           "constituency": "Dhrangadhra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Chaitarbhai Damjibhai Vasava",
+          "personId": "gujarat-chaitarbhai-damjibhai-vasava",
           "constituency": "Dediapada",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Kalubhai Rupabhai Dabhi",
+          "personId": "gujarat-kalubhai-rupabhai-dabhi",
           "constituency": "Dhandhuka",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sandip Desai",
+          "personId": "gujarat-sandip-desai",
           "constituency": "Choryasi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Devkishordasji Bhaktisvarupdasji Swami",
+          "personId": "gujarat-devkishordasji-bhaktisvarupdasji-swami",
           "constituency": "Jambusar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shambhunath Tundiya Mahant",
+          "personId": "gujarat-mahant-shambhunath-tundiya",
           "constituency": "Gadhada",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dineshsinh Rajendrasinh Kushwaha",
+          "personId": "gujarat-dineshsinh-rajendrasinh-kushwaha",
           "constituency": "Bapunagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Darshna M. Vaghela",
+          "personId": "gujarat-darshna-vaghela",
           "constituency": "Asarwa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Darshna Chandubhai Deshmukh",
+          "personId": "gujarat-dr-darshna-chandubhai-deshmukh-vasava",
           "constituency": "Nandod",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Arunsinh Ajitsinh Rana",
+          "personId": "gujarat-arunsinh-ajitsinh-rana",
           "constituency": "Vagra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jaysukhbhai Vallabhbhai Kakadiya",
+          "personId": "gujarat-kakadiya-jaysukhbhai-vallabhbhai-kakadiya-j-v",
           "constituency": "Dhari",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Tushar Amarsinh Chaudhary",
+          "personId": "gujarat-dr-tushar-amarsinh-chaudhary",
           "constituency": "Khedbrahma",
           "party": "Indian National Congress"
         },
         {
           "name": "Sejalben Rajivkumar Pandya",
+          "personId": "gujarat-sejalben-rajivkumar-pandya",
           "constituency": "Bhavnagar East",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kiritkumar Keshavlal Patel",
+          "personId": "gujarat-patel-kiritkumar-keshavlal-k-k-patel",
           "constituency": "Unjha",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mohanbhai Dhanjibhai Dhodiya",
+          "personId": "gujarat-mohanbhai-dhanjibhai-dhodiya",
           "constituency": "Mahuva (ST)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Amrutji Motiji Thakor",
+          "personId": "gujarat-amrutji-motiji-thakor",
           "constituency": "Kankrej",
           "party": "Indian National Congress"
         },
         {
           "name": "Arjunbhai Devabhai Modhwadia",
+          "personId": "gujarat-arjunbhai-devabhai-modhwadia",
           "constituency": "Porbandar",
           "party": "Indian National Congress"
         },
         {
           "name": "Umeshbhai Naranbhai Makwana",
+          "personId": "gujarat-makwana-umeshbhai-naranbhai",
           "constituency": "Botad",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Rajeshkumar Maganbhai Zala",
+          "personId": "gujarat-zala-rajeshkumar-maganbhai",
           "constituency": "Kapadvanj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Harshadbhai Ranchhodbhai Patel",
+          "personId": "gujarat-patel-harshadbhai-ranchhodbhai",
           "constituency": "Sabarmati",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "P. C. Baranda",
+          "personId": "gujarat-p-c-baranda",
           "constituency": "Bhiloda",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bhagvanjibhai Lakhabhai Kargatiya",
+          "personId": "gujarat-bhagvanjibhai-karagatiya",
           "constituency": "Mangrol (Junagadh)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rivaba Ravindrasinh Jadeja",
+          "personId": "gujarat-rivasinh-hardevsinh-solanki-rivaba-ravindrasinh-jadeja",
           "constituency": "Jamnagar North",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rameshbhai Bhurabhai Katara",
+          "personId": "gujarat-katara-rameshbhai-bhurabhai",
           "constituency": "Fatepura",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sukhaji Somaji Thakor",
+          "personId": "gujarat-dr-thakor-sukhaji-somaji",
           "constituency": "Becharaji",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Hirabhai Odhavjibhai Solanki",
+          "personId": "gujarat-hirabhai-odhavjibhai-solanki",
           "constituency": "Rajula",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rameshbhai Virjibhai Tilala",
+          "personId": "gujarat-rameshbhai-virjibhai-tilala",
           "constituency": "Rajkot South",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Arvind Shantilal Rana",
+          "personId": "gujarat-arvind-rana",
           "constituency": "Surat East",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Manubhai M. Patel",
+          "personId": "gujarat-manu-patel",
           "constituency": "Udhna",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "P. K. Parmar",
+          "personId": "gujarat-p-k-parmar",
           "constituency": "Dasada",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Amit Chavda",
+          "personId": "gujarat-amit-chavda",
           "constituency": "Anklav",
           "party": "Indian National Congress"
         },
         {
           "name": "Jitendrakumar Ramanlal Patel",
+          "personId": "gujarat-jitendrakumar-ramanlal-patel-jitu-bhagat",
           "constituency": "Naranpura",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Durlabhjibhai Harakhjibhai Dethariya",
+          "personId": "gujarat-durlabhjibhai-harakhjibhai-dethariya",
           "constituency": "Tankara",
           "party": "Bharatiya Janata Party"
         },
@@ -787,146 +938,175 @@
         },
         {
           "name": "Thakor Swarupji Sardarji",
+          "personId": "gujarat-thakor-swarupji-sardarji",
           "constituency": "Vav",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajendrakumar (Rajubhai) Daneshwar Chavda",
+          "personId": "gujarat-rajendrakumar-rajubhai-daneshwar-chavda",
           "constituency": "Kadi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ketanbhai Mahendrabhai Inamdar",
+          "personId": "gujarat-inamdar-ketanbhai-mahendrabhai",
           "constituency": "Savli",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kantibhai Himmatbhai Balar",
+          "personId": "gujarat-kantibhai-himmatbhai-balar",
           "constituency": "Surat North",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Riteshkumar Ramanbhai Vasava",
+          "personId": "gujarat-riteshkumar-ramanbhai-vasava",
           "constituency": "Jhagadia",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shaileshbhai Sumanbhai Bhabhor",
+          "personId": "gujarat-bhabhor-shaileshbhai-sumanbhai",
           "constituency": "Limkheda",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Virendrasinh Bahadursinh Jadeja",
+          "personId": "gujarat-virendrasinh-bahadursinh-jadeja",
           "constituency": "Rapar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mahendrabhai Rameshbhai Bhabhor",
+          "personId": "gujarat-mahendrabhai-bhabhor",
           "constituency": "Garbada",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ishwarsinh Thakorbhai Patel",
+          "personId": "gujarat-ishwarsinh-thakorbhai-patel",
           "constituency": "Ankleshwar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pankajbhai Vinubhai Desai",
+          "personId": "gujarat-desai-pankajbhai-vinubhai",
           "constituency": "Nadiad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Manisha Vakil",
+          "personId": "gujarat-manisha-vakil",
           "constituency": "Vadodara City",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Arjunsinh Udesinh Chauhan",
+          "personId": "gujarat-arjunsinh-udesinh-chauhan",
           "constituency": "Mehmedabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Satendrabhai Govindbhai Patel",
+          "personId": "gujarat-satendrabhai-patel",
           "constituency": "Manjalpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ishvarbhai Alias Anilbhai Ramanbhai Parmar",
+          "personId": "gujarat-ishvarbhai-alias-anilbhai-ramanbhai-parmar",
           "constituency": "Bardoli",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kishor Kanani",
+          "personId": "gujarat-kishor-kanani-kumar",
           "constituency": "Varachha Road",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jitendrabhai Savajibhai Vaghani",
+          "personId": "gujarat-jitendrabhai-savajibhai-vaghani",
           "constituency": "Bhavnagar West",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jaydrathsinhji Parmar",
+          "personId": "gujarat-jaydrathsinhji-parmar",
           "constituency": "Halol",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Purnesh Modi",
+          "personId": "gujarat-purnesh-modi",
           "constituency": "Surat West",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramanlal Ishwarlal Vora",
+          "personId": "gujarat-ramanlal-vora",
           "constituency": "Idar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vinodbhai Amarshibhai Moradiya",
+          "personId": "gujarat-vinodbhai-amarshibhai-moradiya",
           "constituency": "Katargam",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kaushikbhai Sukhlal Jain",
+          "personId": "gujarat-kaushikbhai-sukhlal-jain",
           "constituency": "Dariapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Nareshbhai Maganbhai Patel",
+          "personId": "gujarat-nareshbhai-maganbhai-patel",
           "constituency": "Gandevi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kiritsinh Jitubha Rana",
+          "personId": "gujarat-kiritsinh-jitubha-rana",
           "constituency": "Limbdi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Devabhai Punjabhai Malam",
+          "personId": "gujarat-devabhai-punjabhai-malam",
           "constituency": "Keshod",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jayeshbhai Vitthalbhai Radadiya",
+          "personId": "gujarat-jayeshbhai-radadiya",
           "constituency": "Jetpur (Rajkot)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Gajendrasinh Udesinh Parmar",
+          "personId": "gujarat-gajendrasinh-udesinh-parmar",
           "constituency": "Prantij",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dharmendrasinh Ranubha Vaghela",
+          "personId": "gujarat-dharmendrasinh-ranubha-vaghela-bapu",
           "constituency": "Vaghodia",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pabubha Virambha Manek",
+          "personId": "gujarat-pabubha-virambha-manek",
           "constituency": "Dwarka",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kandhalbhai Sarmanbhai Jadeja",
+          "personId": "gujarat-kandhalbhai-sarmanbhai-jadeja",
           "constituency": "Kutiyana",
           "party": "Samajwadi Party"
         }
@@ -976,376 +1156,451 @@
       "members": [
         {
           "name": "Naresh Puri",
+          "personId": "punjab-naresh-puri",
           "constituency": "Sujanpur",
           "party": "Indian National Congress"
         },
         {
           "name": "Lal Chand Kataruchakk",
+          "personId": "punjab-lal-chand",
           "constituency": "Bhoa",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Ashwani Kumar Sharma",
+          "personId": "punjab-ashwani-kumar-sharma",
           "constituency": "Pathankot",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Barindermeet Singh Pahra",
+          "personId": "punjab-barindermeet-singh-pahra",
           "constituency": "Gurdaspur",
           "party": "Indian National Congress"
         },
         {
           "name": "Aruna Chaudhary",
+          "personId": "punjab-aruna-chaudhary",
           "constituency": "Dina Nagar",
           "party": "Indian National Congress"
         },
         {
           "name": "Partap Singh Bajwa",
+          "personId": "punjab-partap-singh-bajwa",
           "constituency": "Qadian",
           "party": "Indian National Congress"
         },
         {
           "name": "Amansher Singh",
+          "personId": "punjab-amansher-singh-shery-kalsi",
           "constituency": "Batala",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Amarpal Singh",
+          "personId": "punjab-amarpal-singh",
           "constituency": "Sri Hargobindpur",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Tripat Rajinder Singh Bajwa",
+          "personId": "punjab-tripat-rajinder-singh",
           "constituency": "Fatehgarh Churian",
           "party": "Indian National Congress"
         },
         {
           "name": "Gurdeep Singh Randhawa",
+          "personId": "punjab-gurdeep-singh-randhawa",
           "constituency": "Dera Baba Nanak",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Kuldip Singh Dhaliwal",
+          "personId": "punjab-kuldeep-singh-dhaliwal",
           "constituency": "Ajnala",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Sukhbinder Singh Sarkaria",
+          "personId": "punjab-sukhbinder-singh-sarkaria",
           "constituency": "Rajasansi",
           "party": "Indian National Congress"
         },
         {
           "name": "Ganieve Kaur Majithia",
+          "personId": "punjab-ganieve-kaur-majithia",
           "constituency": "Majitha",
           "party": "Shiromani Akali Dal"
         },
         {
           "name": "Harbhajan Singh E.T.O.",
+          "personId": "punjab-harbhajan-singh",
           "constituency": "Jandiala",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Kunwar Vijay Pratap Singh",
+          "personId": "punjab-kunwar-vijay-pratap-singh",
           "constituency": "Amritsar North",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jasbir Singh Sandhu",
+          "personId": "punjab-dr-jasbir-singh-sandhu",
           "constituency": "Amritsar West",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Ajay Gupta",
+          "personId": "punjab-ajay-gupta",
           "constituency": "Amritsar Central",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jeevan Jyot Kaur",
+          "personId": "punjab-jeevan-jyot-kaur",
           "constituency": "Amritsar East",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Inderbir Singh Nijjar",
+          "personId": "punjab-inderbir-nijjar",
           "constituency": "Amritsar South",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jaswinder Singh",
+          "personId": "punjab-jaswinder-singh",
           "constituency": "Attari",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Harmeet Singh Sandhu",
+          "personId": "punjab-harmeet-singh-sandhu",
           "constituency": "Tarn Taran",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Sarvan Singh Dhun",
+          "personId": "punjab-sarvan-singh-dhun",
           "constituency": "Khemkaran",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Laljit Singh Bhullar",
+          "personId": "punjab-laljit-bhullar",
           "constituency": "Patti",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Manjinder Singh Lalpura",
+          "personId": "punjab-manjinder-singh-lalpura",
           "constituency": "Khadoor Sahib",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Dalbir Singh Tong",
+          "personId": "punjab-dalbir-singh-tong",
           "constituency": "Baba Bakala",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Sukhpal Singh Khaira",
+          "personId": "punjab-sukhpal-singh-khaira",
           "constituency": "Bholath",
           "party": "Indian National Congress"
         },
         {
           "name": "Rana Gurjeet Singh",
+          "personId": "punjab-rana-gurjeet-singh",
           "constituency": "Kapurthala",
           "party": "Indian National Congress"
         },
         {
           "name": "Rana Inder Partap Singh",
+          "personId": "punjab-rana-inder-partap-singh",
           "constituency": "Sultanpur Lodhi",
           "party": "Independent"
         },
         {
           "name": "Balwinder Singh Dhaliwal",
+          "personId": "punjab-balwinder-singh-dhaliwal",
           "constituency": "Phagwara",
           "party": "Indian National Congress"
         },
         {
           "name": "Vikramjit Singh Chaudhary",
+          "personId": "punjab-vikramjit-singh-chaudhary",
           "constituency": "Phillaur",
           "party": "Independent"
         },
         {
           "name": "Inderjit Kaur Mann",
+          "personId": "punjab-inderjit-kaur-mann",
           "constituency": "Nakodar",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Hardev Singh Laddi",
+          "personId": "punjab-hardev-singh-laddi",
           "constituency": "Shahkot",
           "party": "Indian National Congress"
         },
         {
           "name": "Balkar Singh",
+          "personId": "punjab-balkar-singh",
           "constituency": "Kartarpur",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Mohinder Pal Bhagat",
+          "personId": "punjab-mohinder-bhagat",
           "constituency": "Jalandhar West",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Raman Arora",
+          "personId": "punjab-raman-arora",
           "constituency": "Jalandhar Central",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Avtar Singh Junior",
+          "personId": "punjab-avtar-singh-junior",
           "constituency": "Jalandhar North",
           "party": "Indian National Congress"
         },
         {
           "name": "Pargat Singh",
+          "personId": "punjab-pargat-singh-powar",
           "constituency": "Jalandhar Cantonment",
           "party": "Indian National Congress"
         },
         {
           "name": "Sukhwinder Singh Kotli",
+          "personId": "punjab-sukhwinder-singh-kotli",
           "constituency": "Adampur",
           "party": "Indian National Congress"
         },
         {
           "name": "Jangi Lal Mahajan",
+          "personId": "punjab-jangi-lal-mahajan",
           "constituency": "Mukerian",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Karambir Singh Ghuman",
+          "personId": "punjab-karambir-singh",
           "constituency": "Dasuya",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jasvir Singh Raja Gill",
+          "personId": "punjab-jasvir-singh-raja-gill",
           "constituency": "Urmar",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Ravjot Singh",
+          "personId": "punjab-ravjot-singh",
           "constituency": "Sham Chaurasi",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Bram Shanker",
+          "personId": "punjab-bram-shanker-jimpa",
           "constituency": "Hoshiarpur",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Ishank Kumar",
+          "personId": "punjab-dr-ishank-kumar",
           "constituency": "Chabbewal",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jai Krishan Singh",
+          "personId": "punjab-jai-krishan-singh",
           "constituency": "Garhshankar",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Sukhwinder Kumar",
+          "personId": "punjab-sukhwinder-kumar",
           "constituency": "Banga",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Nachhatar Pal",
+          "personId": "punjab-nachhatar-pal",
           "constituency": "Nawanshahr",
           "party": "Bahujan Samaj Party"
         },
         {
           "name": "Santosh Katariaa",
+          "personId": "punjab-santosh-kumari-katariaa",
           "constituency": "Balachaur",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Harjot Singh Bains",
+          "personId": "punjab-harjot-singh-bains",
           "constituency": "Anandpur Sahib",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Dinesh Chadha",
+          "personId": "punjab-dinesh-chadha",
           "constituency": "Rupnagar",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Charanjit Singh",
+          "personId": "punjab-charanjit-singh",
           "constituency": "Chamkaur Sahib",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Anmol Gagan Maan",
+          "personId": "punjab-anmol-gagan-maan",
           "constituency": "Kharar",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Kulwant Singh",
+          "personId": "punjab-kulwant-singh",
           "constituency": "S.A.S. Nagar",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Rupinder Singh",
+          "personId": "punjab-rupinder-singh",
           "constituency": "Bassi Pathana",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Lakhbir Singh Rai",
+          "personId": "punjab-lakhbir-singh-rai",
           "constituency": "Fatehgarh Sahib",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Gurinder Singh Garry",
+          "personId": "punjab-gurinder-singh",
           "constituency": "Amloh",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Tarunpreet Singh Sond",
+          "personId": "punjab-tarunpreet-sond",
           "constituency": "Khanna",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jagtar Singh",
+          "personId": "punjab-jagtar-singh",
           "constituency": "Samrala",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Hardeep Singh Mundian",
+          "personId": "punjab-hardeep-singh-mundian",
           "constituency": "Sahnewal",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Daljit Singh Grewal",
+          "personId": "punjab-daljit-singh-grewal",
           "constituency": "Ludhiana East",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Rajinder Pal Kaur Chhina",
+          "personId": "punjab-rajinder-pal-kaur",
           "constituency": "Ludhiana South",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Kulwant Singh Sidhu",
+          "personId": "punjab-kulwant-singh-sidhu",
           "constituency": "Atam Nagar",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Ashok Prashar Pappi",
+          "personId": "punjab-ashok-parashar-pappi",
           "constituency": "Ludhiana Central",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Sanjeev Arora",
+          "personId": "punjab-sanjeev-arora",
           "constituency": "Ludhiana West",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Madan Lal Bagga",
+          "personId": "punjab-madan-lal-bagga",
           "constituency": "Ludhiana North",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jiwan Singh Sangowal",
+          "personId": "punjab-jiwan-singh-sangowal",
           "constituency": "Gill",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Manwinder Singh Gyaspura",
+          "personId": "punjab-manwinder-singh-giaspura",
           "constituency": "Payal",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Manpreet Singh Ayali",
+          "personId": "punjab-manpreet-singh-ayali",
           "constituency": "Dakha",
           "party": "Akali Dal (Waris Punjab De)"
         },
         {
           "name": "Hakam Singh Thekedar",
+          "personId": "punjab-hakam-singh",
           "constituency": "Raikot",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Saravjit Kaur Manuke",
+          "personId": "punjab-sarvjit-kaur-manuke",
           "constituency": "Jagraon",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Manjit Singh Bilaspur",
+          "personId": "punjab-manjit-singh-bilaspur",
           "constituency": "Nihal Singh Wala",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Amritpal Singh Sukhanand",
+          "personId": "punjab-amritpal-singh-sukhanand",
           "constituency": "Bhagha Purana",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Amandeep Kaur Arora",
+          "personId": "punjab-dr-amandeep-kaur-arora",
           "constituency": "Moga",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Devinder Singh Laddi Dhos",
+          "personId": "punjab-devinderjeet-singh",
           "constituency": "Dharamkot",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Naresh Kataria",
+          "personId": "punjab-naresh-kataria",
           "constituency": "Zira",
           "party": "Aam Aadmi Party"
         },
@@ -1356,206 +1611,247 @@
         },
         {
           "name": "Rajnish Dahiya",
+          "personId": "punjab-rajneesh-kumar-dahiya",
           "constituency": "Firozpur Rural",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Fauja Singh Sarari",
+          "personId": "punjab-fauja-singh",
           "constituency": "Guru Har Sahai",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jagdeep Kamboj Goldy",
+          "personId": "punjab-jagdeep-kamboj",
           "constituency": "Jalalabad",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Narinderpal Singh Sawna",
+          "personId": "punjab-narinder-pal-singh-sawna",
           "constituency": "Fazilka",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Sandeep Jakhar",
+          "personId": "punjab-sandeep-jakhar",
           "constituency": "Abohar",
           "party": "Independent"
         },
         {
           "name": "Amandeep Singh “Goldy” Musafir",
+          "personId": "punjab-amandeep-singh-musafir",
           "constituency": "Balluana",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Gurmeet Singh Khudian",
+          "personId": "punjab-gurmeet-singh-khudian",
           "constituency": "Lambi",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Hardeep Singh Dhillon",
+          "personId": "punjab-hardeep-singh-dimpy-dhillon",
           "constituency": "Gidderbaha",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Baljit Kaur",
+          "personId": "punjab-dr-baljit-kaur",
           "constituency": "Malout",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jagdeep Singh Brar",
+          "personId": "punjab-jagdeep-singh-kaka-brar",
           "constituency": "Muktsar",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Gurdit Singh Sekhon",
+          "personId": "punjab-gurdit-singh-sekhon",
           "constituency": "Faridkot",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Kultar Singh Sandhwan",
+          "personId": "punjab-kultar-singh-sandhwan",
           "constituency": "Kotkapura",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Amolak Singh",
+          "personId": "punjab-amolak-singh",
           "constituency": "Jaitu",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Balkar Singh Sidhu",
+          "personId": "punjab-balkar-singh-sidhu",
           "constituency": "Rampura Phul",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Master Jagsir Singh",
+          "personId": "punjab-jagsir-singh",
           "constituency": "Bhucho Mandi",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jagroop Singh Gill",
+          "personId": "punjab-jagroop-singh-gill",
           "constituency": "Bathinda Urban",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Amit Rattan Kotfatta",
+          "personId": "punjab-amit-rattan",
           "constituency": "Bathinda Rural",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Baljinder Kaur",
+          "personId": "punjab-prof-baljinder-kaur",
           "constituency": "Talwandi Sabo",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Sukhvir Maiser Khana",
+          "personId": "punjab-sukhveer-singh-maiserkhana",
           "constituency": "Maur",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Vijay Singla",
+          "personId": "punjab-vijay-singla",
           "constituency": "Mansa",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Gurpreet Singh Banawali",
+          "personId": "punjab-gurpreet-singh-banawali",
           "constituency": "Sardulgarh",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Budhram Singh",
+          "personId": "punjab-budh-ram",
           "constituency": "Budhlada",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Barinder Kumar Goyal",
+          "personId": "punjab-barinder-kumar-goyal",
           "constituency": "Lehragaga",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Harpal Singh Cheema",
+          "personId": "punjab-harpal-singh-cheema",
           "constituency": "Dirba",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Aman Arora",
+          "personId": "punjab-aman-arora",
           "constituency": "Sunam",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Mohammad Jamil Ur Rehman",
+          "personId": "punjab-mohammad-jamil-ur-rehman",
           "constituency": "Malerkotla",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Jaswant Singh Gajjan Majra",
+          "personId": "punjab-prof-jaswant-singh-gajjan-majra",
           "constituency": "Amargarh",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Bhagwant Mann",
+          "personId": "punjab-bhagwant-mann",
           "constituency": "Dhuri",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Narinder Kaur Bharaj",
+          "personId": "punjab-narinder-kaur-bharaj",
           "constituency": "Sangrur",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Labh Singh Ugoke",
+          "personId": "punjab-labh-singh-ugoke",
           "constituency": "Bhadaur",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Kuldeep Singh Dhillon",
+          "personId": "punjab-kuldeep-singh-dhillon-kala-dhillon",
           "constituency": "Barnala",
           "party": "Indian National Congress"
         },
         {
           "name": "Kulwant Singh Pandori",
+          "personId": "punjab-kulwant-singh-pandori",
           "constituency": "Mehal Kalan",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Gurdev Singh Dev Maan",
+          "personId": "punjab-gurdev-singh-dev-maan",
           "constituency": "Nabha",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Balbir Singh",
+          "personId": "punjab-balbir-singh",
           "constituency": "Patiala Rural",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Neena Mittal",
+          "personId": "punjab-neena-mittal",
           "constituency": "Rajpura",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Kuljit Singh Randhawa",
+          "personId": "punjab-kuljit-singh-randhawa",
           "constituency": "Dera Bassi",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Gurlal Ghanaur",
+          "personId": "punjab-gurlal-ghanaur",
           "constituency": "Ghanaur",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Harmit Singh Pathanmajra",
+          "personId": "punjab-harmit-singh-pathanmajra",
           "constituency": "Sanour",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Ajit Pal Singh Kohli",
+          "personId": "punjab-ajit-pal-singh-kohli",
           "constituency": "Patiala",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Chetan Singh Jaura Majra",
+          "personId": "punjab-chetan-singh-jouramajra",
           "constituency": "Samana",
           "party": "Aam Aadmi Party"
         },
         {
           "name": "Kulwant Singh Bazigar",
+          "personId": "punjab-kulwant-singh-bazigar",
           "constituency": "Shutrana",
           "party": "Aam Aadmi Party"
         }
@@ -1613,1546 +1909,1855 @@
       "members": [
         {
           "name": "Baby Rani Maurya",
+          "personId": "uttar-pradesh-baby-rani-maurya",
           "constituency": "Agra Rural",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Yogendra Upadhyaya",
+          "personId": "uttar-pradesh-yogendra-upadhyaya",
           "constituency": "Agra South",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pratibha Shukla",
+          "personId": "uttar-pradesh-pratibha-shukla",
           "constituency": "Akbarpur - Raniya",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Nand Gopal Gupta Nandi",
+          "personId": "uttar-pradesh-nand-gopal-gupta-nandi",
           "constituency": "Allahabad South",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dharmpal Singh (Aonla)",
+          "personId": "uttar-pradesh-dharmpal-singh",
           "constituency": "Aonla",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sandeep Kumar Singh",
+          "personId": "uttar-pradesh-sandeep-kumar-singh",
           "constituency": "Atrauli",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Daya Shankar Singh",
+          "personId": "uttar-pradesh-daya-shankar-singh",
           "constituency": "Ballia Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Krishan Pal Malik",
+          "personId": "uttar-pradesh-krishnapal-malik",
           "constituency": "Baraut",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Arun Kumar",
+          "personId": "uttar-pradesh-dr-arun-kumar",
           "constituency": "Bareilly",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rakesh Sachan",
+          "personId": "uttar-pradesh-rakesh-sachan",
           "constituency": "Bhognipur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Baldev Singh Aulakh",
+          "personId": "uttar-pradesh-baldev-singh-aulakh",
           "constituency": "Bilaspur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Gulab Debi",
+          "personId": "uttar-pradesh-gulab-debi",
           "constituency": "Chandausi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Laxmi Narayan",
+          "personId": "uttar-pradesh-laxmi-narayan",
           "constituency": "Chhata",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Satish Chandra Sharma",
+          "personId": "uttar-pradesh-satish-sharma",
           "constituency": "Dariyabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Brijesh",
+          "personId": "uttar-pradesh-brijesh",
           "constituency": "Deoband",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Nitin Agarwal",
+          "personId": "uttar-pradesh-nitin-agarwal",
           "constituency": "Hardoi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Suresh Rahi",
+          "personId": "uttar-pradesh-suresh-rahi",
           "constituency": "Hargaon",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dinesh Kumar",
+          "personId": "uttar-pradesh-dinesh",
           "constituency": "Hastinapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Girish Chandra Yadav",
+          "personId": "uttar-pradesh-girish-chandra-yadav",
           "constituency": "Jaunpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Asim Arun",
+          "personId": "uttar-pradesh-asim-arun",
           "constituency": "Kannauj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Brajesh Pathak",
+          "personId": "uttar-pradesh-brajesh-pathak",
           "constituency": "Lucknow Cantt",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jayveer Singh",
+          "personId": "uttar-pradesh-jayveer-singh",
           "constituency": "Mainpuri",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Somendra Singh Tomar",
+          "personId": "uttar-pradesh-dr-somendra-singh-tomar",
           "constituency": "Meerut South",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ketakee Singh",
+          "personId": "uttar-pradesh-ketakee-singh",
           "constituency": "Bansdih",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Manohar Lal",
+          "personId": "uttar-pradesh-manohar-lal-panth",
           "constituency": "Mehroni",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kapil Dev Agarwal",
+          "personId": "uttar-pradesh-kapil-dev-agarwal",
           "constituency": "Muzaffar Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sanjeev Kumar Gond",
+          "personId": "uttar-pradesh-sanjeev-kumar-obra-st",
           "constituency": "Obra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Surya Pratap Shahi",
+          "personId": "uttar-pradesh-surya-pratap-shahi",
           "constituency": "Pathardeva",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sanjay Singh Gangwar",
+          "personId": "uttar-pradesh-sanjay-singh-gangwar",
           "constituency": "Pilibhit",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vijaylaxmi Gautam",
+          "personId": "uttar-pradesh-bijaylaxmi-gautam",
           "constituency": "Salempur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajni Tiwari",
+          "personId": "uttar-pradesh-rajni-tiwari",
           "constituency": "Shahabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Suresh Kumar Khanna",
+          "personId": "uttar-pradesh-suresh-kumar-khanna",
           "constituency": "Shahjahanpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anil Rajbhar",
+          "personId": "uttar-pradesh-anil-rajbhar",
           "constituency": "Shivpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ajit Singh Pal",
+          "personId": "uttar-pradesh-ajit-singh-pal",
           "constituency": "Sikandra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rakesh Rathour",
+          "personId": "uttar-pradesh-rakesh-rathour",
           "constituency": "Sitapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mayankeshwar Sharan Singh",
+          "personId": "uttar-pradesh-mayankeshwar-sharan-singh",
           "constituency": "Tiloi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramkesh Nishad",
+          "personId": "uttar-pradesh-ramkesh-nishad",
           "constituency": "Tindwari",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ravindra Jaiswal",
+          "personId": "uttar-pradesh-ravindra-jaiswal",
           "constituency": "Varanasi North",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mata Prasad Pandey",
+          "personId": "uttar-pradesh-mata-prasad-pandey",
           "constituency": "Itwa",
           "party": "Samajwadi Party"
         },
         {
           "name": "Satish Mahana",
+          "personId": "uttar-pradesh-satish-mahana",
           "constituency": "Maharajpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anil Kumar (Purqazi)",
+          "personId": "uttar-pradesh-anil-kumar",
           "constituency": "Purqazi",
           "party": "Rashtriya Lok Dal"
         },
         {
           "name": "Puran Prakash",
+          "personId": "uttar-pradesh-puran-prakash",
           "constituency": "Baldev",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Yogi Adityanath",
+          "personId": "uttar-pradesh-adityanath",
           "constituency": "Gorakhpur Urban",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Saroj Kureel",
+          "personId": "uttar-pradesh-saroj",
           "constituency": "Ghatampur",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Manish Kumar Urf Mantu",
+          "personId": "uttar-pradesh-manish-kumar-alias-mantu",
           "constituency": "Padrauna",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anil Parashar",
+          "personId": "uttar-pradesh-anil-parashar",
           "constituency": "Koil",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mohd. Hasan Roomi",
+          "personId": "uttar-pradesh-mohammed-hasan",
           "constituency": "Kanpur Cantt",
           "party": "Samajwadi Party"
         },
         {
           "name": "Durga Prasad Yadav",
+          "personId": "uttar-pradesh-durga-prasad-yadav",
           "constituency": "Azamgarh",
           "party": "Samajwadi Party"
         },
         {
           "name": "Ragini",
+          "personId": "uttar-pradesh-dr-ragini",
           "constituency": "Machhlishahr",
           "party": "Samajwadi Party"
         },
         {
           "name": "Nahid Hasan",
+          "personId": "uttar-pradesh-nahid-hasan",
           "constituency": "Kairana",
           "party": "Samajwadi Party"
         },
         {
           "name": "Pradeep Kumar Singh",
+          "personId": "uttar-pradesh-pradeep-kumar-singh",
           "constituency": "Sadabad",
           "party": "Rashtriya Lok Dal"
         },
         {
           "name": "Ommani Varma",
+          "personId": "uttar-pradesh-ommani-varma",
           "constituency": "Naraini",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anil Kumar Maurya",
+          "personId": "uttar-pradesh-dr-anil-kumar-maurya",
           "constituency": "Ghorawal",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Virendra Kumar Yadav",
+          "personId": "uttar-pradesh-virendra-kumar-yadav",
           "constituency": "Jangipur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Ashish Kumar Singh 'Ashu'",
+          "personId": "uttar-pradesh-ashish-kumar-singh-ashu",
           "constituency": "Bilgram-Mallanwan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jay Kumar Singh Jaiki",
+          "personId": "uttar-pradesh-jay-kumar-singh-jaiki",
           "constituency": "Bindki",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Mohan Verma",
+          "personId": "uttar-pradesh-mohan",
           "constituency": "Hata",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "M. P. Arya",
+          "personId": "uttar-pradesh-dr-m-p-arya-gangwar",
           "constituency": "Nawabganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ataur Rehman",
+          "personId": "uttar-pradesh-ataur-rehman",
           "constituency": "Baheri",
           "party": "Samajwadi Party"
         },
         {
           "name": "Jai Devi",
+          "personId": "uttar-pradesh-jai-devi",
           "constituency": "Malihabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Nand Kishor Gurjar",
+          "personId": "uttar-pradesh-nandkishor",
           "constituency": "Loni",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "O. P. Srivastava",
+          "personId": "uttar-pradesh-o-p-srivastava",
           "constituency": "Lucknow East",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramkhiladi Singh",
+          "personId": "uttar-pradesh-ramkhiladi-singh",
           "constituency": "Gunnaur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Gauri Shankar",
+          "personId": "uttar-pradesh-gauri-shankar",
           "constituency": "Orai",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Neeraj Bora",
+          "personId": "uttar-pradesh-dr-neeraj-bora",
           "constituency": "Lucknow North",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Harshvardhan Bajpai",
+          "personId": "uttar-pradesh-harshvardhan-bajpai",
           "constituency": "Allahabad North",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kavindra Chaudhary",
+          "personId": "uttar-pradesh-kavindra-chaudhary",
           "constituency": "Kaptanganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Jawahar Lal Rajput",
+          "personId": "uttar-pradesh-jawahar-lal-rajput",
           "constituency": "Garautha",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Armaan Khan",
+          "personId": "uttar-pradesh-armaan-khan",
           "constituency": "Lucknow West",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rajeshwar Singh",
+          "personId": "uttar-pradesh-rajeshwar-singh",
           "constituency": "Sarojini Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Nafees Ahmad",
+          "personId": "uttar-pradesh-nafees-ahmad",
           "constituency": "Gopalpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Gaurav Kumar",
+          "personId": "uttar-pradesh-gaurav-kumar",
           "constituency": "Zaidpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Manoj Kumar Paras",
+          "personId": "uttar-pradesh-manoj-kumar-paras",
           "constituency": "Nagina",
           "party": "Samajwadi Party"
         },
         {
           "name": "Zahid",
+          "personId": "uttar-pradesh-zahid-beg",
           "constituency": "Bhadohi",
           "party": "Samajwadi Party"
         },
         {
           "name": "Vivek Kumar Verma",
+          "personId": "uttar-pradesh-vivek-kumar-verma",
           "constituency": "Bisalpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Fateh Bahadur",
+          "personId": "uttar-pradesh-fateh-bahadur",
           "constituency": "Caimpiyarganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jai Prakash Anchal",
+          "personId": "uttar-pradesh-jai-prakash-anchal",
           "constituency": "Bairia",
           "party": "Samajwadi Party"
         },
         {
           "name": "Aradhana Mishra, Mona",
+          "personId": "uttar-pradesh-aradhana-mishra-mona",
           "constituency": "Rampur Khas",
           "party": "Indian National Congress"
         },
         {
           "name": "Prasanna Kumar",
+          "personId": "uttar-pradesh-persann-kumar",
           "constituency": "Shamli",
           "party": "Rashtriya Lok Dal"
         },
         {
           "name": "Ziyauddin Rizvi",
+          "personId": "uttar-pradesh-ziyauddin-rizvi",
           "constituency": "Sikanderpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Jaikishan Sahu",
+          "personId": "uttar-pradesh-jaikishan",
           "constituency": "Ghazipur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Kailash Nath",
+          "personId": "uttar-pradesh-kailash-nath",
           "constituency": "Tulsipur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Abhay Singh",
+          "personId": "uttar-pradesh-abhay-singh",
           "constituency": "Goshainganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Ritesh Kumar Gupta",
+          "personId": "uttar-pradesh-ritesh-kumar-gupta",
           "constituency": "Moradabad Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramesh Chandra Mishra",
+          "personId": "uttar-pradesh-ramesh-chandra-mishra",
           "constituency": "Badlapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Puja",
+          "personId": "uttar-pradesh-puja",
           "constituency": "Mehnagar",
           "party": "Samajwadi Party"
         },
         {
           "name": "Fareed Mahfooz Kidwai",
+          "personId": "uttar-pradesh-fareed-mahfooz-kidwai",
           "constituency": "Ram Nagar",
           "party": "Samajwadi Party"
         },
         {
           "name": "Dhirendra Singh",
+          "personId": "uttar-pradesh-dhirendra-singh",
           "constituency": "Jewar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Hriday Narayan Singh Patel",
+          "personId": "uttar-pradesh-hriday-narayan-singh-patel",
           "constituency": "Sagri",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rakesh Pratap Singh",
+          "personId": "uttar-pradesh-rakesh-pratap-singh",
           "constituency": "Gauriganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rajesh Chaudhary",
+          "personId": "uttar-pradesh-rajesh-chaudhary",
           "constituency": "Mant",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Prem Narayan Pandey",
+          "personId": "uttar-pradesh-prem-nrayan-pandey",
           "constituency": "Tarabganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Paltoo Ram",
+          "personId": "uttar-pradesh-paltu-ram",
           "constituency": "Balrampur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Madan Bhaiya",
+          "personId": "uttar-pradesh-madan-bhaiya",
           "constituency": "Khatauli",
           "party": "Rashtriya Lok Dal"
         },
         {
           "name": "Shyam Sunder",
+          "personId": "uttar-pradesh-shyam-sunder",
           "constituency": "Bachhrawan",
           "party": "Samajwadi Party"
         },
         {
           "name": "Mool Chandra Singh",
+          "personId": "uttar-pradesh-mool-chandra-singh",
           "constituency": "Madhaugarh",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Amit Singh Chauhan",
+          "personId": "uttar-pradesh-amit-singh-chauhan",
           "constituency": "Bikapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ashu Malik",
+          "personId": "uttar-pradesh-ashu-malik",
           "constituency": "Saharanpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Sitaram Verma",
+          "personId": "uttar-pradesh-sitaram-verma",
           "constituency": "Lambhua",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mukesh Verma",
+          "personId": "uttar-pradesh-mukesh-verma",
           "constituency": "Shikohabad",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rajpal Singh Baliyan",
+          "personId": "uttar-pradesh-rajpal-singh-baliyan",
           "constituency": "Budhana",
           "party": "Rashtriya Lok Dal"
         },
         {
           "name": "Saroj Sonkar",
+          "personId": "uttar-pradesh-saroj-sonkar",
           "constituency": "Balha",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Geeta Shastri (Pasi)",
+          "personId": "uttar-pradesh-geeta-shastri-pasi",
           "constituency": "Soraon",
           "party": "Samajwadi Party"
         },
         {
           "name": "Hansu Ram",
+          "personId": "uttar-pradesh-hansu-ram",
           "constituency": "Belthara Road",
           "party": "Suheldev Bharatiya Samaj Party"
         },
         {
           "name": "Brijbhushan Rajput",
+          "personId": "uttar-pradesh-brij-bhushan-rajput",
           "constituency": "Charkhari",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Himanshu Yadav",
+          "personId": "uttar-pradesh-himanshu-yadav",
           "constituency": "Shekhupur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Akhilesh",
+          "personId": "uttar-pradesh-akhilesh",
           "constituency": "Mubarakpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Piyush Ranjan Nishad",
+          "personId": "uttar-pradesh-piyush-ranjan-nishad",
           "constituency": "Karachhana",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Madhavendra Pratap Singh",
+          "personId": "uttar-pradesh-madhavendra-pratap-singh",
           "constituency": "Sawaijpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shazil Islam Ansari",
+          "personId": "uttar-pradesh-shazil-islam-ansari",
           "constituency": "Bhojipura",
           "party": "Samajwadi Party"
         },
         {
           "name": "Ganesh Chandra",
+          "personId": "uttar-pradesh-ganesh-chandra",
           "constituency": "Dhanghata",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vinod Shankar",
+          "personId": "uttar-pradesh-vinod-shankar",
           "constituency": "Dhaurahra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Atul Pradhan",
+          "personId": "uttar-pradesh-atul-pradhan",
           "constituency": "Sardhana",
           "party": "Samajwadi Party"
         },
         {
           "name": "Mahendra Nath Yadav",
+          "personId": "uttar-pradesh-mahendra-nath-yadav",
           "constituency": "Basti Sadar",
           "party": "Samajwadi Party"
         },
         {
           "name": "Manish Asija",
+          "personId": "uttar-pradesh-manish-asija",
           "constituency": "Firozabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Yogesh Dhama",
+          "personId": "uttar-pradesh-yogesh-dhama",
           "constituency": "Baghpat",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Subhash Tripathi",
+          "personId": "uttar-pradesh-subhash-tripathi",
           "constituency": "Payagpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Viveka Nand Pandey",
+          "personId": "uttar-pradesh-viveka-nand-pandey",
           "constituency": "Khadda",
           "party": "Nirbal Indian Shoshit Hamara Apna Dal"
         },
         {
           "name": "Tufani Saroj",
+          "personId": "uttar-pradesh-tufani-saroj",
           "constituency": "Kerakat",
           "party": "Samajwadi Party"
         },
         {
           "name": "Nirmal Verma",
+          "personId": "uttar-pradesh-nirmal-verma",
           "constituency": "Biswan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dinanath Bhashkar",
+          "personId": "uttar-pradesh-dinanath-bhashkar",
           "constituency": "Aurai",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajendra Kumar",
+          "personId": "uttar-pradesh-rajendra-kumar-muhammadabad-gohna-sc",
           "constituency": "Muhammadabad- Gohna",
           "party": "Samajwadi Party"
         },
         {
           "name": "Umar Ali Khan",
+          "personId": "uttar-pradesh-umar-ali-khan",
           "constituency": "Behat",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rajendra Prasad Chaudhary",
+          "personId": "uttar-pradesh-rajendra-prasad-chaudhary",
           "constituency": "Rudhauli",
           "party": "Samajwadi Party"
         },
         {
           "name": "Ramratan Kushwaha",
+          "personId": "uttar-pradesh-ramratan-kushwaha",
           "constituency": "Lalitpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Saiyada Khatoon",
+          "personId": "uttar-pradesh-saiyada-khatoon",
           "constituency": "Doomariyaganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rajendra Singh Patel",
+          "personId": "uttar-pradesh-rajendra-singh-patel",
           "constituency": "Jahanabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Surendra Maithani",
+          "personId": "uttar-pradesh-surendra-maithani",
           "constituency": "Govind Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pradeep Kumar Chaudhary",
+          "personId": "uttar-pradesh-pradeep-kumar-chaudhary",
           "constituency": "Bulandshahr",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Tejpal Singh Nagar",
+          "personId": "uttar-pradesh-tejpal-singh-nagar",
           "constituency": "Dadri",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Manish Rawat",
+          "personId": "uttar-pradesh-manish-rawat",
           "constituency": "Sidhauli",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ram Singh Patel",
+          "personId": "uttar-pradesh-ram-singh",
           "constituency": "Patti",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rampal Verma",
+          "personId": "uttar-pradesh-rampal-verma",
           "constituency": "Balamau",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Surabhi",
+          "personId": "uttar-pradesh-dr-surabhi",
           "constituency": "Kaimganj",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Manju Shiwach",
+          "personId": "uttar-pradesh-dr-manju-shiwach",
           "constituency": "Modi Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Harish Chandra",
+          "personId": "uttar-pradesh-harish-chandra",
           "constituency": "Bilsi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pankaj Patel",
+          "personId": "uttar-pradesh-pankaj",
           "constituency": "Mungra Badshahpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Mehboob Ali",
+          "personId": "uttar-pradesh-mehboob-ali",
           "constituency": "Amroha",
           "party": "Samajwadi Party"
         },
         {
           "name": "Ram Feran Pandey",
+          "personId": "uttar-pradesh-ram-feran",
           "constituency": "Shrawasti",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rakesh Kumar Verma Alias R. K. Verma",
+          "personId": "uttar-pradesh-rakesh-kumar-verma",
           "constituency": "Raniganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Anurag Singh",
+          "personId": "uttar-pradesh-anurag-singh",
           "constituency": "Chunar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mohd. Faheem Irfan",
+          "personId": "uttar-pradesh-mohammad-faheem-irfan",
           "constituency": "Bilari",
           "party": "Samajwadi Party"
         },
         {
           "name": "Vinod Saroj",
+          "personId": "uttar-pradesh-vinod-kumar",
           "constituency": "Babaganj",
           "party": "Jansatta Dal Loktantrik"
         },
         {
           "name": "Manoj Kumar Prajapati",
+          "personId": "uttar-pradesh-dr-manoj-kumar",
           "constituency": "Hamirpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sangram Singh",
+          "personId": "uttar-pradesh-sangram-singh",
           "constituency": "Phephana",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rajeev Singh ''Parichha''",
+          "personId": "uttar-pradesh-rajeev-singh-parichha",
           "constituency": "Babina",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anil Kumar Verma",
+          "personId": "uttar-pradesh-anil-kumar-verma",
           "constituency": "Laharpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Anil Pradhan",
+          "personId": "uttar-pradesh-anil-kumar-anil-pradhan",
           "constituency": "Chitrakoot",
           "party": "Samajwadi Party"
         },
         {
           "name": "Vinay Prakash Gond",
+          "personId": "uttar-pradesh-vinay-prakash",
           "constituency": "Ramkola",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rahul Rajpoot",
+          "personId": "uttar-pradesh-rahul-rajpoot",
           "constituency": "Harchandpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Mohd. Tahir Khan",
+          "personId": "uttar-pradesh-mohd-tahir-khan",
           "constituency": "Isauli",
           "party": "Samajwadi Party"
         },
         {
           "name": "Brajesh Katheriya",
+          "personId": "uttar-pradesh-eng-brajesh-katheriya",
           "constituency": "Kishani",
           "party": "Samajwadi Party"
         },
         {
           "name": "Vachaspati",
+          "personId": "uttar-pradesh-vachaspati",
           "constituency": "Bara",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Ashraf Ali Khan",
+          "personId": "uttar-pradesh-ashraf-ali-khan",
           "constituency": "Thana Bhawan",
           "party": "Rashtriya Lok Dal"
         },
         {
           "name": "Archana Pandey",
+          "personId": "uttar-pradesh-archana-pandey",
           "constituency": "Chhibramau",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Guru Prasad Maurya",
+          "personId": "uttar-pradesh-guru-prasad-maurya",
           "constituency": "Phaphamau",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sushil Kumar Shakya",
+          "personId": "uttar-pradesh-sushil-kumar-shakya",
           "constituency": "Amritpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ravidas Mehrotra",
+          "personId": "uttar-pradesh-ravidas-mehotra",
           "constituency": "Lucknow Central",
           "party": "Samajwadi Party"
         },
         {
           "name": "Tribhuwan Dutt",
+          "personId": "uttar-pradesh-tribhuwan-dutt",
           "constituency": "Alapur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rajeev Singh Urf Babbu Bhaiya",
+          "personId": "uttar-pradesh-rajeev-singh-alias-babbu-bhaiya",
           "constituency": "Dataganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pallavi Patel",
+          "personId": "uttar-pradesh-dr-pallavi-patel",
           "constituency": "Sirathu",
           "party": "Samajwadi Party"
         },
         {
           "name": "Tasleem Ahmad",
+          "personId": "uttar-pradesh-tasleem-ahmad",
           "constituency": "Najibabad",
           "party": "Samajwadi Party"
         },
         {
           "name": "Pankaj Kumar Malik",
+          "personId": "uttar-pradesh-pankaj-kumar-malik",
           "constituency": "Charthawal",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rekha Verma",
+          "personId": "uttar-pradesh-rekha-verma",
           "constituency": "Bidhuna",
           "party": "Samajwadi Party"
         },
         {
           "name": "Ashutosh Maurya Urf Raju",
+          "personId": "uttar-pradesh-ashutosh-maurya-alias-raju",
           "constituency": "Bisauli",
           "party": "Samajwadi Party"
         },
         {
           "name": "Bechai Saroj",
+          "personId": "uttar-pradesh-bechai",
           "constituency": "Lalganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Surendra Chaurasia",
+          "personId": "uttar-pradesh-surendra-chaurasia",
           "constituency": "Rampur Karkhana",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mahesh Kumar Trivedi",
+          "personId": "uttar-pradesh-mahesh-kumar-trivedi",
           "constituency": "Kidwai Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vinod Chaturvedi",
+          "personId": "uttar-pradesh-vinod-chaturvedi",
           "constituency": "Kalpi",
           "party": "Samajwadi Party"
         },
         {
           "name": "Asim Kumar",
+          "personId": "uttar-pradesh-asim-kumar",
           "constituency": "Tamkuhi Raj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ajay Kumar",
+          "personId": "uttar-pradesh-ajay-kumar",
           "constituency": "Chhaprauli",
           "party": "Rashtriya Lok Dal"
         },
         {
           "name": "Sachin Yadav",
+          "personId": "uttar-pradesh-sachin-yadav",
           "constituency": "Jasrana",
           "party": "Samajwadi Party"
         },
         {
           "name": "Vijama Yadav",
+          "personId": "uttar-pradesh-vijama-yadav",
           "constituency": "Pratappur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Brajesh Yadav",
+          "personId": "uttar-pradesh-brajesh-yadav",
           "constituency": "Sahaswan",
           "party": "Samajwadi Party"
         },
         {
           "name": "Jagdish Narayan",
+          "personId": "uttar-pradesh-jagdish-narayan",
           "constituency": "Zafrabad",
           "party": "Suheldev Bharatiya Samaj Party"
         },
         {
           "name": "Pankaj Singh",
+          "personId": "uttar-pradesh-pankaj-singh",
           "constituency": "Noida",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anand Kumar Yadav",
+          "personId": "uttar-pradesh-anand-kumar",
           "constituency": "Kaiserganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Umashankar Singh",
+          "personId": "uttar-pradesh-umashankar-singh",
           "constituency": "Rasara",
           "party": "Bahujan Samaj Party"
         },
         {
           "name": "Rajbala Singh",
+          "personId": "uttar-pradesh-rajbala-singh",
           "constituency": "Milak",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kamal Akhtar",
+          "personId": "uttar-pradesh-kamal-akhtar",
           "constituency": "Kanth",
           "party": "Samajwadi Party"
         },
         {
           "name": "Sangram Yadav",
+          "personId": "uttar-pradesh-dr-sangram",
           "constituency": "Atrauliya",
           "party": "Samajwadi Party"
         },
         {
           "name": "Ravi Sharma",
+          "personId": "uttar-pradesh-ravi-sharma",
           "constituency": "Jhansi Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sarvesh Singh",
+          "personId": "uttar-pradesh-sarvesh-singh",
           "constituency": "Sirsaganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Raghvendra Kumar Singh",
+          "personId": "uttar-pradesh-raghvendra-kumar-singh",
           "constituency": "Bharthana",
           "party": "Samajwadi Party"
         },
         {
           "name": "Prabhat Kumar Verma",
+          "personId": "uttar-pradesh-prabhat-kumar-verma",
           "constituency": "Gaura",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ghulam Mohammad",
+          "personId": "uttar-pradesh-ghulam-mohammad",
           "constituency": "Siwalkhas",
           "party": "Rashtriya Lok Dal"
         },
         {
           "name": "Manoj Kumar Pandey",
+          "personId": "uttar-pradesh-manoj-kumar-pandey",
           "constituency": "Unchahar",
           "party": "Samajwadi Party"
         },
         {
           "name": "Pooja Pal",
+          "personId": "uttar-pradesh-pooja-pal",
           "constituency": "Chail",
           "party": "Samajwadi Party"
         },
         {
           "name": "Pinki Singh",
+          "personId": "uttar-pradesh-pinki-singh",
           "constituency": "Asmoli",
           "party": "Samajwadi Party"
         },
         {
           "name": "Veer Vikram Singh",
+          "personId": "uttar-pradesh-veer-vikram-singh",
           "constituency": "Katra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pradeep Kumar Yadav",
+          "personId": "uttar-pradesh-pradeep-kumar-yadav",
           "constituency": "Dibiyapur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Prabhu Narayan Yadav",
+          "personId": "uttar-pradesh-prabhu-narayan-yadav",
           "constituency": "Sakaldiha",
           "party": "Samajwadi Party"
         },
         {
           "name": "Samarpal Singh",
+          "personId": "uttar-pradesh-samarpal-singh",
           "constituency": "Naugawan Sadat",
           "party": "Samajwadi Party"
         },
         {
           "name": "Alka Singh",
+          "personId": "uttar-pradesh-alka-singh",
           "constituency": "Sandila",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ram Avatar Singh",
+          "personId": "uttar-pradesh-ram-avatar-singh",
           "constituency": "Noorpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Lakshmi Raj",
+          "personId": "uttar-pradesh-lakshmi-raj",
           "constituency": "Sikandrabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Swami Omvesh",
+          "personId": "uttar-pradesh-swami-omvesh",
           "constituency": "Chandpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Premsagar Patel",
+          "personId": "uttar-pradesh-premsagar-patel",
           "constituency": "Siswa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sandeep Singh",
+          "personId": "uttar-pradesh-sandeep-singh",
           "constituency": "Meja",
           "party": "Samajwadi Party"
         },
         {
           "name": "Babulal",
+          "personId": "uttar-pradesh-babulal",
           "constituency": "Fatehpur Sikri",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bedi",
+          "personId": "uttar-pradesh-bedi",
           "constituency": "Jakhanian",
           "party": "Suheldev Bharatiya Samaj Party"
         },
         {
           "name": "Devendra Pratap Singh",
+          "personId": "uttar-pradesh-devendra-pratap-singh",
           "constituency": "Sareni",
           "party": "Samajwadi Party"
         },
         {
           "name": "Bhagwan Singh Kushwaha",
+          "personId": "uttar-pradesh-bhagwan-singh-kushwaha",
           "constituency": "Kheragarh",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bawan Singh",
+          "personId": "uttar-pradesh-bawan-singh",
           "constituency": "Katra Bazar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kamlakant Rajbhar Urf Pappu",
+          "personId": "uttar-pradesh-kamalkant",
           "constituency": "Didarganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Lucky Yadav",
+          "personId": "uttar-pradesh-lucky-yadav",
           "constituency": "Malhani",
           "party": "Samajwadi Party"
         },
         {
           "name": "Amitabh Bajpai",
+          "personId": "uttar-pradesh-amitabh-bajpai",
           "constituency": "Arya Nagar",
           "party": "Samajwadi Party"
         },
         {
           "name": "Ram Achal Rajbhar",
+          "personId": "uttar-pradesh-ram-achal-rajbhar",
           "constituency": "Akbarpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Hakim Lal Bind",
+          "personId": "uttar-pradesh-hakim-lal-bind",
           "constituency": "Handia",
           "party": "Samajwadi Party"
         },
         {
           "name": "Shashank Trivedi",
+          "personId": "uttar-pradesh-shashank-trivedi",
           "constituency": "Maholi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sunil Kumar Sharma",
+          "personId": "uttar-pradesh-sunil-kumar-sharma",
           "constituency": "Sahibabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Om Prakash Rajbhar",
+          "personId": "uttar-pradesh-om-prakash-rajbhar",
           "constituency": "Zahoorabad",
           "party": "Suheldev Bharatiya Samaj Party"
         },
         {
           "name": "Salona Kushwaha",
+          "personId": "uttar-pradesh-salona-kushwaha",
           "constituency": "Tilhar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shalabh Mani Tripathi",
+          "personId": "uttar-pradesh-shalabh-mani-tripathi",
           "constituency": "Deoria",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dharmpal Singh",
+          "personId": "uttar-pradesh-dr-dharmpal-singh",
           "constituency": "Etmadpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Neelkanth Tiwari",
+          "personId": "uttar-pradesh-dr-neelkanth-tiwari",
           "constituency": "Varanasi South",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Devender Kumar Nim",
+          "personId": "uttar-pradesh-devender-kumar-nim",
           "constituency": "Rampur Maniharan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Gyanendra Singh",
+          "personId": "uttar-pradesh-gyanendra-singh",
           "constituency": "Paniyara",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Suchi",
+          "personId": "uttar-pradesh-suchi",
           "constituency": "Bijnor",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajkumar Sahyogi",
+          "personId": "uttar-pradesh-rajkumar-sahyogi",
           "constituency": "Iglas",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anil Kumar Singh",
+          "personId": "uttar-pradesh-anil-kumar-singh",
           "constituency": "Purwa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Hariom",
+          "personId": "uttar-pradesh-hariom",
           "constituency": "Amanpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Virendra Chaudhary",
+          "personId": "uttar-pradesh-virendra-chaudhary",
           "constituency": "Pharenda",
           "party": "Indian National Congress"
         },
         {
           "name": "Shashank Verma",
+          "personId": "uttar-pradesh-shashank-verma",
           "constituency": "Nighasan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sidharth Nath Singh",
+          "personId": "uttar-pradesh-sidharth-nath-singh",
           "constituency": "Allahabad West",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ashok Kumar",
+          "personId": "uttar-pradesh-ashok-kumar",
           "constituency": "Salon",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Manisha",
+          "personId": "uttar-pradesh-manisha",
           "constituency": "Rath",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "D. C. Verma",
+          "personId": "uttar-pradesh-dr-d-c-verma",
           "constituency": "Meerganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rampratap Verma Urf Shashikant Verma",
+          "personId": "uttar-pradesh-rampratap-verma-alias-shashikant-verma",
           "constituency": "Utraula",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Awadhesh Kumar Singh",
+          "personId": "uttar-pradesh-awadhesh-kumar-singh",
           "constituency": "Pindra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Indrajeet Saroj",
+          "personId": "uttar-pradesh-indrajeet-saroj",
           "constituency": "Manjhanpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Asha Maurya",
+          "personId": "uttar-pradesh-asha-maurya",
           "constituency": "Mahmoodabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Nagendra Singh Rathour",
+          "personId": "uttar-pradesh-nagendra-singh-rathour",
           "constituency": "Bhojpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bamba Lal",
+          "personId": "uttar-pradesh-bamba-lal",
           "constituency": "Safipur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Manju Tyagi",
+          "personId": "uttar-pradesh-manju-tyagi",
           "constituency": "Sri Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajeev Tarara",
+          "personId": "uttar-pradesh-rajeev-kumar",
           "constituency": "Dhanaura",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shahid Manzoor",
+          "personId": "uttar-pradesh-shahid-manzoor",
           "constituency": "Kithore",
           "party": "Samajwadi Party"
         },
         {
           "name": "Sanjeev Agarwal",
+          "personId": "uttar-pradesh-sanjeev-agarwal",
           "constituency": "Bareilly Cantt",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Nadira Sultan",
+          "personId": "uttar-pradesh-nadira-sultan",
           "constituency": "Patiyali",
           "party": "Samajwadi Party"
         },
         {
           "name": "Devendra Singh",
+          "personId": "uttar-pradesh-devendra-singh",
           "constituency": "Kasganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jai Pratap Singh",
+          "personId": "uttar-pradesh-jai-pratap-singh",
           "constituency": "Bansi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Prem Pal Singh Dhangar",
+          "personId": "uttar-pradesh-prem-pal-singh-dhangar",
           "constituency": "Tundla",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mahendra Singh Khadagvanshi",
+          "personId": "uttar-pradesh-mahender-khadakvanshi",
           "constituency": "Hasanpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jai Prakash Nishad",
+          "personId": "uttar-pradesh-jai-prakash-nishad",
           "constituency": "Rudrapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shafeek Ahmed Ansari",
+          "personId": "uttar-pradesh-shafeek-ahmed-ansari",
           "constituency": "Suar",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Rama Shankar Singh",
+          "personId": "uttar-pradesh-rama-shankar-singh",
           "constituency": "Marihan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vishambhar Singh Yadav",
+          "personId": "uttar-pradesh-vishambhar-singh",
           "constituency": "Baberu",
           "party": "Samajwadi Party"
         },
         {
           "name": "Prakash Dwivedi",
+          "personId": "uttar-pradesh-prakash-dwivedi",
           "constituency": "Banda",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jaydrath Urf Pravaktanand",
+          "personId": "uttar-pradesh-jaydrath-alias-pravaktanand",
           "constituency": "Barkhera",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vimlesh Paswan",
+          "personId": "uttar-pradesh-dr-vimlesh-paswan",
           "constituency": "Bansgaon",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anupma Jaiswal",
+          "personId": "uttar-pradesh-anupma-jaiswal",
           "constituency": "Bahraich",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Abhijeet Singh Sanga",
+          "personId": "uttar-pradesh-abhijeet-singh",
           "constituency": "Bithoor",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vijaypal (Aadhti)",
+          "personId": "uttar-pradesh-vijaypal-aadhti",
           "constituency": "Hapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ankur Tiwari",
+          "personId": "uttar-pradesh-ankur-tiwari",
           "constituency": "Khalilabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Usha Maurya",
+          "personId": "uttar-pradesh-usha-maurya",
           "constituency": "Husainganj",
           "party": "Samajwadi Party"
         },
         {
           "name": "Vinod Singh",
+          "personId": "uttar-pradesh-vinod-singh",
           "constituency": "Sultanpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rinki Kol",
+          "personId": "uttar-pradesh-rinki-kol",
           "constituency": "Chhanbey",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Om Prakash",
+          "personId": "uttar-pradesh-om-prakash",
           "constituency": "Zamania",
           "party": "Samajwadi Party"
         },
         {
           "name": "Vinay Verma",
+          "personId": "uttar-pradesh-vinay-verma",
           "constituency": "Shohratgarh",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Raj Prasad Upadhyay",
+          "personId": "uttar-pradesh-raj-prasad-upadhyay",
           "constituency": "Sadar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Birendra Singh Rana",
+          "personId": "uttar-pradesh-birendra-singh-rana",
           "constituency": "Sikandra Rao",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Iqbal Mehmood",
+          "personId": "uttar-pradesh-iqbal-mehmood",
           "constituency": "Sambhal",
           "party": "Samajwadi Party"
         },
         {
           "name": "Kunwar Sushant Singh",
+          "personId": "uttar-pradesh-kunwar-sushant-singh",
           "constituency": "Barhapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mariya Ali",
+          "personId": "uttar-pradesh-mariya",
           "constituency": "Matera",
           "party": "Samajwadi Party"
         },
         {
           "name": "Mohd. Nasir Qureshi",
+          "personId": "uttar-pradesh-mohd-nasir",
           "constituency": "Moradabad Rural",
           "party": "Samajwadi Party"
         },
         {
           "name": "Chhotey Lal Verma",
+          "personId": "uttar-pradesh-chhotey-lal-verma",
           "constituency": "Fatehabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Poonam Sankhwar",
+          "personId": "uttar-pradesh-poonam-sankhwar",
           "constituency": "Rasulabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Aditi Singh",
+          "personId": "uttar-pradesh-aditi-singh",
           "constituency": "Rae Bareli",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vipul Dubey",
+          "personId": "uttar-pradesh-vipul-dubey",
           "constituency": "Gyanpur",
           "party": "Nirbal Indian Shoshit Hamara Apna Dal"
         },
         {
           "name": "Virendra Singh Lodhi",
+          "personId": "uttar-pradesh-virendra-singh-lodhi",
           "constituency": "Marhara",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rakesh Kumar Yadav",
+          "personId": "uttar-pradesh-rakesh-kumar-yadav",
           "constituency": "Gainsari",
           "party": "Samajwadi Party"
         },
         {
           "name": "Aman Giri",
+          "personId": "uttar-pradesh-aman-giri",
           "constituency": "Gola Gokrannath",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Avinash Chandra Dwivedi",
+          "personId": "uttar-pradesh-avinash-chandra-dwivedi",
           "constituency": "Manikpur",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Dharmesh Singh Tomar",
+          "personId": "uttar-pradesh-dharmesh-singh-tomar",
           "constituency": "Dholana",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Minakshi Singh",
+          "personId": "uttar-pradesh-minakshi-singh",
           "constituency": "Khurja",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "R.K. Patel",
+          "personId": "uttar-pradesh-dr-r-k-patel",
           "constituency": "Mariyahu",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Rajesh Kumar Gautam",
+          "personId": "uttar-pradesh-rajesh-kumar-gautam",
           "constituency": "Kadipur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Saurabh Singh",
+          "personId": "uttar-pradesh-saurabh-singh",
           "constituency": "Kasta",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Neel Ratan Singh",
+          "personId": "uttar-pradesh-neel-ratan-singh",
           "constituency": "Sevapuri",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ram Chandra Yadav",
+          "personId": "uttar-pradesh-ram-chandra-yadav",
           "constituency": "Rudauli",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramkrishna Bhargava",
+          "personId": "uttar-pradesh-ramkrishna-bhargava",
           "constituency": "Misrikh",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shriram Chauhan",
+          "personId": "uttar-pradesh-shriram-chauhan",
           "constituency": "Khajani",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mohit Sonkar",
+          "personId": "uttar-pradesh-mohit-sonkar",
           "constituency": "Bilhaur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dudhram",
+          "personId": "uttar-pradesh-dudhram",
           "constituency": "Mahadewa",
           "party": "Suheldev Bharatiya Samaj Party"
         },
         {
           "name": "Arvind Kumar Singh",
+          "personId": "uttar-pradesh-arvind-kumar-singh",
           "constituency": "Dadraul",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ram Naresh Agnihotri",
+          "personId": "uttar-pradesh-ram-naresh-agnihotri",
           "constituency": "Bhongaon",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sanjay Kumar Sharma",
+          "personId": "uttar-pradesh-sanjay-kumar-sharma",
           "constituency": "Anupshahr",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Prateek Bhushan Singh",
+          "personId": "uttar-pradesh-prateek-bhushan-singh",
           "constituency": "Gonda",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ravendra Pal Singh",
+          "personId": "uttar-pradesh-ravendra-pal-singh",
           "constituency": "Chharra",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pradeep Shukla",
+          "personId": "uttar-pradesh-pradeep-shukla",
           "constituency": "Sahajanwa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sarita Bhadauriya",
+          "personId": "uttar-pradesh-sarita",
           "constituency": "Etawah",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kailash",
+          "personId": "uttar-pradesh-kailash-kharwar",
           "constituency": "Chakia",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Deepak Kumar Mishra",
+          "personId": "uttar-pradesh-deepak-kumar-mishr",
           "constituency": "Barhaj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Neelima Katiyar",
+          "personId": "uttar-pradesh-neelima-katiyar",
           "constituency": "Kalyanpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ram Niwas Verma",
+          "personId": "uttar-pradesh-ram-niwas-verma",
           "constituency": "Nanpara",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Vinay Kumar Dwivedi",
+          "personId": "uttar-pradesh-vinay-kumar",
           "constituency": "Mehnaun",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Chandrapal Singh",
+          "personId": "uttar-pradesh-chandrapal-singh",
           "constituency": "Debai",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Yogesh Verma",
+          "personId": "uttar-pradesh-yogesh-verma",
           "constituency": "Lakhimpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Suresh Kumar",
+          "personId": "uttar-pradesh-suresh-kumar",
           "constituency": "Jagdishpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Purushottam Khandelwal",
+          "personId": "uttar-pradesh-purushottam-khandelwal",
           "constituency": "Agra North",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sushil Singh",
+          "personId": "uttar-pradesh-sushil-singh",
           "constituency": "Saiyadraja",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anil Kumar Tripathi",
+          "personId": "uttar-pradesh-anil-kumar-tripathi",
           "constituency": "Menhdawal",
           "party": "Nirbal Indian Shoshit Hamara Apna Dal"
         },
         {
           "name": "Ajay",
+          "personId": "uttar-pradesh-ajay",
           "constituency": "Colonelganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Surendra Kumar Kushwaha",
+          "personId": "uttar-pradesh-surendra-kumar-kushwaha",
           "constituency": "Fazilnagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sunil Dutt Dwivedi",
+          "personId": "uttar-pradesh-sunil-dutt-dwivedi",
           "constituency": "Farrukhabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Lokendra Pratap Singh",
+          "personId": "uttar-pradesh-lokendra-pratap-singh",
           "constituency": "Mohammdi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Panchanand Pathak (P.N. Pathak)",
+          "personId": "uttar-pradesh-panchanand-pathak-p-n-pathak",
           "constituency": "Kushinagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shyam Prakash",
+          "personId": "uttar-pradesh-shyam-prakash",
           "constituency": "Gopamau",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vikas Gupta",
+          "personId": "uttar-pradesh-vikas-gupta",
           "constituency": "Ayah Shah",
           "party": "Bharatiya Janata Party"
         },
@@ -3163,401 +3768,481 @@
         },
         {
           "name": "Akash Saxena (Hani)",
+          "personId": "uttar-pradesh-akash-saxena-honey",
           "constituency": "Rampur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sureshwar Singh",
+          "personId": "uttar-pradesh-sureshwar-singh",
           "constituency": "Mahasi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shrikant Katiyar",
+          "personId": "uttar-pradesh-shrikant-katiyar",
           "constituency": "Bangarmau",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shivpal Singh Yadav",
+          "personId": "uttar-pradesh-shivpal-singh-yadav",
           "constituency": "Jaswantnagar",
           "party": "Samajwadi Party"
         },
         {
           "name": "Indrani Devi",
+          "personId": "uttar-pradesh-indrani-devi",
           "constituency": "Bhinga",
           "party": "Samajwadi Party"
         },
         {
           "name": "Mukta Sanjeev Raja",
+          "personId": "uttar-pradesh-mukta-raja",
           "constituency": "Aligarh",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Satyapal Singh Rathore",
+          "personId": "uttar-pradesh-satyapal-singh-rathore",
           "constituency": "Aliganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dinesh Rawat",
+          "personId": "uttar-pradesh-dinesh-rawat",
           "constituency": "Haidergarh",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Chetram",
+          "personId": "uttar-pradesh-chetram",
           "constituency": "Powayan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bipin Singh",
+          "personId": "uttar-pradesh-bipin-singh",
           "constituency": "Gorakhpur Rural",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Prabhash Kumar",
+          "personId": "uttar-pradesh-prabhash-kumar",
           "constituency": "Sandi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Saurabh Srivastava",
+          "personId": "uttar-pradesh-saurabh-srivastava",
           "constituency": "Varanasi Cantt",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Harendra Singh",
+          "personId": "uttar-pradesh-harendra-singh-tewatia",
           "constituency": "Garhmukteshwar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ashok Kumar Rana",
+          "personId": "uttar-pradesh-ashok-kumar-rana",
           "constituency": "Dhampur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sanjeev Kumar Diwakar",
+          "personId": "uttar-pradesh-sanjeev-kumar",
           "constituency": "Jalesar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rani Pakshalika Singh",
+          "personId": "uttar-pradesh-rani-pakshalika-singh",
           "constituency": "Bah",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajendra Kumar Maurya",
+          "personId": "uttar-pradesh-rajendra-kumar",
           "constituency": "Pratapgarh",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ratnakar Mishra",
+          "personId": "uttar-pradesh-ratnakar-mishra",
           "constituency": "Mirzapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Suhaib Alias Mannu Ansari",
+          "personId": "uttar-pradesh-suhaib-alias-mannu-ansari",
           "constituency": "Mohammadabad",
           "party": "Samajwadi Party"
         },
         {
           "name": "Chandra Prakash Lodhi",
+          "personId": "uttar-pradesh-chandra-prakash",
           "constituency": "Fatehpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Jeet Lal Patel",
+          "personId": "uttar-pradesh-jeet-lal",
           "constituency": "Bishwavnathganj",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Amresh Kumar",
+          "personId": "uttar-pradesh-amresh-kumar",
           "constituency": "Mohanlalganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramakant Yadav",
+          "personId": "uttar-pradesh-ramakant-yadav",
           "constituency": "Phoolpur Pawai",
           "party": "Samajwadi Party"
         },
         {
           "name": "Yogesh Shukla",
+          "personId": "uttar-pradesh-yogesh-shukla",
           "constituency": "Bakshi Kaa Talab",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramesh Jaiswal",
+          "personId": "uttar-pradesh-ramesh-jaiswal",
           "constituency": "Mughalsarai",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajesh Tripathi",
+          "personId": "uttar-pradesh-rajesh-tripathi",
           "constituency": "Chillupar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ashutosh Shukla",
+          "personId": "uttar-pradesh-ashutosh-shukla",
           "constituency": "Bhagwant Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shrikant Sharma",
+          "personId": "uttar-pradesh-shrikant-sharma",
           "constituency": "Mathura",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mahesh Chandra Gupta",
+          "personId": "uttar-pradesh-mahesh-chandra-gupta",
           "constituency": "Badaun",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Devendra Singh Lodhi",
+          "personId": "uttar-pradesh-devendra-singh-lodhi",
           "constituency": "Syana",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Brajesh Kumar",
+          "personId": "uttar-pradesh-brajesh-kumar",
           "constituency": "Mohan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Krishna Paswan",
+          "personId": "uttar-pradesh-krishna-paswan",
           "constituency": "Khaga",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Naseer Ahmad Khan",
+          "personId": "uttar-pradesh-naseer-ahmad-khan",
           "constituency": "Chamraua",
           "party": "Samajwadi Party"
         },
         {
           "name": "Amit Agarwal",
+          "personId": "uttar-pradesh-amit-agarwal",
           "constituency": "Meerut Cantt",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rishi Tripathi",
+          "personId": "uttar-pradesh-rishi",
           "constituency": "Nautanwan",
           "party": "Nirbal Indian Shoshit Hamara Apna Dal"
         },
         {
           "name": "Ankit Bharti",
+          "personId": "uttar-pradesh-ankit-bharti",
           "constituency": "Saidpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Meghshyam",
+          "personId": "uttar-pradesh-meghshyam",
           "constituency": "Goverdhan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramesh Singh",
+          "personId": "uttar-pradesh-ramesh",
           "constituency": "Shahganj",
           "party": "Nirbal Indian Shoshit Hamara Apna Dal"
         },
         {
           "name": "Dharmraj Singh Yadav",
+          "personId": "uttar-pradesh-dharmraj-singh-yadav",
           "constituency": "Barabanki",
           "party": "Samajwadi Party"
         },
         {
           "name": "Kirat Singh",
+          "personId": "uttar-pradesh-kirat-singh",
           "constituency": "Gangoh",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Gudiya Katheriya",
+          "personId": "uttar-pradesh-gudiya-katheriya",
           "constituency": "Auraiya",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ram Murti Verma",
+          "personId": "uttar-pradesh-ram-murti-verma",
           "constituency": "Tanda",
           "party": "Samajwadi Party"
         },
         {
           "name": "Rashmi Arya",
+          "personId": "uttar-pradesh-rashmi-arya",
           "constituency": "Mauranipur",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Sunil Patel",
+          "personId": "uttar-pradesh-dr-sunil-patel",
           "constituency": "Rohaniya",
           "party": "Apna Dal (Soneylal)"
         },
         {
           "name": "Omkumar",
+          "personId": "uttar-pradesh-omkumar",
           "constituency": "Nehtaur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Baburam",
+          "personId": "uttar-pradesh-baburam",
           "constituency": "Puranpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sarvan Kumar Nishad",
+          "personId": "uttar-pradesh-sarvan-kumar-nishad",
           "constituency": "Chauri-Chaura",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pankaj Gupta",
+          "personId": "uttar-pradesh-pankaj-gupta",
           "constituency": "Unnao",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shyamdhani Rahi",
+          "personId": "uttar-pradesh-shyamdhani-rahi",
           "constituency": "Kapilvastu",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Tribhuwan Ram",
+          "personId": "uttar-pradesh-tribhuwan-ram",
           "constituency": "Ajagara",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anil Kumar Sharma",
+          "personId": "uttar-pradesh-anil-kumar-shikarpur",
           "constituency": "Shikarpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Raghavendra Sharma",
+          "personId": "uttar-pradesh-dr-raghavendra-sharma",
           "constituency": "Bithari Chainpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Gyan Tiwari",
+          "personId": "uttar-pradesh-gyan-tiwari",
           "constituency": "Sevata",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ajit Pal Tyagi",
+          "personId": "uttar-pradesh-ajit-pal-tyagi",
           "constituency": "Muradnagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Hari Prakash Verma",
+          "personId": "uttar-pradesh-hari-prakash-verma",
           "constituency": "Jalalabad",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rakesh Kumar Goswami",
+          "personId": "uttar-pradesh-rakesh-kumar-goswami",
           "constituency": "Mahoba",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sakendra Pratap",
+          "personId": "uttar-pradesh-sakendra-pratap-verma",
           "constituency": "Kursi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bhupesh Chaubey",
+          "personId": "uttar-pradesh-bhupesh-chaubey",
           "constituency": "Robertsganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anjula Singh Mahaur",
+          "personId": "uttar-pradesh-anjula-singh-mahaur",
           "constituency": "Hathras",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rafiq Ansari",
+          "personId": "uttar-pradesh-rafiq-ansari",
           "constituency": "Meerut",
           "party": "Samajwadi Party"
         },
         {
           "name": "Kailash Rajput",
+          "personId": "uttar-pradesh-kailash-rajput",
           "constituency": "Tirwa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "G S Dharmesh",
+          "personId": "uttar-pradesh-dr-g-s-dharmesh",
           "constituency": "Agra Cantt",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mahendra Pal Singh",
+          "personId": "uttar-pradesh-mahendra-pal-singh",
           "constituency": "Pipraich",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Thakur Jaiveer Singh",
+          "personId": "uttar-pradesh-thakur-jaiveer-singh",
           "constituency": "Barauli",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mukesh Choudhary",
+          "personId": "uttar-pradesh-mukesh-choudhary",
           "constituency": "Nakur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Jay Mangal",
+          "personId": "uttar-pradesh-jay-mangal",
           "constituency": "Maharajganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Harvinder Kumar Sahni Alias Romi Sahni",
+          "personId": "uttar-pradesh-harvindar-kumar-sahani",
           "constituency": "Palia",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ved Prakash Gupta",
+          "personId": "uttar-pradesh-ved-prakash-gupta",
           "constituency": "Ayodhya",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ram Bilash Chauhan",
+          "personId": "uttar-pradesh-ram-bilash-chauhan",
           "constituency": "Madhuban",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ajay Singh",
+          "personId": "uttar-pradesh-ajay-singh",
           "constituency": "Harraiya",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vipin Kumar David",
+          "personId": "uttar-pradesh-vipin-kumar-david",
           "constituency": "Etah",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajeev Gumber",
+          "personId": "uttar-pradesh-rajeev-gumber",
           "constituency": "Saharanpur Nagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sabhakunwar",
+          "personId": "uttar-pradesh-sabhakunwar",
           "constituency": "Bhatpar Rani",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ramapati Shastri",
+          "personId": "uttar-pradesh-ramapati-shastri",
           "constituency": "Mankapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Abbas Ansari",
+          "personId": "uttar-pradesh-abbas-ansari",
           "constituency": "Mau",
           "party": "Suheldev Bharatiya Samaj Party"
         },
         {
           "name": "Raj Mani",
+          "personId": "uttar-pradesh-raj-mani",
           "constituency": "Koraon",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Navab Jan",
+          "personId": "uttar-pradesh-navab-jan",
           "constituency": "Thakurdwara",
           "party": "Samajwadi Party"
         },
         {
           "name": "Raghuraj Pratap Singh",
+          "personId": "uttar-pradesh-raghuraj-pratap-singh",
           "constituency": "Kunda",
           "party": "Jansatta Dal Loktantrik"
         },
         {
           "name": "Rakesh Pandey",
+          "personId": "uttar-pradesh-rakesh-pandey",
           "constituency": "Jalalpur",
           "party": "Samajwadi Party"
         },
         {
           "name": "Maharaji Prajapati",
+          "personId": "uttar-pradesh-maharaji-prajapati",
           "constituency": "Amethi",
           "party": "Samajwadi Party"
         },
@@ -3691,351 +4376,421 @@
       "members": [
         {
           "name": "Durgeshwar Lal",
+          "personId": "uttarakhand-durgeshwar-lal",
           "constituency": "Purola",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sanjay Dobhal",
+          "personId": "uttarakhand-sanjay-dobhal",
           "constituency": "Yamunotri",
           "party": "Independent"
         },
         {
           "name": "Suresh Singh Chauhan",
+          "personId": "uttarakhand-suresh-singh-chauhan",
           "constituency": "Gangotri",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Lakhpat Singh Butola",
+          "personId": "uttarakhand-lakhapat-singh-butola",
           "constituency": "Badrinath",
           "party": "Indian National Congress"
         },
         {
           "name": "Bhupal Ram Tamta",
+          "personId": "uttarakhand-bhupal-ram-tamta",
           "constituency": "Tharali",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Anil Nautiyal",
+          "personId": "uttarakhand-anil-nautiyal",
           "constituency": "Karnaprayag",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Asha Nautiyal",
+          "personId": "uttarakhand-asha-nautiyal",
           "constituency": "Kedarnath",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Bharat Singh Chaudhary",
+          "personId": "uttarakhand-bharat-singh-chaudhary",
           "constituency": "Rudraprayag",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shakti Lal Shah",
+          "personId": "uttarakhand-shakti-lal-shah",
           "constituency": "Ghansali",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vinod Kandari",
+          "personId": "uttarakhand-vinod-kandari",
           "constituency": "Devprayag",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Subodh Uniyal",
+          "personId": "uttarakhand-subodh-uniyal",
           "constituency": "Narendranagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vikram Singh Negi",
+          "personId": "uttarakhand-vikram-singh-negi",
           "constituency": "Pratapnagar",
           "party": "Indian National Congress"
         },
         {
           "name": "Kishore Upadhyaya",
+          "personId": "uttarakhand-kishore-upadhyay",
           "constituency": "Tehri",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pritam Singh Panwar",
+          "personId": "uttarakhand-pritam-singh-panwar",
           "constituency": "Dhanaulti",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pritam Singh",
+          "personId": "uttarakhand-pritam-singh",
           "constituency": "Chakrata",
           "party": "Indian National Congress"
         },
         {
           "name": "Munna Singh Chauhan",
+          "personId": "uttarakhand-munna-singh-chauhan",
           "constituency": "Vikasnagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sahdev Singh Pundir",
+          "personId": "uttarakhand-sahdev-singh-pundir",
           "constituency": "Sahaspur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Vinod Chamoli",
+          "personId": "uttarakhand-vinod-chamoli",
           "constituency": "Dharampur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Umesh Sharma “Kau”",
+          "personId": "uttarakhand-umesh-sharma-kau",
           "constituency": "Raipur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Khajan Dass",
+          "personId": "uttarakhand-khajan-dass",
           "constituency": "Rajpur Road",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Savita Kapoor",
+          "personId": "uttarakhand-savita-kapoor",
           "constituency": "Dehradun Cantonment",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ganesh Joshi",
+          "personId": "uttarakhand-ganesh-joshi",
           "constituency": "Mussoorie",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Brij Bhushan Gairola",
+          "personId": "uttarakhand-brij-bhushan-gairola",
           "constituency": "Doiwala",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Premchand Aggarwal",
+          "personId": "uttarakhand-prem-chand-aggarwal",
           "constituency": "Rishikesh",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Madan Kaushik",
+          "personId": "uttarakhand-madan-kaushik",
           "constituency": "Haridwar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Adesh Chauhan",
+          "personId": "uttarakhand-adesh-chauhan",
           "constituency": "BHEL Ranipur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ravi Bahadur",
+          "personId": "uttarakhand-er-ravi-bahadur",
           "constituency": "Jwalapur",
           "party": "Indian National Congress"
         },
         {
           "name": "Mamta Rakesh",
+          "personId": "uttarakhand-mamta-rakesh",
           "constituency": "Bhagwanpur",
           "party": "Indian National Congress"
         },
         {
           "name": "Virendra Kumar",
+          "personId": "uttarakhand-virendra-kumar",
           "constituency": "Jhabrera",
           "party": "Indian National Congress"
         },
         {
           "name": "Furqan Ahmad",
+          "personId": "uttarakhand-furkan-ahmad",
           "constituency": "Piran Kaliyar",
           "party": "Indian National Congress"
         },
         {
           "name": "Pradip Batra",
+          "personId": "uttarakhand-pradeep-batra",
           "constituency": "Roorkee",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Umesh Kumar",
+          "personId": "uttarakhand-umesh-kumar",
           "constituency": "Khanpur",
           "party": "Independent"
         },
         {
           "name": "Muhammad Nizamuddin",
+          "personId": "uttarakhand-qazi-mohammad-nizamuddin",
           "constituency": "Manglaur",
           "party": "Indian National Congress"
         },
         {
           "name": "Muhammad Shahzad",
+          "personId": "uttarakhand-shahzad",
           "constituency": "Laksar",
           "party": "Bahujan Samaj Party"
         },
         {
           "name": "Anupama Rawat",
+          "personId": "uttarakhand-anupama-rawat",
           "constituency": "Haridwar Rural",
           "party": "Indian National Congress"
         },
         {
           "name": "Renu Bisht",
+          "personId": "uttarakhand-renu-bisht",
           "constituency": "Yamkeshwar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajkumar Pori",
+          "personId": "uttarakhand-rajkumar-pori",
           "constituency": "Pauri",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dhan Singh Rawat",
+          "personId": "uttarakhand-dr-dhan-singh-rawat",
           "constituency": "Srinagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Satpal Maharaj",
+          "personId": "uttarakhand-satpal-maharaj",
           "constituency": "Chaubattakhal",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dilip Singh Rawat",
+          "personId": "uttarakhand-daleep-singh-rawat",
           "constituency": "Lansdowne",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ritu Khanduri Bhushan",
+          "personId": "uttarakhand-ritu-khanduri-bhushan",
           "constituency": "Kotdwar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Harish Singh Dhami",
+          "personId": "uttarakhand-harish-singh-dhami",
           "constituency": "Dharchula",
           "party": "Indian National Congress"
         },
         {
           "name": "Bishan Singh Chuphal",
+          "personId": "uttarakhand-vishan-singh",
           "constituency": "Didihat",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mayukh Singh Mahar",
+          "personId": "uttarakhand-mayukh-mahar",
           "constituency": "Pithoragarh",
           "party": "Indian National Congress"
         },
         {
           "name": "Fakir Ram Tamta",
+          "personId": "uttarakhand-fakeer-ram",
           "constituency": "Gangolihat",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Suresh Singh Garhia",
+          "personId": "uttarakhand-suresh-gariya",
           "constituency": "Kapkot",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Parwati Das",
+          "personId": "uttarakhand-parwati-devi",
           "constituency": "Bageshwar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Madan Singh Bisht",
+          "personId": "uttarakhand-madan-singh-bisht",
           "constituency": "Dwarahat",
           "party": "Indian National Congress"
         },
         {
           "name": "Mahesh Singh Jeena",
+          "personId": "uttarakhand-mahesh-jeena",
           "constituency": "Salt",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Pramod Nainwal",
+          "personId": "uttarakhand-pramod-nainwal",
           "constituency": "Ranikhet",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rekha Arya",
+          "personId": "uttarakhand-rekha-arya",
           "constituency": "Someshwar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Manoj Tiwari",
+          "personId": "uttarakhand-manoj-tewari",
           "constituency": "Almora",
           "party": "Indian National Congress"
         },
         {
           "name": "Mohan Singh Mahara",
+          "personId": "uttarakhand-mohan-singh",
           "constituency": "Jageshwar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Khushal Singh Adhikari",
+          "personId": "uttarakhand-khushal-singh-adhikari",
           "constituency": "Lohaghat",
           "party": "Indian National Congress"
         },
         {
           "name": "Pushkar Singh Dhami",
+          "personId": "uttarakhand-pushkar-singh-dhami",
           "constituency": "Champawat",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mohan Singh Bisht",
+          "personId": "uttarakhand-dr-mohan-singh-bisht",
           "constituency": "Lalkuan",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ram Singh Kaira",
+          "personId": "uttarakhand-ram-singh-kaira",
           "constituency": "Bhimtal",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sarita Arya",
+          "personId": "uttarakhand-sarita-arya",
           "constituency": "Nainital",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sumit Hridayesh",
+          "personId": "uttarakhand-sumit-hridayesh",
           "constituency": "Haldwani",
           "party": "Indian National Congress"
         },
         {
           "name": "Banshidhar Bhagat",
+          "personId": "uttarakhand-banshidhar-bhagat",
           "constituency": "Kaladhungi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Diwan Singh Bisht",
+          "personId": "uttarakhand-diwan-singh-bisht",
           "constituency": "Ramnagar",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Adesh Singh Chauhan",
+          "personId": "uttarakhand-adesh-singh-chauhan",
           "constituency": "Jaspur",
           "party": "Indian National Congress"
         },
         {
           "name": "Trilok Singh Cheema",
+          "personId": "uttarakhand-trilok-singh-cheema",
           "constituency": "Kashipur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Yashpal Arya",
+          "personId": "uttarakhand-yashpal-arya",
           "constituency": "Bajpur",
           "party": "Indian National Congress"
         },
         {
           "name": "Arvind Pandey",
+          "personId": "uttarakhand-arvind-pandey",
           "constituency": "Gadarpur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Shiv Arora",
+          "personId": "uttarakhand-shiv-arora",
           "constituency": "Rudrapur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Tilak Raj Behar",
+          "personId": "uttarakhand-tilak-raj-behar",
           "constituency": "Kichha",
           "party": "Indian National Congress"
         },
         {
           "name": "Saurabh Bahuguna",
+          "personId": "uttarakhand-saurabh-bahuguna",
           "constituency": "Sitarganj",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Gopal Singh Rana",
+          "personId": "uttarakhand-gopal-singh-rana",
           "constituency": "Nanakmatta",
           "party": "Indian National Congress"
         },
         {
           "name": "Bhuwan Chandra Kapri",
+          "personId": "uttarakhand-bhuwan-chandra-kapri",
           "constituency": "Khatima",
           "party": "Indian National Congress"
         }
@@ -4098,6 +4853,7 @@
         },
         {
           "name": "Nilkanth Halarnkar",
+          "personId": "goa-nilkanth-halarnkar",
           "constituency": "Tivim",
           "party": "Bharatiya Janata Party"
         },
@@ -4115,6 +4871,7 @@
         },
         {
           "name": "Kedar Naik",
+          "personId": "goa-kedar-naik",
           "constituency": "Saligao",
           "party": "Bharatiya Janata Party"
         },
@@ -4222,6 +4979,7 @@
         },
         {
           "name": "Krishna Salkar",
+          "personId": "goa-krishna-salkar",
           "constituency": "Vasco da Gama",
           "party": "Bharatiya Janata Party"
         },
@@ -4245,6 +5003,7 @@
         },
         {
           "name": "Aleixo Lourenco",
+          "personId": "goa-aleixo-reginaldo-lourenco",
           "constituency": "Curtorim",
           "party": "Independent"
         },
@@ -4268,6 +5027,7 @@
         },
         {
           "name": "Ulhas Tuenkar",
+          "personId": "goa-ulhas-tuenkar",
           "constituency": "Navelim",
           "party": "Bharatiya Janata Party"
         },
@@ -4291,6 +5051,7 @@
         },
         {
           "name": "Nilesh Cabral",
+          "personId": "goa-nilesh-cabral",
           "constituency": "Curchorem",
           "party": "Bharatiya Janata Party"
         },
@@ -4366,241 +5127,289 @@
       "members": [
         {
           "name": "Thokchom Lokeshwar Singh",
+          "personId": "manipur-thokchom-lokeshwar-singh",
           "constituency": "Khundrakpam",
           "party": "Indian National Congress"
         },
         {
           "name": "Nongthombam Biren Singh",
+          "personId": "manipur-nongthombam-biren-singh",
           "constituency": "Heingang",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Leishangthem Susindro Meitei",
+          "personId": "manipur-leishangthem-susindro-meitei",
           "constituency": "Khurai",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sheikh Noorul Hassan",
+          "personId": "manipur-sheikh-noorul-hassan",
           "constituency": "Kshetrigao",
           "party": "National Peoples Party"
         },
         {
           "name": "Thongam Biswajit Singh",
+          "personId": "manipur-thongam-biswajit-singh",
           "constituency": "Thongju",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Lourembam Rameshwor Meetei",
+          "personId": "manipur-lourembam-rameshwor-meetei",
           "constituency": "Keirao",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Thounaojam Shyamkumar",
+          "personId": "manipur-thounaojam-shyamkumar",
           "constituency": "Andro",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Khongbantabam Ibomcha",
+          "personId": "manipur-khongbantabam-ibomcha",
           "constituency": "Lamlai",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Khumukcham Joykisan Singh",
+          "personId": "manipur-khumukcham-joykisan-singh",
           "constituency": "Thangmeiband",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Khwairakpam Raghumani Singh",
+          "personId": "manipur-khwairakpam-raghumani-singh",
           "constituency": "Uripok",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Rajkumar Imo Singh",
+          "personId": "manipur-rajkumar-imo-singh",
           "constituency": "Sagolband",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Nishikant Sapam",
+          "personId": "manipur-sapam-nishikant-singh",
           "constituency": "Keishamthong",
           "party": "Independent"
         },
         {
           "name": "Yumnam Khemchand Singh",
+          "personId": "manipur-yumnam-khemchand-singh",
           "constituency": "Singjamei",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Thokchom Satyabrata Singh",
+          "personId": "manipur-thokchom-satyabrata-singh",
           "constituency": "Yaiskul",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Thangjam Arunkumar",
+          "personId": "manipur-thangjam-arunkumar",
           "constituency": "Wangkhei",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Heikham Dingo Singh",
+          "personId": "manipur-heikham-dingo-singh",
           "constituency": "Sekmai (SC)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sorokhaibam Rajen Singh",
+          "personId": "manipur-sorokhaibam-rajen-singh",
           "constituency": "Lamsang",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Dr. Sapam Ranjan Singh",
+          "personId": "manipur-dr-sapam-ranjan-singh",
           "constituency": "Konthoujam",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sapam Kunjakeswor (Keba) Singh",
+          "personId": "manipur-sapam-kunjakeswor-keba-singh",
           "constituency": "Patsoi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Karam Shyam",
+          "personId": "manipur-karam-shyam",
           "constituency": "Langthabal",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sagolshem Kebi Devi",
+          "personId": "manipur-sagolshem-kebi-devi",
           "constituency": "Naoriya Pakhanglakpa",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Khurajam Loken Singh",
+          "personId": "manipur-khuraijam-loken-singh",
           "constituency": "Wangoi",
           "party": "National Peoples Party"
         },
         {
           "name": "Kongkham Robindro Singh",
+          "personId": "manipur-kongkham-robindro-singh",
           "constituency": "Mayang Imphal",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Thounaojam Basanta Kumar Singh",
+          "personId": "manipur-thounaojam-basanta-kumar-singh",
           "constituency": "Nambol",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Irengbam Nalini Devi",
+          "personId": "manipur-irengbam-nalini-devi",
           "constituency": "Oinam",
           "party": "National Peoples Party"
         },
         {
           "name": "Konthoujam Govindas Singh",
+          "personId": "manipur-konthoujam-govindas-singh",
           "constituency": "Bishnupur",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Thongam Shanti Singh",
+          "personId": "manipur-thongam-shanti-singh",
           "constituency": "Moirang",
           "party": "National Peoples Party"
         },
         {
           "name": "Tongbram Robindro Singh",
+          "personId": "manipur-tongbram-robindro-singh",
           "constituency": "Thanga",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Sanasam Premchandra Singh",
+          "personId": "manipur-sanasam-premchandra-singh",
           "constituency": "Kumbi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mohd Abdul Nasir",
+          "personId": "manipur-mohd-abdul-nasir",
           "constituency": "Lilong",
           "party": "Janata Dal (United)"
         },
         {
           "name": "Okram Ibobi Singh",
+          "personId": "manipur-okram-ibobi-singh",
           "constituency": "Thoubal",
           "party": "Indian National Congress"
         },
         {
           "name": "Keisham Meghachandra Singh",
+          "personId": "manipur-keisham-meghachandra-singh",
           "constituency": "Wangkhem",
           "party": "Indian National Congress"
         },
         {
           "name": "Thokchom Radheshyam Singh",
+          "personId": "manipur-thokchom-radheshyam-singh",
           "constituency": "Heirok",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Paonam Brojen Singh",
+          "personId": "manipur-paonam-brojen-singh",
           "constituency": "Wangjing Tentha",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Surjakumar Okram",
+          "personId": "manipur-surjakumar-okram",
           "constituency": "Khangabok",
           "party": "Indian National Congress"
         },
         {
           "name": "Dr. Usham Deben Singh",
+          "personId": "manipur-dr-usham-deben-singh",
           "constituency": "Wabgai",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Mayanglambam Rameshwar Singh",
+          "personId": "manipur-mayanglambam-rameshwar-singh",
           "constituency": "Kakching",
           "party": "National Peoples Party"
         },
         {
           "name": "Dr. Yumnam Radheshyam Singh",
+          "personId": "manipur-yumnam-radheshyam",
           "constituency": "Hiyanglam",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Kangujam Ranjit Singh",
+          "personId": "manipur-kangujam-ranjit-singh",
           "constituency": "Sugnoo",
           "party": "Indian National Congress"
         },
         {
           "name": "Achab Uddin",
+          "personId": "manipur-md-achab-uddin",
           "constituency": "Jiribam",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "SS. Olish",
+          "personId": "manipur-ss-olish",
           "constituency": "Chandel (ST)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Letpao Haokip",
+          "personId": "manipur-letpao-haokip",
           "constituency": "Tengnoupal (ST)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Leishiyo Keishing",
+          "personId": "manipur-leishiyo-keishing",
           "constituency": "Phungyar (ST)",
           "party": "Naga Peoples Front"
         },
         {
           "name": "Ram Muivah",
+          "personId": "manipur-ram-muivah",
           "constituency": "Ukhrul (ST)",
           "party": "Naga Peoples Front"
         },
         {
           "name": "Khashim Vashum",
+          "personId": "manipur-khashim-vashum",
           "constituency": "Chingai (ST)",
           "party": "Naga Peoples Front"
         },
         {
           "name": "Kimneo Haokip Hangshing",
+          "personId": "manipur-kimneo-haokip-hangshing",
           "constituency": "Saikul (ST)",
           "party": "Kuki Peoples Alliance"
         },
         {
           "name": "J. Kumo Sha",
+          "personId": "manipur-j-kumo-sha",
           "constituency": "Karong (ST)",
           "party": "Independent"
         },
         {
           "name": "Losii Dikho",
+          "personId": "manipur-losii-dikho",
           "constituency": "Mao (ST)",
           "party": "Naga Peoples Front"
         },
@@ -4612,31 +5421,37 @@
         },
         {
           "name": "Nemcha Kipgen",
+          "personId": "manipur-nemcha-kipgen",
           "constituency": "Kangpokpi",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Haokholet Kipgen",
+          "personId": "manipur-haokholet-kipgen",
           "constituency": "Saitu (ST)",
           "party": "Independent"
         },
         {
           "name": "Awangbow Newmai",
+          "personId": "manipur-awangbow-newmai",
           "constituency": "Tamei (ST)",
           "party": "Naga Peoples Front"
         },
         {
           "name": "Janghemlung Panmei",
+          "personId": "manipur-jenghemlung-panmei",
           "constituency": "Tamenglong (ST)",
           "party": "National Peoples Party"
         },
         {
           "name": "Dinganglung Gangmei",
+          "personId": "manipur-dinganglung-gangmei",
           "constituency": "Nungba (ST)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Ngursanglur Sanate",
+          "personId": "manipur-ngursanglur-sanate",
           "constituency": "Tipaimukh (ST)",
           "party": "Bharatiya Janata Party"
         },
@@ -4648,21 +5463,25 @@
         },
         {
           "name": "Letzamang Haokip",
+          "personId": "manipur-letzamang-haokip",
           "constituency": "Henglep (ST)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "L.M. Khaute",
+          "personId": "manipur-l-m-khaute",
           "constituency": "Churachandpur (ST)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Paolienlal Haokip",
+          "personId": "manipur-paolienlal-haokip",
           "constituency": "Saikot (ST)",
           "party": "Bharatiya Janata Party"
         },
         {
           "name": "Chinlunthang",
+          "personId": "manipur-chinlunthang",
           "constituency": "Singhat (ST)",
           "party": "Kuki Peoples Alliance"
         }

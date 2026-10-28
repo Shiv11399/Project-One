@@ -623,6 +623,37 @@
             line-height: 1.55;
         }
 
+        .winners-archive > .candidate-empty {
+            margin: 0 14px 12px;
+        }
+
+        .winners-archive-cards {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+            max-height: 520px;
+            padding: 0 12px 12px;
+            overflow: auto;
+        }
+
+        /* Grid gap handles spacing; beats the later ".candidate-card + .candidate-card" rule. */
+        .winners-archive .winners-archive-cards .candidate-card {
+            margin: 0;
+        }
+
+        .candidate-result {
+            margin: 6px 0 0;
+            color: #c0cbd8;
+            font-size: 12px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 640px) {
+            .winners-archive-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .incumbent-member-list {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1568,7 +1599,18 @@
             return badge;
         }
 
-        function createCandidateCard(candidate) {
+        function formatResult(result) {
+            return [
+                result.outcome === "won" ? "Won" : result.outcome,
+                Number.isFinite(result.votes) ? `${result.votes.toLocaleString("en-IN")} votes` : "",
+                Number.isFinite(result.voteShare) ? `${result.voteShare}% vote share` : "",
+                Number.isFinite(result.margin) ? `margin ${result.margin.toLocaleString("en-IN")}` : ""
+            ].filter(Boolean).join(" · ");
+        }
+
+        // In an archive, whose note already says every imported field is unverified, only
+        // statuses other than "unverified" are worth a badge.
+        function createCandidateCard(candidate, { archive = false } = {}) {
             const card = document.createElement("article");
             card.className = "candidate-card";
             const name = document.createElement("h4");
@@ -1584,7 +1626,9 @@
                 ["party", "Party"],
                 ["constituency", "Constituency"]
             ].forEach(([field, label]) => {
-                const badge = createVerificationBadge(candidate.verification?.[field], label);
+                const record = candidate.verification?.[field];
+                if (archive && record?.status === "unverified") return;
+                const badge = createVerificationBadge(record, label);
                 if (badge) verifiedFields.append(badge);
             });
             if (verifiedFields.childElementCount) card.append(verifiedFields);
@@ -1593,6 +1637,12 @@
                 meta.className = "candidate-meta";
                 meta.textContent = details.join(" · ");
                 card.append(meta);
+            }
+            if (candidate.result) {
+                const result = document.createElement("p");
+                result.className = "candidate-result";
+                result.textContent = formatResult(candidate.result);
+                card.append(result);
             }
             if (Array.isArray(candidate.sources) && candidate.sources.length) {
                 const sources = document.createElement("div");
@@ -1816,13 +1866,16 @@
                 ["Party", "party", (profile) => profile.party || "Not recorded"],
                 ["Constituency", "constituency", (profile) => profile.constituency || "Not recorded"],
                 ["Previous elected positions", "previousPositions", (profile) => {
-                    const positions = profile.profile?.previousPositions;
-                    if (!Array.isArray(positions) || !positions.length) return "Not recorded";
-                    return positions.map((position) => [
-                        position.title,
-                        position.constituency,
-                        position.fromYear && position.toYear ? `${position.fromYear}–${position.toYear}` : position.fromYear || position.toYear
-                    ].filter(Boolean).join(" · ")).join("; ");
+                    const positions = (Array.isArray(profile.profile?.previousPositions) ? profile.profile.previousPositions : [])
+                        .map((position) => [
+                            position.title,
+                            position.constituency,
+                            position.fromYear && position.toYear ? `${position.fromYear}–${position.toYear}` : position.fromYear || position.toYear
+                        ].filter(Boolean).join(" · "));
+                    const wins = earlierWinsFor(profile).map(({ entry, candidacy }) =>
+                        `MLA · ${candidacy.constituency} · won ${entry.year}${/by-election/i.test(entry.type) ? " by-election" : ""} (${candidacy.party})`);
+                    const all = [...positions, ...wins];
+                    return all.length ? all.join("; ") : "Not recorded";
                 }],
                 ["Declared education", "education", (profile) => valueWithSource(profile.profile?.education)],
                 ["Declared assets", "assets", (profile) => valueWithSource(profile.profile?.assets)],
@@ -1862,13 +1915,26 @@
                     return results.map((result) => [
                         result.year,
                         result.constituency || profile.constituency,
-                        Number.isFinite(result.votes) ? `${result.votes.toLocaleString()} votes` : "",
+                        Number.isFinite(result.votes) ? `${result.votes.toLocaleString("en-IN")} votes` : "",
                         Number.isFinite(result.voteShare) ? `${result.voteShare}% vote share` : "",
-                        Number.isFinite(result.margin) ? `${result.margin.toLocaleString()} vote margin` : "",
+                        Number.isFinite(result.margin) ? `${result.margin.toLocaleString("en-IN")} vote margin` : "",
                         result.result || result.outcome
                     ].filter(Boolean).join(" · ")).join("; ");
                 }]
             ];
+
+            // Earlier winning candidacies of the same person in the archives, e.g. a 2022 win
+            // shown on the profile of someone who won the seat again in a 2024 by-election.
+            function earlierWinsFor(profile) {
+                if (!profile.candidateId || !Number.isInteger(profile.electionYear)) return [];
+                return (candidateData?.elections || [])
+                    .filter((entry) => entry.candidateScope === "winners_archive" && entry.year <= profile.electionYear)
+                    .flatMap((entry) => entry.candidacies
+                        .filter((candidacy) => candidacy.candidateId === profile.candidateId && candidacy.id !== profile.comparisonId)
+                        .map((candidacy) => ({ entry, candidacy })))
+                    .filter(({ entry }) => entry.year < profile.electionYear || /by-election/i.test(profile.recordType || ""))
+                    .sort((first, second) => second.entry.year - first.entry.year);
+            }
 
             function sourceKey(source) {
                 return `${source.label}|${source.url}`;
@@ -2365,26 +2431,33 @@
             const people = new Map((candidateData?.people || []).map((person) => [person.id, person]));
             const stateElections = (candidateData?.elections || []).filter((entry) => entry.state === election.state);
             const upcomingElection = stateElections.find((entry) => entry.candidateScope === "declared_candidates");
+            // General-election archives first, then by-elections oldest to newest.
             const previousElections = stateElections
                 .filter((entry) => entry.candidateScope === "winners_archive")
-                .map((entry) => ({
-                    year: entry.year,
-                    label: "Previous-election winner",
-                    sources: entry.sources || [],
-                    archiveNote: entry.archiveNote || "",
-                    candidates: entry.candidacies.map((candidacy) => {
-                        const person = people.get(candidacy.candidateId);
-                        return {
-                            ...candidacy,
-                            name: person?.name || "Candidate identity not verified",
-                            aliases: person?.aliases || [],
-                            candidacyId: candidacy.id,
-                            electionYear: entry.year,
-                            profile: candidacy.profile || {},
-                            recordType: "Previous-election winner"
-                        };
-                    })
-                }));
+                .map((entry) => {
+                    const byElection = /by-election/i.test(entry.type);
+                    const label = byElection ? "By-election winner" : "Previous-election winner";
+                    return {
+                        year: entry.year,
+                        byElection,
+                        label,
+                        sources: entry.sources || [],
+                        archiveNote: entry.archiveNote || "",
+                        candidates: entry.candidacies.map((candidacy) => {
+                            const person = people.get(candidacy.candidateId);
+                            return {
+                                ...candidacy,
+                                name: person?.name || "Candidate identity not verified",
+                                aliases: person?.aliases || [],
+                                candidacyId: candidacy.id,
+                                electionYear: entry.year,
+                                profile: candidacy.profile || {},
+                                recordType: label
+                            };
+                        })
+                    };
+                })
+                .sort((first, second) => (first.byElection - second.byElection) || (first.year - second.year));
             const candidates = upcomingElection
                 ? upcomingElection.candidacies.map((candidacy) => {
                     const person = people.get(candidacy.candidateId);
@@ -2442,21 +2515,27 @@
                 empty.textContent = `No verified candidates have been declared for the ${election.state} ${upcomingElection?.year || "upcoming"} election yet.`;
                 section.append(empty);
             }
+            // Archives can hold hundreds of winners, so each one is folded away like the Assembly roster.
             previousElections.forEach((previousElection) => {
-                const archiveHeading = document.createElement("h4");
-                archiveHeading.className = "announcement-heading";
-                archiveHeading.textContent = `${previousElection.year} ${election.state} election winners`;
-                archiveHeading.style.marginTop = "18px";
-                section.append(archiveHeading);
+                const archive = document.createElement("details");
+                archive.className = "incumbent-list winners-archive";
+                const summary = document.createElement("summary");
+                const count = previousElection.candidates.length;
+                summary.textContent = `${previousElection.year} ${election.state} ${previousElection.byElection ? "by-election" : "election"} winners · ${count} ${count === 1 ? "seat" : "seats"}`;
+                archive.append(summary);
                 if (previousElection.archiveNote) {
                     const archiveNote = document.createElement("p");
                     archiveNote.className = "candidate-empty";
                     archiveNote.textContent = previousElection.archiveNote;
-                    section.append(archiveNote);
+                    archive.append(archiveNote);
                 }
+                const cards = document.createElement("div");
+                cards.className = "winners-archive-cards";
                 previousElection.candidates.forEach((candidate) => {
-                    section.append(createCandidateCard(candidate));
+                    cards.append(createCandidateCard(candidate, { archive: true }));
                 });
+                archive.append(cards);
+                section.append(archive);
             });
             section.append(createCandidateProfileTools(
                 profileData,

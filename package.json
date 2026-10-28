@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "update-feed": "node scripts/update-eci-feed.js",
-    "prepare-pages": "node scripts/prepare-pages.js"
+    "prepare-pages": "node scripts/prepare-pages.js",
+    "import-archives": "node scripts/import-winner-archives.js"
   },
   "engines": {
     "node": ">=18"
