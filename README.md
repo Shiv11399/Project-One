@@ -268,6 +268,8 @@ Every imported field is `unverified`; nothing has been checked against original 
 
 The page provides text search across candidate name, party, and constituency and a side-by-side comparison for up to three profiles. Clicking a sitting MLA's constituency card in the Current Assembly roster selects that person and opens the comparison drawer (right side on desktop, bottom sheet on mobile); vacant seats are not selectable. Current Assembly snapshot profiles are explicitly labeled as such and are not treated as declared candidates or historical election results.
 
+For declared assets in the comparison, the site keeps the affidavit amount visible and adds an illustrative Fortuner price equivalent when the value is parseable as `INR <amount>`. An asterisk links the comparison to a footnote below the table with the ₹34.76 lakh base-model ex-showroom benchmark listed in October 2026 and its source. This is a scale analogy only: affidavit values are not inflation-adjusted, declared assets may include non-cash holdings, and the equivalent is not liquid wealth or purchasing power. Review the benchmark and source when prices change.
+
 ### Current Assembly and incumbents: `data/incumbents.json`
 
 This is a dated, manually maintained snapshot, not a live feed. Each state has an `asOf` date, government and Chief Minister details, party seat totals, source links, and a constituency-by-constituency `members` list. The snapshot currently covers Goa, Manipur, Punjab, Uttarakhand, Uttar Pradesh, and Gujarat.
@@ -313,7 +315,7 @@ Each member's `status` and a state's `notes` are optional. A member can also set
 
 The Current Assembly panel renders `seatCounts` as a party seat-distribution pie chart with a matching legend showing seat totals and percentages. The chart represents state-wide Assembly composition; individual constituency entries remain in the expandable roster below it.
 
-Known vacancies and source conflicts are documented in the relevant state data. Some rosters rely on secondary sources where a current official roster could not be verified. Check the source links and update `asOf` and the affected data when membership changes. Do not treat current MLAs as candidates for the next election.
+Known vacancies and source conflicts are documented in the relevant state data. Some rosters rely on secondary sources where a current official roster could not be verified. Party tallies should reflect a member's current affiliation, not automatically the party on the ticket they originally won with; document resignations, party switches, and by-election outcomes in the state's notes and sources. Check the source links and update `asOf` and the affected data when membership changes. Do not treat current MLAs as candidates for the next election.
 
 ## Data maintenance
 

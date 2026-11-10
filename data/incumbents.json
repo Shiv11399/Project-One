@@ -15,10 +15,15 @@
         {
           "label": "Official Gujarat Chief Minister portal",
           "url": "https://cmogujarat.gov.in/en"
+        },
+        {
+          "url": "https://www.newindianexpress.com/states/gujarat/2026/Sep/25/four-gujarat-mlas-among-111-mps-mlas-who-switched-parties-after-winning-polls-adr",
+          "label": "ADR/NEW report on Gujarat MLAs who switched parties (data through 2026-07-12; secondary source)"
         }
       ],
       "asOf": "2026-10-25",
       "government": "Bharatiya Janata Party government",
+      "notes": "The constituency roster baseline is dated 2026-10-25. Party affiliations and seat totals were reviewed on 2026-11-10 against an ADR/NEW report covering data through 2026-07-12: C. J. Chavda (Vijapur), Arjun Modhwadia (Porbandar), Arvindbhai Ladani (Manavadar), and Chirag Patel (Khambhat) were elected as Congress MLAs, resigned, joined the BJP, and later won by-elections. Their current party is shown as BJP. The official NeVA homepage listed notices through 2026-11-05 but does not publish a complete member roster, so the remaining names and affiliations have not been independently rechecked against a complete official roll.",
       "members": [
         {
           "name": "Jethabhai Ghelabhai Ahir",
@@ -395,7 +400,7 @@
           "name": "Arvindbhai Jinabhai Ladani",
           "personId": "gujarat-arvindbhai-jinabhai-ladani",
           "constituency": "Manavadar",
-          "party": "Indian National Congress"
+          "party": "Bharatiya Janata Party"
         },
         {
           "name": "Hardik Bharatbhai Patel",
@@ -833,7 +838,7 @@
           "name": "Arjunbhai Devabhai Modhwadia",
           "personId": "gujarat-arjunbhai-devabhai-modhwadia",
           "constituency": "Porbandar",
-          "party": "Indian National Congress"
+          "party": "Bharatiya Janata Party"
         },
         {
           "name": "Umeshbhai Naranbhai Makwana",
@@ -1114,11 +1119,11 @@
       "seatCounts": [
         {
           "party": "Bharatiya Janata Party",
-          "seats": 160
+          "seats": 162
         },
         {
           "party": "Indian National Congress",
-          "seats": 14
+          "seats": 12
         },
         {
           "party": "Independent",
