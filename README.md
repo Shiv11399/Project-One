@@ -297,7 +297,7 @@ Each member's `status` and a state's `notes` are optional. A member can also set
 
 The Current Assembly panel renders `seatCounts` as a party seat-distribution pie chart with a matching legend showing seat totals and percentages. The chart represents state-wide Assembly composition; individual constituency entries remain in the expandable roster below it.
 
-Known vacancies and source conflicts are documented in the relevant state data. Some rosters rely on secondary sources where a current official roster could not be verified. Check the source links and update `asOf` and the affected data when membership changes. Do not treat current MLAs as candidates for the next election.
+Known vacancies and source conflicts are documented in the relevant state data. Some rosters rely on secondary sources where a current official roster could not be verified. Party tallies should reflect a member's current affiliation, not automatically the party on the ticket they originally won with; document resignations, party switches, and by-election outcomes in the state's notes and sources. Check the source links and update `asOf` and the affected data when membership changes. Do not treat current MLAs as candidates for the next election.
 
 ## Data maintenance
 
