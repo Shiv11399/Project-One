@@ -1748,6 +1748,18 @@
                 }))
                 : [];
             const candidacyProfiles = [...previousWinners, ...declaredCandidates];
+            function earlierWinsFor(profile) {
+                const profileYear = Number(profile.electionYear);
+                if (!profile.candidateId || !Number.isInteger(profileYear)) return [];
+                return previousElections
+                    .filter((entry) => entry.year < profileYear)
+                    .flatMap((entry) => entry.candidates
+                        .filter((candidacy) => candidacy.candidateId === profile.candidateId)
+                        .map((candidacy) => ({ entry, candidacy })))
+                    .sort((first, second) =>
+                        (first.entry.year - second.entry.year) ||
+                        (Number(first.entry.byElection) - Number(second.entry.byElection)));
+            }
             const currentMembers = Array.isArray(stateData?.members) ? stateData.members : [];
             const currentProfiles = [];
             currentMembers
@@ -2006,7 +2018,7 @@
                             position.fromYear && position.toYear ? `${position.fromYear}–${position.toYear}` : position.fromYear || position.toYear
                         ].filter(Boolean).join(" · "));
                     const wins = earlierWinsFor(profile).map(({ entry, candidacy }) =>
-                        `MLA · ${candidacy.constituency} · won ${entry.year}${/by-election/i.test(entry.type) ? " by-election" : ""} (${candidacy.party})`);
+                        `MLA · ${candidacy.constituency} · won ${entry.year}${entry.byElection ? " by-election" : ""} (${candidacy.party})`);
                     const all = [...positions, ...wins];
                     return all.length ? all.join("; ") : "Not recorded";
                 }],
