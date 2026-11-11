@@ -1940,6 +1940,44 @@
                 return record.value;
             }
 
+            function appendCriminalCases(cell, profile) {
+                const cases = profile.profile?.criminalCases;
+                if (!cases || !Number.isInteger(cases.declaredCount) || cases.declaredCount < 0) {
+                    cell.textContent = "Not recorded";
+                    return;
+                }
+
+                const count = document.createElement("p");
+                count.className = "criminal-case-count";
+                count.textContent = cases.declaredCount === 0
+                    ? "Affidavit summary reports no declared cases"
+                    : `${cases.declaredCount} reported in affidavit summary`;
+                cell.append(count);
+
+                if (cases.declaredCount === 0 || !Array.isArray(cases.entries)) return;
+                const entries = cases.entries.filter((entry) =>
+                    entry && typeof entry.description === "string" && entry.description.trim());
+                if (!entries.length) return;
+
+                const list = document.createElement("ul");
+                list.className = "criminal-case-list";
+                entries.forEach((entry) => {
+                    const item = document.createElement("li");
+                    if (typeof entry.status === "string" && entry.status.trim()) {
+                        const status = document.createElement("span");
+                        status.className = "criminal-case-status";
+                        status.textContent = entry.status.replace(/_/g, " ");
+                        item.append(status);
+                    }
+                    const description = document.createElement("span");
+                    description.className = "criminal-case-description";
+                    description.textContent = entry.description;
+                    item.append(description);
+                    list.append(item);
+                });
+                cell.append(list);
+            }
+
             const fortunerPriceBenchmark = {
                 amountInr: 3_476_000,
                 source: {
