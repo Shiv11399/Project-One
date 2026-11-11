@@ -1173,6 +1173,31 @@
             padding-left: 2px;
         }
 
+        .criminal-case-references {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 5px 0;
+        }
+
+        .criminal-case-reference {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 3px;
+            padding: 3px 7px;
+            border: 1px solid rgba(148, 163, 184, 0.32);
+            border-radius: 6px;
+            color: #e2e8f0;
+            font-size: 11px;
+            line-height: 1.45;
+            overflow-wrap: anywhere;
+        }
+
+        .criminal-case-reference-label {
+            color: var(--muted);
+            font-weight: 700;
+        }
+
         .criminal-case-status {
             display: block;
             margin-bottom: 3px;
@@ -1969,10 +1994,39 @@
                         status.textContent = entry.status.replace(/_/g, " ");
                         item.append(status);
                     }
+
+                    const references = [];
+                    const details = [];
+                    entry.description.split(";").map((part) => part.trim()).filter(Boolean).forEach((part) => {
+                        const separator = part.indexOf(":");
+                        const label = separator < 0 ? "" : part.slice(0, separator).trim();
+                        if (["Sections listed", "Other sections/details"].includes(label)) {
+                            references.push({ label, value: part.slice(separator + 1).trim() });
+                        } else {
+                            details.push(part);
+                        }
+                    });
+                    if (references.length) {
+                        const referenceList = document.createElement("div");
+                        referenceList.className = "criminal-case-references";
+                        references.forEach((reference) => {
+                            const chip = document.createElement("span");
+                            chip.className = "criminal-case-reference";
+                            const label = document.createElement("span");
+                            label.className = "criminal-case-reference-label";
+                            label.textContent = `${reference.label}:`;
+                            const value = document.createElement("span");
+                            value.textContent = reference.value;
+                            chip.append(label, value);
+                            referenceList.append(chip);
+                        });
+                        item.append(referenceList);
+                    }
+
                     const description = document.createElement("span");
                     description.className = "criminal-case-description";
-                    description.textContent = entry.description;
-                    item.append(description);
+                    description.textContent = details.length ? details.join("; ") : "";
+                    if (description.textContent) item.append(description);
                     list.append(item);
                 });
                 cell.append(list);
