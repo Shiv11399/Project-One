@@ -1205,10 +1205,14 @@
             font-weight: 750;
         }
 
-        .asset-fortuner-icon {
-            width: 21px;
-            height: 21px;
+        .asset-fortuner-image {
+            width: 34px;
+            height: 24px;
             flex: 0 0 auto;
+            object-fit: cover;
+            border: 1px solid rgba(148, 163, 184, 0.35);
+            border-radius: 4px;
+            background: #ffffff;
         }
 
         .asset-equivalent-note {
@@ -1535,7 +1539,7 @@
 
         <footer class="page-footer">
             <p>Timing shown here is an expected election window, not a confirmed polling date. The Election Commission of India publishes the official schedule when announced.</p>
-            <p>Party symbols are shown only to identify parties, as reserved by the Election Commission of India for the election shown. They are not an endorsement of any party or candidate. Independents and parties without a reserved symbol are shown by name only.</p>
+            <p>Party symbols are shown only to identify parties, as reserved by the Election Commission of India for the election shown. They are not an endorsement of any party or candidate. Independents and unrecorded parties use a neutral placeholder.</p>
             <span>India · 2027 outlook</span>
         </footer>
     </main>
@@ -2257,33 +2261,16 @@
 
                 const equivalent = document.createElement("p");
                 equivalent.className = "asset-fortuner-equivalent";
-                const carIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-                carIcon.classList.add("asset-fortuner-icon");
-                carIcon.setAttribute("viewBox", "0 0 24 24");
-                carIcon.setAttribute("fill", "none");
-                carIcon.setAttribute("stroke", "currentColor");
-                carIcon.setAttribute("stroke-width", "1.7");
-                carIcon.setAttribute("stroke-linecap", "round");
-                carIcon.setAttribute("stroke-linejoin", "round");
-                carIcon.setAttribute("aria-hidden", "true");
-                const body = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                body.setAttribute("d", "M3 15v-2.2l2-1.2 1.8-4.1A2.5 2.5 0 0 1 9.1 6h6.8a2.5 2.5 0 0 1 2.3 1.5l1.5 3.1 1.3.8V15H3Z");
-                const windows = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                windows.setAttribute("d", "m6.3 11.2 1.3-3a1.6 1.6 0 0 1 1.5-1h6.6a1.6 1.6 0 0 1 1.5 1l1.3 3H6.3Z");
-                const wheels = document.createElementNS("http://www.w3.org/2000/svg", "path");
-                wheels.setAttribute("d", "M6.5 15v1m11-1v1");
-                const wheelCaps = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-                wheelCaps.setAttribute("cx", "7");
-                wheelCaps.setAttribute("cy", "16");
-                wheelCaps.setAttribute("r", "1.6");
-                const secondWheelCap = wheelCaps.cloneNode();
-                secondWheelCap.setAttribute("cx", "17");
-                carIcon.append(body, windows, wheels, wheelCaps, secondWheelCap);
+                const carImage = document.createElement("img");
+                carImage.className = "asset-fortuner-image";
+                carImage.src = "./assets/fortuner-car.jpg";
+                carImage.alt = "";
+                carImage.setAttribute("aria-hidden", "true");
                 const equivalentText = document.createElement("span");
                 equivalentText.textContent = `≈ ${(
                     amountInr / fortunerPriceBenchmark.amountInr
                 ).toLocaleString("en-IN", { minimumFractionDigits: 1, maximumFractionDigits: 1 })} Fortuner base-price equivalents*`;
-                equivalent.append(carIcon, equivalentText);
+                equivalent.append(carImage, equivalentText);
                 cell.append(equivalent);
             }
 
@@ -2299,9 +2286,7 @@
                     );
                     return value;
                 }],
-                ["Party", "party", (profile) => profile.party
-                    ? createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate, explainMissing: true })
-                    : "Not recorded"],
+                ["Party", "party", (profile) => createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate, explainMissing: true })],
                 ["Constituency", "constituency", (profile) => profile.constituency || "Not recorded"],
                 ["Previous elected positions", "previousPositions", (profile) => {
                     const positions = (Array.isArray(profile.profile?.previousPositions) ? profile.profile.previousPositions : [])
@@ -2438,12 +2423,10 @@
                     meta.append(current);
                 }
                 heading.append(name);
-                if (profile.party) {
-                    const party = document.createElement("div");
-                    party.className = "candidate-column-party";
-                    party.append(createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate }));
-                    heading.append(party);
-                }
+                const party = document.createElement("div");
+                party.className = "candidate-column-party";
+                party.append(createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate }));
+                heading.append(party);
                 heading.append(meta);
 
                 if (columnStatusCounts.length) {
