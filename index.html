@@ -685,6 +685,25 @@
             object-fit: contain;
         }
 
+        .party-symbol--placeholder {
+            width: 24px;
+            height: 24px;
+            justify-content: center;
+            padding: 2px;
+            background: rgba(148, 163, 184, 0.12);
+        }
+
+        .party-symbol--placeholder svg {
+            display: block;
+            width: 18px;
+            height: 18px;
+            fill: none;
+            stroke: currentColor;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 1.8;
+        }
+
         .candidate-party,
         .candidate-column-party {
             margin: 6px 0 0;
@@ -1792,11 +1811,35 @@
             return findParty(label)?.name || label;
         }
 
+        function createPartyPlaceholder(description) {
+            const placeholder = document.createElement("span");
+            placeholder.className = "party-symbol party-symbol--placeholder";
+            placeholder.title = description;
+            placeholder.setAttribute("aria-label", description);
+            const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            icon.setAttribute("viewBox", "0 0 24 24");
+            icon.setAttribute("aria-hidden", "true");
+            const head = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            head.setAttribute("cx", "12");
+            head.setAttribute("cy", "8");
+            head.setAttribute("r", "3");
+            const shoulders = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            shoulders.setAttribute("d", "M5 20c0-3.3 3.1-6 7-6s7 2.7 7 6");
+            icon.append(head, shoulders);
+            placeholder.append(icon);
+            return placeholder;
+        }
+
         function createPartyLabel(label, { state, date, explainMissing = false } = {}) {
             const party = findParty(label);
             const wrapper = document.createElement("span");
             wrapper.className = "party-label";
             const reserved = findReservedSymbol(party, state, date);
+            if (party?.independent) {
+                wrapper.append(createPartyPlaceholder("Independent candidate — no fixed party symbol"));
+            } else if (!party) {
+                wrapper.append(createPartyPlaceholder(label ? "Party not recorded" : "No party recorded"));
+            }
             // In detailed views, say why no symbol is shown so it does not read as missing data.
             if (!reserved && explainMissing && party) {
                 const name = document.createElement("span");
@@ -1846,12 +1889,10 @@
             const details = [candidate.constituency, candidate.status]
                 .filter(Boolean);
             card.append(name);
-            if (candidate.party) {
-                const party = document.createElement("p");
-                party.className = "candidate-party";
-                party.append(createPartyLabel(candidate.party, { state: candidate.state, date: candidate.pollDate }));
-                card.append(party);
-            }
+            const party = document.createElement("p");
+            party.className = "candidate-party";
+            party.append(createPartyLabel(candidate.party, { state: candidate.state, date: candidate.pollDate }));
+            card.append(party);
             const verifiedFields = document.createElement("div");
             verifiedFields.className = "candidate-verification";
             [
@@ -2540,7 +2581,7 @@
                     const label = document.createElement("span");
                     label.append(
                         `${profile.name || "Unnamed candidate"} · `,
-                        profile.party ? createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate }) : "Party not verified",
+                        createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate }),
                         ` · ${profile.constituency || "Constituency not verified"}`
                     );
                     const tag = document.createElement("span");

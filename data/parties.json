@@ -92,7 +92,7 @@
       "abbreviation": "NPP",
       "aliases": ["NPP", "National Peoples Party"],
       "reservations": [
-        { "symbol": "Book", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"] }
+        { "symbol": "Book", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/npp-book.svg", "source": { "label": "Indian Election Symbol Book.svg — Wikimedia Commons (CC BY-SA 4.0)", "url": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_Book.svg", "retrievedAt": "2026-11-13" } } }
       ]
     },
     {
@@ -101,7 +101,7 @@
       "abbreviation": "SP",
       "aliases": ["SP"],
       "reservations": [
-        { "symbol": "Bicycle", "states": ["Uttar Pradesh"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+        { "symbol": "Bicycle", "states": ["Uttar Pradesh"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/sp-bicycle.png", "source": { "label": "Indian Election Symbol Cycle.png — Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_Cycle.png", "retrievedAt": "2026-11-13" } } }
       ]
     },
     {
@@ -110,7 +110,7 @@
       "abbreviation": "RLD",
       "aliases": ["RLD"],
       "reservations": [
-        { "symbol": "Hand Pump", "states": ["Uttar Pradesh"], "from": "2021-09-23", "to": "2023-05-14", "notifications": ["eci-2021-09-23"], "note": "Not listed as a State Party in the 2023 and 2024 notifications." }
+        { "symbol": "Hand Pump", "states": ["Uttar Pradesh"], "from": "2021-09-23", "to": "2023-05-14", "notifications": ["eci-2021-09-23"], "note": "Not listed as a State Party in the 2023 and 2024 notifications.", "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/rld-hand-pump.svg", "source": { "label": "Indian Election Symbol Hand Pump.svg — Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_Hand_Pump.svg", "retrievedAt": "2026-11-13" } } }
       ]
     },
     {
@@ -128,7 +128,7 @@
       "abbreviation": "SAD",
       "aliases": ["SAD"],
       "reservations": [
-        { "symbol": "Scales", "states": ["Punjab"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+        { "symbol": "Scales", "states": ["Punjab"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/sad-scales.svg", "source": { "label": "Shiromani Akali Dal symbol.svg — Wikimedia Commons (CC BY-SA 4.0)", "url": "https://commons.wikimedia.org/wiki/File:Shiromani_Akali_Dal_symbol.svg", "retrievedAt": "2026-11-13" } } }
       ]
     },
     {
@@ -155,7 +155,7 @@
       "abbreviation": "RGP",
       "aliases": ["RGP"],
       "reservations": [
-        { "symbol": "Football", "states": ["Goa"], "from": "2024-03-23", "notifications": ["eci-2024-03-23-sp"] }
+        { "symbol": "Football", "states": ["Goa"], "from": "2024-03-23", "notifications": ["eci-2024-03-23-sp"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/rgp-football.jpg", "source": { "label": "Indian Election Symbol football.jpg — Wikimedia Commons / Election Commission of India (GODL-India)", "url": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_football.jpg", "retrievedAt": "2026-11-13" } } }
       ]
     },
     {
@@ -164,7 +164,7 @@
       "abbreviation": "NPF",
       "aliases": ["NPF"],
       "reservations": [
-        { "symbol": "Cock", "states": ["Manipur"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+        { "symbol": "Cock", "states": ["Manipur"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/npf-cock.png", "source": { "label": "Indian Election Symbol Cock.png — Wikimedia Commons (CC BY-SA 4.0)", "url": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_Cock.png", "retrievedAt": "2026-11-13" } } }
       ]
     },
     {
@@ -173,7 +173,7 @@
       "abbreviation": "JD(U)",
       "aliases": ["JD(U)", "JDU"],
       "reservations": [
-        { "symbol": "Arrow", "states": ["Manipur"], "from": "2023-05-15", "notifications": ["eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+        { "symbol": "Arrow", "states": ["Manipur"], "from": "2023-05-15", "notifications": ["eci-2023-05-15-sp", "eci-2024-03-23-sp"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/jdu-arrow.png", "source": { "label": "Indian Election Symbol Arrow.png — Wikimedia Commons", "url": "https://commons.wikimedia.org/wiki/File:Indian_Election_Symbol_Arrow.png", "retrievedAt": "2026-11-13" } } }
       ]
     },
     {
