@@ -370,8 +370,8 @@ async function validatePartyData(partyData, candidateData, incumbentData, projec
             }
             if (reservation.artwork !== undefined) {
                 const artwork = reservation.artwork;
-                if (!["eci", "party-website"].includes(artwork.origin) || typeof artwork.path !== "string" || !/^assets\/symbols\/[a-z0-9-]+\.(png|svg|webp|jpg)$/.test(artwork.path)) {
-                    fail(`The symbol artwork for ${context} must be a file in assets/symbols from an ECI notification or the party's website`);
+                if (!["eci", "party-website", "wikimedia-commons"].includes(artwork.origin) || typeof artwork.path !== "string" || !/^assets\/symbols\/[a-z0-9-]+\.(png|svg|webp|jpg)$/.test(artwork.path)) {
+                    fail(`The symbol artwork for ${context} must be a file in assets/symbols from an ECI notification, party website, or Wikimedia Commons`);
                 }
                 validateSource(artwork.source || {}, `symbol artwork for ${context}`);
                 try {

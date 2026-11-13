@@ -1810,7 +1810,7 @@
                 wrapper.append(name, reason);
                 return wrapper;
             }
-            if (reserved) {
+            if (reserved?.artwork) {
                 const symbol = document.createElement("span");
                 symbol.className = "party-symbol";
                 const notice = reserved.notification ? `ECI Notification ${reserved.notification.number}` : "an ECI notification";
@@ -1825,9 +1825,6 @@
                     image.loading = "lazy";
                     symbol.append(image);
                     symbol.classList.add("party-symbol--artwork");
-                } else {
-                    symbol.textContent = reserved.symbol;
-                    symbol.setAttribute("aria-label", `Election symbol: ${reserved.symbol}.`);
                 }
                 wrapper.append(symbol);
             }
