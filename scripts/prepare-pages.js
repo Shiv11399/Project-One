@@ -1,4 +1,4 @@
-const { cp, mkdir, readFile, writeFile } = require("node:fs/promises");
+const { access, cp, mkdir, readFile, writeFile } = require("node:fs/promises");
 const path = require("node:path");
 
 async function main() {
@@ -10,6 +10,8 @@ async function main() {
     const candidateData = JSON.parse(await readFile(candidateDataPath, "utf8"));
     const incumbentDataPath = path.join(projectRoot, "data", "incumbents.json");
     const incumbentData = JSON.parse(await readFile(incumbentDataPath, "utf8"));
+    const partyDataPath = path.join(projectRoot, "data", "parties.json");
+    const partyData = JSON.parse(await readFile(partyDataPath, "utf8"));
 
     if (
         typeof feed.lastChecked !== "string" ||
@@ -283,6 +285,8 @@ async function main() {
         }
     }
 
+    await validatePartyData(partyData, candidateData, incumbentData, projectRoot);
+
     const refreshFailed = process.env.FEED_REFRESH_STATUS === "failure";
     const pageFeed = {
         ...feed,
@@ -310,7 +314,8 @@ async function main() {
         cp(path.join(projectRoot, "assets"), assetsDirectory, { recursive: true }),
         writeFile(path.join(dataDirectory, "elections.json"), `${JSON.stringify(pageFeed, null, 2)}\n`, "utf8"),
         writeFile(path.join(dataDirectory, "candidates.json"), `${JSON.stringify(candidateData, null, 2)}\n`, "utf8"),
-        writeFile(path.join(dataDirectory, "incumbents.json"), `${JSON.stringify(incumbentData, null, 2)}\n`, "utf8")
+        writeFile(path.join(dataDirectory, "incumbents.json"), `${JSON.stringify(incumbentData, null, 2)}\n`, "utf8"),
+        writeFile(path.join(dataDirectory, "parties.json"), `${JSON.stringify(partyData, null, 2)}\n`, "utf8")
     ]);
 
     console.log(
@@ -318,6 +323,93 @@ async function main() {
             ? `Prepared GitHub Pages with ${feed.announcements.length} saved ECI notices.`
             : `Prepared GitHub Pages with ${feed.announcements.length} saved ECI notices; the latest refresh failed.`
     );
+}
+
+// Party symbols are shown only to identify parties, so every symbol must trace back to the
+// ECI notification that reserved it for the period and state, and any artwork must be an
+// unmodified file from an ECI notification or the party's own website.
+async function validatePartyData(partyData, candidateData, incumbentData, projectRoot) {
+    const fail = (message) => {
+        throw new Error(`${message}; refusing to deploy it.`);
+    };
+    const isDate = (value) => typeof value === "string" && /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(Date.parse(value));
+    if (partyData.schemaVersion !== 1 || !Array.isArray(partyData.notifications) || !Array.isArray(partyData.parties)) {
+        fail("The saved party data is invalid");
+    }
+
+    const notificationIds = new Set();
+    for (const notification of partyData.notifications) {
+        if (typeof notification.id !== "string" || typeof notification.number !== "string" || !isDate(notification.date)) {
+            fail(`The ECI notification ${notification.id || "(unnamed)"} is incomplete`);
+        }
+        validateSource({ label: notification.number, url: notification.url, retrievedAt: notification.retrievedAt }, `ECI notification ${notification.id}`);
+        if (notificationIds.has(notification.id)) fail(`The ECI notification ${notification.id} is duplicated`);
+        notificationIds.add(notification.id);
+    }
+
+    const labels = new Map();
+    for (const party of partyData.parties) {
+        if (typeof party.id !== "string" || typeof party.name !== "string" || !party.name.trim() || !Array.isArray(party.reservations)) {
+            fail(`The party ${party.id || party.name || "(unnamed)"} is incomplete`);
+        }
+        for (const label of [party.name, party.abbreviation, ...(party.aliases || [])].filter(Boolean)) {
+            const key = label.trim().toLowerCase();
+            if (labels.has(key) && labels.get(key) !== party.id) fail(`The party label "${label}" is used by more than one party`);
+            labels.set(key, party.id);
+        }
+        for (const reservation of party.reservations) {
+            const context = `${party.name} (${reservation.symbol || "unnamed symbol"})`;
+            if (
+                typeof reservation.symbol !== "string" || !reservation.symbol.trim() ||
+                !Array.isArray(reservation.states) || !reservation.states.length ||
+                !isDate(reservation.from) || (reservation.to !== undefined && !isDate(reservation.to)) ||
+                !Array.isArray(reservation.notifications) || !reservation.notifications.length ||
+                reservation.notifications.some((id) => !notificationIds.has(id))
+            ) {
+                fail(`The symbol reservation for ${context} must name its symbol, states, dates and ECI notifications`);
+            }
+            if (reservation.artwork !== undefined) {
+                const artwork = reservation.artwork;
+                if (!["eci", "party-website"].includes(artwork.origin) || typeof artwork.path !== "string" || !/^assets\/symbols\/[a-z0-9-]+\.(png|svg|webp|jpg)$/.test(artwork.path)) {
+                    fail(`The symbol artwork for ${context} must be a file in assets/symbols from an ECI notification or the party's website`);
+                }
+                validateSource(artwork.source || {}, `symbol artwork for ${context}`);
+                try {
+                    await access(path.join(projectRoot, artwork.path));
+                } catch (error) {
+                    fail(`The symbol artwork file ${artwork.path} for ${context} is missing`);
+                }
+            }
+        }
+        // Overlapping periods in the same state would make the symbol for an election ambiguous.
+        for (const [index, first] of party.reservations.entries()) {
+            for (const second of party.reservations.slice(index + 1)) {
+                const sharedState = first.states.some((state) => state === "*" || second.states.includes(state) || second.states.includes("*"));
+                const overlaps = first.from <= (second.to || "9999-12-31") && second.from <= (first.to || "9999-12-31");
+                if (sharedState && overlaps && first.symbol !== second.symbol) fail(`${party.name} has two different symbols for the same state and period`);
+            }
+        }
+    }
+
+    // Every party name shown on the site must resolve to a registered party, so its full name
+    // (and symbol, where one is reserved) can be displayed.
+    const used = [];
+    candidateData.elections.forEach((election) => election.candidacies.forEach((candidacy) => used.push([candidacy.party, election.id])));
+    Object.entries(incumbentData.states).forEach(([state, snapshot]) => {
+        snapshot.members.forEach((member) => used.push([member.party, `${state} roster`]));
+        snapshot.seatCounts.forEach((entry) => used.push([entry.party, `${state} seat tally`]));
+    });
+    const unknown = [...new Set(used
+        .filter(([label]) => label !== "Vacant" && !labels.has(String(label).trim().toLowerCase()))
+        .map(([label, where]) => `"${label}" (${where})`))];
+    if (unknown.length) fail(`These party names are not in data/parties.json: ${unknown.slice(0, 10).join(", ")}`);
+
+    for (const election of candidateData.elections) {
+        if (election.pollDate !== undefined && !isDate(election.pollDate)) fail(`The poll date for ${election.id} is invalid`);
+        for (const candidacy of election.candidacies) {
+            if (candidacy.pollDate !== undefined && !isDate(candidacy.pollDate)) fail(`The poll date for ${candidacy.id} is invalid`);
+        }
+    }
 }
 
 function validateSource(source, context) {

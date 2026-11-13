@@ -4640,6 +4640,7 @@
       "id": "goa-2022-assembly-winners",
       "state": "Goa",
       "year": 2022,
+      "pollDate": "2022-02-14",
       "type": "State Legislative Assembly",
       "candidateScope": "winners_archive",
       "candidacies": [
@@ -8024,6 +8025,7 @@
       "id": "manipur-2022-assembly-winners",
       "state": "Manipur",
       "year": 2022,
+      "pollDate": "2022-02-28",
       "type": "State Legislative Assembly",
       "candidateScope": "winners_archive",
       "candidacies": [
@@ -13050,6 +13052,7 @@
       "id": "punjab-2022-assembly-winners",
       "state": "Punjab",
       "year": 2022,
+      "pollDate": "2022-02-20",
       "type": "State Legislative Assembly",
       "candidateScope": "winners_archive",
       "candidacies": [
@@ -22772,6 +22775,7 @@
           "constituency": "Barnala",
           "party": "INC",
           "status": "by-election winner, 2024-11-13 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-11-13",
           "verification": {
             "name": {
               "status": "unverified"
@@ -22845,6 +22849,7 @@
           "constituency": "Chabbewal (SC)",
           "party": "AAP",
           "status": "by-election winner, 2024-11-13 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-11-13",
           "verification": {
             "name": {
               "status": "unverified"
@@ -22918,6 +22923,7 @@
           "constituency": "Dera Baba Nanak",
           "party": "AAP",
           "status": "by-election winner, 2024-11-13 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-11-13",
           "verification": {
             "name": {
               "status": "unverified"
@@ -22991,6 +22997,7 @@
           "constituency": "Gidderbaha",
           "party": "AAP",
           "status": "by-election winner, 2024-11-13 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-11-13",
           "verification": {
             "name": {
               "status": "unverified"
@@ -23064,6 +23071,7 @@
           "constituency": "Jalandhar West (SC)",
           "party": "AAP",
           "status": "by-election winner, 2024-07-10 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-07-10",
           "verification": {
             "name": {
               "status": "unverified"
@@ -23160,6 +23168,7 @@
           "constituency": "Ludhiana West",
           "party": "AAP",
           "status": "by-election winner, 2025-06-19 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2025-06-19",
           "verification": {
             "name": {
               "status": "unverified"
@@ -23233,6 +23242,7 @@
           "constituency": "Tarn Taran",
           "party": "AAP",
           "status": "by-election winner, 2025-11-11 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2025-11-11",
           "verification": {
             "name": {
               "status": "unverified"
@@ -23320,6 +23330,7 @@
       "id": "uttarakhand-2022-assembly-winners",
       "state": "Uttarakhand",
       "year": 2022,
+      "pollDate": "2022-02-14",
       "type": "State Legislative Assembly",
       "candidateScope": "winners_archive",
       "candidacies": [
@@ -29188,6 +29199,7 @@
           "constituency": "Badrinath",
           "party": "INC",
           "status": "by-election winner, 2024-07-10 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-07-10",
           "verification": {
             "name": {
               "status": "unverified"
@@ -29261,6 +29273,7 @@
           "constituency": "Kedarnath",
           "party": "BJP",
           "status": "by-election winner, 2024-11-20 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-11-20",
           "verification": {
             "name": {
               "status": "unverified"
@@ -29334,6 +29347,7 @@
           "constituency": "Manglaur",
           "party": "INC",
           "status": "by-election winner, 2024-07-10 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-07-10",
           "verification": {
             "name": {
               "status": "unverified"
@@ -29430,6 +29444,7 @@
           "constituency": "Bageshwar (SC)",
           "party": "BJP",
           "status": "by-election winner, 2023-09-05 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2023-09-05",
           "verification": {
             "name": {
               "status": "unverified"
@@ -29526,6 +29541,7 @@
           "constituency": "Champawat",
           "party": "BJP",
           "status": "by-election winner, 2022-05-31 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2022-05-31",
           "verification": {
             "name": {
               "status": "unverified"
@@ -29613,6 +29629,7 @@
       "id": "uttar-pradesh-2022-assembly-winners",
       "state": "Uttar Pradesh",
       "year": 2022,
+      "pollDate": "2022-02-10",
       "type": "State Legislative Assembly",
       "candidateScope": "winners_archive",
       "candidacies": [
@@ -63004,6 +63021,7 @@
           "constituency": "Chhanbey (SC)",
           "party": "Apna Dal (Soneylal)",
           "status": "by-election winner, 2023-05-10 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2023-05-10",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63077,6 +63095,7 @@
           "constituency": "Ghosi",
           "party": "SP",
           "status": "by-election winner, 2023-09-05 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2023-09-05",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63150,6 +63169,7 @@
           "constituency": "Suar",
           "party": "Apna Dal (Soneylal)",
           "status": "by-election winner, 2023-05-10 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2023-05-10",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63246,6 +63266,7 @@
           "constituency": "Dadraul",
           "party": "BJP",
           "status": "by-election winner, 2024-05-13 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-05-13",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63319,6 +63340,7 @@
           "constituency": "Duddhi (ST)",
           "party": "SP",
           "status": "by-election winner, 2024-06-01 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-06-01",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63392,6 +63414,7 @@
           "constituency": "Gainsari",
           "party": "SP",
           "status": "by-election winner, 2024-05-25 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-05-25",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63465,6 +63488,7 @@
           "constituency": "Lucknow East",
           "party": "BJP",
           "status": "by-election winner, 2024-05-20 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-05-20",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63561,6 +63585,7 @@
           "constituency": "Gola Gokrannath",
           "party": "BJP",
           "status": "by-election winner, 2022-11-03 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2022-11-03",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63634,6 +63659,7 @@
           "constituency": "Khatauli",
           "party": "RLD",
           "status": "by-election winner, 2022-12-05 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2022-12-05",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63707,6 +63733,7 @@
           "constituency": "Rampur",
           "party": "BJP",
           "status": "by-election winner, 2022-12-05 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2022-12-05",
           "verification": {
             "name": {
               "status": "unverified"
@@ -63794,6 +63821,7 @@
       "id": "gujarat-2022-assembly-winners",
       "state": "Gujarat",
       "year": 2022,
+      "pollDate": "2022-12-01",
       "type": "State Legislative Assembly",
       "candidateScope": "winners_archive",
       "candidacies": [
@@ -78907,6 +78935,7 @@
           "constituency": "Kadi (SC)",
           "party": "BJP",
           "status": "by-election winner, 2025-06-19 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2025-06-19",
           "verification": {
             "name": {
               "status": "unverified"
@@ -79003,6 +79032,7 @@
           "constituency": "Khambhat",
           "party": "BJP",
           "status": "by-election winner, 2024-05-07 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-05-07",
           "verification": {
             "name": {
               "status": "unverified"
@@ -79076,6 +79106,7 @@
           "constituency": "Manavadar",
           "party": "BJP",
           "status": "by-election winner, 2024-05-07 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-05-07",
           "verification": {
             "name": {
               "status": "unverified"
@@ -79149,6 +79180,7 @@
           "constituency": "Porbandar",
           "party": "BJP",
           "status": "by-election winner, 2024-05-07 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-05-07",
           "verification": {
             "name": {
               "status": "unverified"
@@ -79222,6 +79254,7 @@
           "constituency": "Vaghodiya",
           "party": "BJP",
           "status": "by-election winner, 2024-05-07 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-05-07",
           "verification": {
             "name": {
               "status": "unverified"
@@ -79295,6 +79328,7 @@
           "constituency": "Vav",
           "party": "BJP",
           "status": "by-election winner, 2024-11-13 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-11-13",
           "verification": {
             "name": {
               "status": "unverified"
@@ -79368,6 +79402,7 @@
           "constituency": "Vijapur",
           "party": "BJP",
           "status": "by-election winner, 2024-05-07 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2024-05-07",
           "verification": {
             "name": {
               "status": "unverified"
@@ -79464,6 +79499,7 @@
           "constituency": "Manjalpur",
           "party": "BJP",
           "status": "by-election winner, 2026-07-30 (as listed in the ADR/MyNeta archive)",
+          "pollDate": "2026-07-30",
           "verification": {
             "name": {
               "status": "unverified"

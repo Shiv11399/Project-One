@@ -27,7 +27,7 @@ The election cards use locally stored Wikimedia Commons thumbnails. Artist credi
 
 ## Data files and structures
 
-The site keeps election announcements, candidate information, and current Assembly information in separate JSON files under `data/`. `scripts/prepare-pages.js` validates the saved data and copies all three files into the static Pages output. The local server exposes them at `/data/elections.json`, `/data/candidates.json`, and `/data/incumbents.json`.
+The site keeps election announcements, candidate information, current Assembly information, and party names and symbols in separate JSON files under `data/`. `scripts/prepare-pages.js` validates the saved data and copies all four files into the static Pages output. The local server exposes them at `/data/elections.json`, `/data/candidates.json`, `/data/incumbents.json`, and `/data/parties.json`.
 
 ### ECI announcements: `data/elections.json`
 
@@ -316,6 +316,37 @@ Each member's `status` and a state's `notes` are optional. A member can also set
 The Current Assembly panel renders `seatCounts` as a party seat-distribution pie chart with a matching legend showing seat totals and percentages. The chart represents state-wide Assembly composition; individual constituency entries remain in the expandable roster below it.
 
 Known vacancies and source conflicts are documented in the relevant state data. Some rosters rely on secondary sources where a current official roster could not be verified. Party tallies should reflect a member's current affiliation, not automatically the party on the ticket they originally won with; document resignations, party switches, and by-election outcomes in the state's notes and sources. Check the source links and update `asOf` and the affected data when membership changes. Do not treat current MLAs as candidates for the next election.
+
+### Parties and election symbols: `data/parties.json`
+
+Every party name used in the other data files resolves to one entry here, so the site can always show the party's full registered name, and its election symbol where one applies. Symbols are shown **only to identify parties**, never as promotion or endorsement: every party gets the same neutral styling, the page footer says so, and each symbol's tooltip names the ECI notification that reserved it.
+
+```json
+{
+  "schemaVersion": 1,
+  "notifications": [
+    { "id": "eci-2024-03-23-sp", "number": "No.56/25/2024/PPS-II (SP)", "date": "2024-03-23", "title": "...", "url": "https://...", "copy": "Where this copy is published", "retrievedAt": "2026-11-13" }
+  ],
+  "parties": [
+    {
+      "id": "sp",
+      "name": "Samajwadi Party",
+      "abbreviation": "SP",
+      "aliases": ["SP"],
+      "reservations": [
+        { "symbol": "Bicycle", "states": ["Uttar Pradesh"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+      ]
+    }
+  ]
+}
+```
+
+- **The correct symbol for each election.** Recognition and symbols change, so a symbol is shown only when a reservation covers the record's state (`"*"` for National Parties) and its poll date (`from`/`to`, inclusive). Poll dates come from `pollDate` on each archive election (the first polling day) or on each by-election candidacy. The current Assembly roster uses its `asOf` date, and records without a date use today's date. For example, Apna Dal (Soneylal) shows no symbol for 2022, when it was not a recognised party, but shows Cup & Saucer in the current roster; Rashtriya Lok Dal shows Hand Pump for 2022 only.
+- **Sources.** Reservations cite the ECI notifications that list them: No.56/2021/PPS-III (23 Sep 2021), No.56/2023/PPS-II (NP)/(SP) (15 May 2023), and No.56/25/2024/PPS-II (NP)/(SP) (23 Mar 2024). The links point to copies republished by a Chief Electoral Officer or in a state gazette. Changes made by separate ECI orders between notifications (for example the recognition changes of 10 April 2023) are not modelled; a record dated in such a gap uses the earlier notification, and if that notification does not list the party, no symbol is shown. Check for newer notifications before relying on the 2024 list after `latestNotificationCheck`.
+- **No guessing.** Parties without a reserved symbol for that election, Independents (who are allotted a free symbol per constituency), and unrecognised parties using common symbols are shown by name only. The comparison's Party row says why no symbol is shown.
+- **Symbol artwork.** The ECI notifications give symbol names, not images, so the site currently shows each symbol's name in a neutral tag. To show artwork, add an unmodified file to `assets/symbols/` and an `artwork` object to the reservation: `{ "origin": "eci" | "party-website", "path": "assets/symbols/<name>.png", "source": { "label": "...", "url": "https://...", "retrievedAt": "YYYY-MM-DD" } }`. Use artwork from an ECI notification or the party's official website, depicting the symbol itself rather than a party logo with added branding. Do not edit, recolour, crop or combine it with this site's branding. The page shows it at 18 px on a plain white tile, scaled without distortion.
+
+`scripts/prepare-pages.js` refuses to deploy if any party name in the data is missing from this file, a reservation lacks a symbol, state, date or a known notification, the same party has two different symbols for the same state and period, or artwork lacks an existing file in `assets/symbols/` or an HTTPS source.
 
 ## Data maintenance
 

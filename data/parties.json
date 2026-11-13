@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "notifications": [
+    {
+      "id": "eci-2021-09-23",
+      "number": "No.56/2021/PPS-III",
+      "date": "2021-09-23",
+      "title": "ECI notification specifying National and State Parties and their reserved symbols",
+      "url": "https://ceoelection.bihar.gov.in/pdf/56_2021_PPS_III_english.pdf",
+      "copy": "Copy published by the Chief Electoral Officer, Bihar",
+      "retrievedAt": "2026-11-13"
+    },
+    {
+      "id": "eci-2023-05-15-np",
+      "number": "No.56/2023/PPS-II (NP)",
+      "date": "2023-05-15",
+      "title": "ECI notification specifying National Parties and their reserved symbols",
+      "url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2023/209_Ex_V_4_2023.pdf",
+      "copy": "Republished in the Tamil Nadu Government Gazette Extraordinary No. 209 of 2023",
+      "retrievedAt": "2026-11-13"
+    },
+    {
+      "id": "eci-2023-05-15-sp",
+      "number": "No.56/2023/PPS-II (SP)",
+      "date": "2023-05-15",
+      "title": "ECI notification specifying State Parties and their reserved symbols",
+      "url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2023/210_Ex_V_4_2023.pdf",
+      "copy": "Republished in the Tamil Nadu Government Gazette Extraordinary No. 210 of 2023",
+      "retrievedAt": "2026-11-13"
+    },
+    {
+      "id": "eci-2024-03-23-np",
+      "number": "No.56/25/2024/PPS-II (NP)",
+      "date": "2024-03-23",
+      "title": "ECI notification specifying National Parties and their reserved symbols",
+      "url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2024/132_Ex_V_4_2024.pdf",
+      "copy": "Republished in the Tamil Nadu Government Gazette Extraordinary No. 132 of 2024",
+      "retrievedAt": "2026-11-13"
+    },
+    {
+      "id": "eci-2024-03-23-sp",
+      "number": "No.56/25/2024/PPS-II (SP)",
+      "date": "2024-03-23",
+      "title": "ECI notification specifying State Parties and their reserved symbols",
+      "url": "https://www.stationeryprinting.tn.gov.in/extraordinary/2024/133_Ex_V_4_2024.pdf",
+      "copy": "Republished in the Tamil Nadu Government Gazette Extraordinary No. 133 of 2024",
+      "retrievedAt": "2026-11-13"
+    }
+  ],
+  "latestNotificationCheck": "2026-11-13",
+  "parties": [
+    {
+      "id": "aap",
+      "name": "Aam Aadmi Party",
+      "abbreviation": "AAP",
+      "aliases": ["AAP"],
+      "reservations": [
+        { "symbol": "Broom", "states": ["Punjab"], "from": "2021-09-23", "to": "2023-05-14", "notifications": ["eci-2021-09-23"] },
+        { "symbol": "Broom", "states": ["*"], "from": "2023-05-15", "notifications": ["eci-2023-05-15-np", "eci-2024-03-23-np"] }
+      ]
+    },
+    {
+      "id": "bsp",
+      "name": "Bahujan Samaj Party",
+      "abbreviation": "BSP",
+      "aliases": ["BSP"],
+      "reservations": [
+        { "symbol": "Elephant", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"], "note": "Reserved in all States and Union Territories except Assam." }
+      ]
+    },
+    {
+      "id": "bjp",
+      "name": "Bharatiya Janata Party",
+      "abbreviation": "BJP",
+      "aliases": ["BJP"],
+      "reservations": [
+        { "symbol": "Lotus", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"] }
+      ]
+    },
+    {
+      "id": "inc",
+      "name": "Indian National Congress",
+      "abbreviation": "INC",
+      "aliases": ["INC"],
+      "reservations": [
+        { "symbol": "Hand", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"] }
+      ]
+    },
+    {
+      "id": "npp",
+      "name": "National People's Party",
+      "abbreviation": "NPP",
+      "aliases": ["NPP", "National Peoples Party"],
+      "reservations": [
+        { "symbol": "Book", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"] }
+      ]
+    },
+    {
+      "id": "sp",
+      "name": "Samajwadi Party",
+      "abbreviation": "SP",
+      "aliases": ["SP"],
+      "reservations": [
+        { "symbol": "Bicycle", "states": ["Uttar Pradesh"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+      ]
+    },
+    {
+      "id": "rld",
+      "name": "Rashtriya Lok Dal",
+      "abbreviation": "RLD",
+      "aliases": ["RLD"],
+      "reservations": [
+        { "symbol": "Hand Pump", "states": ["Uttar Pradesh"], "from": "2021-09-23", "to": "2023-05-14", "notifications": ["eci-2021-09-23"], "note": "Not listed as a State Party in the 2023 and 2024 notifications." }
+      ]
+    },
+    {
+      "id": "apna-dal-soneylal",
+      "name": "Apna Dal (Soneylal)",
+      "abbreviation": "AD(S)",
+      "aliases": ["AD(S)"],
+      "reservations": [
+        { "symbol": "Cup & Saucer", "states": ["Uttar Pradesh"], "from": "2023-05-15", "notifications": ["eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+      ]
+    },
+    {
+      "id": "sad",
+      "name": "Shiromani Akali Dal",
+      "abbreviation": "SAD",
+      "aliases": ["SAD"],
+      "reservations": [
+        { "symbol": "Scales", "states": ["Punjab"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+      ]
+    },
+    {
+      "id": "mgp",
+      "name": "Maharashtrawadi Gomantak",
+      "abbreviation": "MGP",
+      "aliases": ["MGP", "Maharashtrawadi Gomantak Party"],
+      "reservations": [
+        { "symbol": "Lion", "states": ["Goa"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+      ]
+    },
+    {
+      "id": "goa-forward-party",
+      "name": "Goa Forward Party",
+      "abbreviation": "GFP",
+      "aliases": ["GFP"],
+      "reservations": [
+        { "symbol": "Coconut", "states": ["Goa"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+      ]
+    },
+    {
+      "id": "revolutionary-goans-party",
+      "name": "Revolutionary Goans Party",
+      "abbreviation": "RGP",
+      "aliases": ["RGP"],
+      "reservations": [
+        { "symbol": "Football", "states": ["Goa"], "from": "2024-03-23", "notifications": ["eci-2024-03-23-sp"] }
+      ]
+    },
+    {
+      "id": "npf",
+      "name": "Naga Peoples Front",
+      "abbreviation": "NPF",
+      "aliases": ["NPF"],
+      "reservations": [
+        { "symbol": "Cock", "states": ["Manipur"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+      ]
+    },
+    {
+      "id": "jdu",
+      "name": "Janata Dal (United)",
+      "abbreviation": "JD(U)",
+      "aliases": ["JD(U)", "JDU"],
+      "reservations": [
+        { "symbol": "Arrow", "states": ["Manipur"], "from": "2023-05-15", "notifications": ["eci-2023-05-15-sp", "eci-2024-03-23-sp"] }
+      ]
+    },
+    {
+      "id": "sbsp",
+      "name": "Suheldev Bharatiya Samaj Party",
+      "abbreviation": "SBSP",
+      "aliases": ["SBSP"],
+      "reservations": []
+    },
+    {
+      "id": "nishad",
+      "name": "Nirbal Indian Shoshit Hamara Aam Dal",
+      "abbreviation": "NISHAD",
+      "aliases": ["NISHAD", "Nirbal Indian Shoshit Hamara Apna Dal"],
+      "reservations": []
+    },
+    {
+      "id": "jansatta-dal-loktantrik",
+      "name": "Jansatta Dal Loktantrik",
+      "aliases": [],
+      "reservations": []
+    },
+    {
+      "id": "kuki-peoples-alliance",
+      "name": "Kuki Peoples Alliance",
+      "abbreviation": "KPA",
+      "aliases": ["KPA"],
+      "reservations": []
+    },
+    {
+      "id": "akali-dal-waris-punjab-de",
+      "name": "Akali Dal (Waris Punjab De)",
+      "aliases": [],
+      "reservations": []
+    },
+    {
+      "id": "independent",
+      "name": "Independent",
+      "abbreviation": "IND",
+      "aliases": ["IND"],
+      "independent": true,
+      "reservations": []
+    }
+  ]
+}

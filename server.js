@@ -59,11 +59,30 @@ const server = http.createServer(async (request, response) => {
         return;
     }
 
-    if ((request.method === "GET" || request.method === "HEAD") && /^\/assets\/[a-z0-9-]+\.jpg$/.test(requestUrl.pathname)) {
+    if ((request.method === "GET" || request.method === "HEAD") && requestUrl.pathname === "/data/parties.json") {
+        try {
+            const partyData = await readFile(path.join(__dirname, "data", "parties.json"));
+            response.writeHead(200, {
+                "Content-Type": "application/json; charset=utf-8",
+                "Cache-Control": "no-store",
+                "X-Content-Type-Options": "nosniff"
+            });
+            response.end(request.method === "HEAD" ? undefined : partyData);
+        } catch (error) {
+            console.error("Unable to read party and symbol data:", error);
+            response.writeHead(500, { "Content-Type": "application/json; charset=utf-8" });
+            response.end(JSON.stringify({ error: "Unable to load party and symbol data." }));
+        }
+        return;
+    }
+
+    const imageTypes = { jpg: "image/jpeg", png: "image/png", svg: "image/svg+xml", webp: "image/webp" };
+    const imageMatch = requestUrl.pathname.match(/^\/assets\/(?:symbols\/)?[a-z0-9-]+\.(jpg|png|svg|webp)$/);
+    if ((request.method === "GET" || request.method === "HEAD") && imageMatch) {
         try {
             const image = await readFile(path.join(__dirname, requestUrl.pathname.slice(1)));
             response.writeHead(200, {
-                "Content-Type": "image/jpeg",
+                "Content-Type": imageTypes[imageMatch[1]],
                 "Cache-Control": "public, max-age=86400",
                 "X-Content-Type-Options": "nosniff"
             });

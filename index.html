@@ -641,6 +641,61 @@
             margin: 0;
         }
 
+        /* Party symbols: identical, neutral treatment for every party (no party colours, no
+           emphasis), and artwork displayed as supplied (no filters, recolouring or cropping). */
+        .party-label {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px;
+            vertical-align: middle;
+        }
+
+        .party-symbol {
+            display: inline-flex;
+            align-items: center;
+            padding: 1px 7px;
+            border: 1px solid rgba(148, 163, 184, 0.35);
+            border-radius: 5px;
+            color: #cbd5e1;
+            font-size: 10.5px;
+            font-weight: 650;
+            letter-spacing: 0.01em;
+            line-height: 1.5;
+            white-space: nowrap;
+            cursor: help;
+        }
+
+        .party-symbol-note {
+            flex-basis: 100%;
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .party-symbol--artwork {
+            padding: 2px;
+            border-color: rgba(148, 163, 184, 0.35);
+            background: #ffffff;
+        }
+
+        .party-symbol--artwork img {
+            display: block;
+            width: 18px;
+            height: 18px;
+            object-fit: contain;
+        }
+
+        .candidate-party,
+        .candidate-column-party {
+            margin: 6px 0 0;
+            color: var(--text);
+            font-size: 12.5px;
+        }
+
+        .candidate-column-party {
+            font-weight: 600;
+        }
+
         .candidate-result {
             margin: 6px 0 0;
             color: #c0cbd8;
@@ -1461,6 +1516,7 @@
 
         <footer class="page-footer">
             <p>Timing shown here is an expected election window, not a confirmed polling date. The Election Commission of India publishes the official schedule when announced.</p>
+            <p>Party symbols are shown only to identify parties, as reserved by the Election Commission of India for the election shown. They are not an endorsement of any party or candidate. Independents and parties without a reserved symbol are shown by name only.</p>
             <span>India · 2027 outlook</span>
         </footer>
     </main>
@@ -1532,6 +1588,7 @@
         let candidateDataError = "";
         let incumbentData = null;
         let incumbentDataError = "";
+        let partyData = null;
         let selectedElectionIndex = 0;
         let comparisonPanelOpen = false;
         let comparisonNotice = "";
@@ -1704,6 +1761,83 @@
             ].filter(Boolean).join(" · ");
         }
 
+        // Party symbols identify parties; they are never promotion or endorsement. A symbol is
+        // shown only when an ECI notification reserved it for that party in that state on the
+        // election's poll date, every party gets identical neutral styling, artwork (when an
+        // official file has been added) is shown unmodified, and the full name is always shown.
+        function findParty(label) {
+            if (!partyData || !label) return null;
+            const key = String(label).trim().toLowerCase();
+            return partyData.parties.find((party) =>
+                [party.name, party.abbreviation, ...(party.aliases || [])]
+                    .filter(Boolean)
+                    .some((name) => name.trim().toLowerCase() === key)) || null;
+        }
+
+        // `date` is the poll date (YYYY-MM-DD); without one, today's date picks the latest notification.
+        function findReservedSymbol(party, state, date) {
+            if (!party) return null;
+            const day = date || new Date().toISOString().slice(0, 10);
+            const reservation = party.reservations.find((entry) =>
+                entry.from <= day && (!entry.to || day <= entry.to) &&
+                (entry.states.includes("*") || entry.states.includes(state)));
+            if (!reservation) return null;
+            const notifications = reservation.notifications
+                .map((id) => partyData.notifications.find((notification) => notification.id === id))
+                .filter((notification) => notification && notification.date <= day);
+            return { ...reservation, notification: notifications[notifications.length - 1] || null };
+        }
+
+        function partyDisplayName(label) {
+            return findParty(label)?.name || label;
+        }
+
+        function createPartyLabel(label, { state, date, explainMissing = false } = {}) {
+            const party = findParty(label);
+            const wrapper = document.createElement("span");
+            wrapper.className = "party-label";
+            const reserved = findReservedSymbol(party, state, date);
+            // In detailed views, say why no symbol is shown so it does not read as missing data.
+            if (!reserved && explainMissing && party) {
+                const name = document.createElement("span");
+                name.className = "party-name";
+                name.textContent = party.name;
+                const reason = document.createElement("span");
+                reason.className = "party-symbol-note";
+                reason.textContent = party.independent
+                    ? "Independents are allotted a free symbol per constituency; not recorded here"
+                    : `No ECI-reserved symbol in ${state || "this state"} on ${date || "this date"}`;
+                wrapper.append(name, reason);
+                return wrapper;
+            }
+            if (reserved) {
+                const symbol = document.createElement("span");
+                symbol.className = "party-symbol";
+                const notice = reserved.notification ? `ECI Notification ${reserved.notification.number}` : "an ECI notification";
+                const description = `Election symbol "${reserved.symbol}", reserved for ${party.name} under ${notice}. Shown only to identify the party.`;
+                symbol.title = description;
+                if (reserved.artwork) {
+                    const image = document.createElement("img");
+                    image.src = `./${reserved.artwork.path}`;
+                    image.alt = `Election symbol: ${reserved.symbol}`;
+                    image.width = 18;
+                    image.height = 18;
+                    image.loading = "lazy";
+                    symbol.append(image);
+                    symbol.classList.add("party-symbol--artwork");
+                } else {
+                    symbol.textContent = reserved.symbol;
+                    symbol.setAttribute("aria-label", `Election symbol: ${reserved.symbol}.`);
+                }
+                wrapper.append(symbol);
+            }
+            const name = document.createElement("span");
+            name.className = "party-name";
+            name.textContent = party?.name || label || "Party not recorded";
+            wrapper.append(name);
+            return wrapper;
+        }
+
         // In an archive, whose note already says every imported field is unverified, only
         // statuses other than "unverified" are worth a badge.
         function createCandidateCard(candidate, { archive = false } = {}) {
@@ -1712,9 +1846,15 @@
             const name = document.createElement("h4");
             name.className = "candidate-name";
             name.textContent = candidate.name;
-            const details = [candidate.party, candidate.constituency, candidate.status]
+            const details = [candidate.constituency, candidate.status]
                 .filter(Boolean);
             card.append(name);
+            if (candidate.party) {
+                const party = document.createElement("p");
+                party.className = "candidate-party";
+                party.append(createPartyLabel(candidate.party, { state: candidate.state, date: candidate.pollDate }));
+                card.append(party);
+            }
             const verifiedFields = document.createElement("div");
             verifiedFields.className = "candidate-verification";
             [
@@ -1793,6 +1933,7 @@
                     const currentSeat = {
                         constituency: member.constituency,
                         party: member.party,
+                        state,
                         asOf: stateData.asOf || "snapshot date unavailable",
                         sources: Array.isArray(stateData.sources) ? stateData.sources : []
                     };
@@ -1815,6 +1956,8 @@
                         currentSeat,
                         comparisonId: currentMemberProfileId(state, member),
                         electionYear: currentSeat.asOf,
+                        state,
+                        pollDate: /^\d{4}-\d{2}-\d{2}$/.test(currentSeat.asOf) ? currentSeat.asOf : undefined,
                         recordType: "Current Assembly"
                     });
                 });
@@ -1872,6 +2015,18 @@
             note.className = "candidate-intro";
             note.textContent = "Affidavit figures are candidate-declared for the cited election, not current valuations. A pending matter is an allegation, not a conviction; case statuses reflect the cited affidavit record, not live court updates.";
             footer.append(note);
+            if (partyData) {
+                const symbolNote = document.createElement("p");
+                symbolNote.className = "candidate-intro";
+                symbolNote.textContent = "Party symbols identify parties as reserved by the Election Commission of India for each election's date and state; they are not an endorsement. Sources:";
+                const symbolSources = document.createElement("div");
+                symbolSources.className = "candidate-sources";
+                partyData.notifications.forEach((notification) => {
+                    const link = createSourceLink({ label: `ECI Notification ${notification.number} (${notification.date})`, url: notification.url });
+                    if (link) symbolSources.append(link);
+                });
+                footer.append(symbolNote, symbolSources);
+            }
 
             const legendToggle = document.createElement("details");
             legendToggle.className = "verification-legend-toggle";
@@ -2098,9 +2253,17 @@
                 ["Current Assembly seat", "currentSeat", (profile) => {
                     const seat = profile.currentSeat;
                     if (!seat) return "Not linked to the current Assembly snapshot";
-                    return `MLA for ${seat.constituency} · ${seat.party} · snapshot as of ${seat.asOf}`;
+                    const value = document.createDocumentFragment();
+                    value.append(
+                        `MLA for ${seat.constituency} · `,
+                        createPartyLabel(seat.party, { state: seat.state, date: /^\d{4}-\d{2}-\d{2}$/.test(seat.asOf) ? seat.asOf : undefined }),
+                        ` · snapshot as of ${seat.asOf}`
+                    );
+                    return value;
                 }],
-                ["Party", "party", (profile) => profile.party || "Not recorded"],
+                ["Party", "party", (profile) => profile.party
+                    ? createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate, explainMissing: true })
+                    : "Not recorded"],
                 ["Constituency", "constituency", (profile) => profile.constituency || "Not recorded"],
                 ["Previous elected positions", "previousPositions", (profile) => {
                     const positions = (Array.isArray(profile.profile?.previousPositions) ? profile.profile.previousPositions : [])
@@ -2110,7 +2273,7 @@
                             position.fromYear && position.toYear ? `${position.fromYear}–${position.toYear}` : position.fromYear || position.toYear
                         ].filter(Boolean).join(" · "));
                     const wins = earlierWinsFor(profile).map(({ entry, candidacy }) =>
-                        `MLA · ${candidacy.constituency} · won ${entry.year}${entry.byElection ? " by-election" : ""} (${candidacy.party})`);
+                        `MLA · ${candidacy.constituency} · won ${entry.year}${entry.byElection ? " by-election" : ""} (${partyDisplayName(candidacy.party)})`);
                     const all = [...positions, ...wins];
                     return all.length ? all.join("; ") : "Not recorded";
                 }],
@@ -2236,7 +2399,14 @@
                     current.textContent = "Current MLA";
                     meta.append(current);
                 }
-                heading.append(name, meta);
+                heading.append(name);
+                if (profile.party) {
+                    const party = document.createElement("div");
+                    party.className = "candidate-column-party";
+                    party.append(createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate }));
+                    heading.append(party);
+                }
+                heading.append(meta);
 
                 if (columnStatusCounts.length) {
                     const statuses = document.createElement("div");
@@ -2308,7 +2478,12 @@
                         } else if (label === "Declared assets") {
                             appendDeclaredAssets(cell, profile);
                         } else {
-                            cell.textContent = getValue(profile);
+                            const value = getValue(profile);
+                            if (value instanceof Node) {
+                                cell.append(value);
+                            } else {
+                                cell.textContent = value;
+                            }
                         }
                         appendVerification(cell, profile, verificationField, columnStatus);
                         const cellSources = uniqueSources(comparisonSources(profile, label, verificationField))
@@ -2342,7 +2517,7 @@
                 picker.replaceChildren();
                 const query = normalizeText(search.value);
                 const filtered = profiles.filter((profile) => normalizeText(
-                    `${profile.name || ""} ${(profile.aliases || []).join(" ")} ${profile.party || ""} ${profile.constituency || ""} ${profile.currentSeat?.party || ""} ${profile.currentSeat?.constituency || ""} ${profile.electionYear || ""}`
+                    `${profile.name || ""} ${(profile.aliases || []).join(" ")} ${profile.party || ""} ${partyDisplayName(profile.party) || ""} ${profile.constituency || ""} ${profile.currentSeat?.party || ""} ${profile.currentSeat?.constituency || ""} ${profile.electionYear || ""}`
                 ).includes(query));
                 filtered.forEach((profile) => {
                     const option = document.createElement("label");
@@ -2366,7 +2541,11 @@
                         renderComparison();
                     });
                     const label = document.createElement("span");
-                    label.textContent = `${profile.name || "Unnamed candidate"} · ${profile.party || "Party not verified"} · ${profile.constituency || "Constituency not verified"}`;
+                    label.append(
+                        `${profile.name || "Unnamed candidate"} · `,
+                        profile.party ? createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate }) : "Party not verified",
+                        ` · ${profile.constituency || "Constituency not verified"}`
+                    );
                     const tag = document.createElement("span");
                     tag.className = "candidate-profile-tag";
                     tag.textContent = profile.currentSeat && profile.recordType !== "Current Assembly"
@@ -2463,7 +2642,13 @@
         };
         const fallbackPartyChartColors = ["#38bdf8", "#fb7185", "#a3e635", "#c084fc", "#f97316"];
 
-        function createPartySeatChart(stateData) {
+        // Symbols in the roster and chart follow the notification in force on the snapshot date.
+        function snapshotDateOf(stateData) {
+            return /^\d{4}-\d{2}-\d{2}$/.test(stateData?.asOf || "") ? stateData.asOf : undefined;
+        }
+
+        function createPartySeatChart(stateData, state) {
+            const snapshotDate = snapshotDateOf(stateData);
             const entries = [...stateData.seatCounts]
                 .filter((entry) => Number.isFinite(entry.seats) && entry.seats > 0)
                 .sort((first, second) => second.seats - first.seats);
@@ -2486,7 +2671,7 @@
             pie.style.background = `conic-gradient(${segments.join(", ")})`;
             pie.setAttribute(
                 "aria-label",
-                `Party seat distribution: ${entries.map((entry) => `${entry.party}, ${entry.seats} of ${totalSeats} seats`).join("; ")}.`
+                `Party seat distribution: ${entries.map((entry) => `${partyDisplayName(entry.party)}, ${entry.seats} of ${totalSeats} seats`).join("; ")}.`
             );
 
             const legend = document.createElement("div");
@@ -2503,8 +2688,9 @@
                 swatch.className = "incumbent-party-swatch";
                 swatch.style.backgroundColor = color;
                 swatch.setAttribute("aria-hidden", "true");
-                const party = document.createElement("span");
-                party.textContent = entry.party;
+                const party = entry.party === "Vacant"
+                    ? Object.assign(document.createElement("span"), { textContent: "Vacant" })
+                    : createPartyLabel(entry.party, { state, date: snapshotDate });
                 label.append(swatch, party);
                 const count = document.createElement("span");
                 count.className = "incumbent-party-seats";
@@ -2519,6 +2705,7 @@
 
         function createIncumbentSection(election) {
             const stateData = incumbentData?.states?.[election.state];
+            const snapshotDate = snapshotDateOf(stateData);
             const section = document.createElement("section");
             section.className = "incumbent-section";
             const heading = document.createElement("h3");
@@ -2574,7 +2761,7 @@
                 const chartHeading = document.createElement("h4");
                 chartHeading.className = "incumbent-chart-heading";
                 chartHeading.textContent = "Party seat distribution";
-                const chart = createPartySeatChart(stateData);
+                const chart = createPartySeatChart(stateData, election.state);
                 if (chart) {
                     section.append(chartHeading, chart);
                 } else {
@@ -2618,17 +2805,18 @@
                         "aria-label",
                         isVacant
                             ? `${member.constituency}: seat vacant`
-                            : `Compare ${member.name}, ${member.constituency}, ${member.party}`
+                            : `Compare ${member.name}, ${member.constituency}, ${partyDisplayName(member.party)}`
                     );
                     const name = document.createElement("h4");
                     name.className = "incumbent-member-name";
                     name.textContent = member.name;
                     const meta = document.createElement("p");
                     meta.className = "incumbent-member-meta";
-                    meta.textContent = [
-                        member.constituency,
-                        member.status || member.party
-                    ].filter(Boolean).join(" · ");
+                    if (member.status || isVacant) {
+                        meta.textContent = [member.constituency, member.status || "Seat vacant"].filter(Boolean).join(" · ");
+                    } else {
+                        meta.append(`${member.constituency} · `, createPartyLabel(member.party, { state: election.state, date: snapshotDate }));
+                    }
                     memberButton.append(name, meta);
                     if (!isVacant) {
                         // Resolved at click time so it reflects candidate data that loaded after this render.
@@ -2676,6 +2864,8 @@
                                 aliases: person?.aliases || [],
                                 candidacyId: candidacy.id,
                                 electionYear: entry.year,
+                                state: entry.state,
+                                pollDate: candidacy.pollDate || entry.pollDate,
                                 profile: candidacy.profile || {},
                                 recordType: label
                             };
@@ -2692,6 +2882,8 @@
                         aliases: person?.aliases || [],
                         candidacyId: candidacy.id,
                         electionYear: upcomingElection.year,
+                        state: upcomingElection.state,
+                        pollDate: candidacy.pollDate || upcomingElection.pollDate,
                         profile: candidacy.profile || {}
                     };
                 })
@@ -2995,9 +3187,29 @@
             renderDetail(elections[selectedElectionIndex], selectedElectionIndex);
         }
 
+        // Without party data the page still works: labels fall back to the stored text and no
+        // symbols are shown, rather than guessing one.
+        async function loadPartyData() {
+            try {
+                const response = await fetch("./data/parties.json", { cache: "no-store" });
+                if (!response.ok) {
+                    throw new Error(`Party and symbol data could not be loaded (${response.status}).`);
+                }
+                const data = await response.json();
+                if (data.schemaVersion !== 1 || !Array.isArray(data.parties) || !Array.isArray(data.notifications)) {
+                    throw new Error("Party and symbol data has an invalid format.");
+                }
+                partyData = data;
+            } catch (error) {
+                console.error("Unable to load party and symbol data:", error);
+            }
+            renderDetail(elections[selectedElectionIndex], selectedElectionIndex);
+        }
+
         renderDetail(elections[0], 0);
         refreshButton.addEventListener("click", loadAnnouncements);
         loadAnnouncements();
+        loadPartyData();
         loadCandidateData();
         loadIncumbentData();
     </script>

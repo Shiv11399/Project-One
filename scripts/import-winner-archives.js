@@ -17,13 +17,14 @@
 const { readFile, writeFile } = require("node:fs/promises");
 const path = require("node:path");
 
+// `pollDate` is the first polling day; it decides which ECI symbols notification applies.
 const states = [
-    { state: "Goa", prefix: "goa", myneta: "Goa2022", wikipedia: "2022_Goa_Legislative_Assembly_election", seats: 40 },
-    { state: "Manipur", prefix: "manipur", myneta: "Manipur2022", wikipedia: "2022_Manipur_Legislative_Assembly_election", seats: 60 },
-    { state: "Punjab", prefix: "punjab", myneta: "Punjab2022", wikipedia: "2022_Punjab_Legislative_Assembly_election", seats: 117 },
-    { state: "Uttarakhand", prefix: "uttarakhand", myneta: "Uttarakhand2022", wikipedia: "2022_Uttarakhand_Legislative_Assembly_election", seats: 70 },
-    { state: "Uttar Pradesh", prefix: "uttar-pradesh", myneta: "UttarPradesh2022", wikipedia: "2022_Uttar_Pradesh_Legislative_Assembly_election", seats: 403 },
-    { state: "Gujarat", prefix: "gujarat", myneta: "Gujarat2022", wikipedia: "2022_Gujarat_Legislative_Assembly_election", seats: 182 }
+    { state: "Goa", prefix: "goa", myneta: "Goa2022", wikipedia: "2022_Goa_Legislative_Assembly_election", seats: 40, pollDate: "2022-02-14" },
+    { state: "Manipur", prefix: "manipur", myneta: "Manipur2022", wikipedia: "2022_Manipur_Legislative_Assembly_election", seats: 60, pollDate: "2022-02-28" },
+    { state: "Punjab", prefix: "punjab", myneta: "Punjab2022", wikipedia: "2022_Punjab_Legislative_Assembly_election", seats: 117, pollDate: "2022-02-20" },
+    { state: "Uttarakhand", prefix: "uttarakhand", myneta: "Uttarakhand2022", wikipedia: "2022_Uttarakhand_Legislative_Assembly_election", seats: 70, pollDate: "2022-02-14" },
+    { state: "Uttar Pradesh", prefix: "uttar-pradesh", myneta: "UttarPradesh2022", wikipedia: "2022_Uttar_Pradesh_Legislative_Assembly_election", seats: 403, pollDate: "2022-02-10" },
+    { state: "Gujarat", prefix: "gujarat", myneta: "Gujarat2022", wikipedia: "2022_Gujarat_Legislative_Assembly_election", seats: 182, pollDate: "2022-12-01" }
 ];
 const year = 2022;
 const retrievedAt = new Date().toISOString().slice(0, 10);
@@ -363,9 +364,10 @@ async function importState(config, candidateData, peopleById, report) {
     const electionId = `${config.prefix}-${year}-assembly-winners`;
     let election = candidateData.elections.find((entry) => entry.id === electionId);
     if (!election) {
-        election = { id: electionId, state: config.state, year, type: "State Legislative Assembly", candidateScope: "winners_archive", candidacies: [] };
+        election = { id: electionId, state: config.state, year, pollDate: config.pollDate, type: "State Legislative Assembly", candidateScope: "winners_archive", candidacies: [] };
         candidateData.elections.push(election);
     }
+    election.pollDate = election.pollDate || config.pollDate;
     const unusedExisting = new Set(election.candidacies);
     const personName = (candidacy) => peopleById.get(candidacy.candidateId)?.name || "";
 
@@ -480,6 +482,7 @@ function importByElections(config, seats, rows, candidateData, peopleById) {
                 previousPerson.aliases = [...(previousPerson.aliases || []), row.name];
             }
             const candidacy = newCandidacy(candidacyId, personId, constituency, row.party, `by-election winner, ${row.byElectionDate} (as listed in the ADR/MyNeta archive)`);
+            candidacy.pollDate = row.byElectionDate;
             addAffidavitSummary(candidacy, config, row);
             election.candidacies.push(candidacy);
         }
