@@ -74,7 +74,7 @@
       "abbreviation": "BJP",
       "aliases": ["BJP"],
       "reservations": [
-        { "symbol": "Lotus", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/bjp-lotus.svg", "source": { "label": "Lotus flower symbol.svg — Wikimedia Commons (CC BY-SA 4.0)", "url": "https://commons.wikimedia.org/wiki/File:Lotus_flower_symbol.svg", "retrievedAt": "2026-11-13" } } }
+        { "symbol": "Lotus", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/bjp-lotus-colour.svg", "source": { "label": "Bharatiya Janata Party (icon).svg — Wikimedia Commons (CC BY-SA 4.0)", "url": "https://commons.wikimedia.org/wiki/File:Bharatiya_Janata_Party_(icon).svg", "retrievedAt": "2026-11-13" } } }
       ]
     },
     {
@@ -83,7 +83,7 @@
       "abbreviation": "INC",
       "aliases": ["INC"],
       "reservations": [
-        { "symbol": "Hand", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/inc-hand.svg", "source": { "label": "Indian National Congress symbol.svg — Wikimedia Commons (CC0)", "url": "https://commons.wikimedia.org/wiki/File:Indian_National_Congress_symbol.svg", "retrievedAt": "2026-11-13" } } }
+        { "symbol": "Hand", "states": ["*"], "from": "2021-09-23", "notifications": ["eci-2021-09-23", "eci-2023-05-15-np", "eci-2024-03-23-np"], "artwork": { "origin": "wikimedia-commons", "path": "assets/symbols/inc-hand-colour.svg", "source": { "label": "Indian National Congress logo.svg — Wikimedia Commons (public domain in India)", "url": "https://commons.wikimedia.org/wiki/File:Indian_National_Congress_logo.svg", "retrievedAt": "2026-11-13" } } }
       ]
     },
     {
