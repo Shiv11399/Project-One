@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>The Ballot Grid</title>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#0b111c" stroke="#ff9f43" stroke-width="4"/>
+  <text x="32" y="45" text-anchor="middle" font-family="Segoe UI, Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#ff9f43">B</text>
+</svg>
