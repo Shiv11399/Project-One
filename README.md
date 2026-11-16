@@ -273,16 +273,19 @@ Each candidacy may include a `verification` map keyed by field (`name`, `party`,
 Run `npm run import-archives` (optionally followed by state names, e.g. `npm run import-archives -- Goa Punjab`) to rebuild the 2022 winners archives and link sitting MLAs. The script combines two secondary sources:
 
 - **Wikipedia's "Results by constituency" table** for each state's 2022 election gives every seat's winner, party, votes, vote share and margin (stored as the candidacy's `result`). It is compiled from ECI results but is not an ECI record.
-- **The ADR/MyNeta 2022 winners table** gives affidavit summaries: education, assets, liabilities and the declared criminal-case count (without individual case details). MyNeta renders some rows only through obfuscated scripts; the importer deliberately does not decode them, so those winners have a result but no affidavit summary. MyNeta also lists later by-election winners, which become by-election archives with affidavit summaries but no vote totals.
+- **The ADR/MyNeta 2022 winners table** gives affidavit summaries: education, assets, liabilities and the declared criminal-case count (without individual case details). MyNeta renders some rows only through obfuscated scripts; the importer deliberately does not decode them. MyNeta also lists later by-election winners, which become by-election archives with affidavit summaries but no vote totals.
+- **MyNeta's per-constituency candidate lists** fill the gap for winners whose winners-table row is script-rendered: they list every candidate as plain text, so the importer reads each such winner's education and declared case count from their constituency page, accepting it only when the row marked "Winner" names the same person. On those pages assets and liabilities are deliberately shown as images, so they are not extracted; these winners show "Not recorded" for assets and liabilities and link to their MyNeta candidate page. Run only this step with `npm run import-archives -- --fill-only` (optionally with state names).
 
-| State | Seats | With 2022 result | With affidavit summary | By-election winners |
-| --- | --- | --- | --- | --- |
-| Goa | 40 | 40 | 34 | 0 |
-| Manipur | 60 | 60 | 54 | 0 |
-| Punjab | 117 | 117 | 104 | 7 |
-| Uttarakhand | 70 | 70 | 63 | 5 |
-| Uttar Pradesh | 403 | 400 | 359 | 10 |
-| Gujarat | 182 | 182 | 162 | 8 |
+| State | Seats | With 2022 result | Full affidavit summary | Education and case count only | By-election winners |
+| --- | --- | --- | --- | --- | --- |
+| Goa | 40 | 40 | 34 | 4 | 0 |
+| Manipur | 60 | 60 | 54 | 6 | 0 |
+| Punjab | 117 | 117 | 104 | 13 | 7 |
+| Uttarakhand | 70 | 70 | 63 | 7 | 5 |
+| Uttar Pradesh | 403 | 400 | 359 | 44 | 10 |
+| Gujarat | 182 | 182 | 162 | 20 | 8 |
+
+Two Goa winners (Vasco-Da-Gama and Curtorim) have no affidavit data at all: MyNeta's Goa analysis covers 38 of 40 winners and their constituency pages do not list them. Declared assets and liabilities for the 96 winners without a full summary can be added by hand from the original affidavit on the [ECI affidavit portal](https://affidavit.eci.gov.in/).
 
 Records are matched across sources by constituency and winner name, tolerating transliteration and name-order differences but never accepting a shared surname alone. Where the two sources name different winners for the same seat (Goverdhan, Bilhaur and Jakhanian in Uttar Pradesh, where Wikipedia's table lists other people), the affidavit record is kept, the Wikipedia result is left out, and the name's verification note records the conflict; the current Assembly roster agrees with the affidavit record in all three. A 2022 winner who later won the same seat in a by-election shares one `people` identity across both records, and the comparison's "Previous elected positions" row lists such earlier wins. Re-running the script keeps existing candidacies and only adds missing fields, so manual corrections survive; it prints every match it is unsure of for review.
 

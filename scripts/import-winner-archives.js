@@ -5,7 +5,9 @@
 //   "Results by constituency" table, a secondary source compiled from ECI results.
 // - Affidavit summaries (education, assets, liabilities, declared case counts) come from the
 //   plain rows of the ADR/MyNeta winners table. Rows MyNeta renders only through obfuscated
-//   scripts are deliberately not decoded; those winners keep their result but no summary.
+//   scripts are deliberately not decoded; those winners keep their result, and their education
+//   and declared case count are filled from MyNeta's per-constituency candidate lists, where
+//   they are plain text. Assets and liabilities on those lists are images and are not extracted.
 // - MyNeta also lists later by-election winners; they become separate by-election archives
 //   so sitting MLAs elected in by-elections get a profile too.
 // - Where the two sources name different winners for the same seat, the MyNeta affidavit
@@ -13,7 +15,8 @@
 //
 // Everything imported is marked unverified. Existing candidacies are kept and only gain
 // missing fields, so hand-curated corrections survive a re-run. Pass state names to limit
-// the run, e.g. `node scripts/import-winner-archives.js Goa Punjab`.
+// the run, e.g. `node scripts/import-winner-archives.js Goa Punjab`; add `--fill-only` to only
+// fill missing education and case counts without re-running the rest of the import.
 const { readFile, writeFile } = require("node:fs/promises");
 const path = require("node:path");
 
@@ -547,21 +550,149 @@ function linkIncumbents(config, candidateData, incumbentData, peopleById, report
     return linked;
 }
 
+// MyNeta's per-constituency candidate lists show every candidate as a plain row, including
+// winners whose row in the winners table is script-rendered. They give education and the
+// declared case count as text; assets and liabilities there are images by design and are
+// not extracted, so those stay "Not recorded".
+async function fetchConstituencyIndex(config) {
+    const html = await fetchText(`https://www.myneta.info/${config.myneta}/`);
+    const index = new Map();
+    for (const link of html.matchAll(/href=index\.php\?action=show_candidates&constituency_id=(\d+)[^>]*>([^<]+)<\/a>/g)) {
+        const name = stripHtml(link[2]);
+        if (/BYE ELECTION/i.test(name)) continue;
+        index.set(link[1], name);
+    }
+    return [...index].map(([id, name]) => ({ id, name }));
+}
+
+async function fetchConstituencyWinner(config, constituencyId) {
+    const url = `https://www.myneta.info/${config.myneta}/index.php?action=show_candidates&constituency_id=${constituencyId}`;
+    const html = await fetchText(url);
+    for (const row of html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)) {
+        if (!/>\s*Winner\s*</.test(row[1])) continue;
+        const cells = [...row[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((cell) => cell[1]);
+        const nameIndex = cells.findIndex((cell) => /candidate\.php\?candidate_id=\d+/.test(cell));
+        const link = cells[nameIndex]?.match(/candidate_id=(\d+)>([^<]+)</);
+        if (!link || cells.length < nameIndex + 4) return null;
+        return {
+            url,
+            mynetaId: link[1],
+            name: stripHtml(link[2]),
+            party: stripHtml(cells[nameIndex + 1]),
+            criminalCases: parseInteger(stripHtml(cells[nameIndex + 2])) ?? 0,
+            education: stripHtml(cells[nameIndex + 3])
+        };
+    }
+    return null;
+}
+
+async function fillFromConstituencyPages(config, candidateData, peopleById, report) {
+    const election = candidateData.elections.find((entry) => entry.id === `${config.prefix}-${year}-assembly-winners`);
+    const missing = (election?.candidacies || []).filter((candidacy) => !candidacy.profile?.education && !candidacy.profile?.assets);
+    if (!missing.length) return 0;
+    const index = await fetchConstituencyIndex(config);
+    await sleep(1500);
+    let filled = 0;
+    for (const candidacy of missing) {
+        const person = peopleById.get(candidacy.candidateId);
+        // Spellings and duplicate seat names vary ("DHOLANA" / "Dhaulana", two "MANGROL" seats), so
+        // try up to three likely pages, best first, and keep the one whose winner is this person.
+        const key = constituencyKey(candidacy.constituency);
+        const pages = index
+            .map((entry) => ({
+                entry,
+                score: fullConstituencyKey(entry.name) === fullConstituencyKey(candidacy.constituency)
+                    ? 2
+                    : constituenciesClose(entry.name, candidacy.constituency) ? 1.5 : similarity(constituencyKey(entry.name), key)
+            }))
+            .filter(({ score }) => score >= 0.55)
+            .sort((first, second) => second.score - first.score)
+            .slice(0, 3)
+            .map(({ entry }) => entry);
+        const names = [person?.name, ...(person?.aliases || [])].filter(Boolean);
+        let page = null;
+        let winner = null;
+        const seen = [];
+        for (const candidatePage of pages) {
+            const pageWinner = await fetchConstituencyWinner(config, candidatePage.id);
+            await sleep(1500);
+            if (pageWinner && names.some((name) => sameSeatWinnersMatch(name, pageWinner.name))) {
+                page = candidatePage;
+                winner = pageWinner;
+                break;
+            }
+            seen.push(`${candidatePage.name}: ${pageWinner?.name || "no winner listed"}`);
+        }
+        if (!winner) {
+            report.push(`${config.state} · ${candidacy.constituency}: no MyNeta constituency page lists ${person?.name} as winner (${seen.join("; ") || "no likely page"}); not filled.`);
+            continue;
+        }
+        const listSource = {
+            label: `ADR/MyNeta ${config.state} ${year} ${page.name} candidate list (secondary)`,
+            url: winner.url,
+            retrievedAt
+        };
+        const candidateSource = {
+            label: `ADR/MyNeta ${config.state} ${year} candidate affidavit summary for ${winner.name} (secondary)`,
+            url: `https://www.myneta.info/${config.myneta}/candidate.php?candidate_id=${winner.mynetaId}`,
+            retrievedAt
+        };
+        candidacy.profile = candidacy.profile || {};
+        candidacy.verification = candidacy.verification || {};
+        candidacy.sources = candidacy.sources || [];
+        candidacy.profile.education = { value: winner.education, source: listSource };
+        candidacy.profile.criminalCases = { declaredCount: winner.criminalCases, entries: [], source: listSource };
+        candidacy.verification.education = { status: "unverified" };
+        candidacy.verification.criminalCases = {
+            status: "unverified",
+            note: winner.criminalCases
+                ? "Declared case count from the ADR/MyNeta constituency candidate list; individual case details have not been imported or checked against the original ECI affidavit. A pending case is an allegation, not a conviction."
+                : "The source reports zero declared cases; this has not yet been checked against the original affidavit."
+        };
+        [candidateSource, listSource].forEach((source) => {
+            if (!candidacy.sources.some((entry) => entry.url === source.url)) candidacy.sources.push(source);
+        });
+        if (person && !names.some((name) => sameFullName(name, winner.name))) {
+            person.aliases = [...(person.aliases || []), winner.name];
+        }
+        filled++;
+    }
+
+    const partial = election.candidacies.filter((candidacy) => candidacy.profile?.education && !candidacy.profile?.assets).length;
+    const note = ` For ${partial} winners, education and the declared case count come from ADR/MyNeta's constituency candidate lists instead; their assets and liabilities are not included.`;
+    election.archiveNote = election.archiveNote.replace(/ For \d+ winners, education and the declared case count come from[^.]*;[^.]*\./, "") + note;
+    if (!election.sources.some((source) => /constituency candidate lists/.test(source.label))) {
+        election.sources.push({
+            label: `ADR/MyNeta ${config.state} ${year} constituency candidate lists (secondary)`,
+            url: `https://www.myneta.info/${config.myneta}/`,
+            retrievedAt
+        });
+    }
+    return filled;
+}
+
 async function main() {
     const candidateData = JSON.parse(await readFile(candidatesPath, "utf8"));
     const incumbentData = JSON.parse(await readFile(incumbentsPath, "utf8"));
     const peopleById = new Map(candidateData.people.map((person) => [person.id, person]));
     const report = [];
-    const only = process.argv.slice(2);
+    // `--fill-only` skips the full import and only fills missing education and case counts
+    // from the constituency pages.
+    const fillOnly = process.argv.includes("--fill-only");
+    const only = process.argv.slice(2).filter((argument) => !argument.startsWith("--"));
 
     for (const config of states.filter((entry) => !only.length || only.includes(entry.state))) {
-        const { seats, withAffidavit, withResult, byElections } = await importState(config, candidateData, peopleById, report);
-        const linked = linkIncumbents(config, candidateData, incumbentData, peopleById, report);
-        console.log(`${config.state}: ${seats} winners, ${withResult} with results, ${withAffidavit} with affidavit summaries, ${byElections} by-election winners, ${linked} sitting MLAs linked.`);
+        if (!fillOnly) {
+            const { seats, withAffidavit, withResult, byElections } = await importState(config, candidateData, peopleById, report);
+            const linked = linkIncumbents(config, candidateData, incumbentData, peopleById, report);
+            console.log(`${config.state}: ${seats} winners, ${withResult} with results, ${withAffidavit} with affidavit summaries, ${byElections} by-election winners, ${linked} sitting MLAs linked.`);
+        }
+        const filled = await fillFromConstituencyPages(config, candidateData, peopleById, report);
+        console.log(`${config.state}: filled education and declared case counts for ${filled} winners from constituency pages.`);
     }
 
     await writeFile(candidatesPath, `${JSON.stringify(candidateData, null, 2)}\n`, "utf8");
-    await writeFile(incumbentsPath, `${JSON.stringify(incumbentData, null, 2)}\n`, "utf8");
+    if (!fillOnly) await writeFile(incumbentsPath, `${JSON.stringify(incumbentData, null, 2)}\n`, "utf8");
     if (report.length) console.log(`\nReview:\n${report.map((line) => `- ${line}`).join("\n")}`);
 }
 
