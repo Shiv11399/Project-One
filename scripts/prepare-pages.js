@@ -404,6 +404,28 @@ async function validatePartyData(partyData, candidateData, incumbentData, projec
         .map(([label, where]) => `"${label}" (${where})`))];
     if (unknown.length) fail(`These party names are not in data/parties.json: ${unknown.slice(0, 10).join(", ")}`);
 
+    // Curated party history: every event names a registered party, a date and a source, so a
+    // party change is never shown on the strength of an unsourced claim.
+    const historyEvents = new Set(["member", "joined", "merged", "left", "suspended", "expelled", "resigned-seat"]);
+    for (const person of candidateData.people) {
+        if (person.partyHistory === undefined) continue;
+        if (!Array.isArray(person.partyHistory)) fail(`The party history for ${person.id} is invalid`);
+        for (const event of person.partyHistory) {
+            const context = `party history of ${person.id} (${event.date || "undated"})`;
+            if (
+                typeof event.date !== "string" || !/^\d{4}-\d{2}(-\d{2})?$/.test(event.date) ||
+                !historyEvents.has(event.event) ||
+                typeof event.description !== "string" || !event.description.trim() ||
+                !labels.has(String(event.party || "").trim().toLowerCase()) ||
+                (event.fromParty != null && !labels.has(String(event.fromParty).trim().toLowerCase())) ||
+                !Array.isArray(event.sources) || !event.sources.length
+            ) {
+                fail(`The ${context} needs a YYYY-MM or YYYY-MM-DD date, a known event type, registered parties, a description and sources`);
+            }
+            event.sources.forEach((source) => validateSource(source, context));
+        }
+    }
+
     for (const election of candidateData.elections) {
         if (election.pollDate !== undefined && !isDate(election.pollDate)) fail(`The poll date for ${election.id} is invalid`);
         for (const candidacy of election.candidacies) {

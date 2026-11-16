@@ -667,6 +667,48 @@
             cursor: help;
         }
 
+        .party-history {
+            display: grid;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .party-history-item {
+            display: grid;
+            gap: 2px;
+            padding-left: 10px;
+            border-left: 2px solid rgba(148, 163, 184, 0.3);
+        }
+
+        .party-history-item--change {
+            border-left-color: var(--saffron);
+        }
+
+        .party-history-date,
+        .party-history-detail {
+            color: var(--muted);
+            font-size: 11px;
+        }
+
+        .party-history-change {
+            color: var(--saffron);
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .candidate-column-chip--changed {
+            border-color: rgba(148, 163, 184, 0.45);
+            color: #dbe4ef;
+        }
+
+        .incumbent-member-elected {
+            margin: 4px 0 0;
+            color: var(--muted);
+            font-size: 11px;
+        }
+
         .party-symbol-note {
             flex-basis: 100%;
             color: var(--muted);
@@ -1883,6 +1925,129 @@
             return wrapper;
         }
 
+        // A person's party history, oldest first, built from what the data records: each winning
+        // candidacy, curated and sourced `partyHistory` events on the person, and their current
+        // Assembly roster entry. Wording stays factual ("elected as", "listed as"); a change is
+        // reported only where consecutive entries name different parties.
+        const partyHistoryEventLabels = {
+            member: "Member of",
+            joined: "Joined",
+            merged: "Legislature-party merger into",
+            left: "Left",
+            suspended: "Suspended from",
+            expelled: "Expelled from",
+            "resigned-seat": "Resigned Assembly seat"
+        };
+
+        function partyKey(label) {
+            return findParty(label)?.id || String(label || "").trim().toLowerCase();
+        }
+
+        function partyHistoryFor(personId) {
+            if (!personId) return [];
+            const entries = [];
+            (candidateData?.elections || []).forEach((election) => {
+                election.candidacies
+                    .filter((candidacy) => candidacy.candidateId === personId)
+                    .forEach((candidacy) => {
+                        const byElection = /by-election/i.test(election.type);
+                        entries.push({
+                            date: candidacy.pollDate || election.pollDate || String(election.year),
+                            party: candidacy.party,
+                            state: election.state,
+                            kind: "election",
+                            text: `Won ${candidacy.constituency} in the ${election.year} ${byElection ? "by-election" : "Assembly election"}`
+                        });
+                    });
+            });
+            const person = (candidateData?.people || []).find((entry) => entry.id === personId);
+            (person?.partyHistory || []).forEach((event) => {
+                entries.push({
+                    date: event.date,
+                    party: event.party,
+                    fromParty: event.fromParty,
+                    state: event.state,
+                    kind: event.event,
+                    text: event.description,
+                    sources: event.sources || []
+                });
+            });
+            Object.entries(incumbentData?.states || {}).forEach(([state, snapshot]) => {
+                const member = snapshot.members.find((entry) => entry.personId === personId);
+                if (member) {
+                    entries.push({
+                        date: snapshot.asOf,
+                        party: member.party,
+                        state,
+                        kind: "roster",
+                        text: `Listed for ${member.constituency} in the ${state} Assembly roster`
+                    });
+                }
+            });
+            entries.sort((first, second) => String(first.date).localeCompare(String(second.date)));
+            // Events that end an affiliation (left, suspended, expelled, resigned seat) do not start a new one.
+            let previousParty = null;
+            entries.forEach((entry) => {
+                const affiliation = !["left", "suspended", "expelled", "resigned-seat"].includes(entry.kind);
+                entry.changedFrom = affiliation && previousParty && partyKey(previousParty) !== partyKey(entry.party) ? previousParty : null;
+                if (affiliation) previousParty = entry.party;
+            });
+            return entries;
+        }
+
+        function partyChangedDuringRecord(personId) {
+            return partyHistoryFor(personId).some((entry) => entry.changedFrom);
+        }
+
+        function createPartyHistoryList(personId) {
+            const entries = partyHistoryFor(personId);
+            const list = document.createElement("ol");
+            list.className = "party-history";
+            entries.forEach((entry) => {
+                const item = document.createElement("li");
+                item.className = `party-history-item${entry.changedFrom ? " party-history-item--change" : ""}`;
+                const date = document.createElement("span");
+                date.className = "party-history-date";
+                date.textContent = entry.date;
+                const line = document.createElement("span");
+                line.className = "party-history-line";
+                const prefix = partyHistoryEventLabels[entry.kind];
+                const independent = Boolean(findParty(entry.party)?.independent);
+                if (entry.kind === "resigned-seat" && independent) {
+                    line.append(`${prefix} as an Independent`);
+                } else if (prefix) {
+                    line.append(entry.kind === "resigned-seat" && entry.party ? `${prefix} while a member of ` : `${prefix} `);
+                }
+                if (entry.party && !(entry.kind === "resigned-seat" && independent)) {
+                    line.append(createPartyLabel(entry.party, { state: entry.state, date: /^\d{4}-\d{2}-\d{2}$/.test(entry.date) ? entry.date : undefined }));
+                }
+                const detail = document.createElement("span");
+                detail.className = "party-history-detail";
+                detail.textContent = entry.text || "";
+                item.append(date, line, detail);
+                if (entry.changedFrom) {
+                    const change = document.createElement("span");
+                    change.className = "party-history-change";
+                    // Becoming an Independent can follow a suspension or expulsion, so it is not called a party change.
+                    change.textContent = findParty(entry.party)?.independent
+                        ? `No longer listed under ${partyDisplayName(entry.changedFrom)}`
+                        : `Party changed from ${partyDisplayName(entry.changedFrom)}`;
+                    item.append(change);
+                }
+                if (entry.sources?.length) {
+                    const sources = document.createElement("span");
+                    sources.className = "candidate-sources";
+                    entry.sources.forEach((source) => {
+                        const link = createSourceLink(source);
+                        if (link) sources.append(link);
+                    });
+                    item.append(sources);
+                }
+                list.append(item);
+            });
+            return list;
+        }
+
         // In an archive, whose note already says every imported field is unverified, only
         // statuses other than "unverified" are worth a badge.
         function createCandidateCard(candidate, { archive = false } = {}) {
@@ -1916,6 +2081,14 @@
                 meta.className = "candidate-meta";
                 meta.textContent = details.join(" · ");
                 card.append(meta);
+            }
+            // On an archive card, note when the person is now listed under a different party.
+            const rosterEntry = partyHistoryFor(candidate.candidateId).filter((entry) => entry.kind === "roster").pop();
+            if (archive && rosterEntry && partyKey(rosterEntry.party) !== partyKey(candidate.party)) {
+                const now = document.createElement("p");
+                now.className = "candidate-meta";
+                now.append("Now listed as ", createPartyLabel(rosterEntry.party, { state: rosterEntry.state, date: rosterEntry.date }), ` (Assembly roster, ${rosterEntry.date})`);
+                card.append(now);
             }
             if (candidate.result) {
                 const result = document.createElement("p");
@@ -2288,6 +2461,9 @@
                     return value;
                 }],
                 ["Party", "party", (profile) => createPartyLabel(profile.party, { state: profile.state, date: profile.pollDate, explainMissing: true })],
+                ["Party history", "partyHistory", (profile) => profile.candidateId && partyHistoryFor(profile.candidateId).length
+                    ? createPartyHistoryList(profile.candidateId)
+                    : "Not recorded"],
                 ["Constituency", "constituency", (profile) => profile.constituency || "Not recorded"],
                 ["Previous elected positions", "previousPositions", (profile) => {
                     const positions = (Array.isArray(profile.profile?.previousPositions) ? profile.profile.previousPositions : [])
@@ -2422,6 +2598,13 @@
                     current.className = "candidate-column-chip candidate-column-chip--current";
                     current.textContent = "Current MLA";
                     meta.append(current);
+                }
+                if (partyChangedDuringRecord(profile.candidateId)) {
+                    const changed = document.createElement("span");
+                    changed.className = "candidate-column-chip candidate-column-chip--changed";
+                    changed.textContent = "Affiliation changed";
+                    changed.title = "This person is recorded under more than one party affiliation; see Party history.";
+                    meta.append(changed);
                 }
                 heading.append(name);
                 const party = document.createElement("div");
@@ -2840,6 +3023,17 @@
                         meta.append(`${member.constituency} · `, createPartyLabel(member.party, { state: election.state, date: snapshotDate }));
                     }
                     memberButton.append(name, meta);
+                    // Flag a current affiliation that differs from the party the member was last elected on.
+                    const lastElected = partyHistoryFor(member.personId).filter((entry) => entry.kind === "election").pop();
+                    if (!isVacant && lastElected && partyKey(lastElected.party) !== partyKey(member.party)) {
+                        const elected = document.createElement("p");
+                        elected.className = "incumbent-member-elected";
+                        elected.append(
+                            `Elected ${String(lastElected.date).slice(0, 4)} as `,
+                            createPartyLabel(lastElected.party, { state: lastElected.state, date: /^\d{4}-\d{2}-\d{2}$/.test(lastElected.date) ? lastElected.date : undefined })
+                        );
+                        memberButton.append(elected);
+                    }
                     if (!isVacant) {
                         // Resolved at click time so it reflects candidate data that loaded after this render.
                         memberButton.addEventListener("click", () => openComparisonWithProfile(

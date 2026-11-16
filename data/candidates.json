@@ -15,7 +15,63 @@
     },
     {
       "id": "goa-michael-vincent-lobo",
-      "name": "Michael Vincent Lobo"
+      "name": "Michael Vincent Lobo",
+      "partyHistory": [
+        {
+          "date": "2022-01-10",
+          "event": "left",
+          "party": "Bharatiya Janata Party",
+          "state": "Goa",
+          "description": "Resigned as a Goa minister, as MLA and from the BJP ahead of the 2022 Assembly election.",
+          "sources": [
+            {
+              "label": "Scroll: Goa minister Michael Lobo quits BJP ahead of Assembly polls, says he is in talks with other parties",
+              "url": "https://scroll.in/latest/1014698/goa-minister-michael-lobo-quits-bjp-ahead-of-assembly-polls-says-he-is-in-talks-with-other-parties",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2022-01-11",
+          "event": "joined",
+          "party": "Indian National Congress",
+          "fromParty": "Bharatiya Janata Party",
+          "state": "Goa",
+          "description": "Joined the Congress along with Delilah Lobo.",
+          "sources": [
+            {
+              "label": "The Quint: 2022 Goa Elections: Michael Lobo and Wife Delilah Lobo Join Congress",
+              "url": "https://www.thequint.com/elections/2022-goa-elections-michael-lobo-and-wife-delilah-lobo-join-congress",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2022-09-14",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Goa",
+          "description": "One of eight of the 11 Congress MLAs who passed a resolution to merge the Congress Legislature Party into the BJP and joined the BJP; the Speaker accepted the merger, and on 2024-11-02 dismissed a petition seeking their disqualification. He moved the resolution.",
+          "sources": [
+            {
+              "label": "Onmanorama: Goa ex-CM Digambar Kamat, 7 other Congress MLAs join BJP",
+              "url": "https://onmanorama.com/news/india/2022/09/14/goa-congress-legislature-party-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Quint: Goa Assembly Speaker Accepts Merger of Congress Legislature Party Into BJP",
+              "url": "https://www.thequint.com/news/india/goa-assembly-speaker-merger-congress-legislature-party-bjp-defections",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Goan, 2024-11-02: Speaker dismisses plea to disqualify 8 Cong MLAs who joined BJP",
+              "url": "https://thegoan.net/goa-news/speaker-dismisses-plea-to-disqualify-8-cong-mlas-who-joined-bjp/121264.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "goa-ramesh-tawadkar",
@@ -27,7 +83,34 @@
     },
     {
       "id": "goa-rajesh-faldessai",
-      "name": "Rajesh Faldessai"
+      "name": "Rajesh Faldessai",
+      "partyHistory": [
+        {
+          "date": "2022-09-14",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Goa",
+          "description": "One of eight of the 11 Congress MLAs who passed a resolution to merge the Congress Legislature Party into the BJP and joined the BJP; the Speaker accepted the merger, and on 2024-11-02 dismissed a petition seeking their disqualification.",
+          "sources": [
+            {
+              "label": "Onmanorama: Goa ex-CM Digambar Kamat, 7 other Congress MLAs join BJP",
+              "url": "https://onmanorama.com/news/india/2022/09/14/goa-congress-legislature-party-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Quint: Goa Assembly Speaker Accepts Merger of Congress Legislature Party Into BJP",
+              "url": "https://www.thequint.com/news/india/goa-assembly-speaker-merger-congress-legislature-party-bjp-defections",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Goan, 2024-11-02: Speaker dismisses plea to disqualify 8 Cong MLAs who joined BJP",
+              "url": "https://thegoan.net/goa-news/speaker-dismisses-plea-to-disqualify-8-cong-mlas-who-joined-bjp/121264.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "goa-alemao-yuri",
@@ -59,15 +142,110 @@
     },
     {
       "id": "goa-digambar-kamat",
-      "name": "Digambar Kamat"
+      "name": "Digambar Kamat",
+      "partyHistory": [
+        {
+          "date": "2005-02",
+          "event": "left",
+          "party": "Bharatiya Janata Party",
+          "state": "Goa",
+          "description": "Left the BJP, where he was second-in-command in the Manohar Parrikar government, and moved to the Congress.",
+          "sources": [
+            {
+              "label": "Goemkarponn: Kamat rejoins the same party, he felt suffocated in 2005",
+              "url": "https://goemkarponn.com/kamat-rejoins-the-same-party-he-felt-suffocated-in-2005",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2022-09-14",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Goa",
+          "description": "One of eight of the 11 Congress MLAs who passed a resolution to merge the Congress Legislature Party into the BJP and joined the BJP; the Speaker accepted the merger, and on 2024-11-02 dismissed a petition seeking their disqualification.",
+          "sources": [
+            {
+              "label": "Onmanorama: Goa ex-CM Digambar Kamat, 7 other Congress MLAs join BJP",
+              "url": "https://onmanorama.com/news/india/2022/09/14/goa-congress-legislature-party-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Quint: Goa Assembly Speaker Accepts Merger of Congress Legislature Party Into BJP",
+              "url": "https://www.thequint.com/news/india/goa-assembly-speaker-merger-congress-legislature-party-bjp-defections",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Goan, 2024-11-02: Speaker dismisses plea to disqualify 8 Cong MLAs who joined BJP",
+              "url": "https://thegoan.net/goa-news/speaker-dismisses-plea-to-disqualify-8-cong-mlas-who-joined-bjp/121264.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "goa-sankalp-amonkar",
-      "name": "Sankalp Amonkar"
+      "name": "Sankalp Amonkar",
+      "partyHistory": [
+        {
+          "date": "2022-09-14",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Goa",
+          "description": "One of eight of the 11 Congress MLAs who passed a resolution to merge the Congress Legislature Party into the BJP and joined the BJP; the Speaker accepted the merger, and on 2024-11-02 dismissed a petition seeking their disqualification.",
+          "sources": [
+            {
+              "label": "Onmanorama: Goa ex-CM Digambar Kamat, 7 other Congress MLAs join BJP",
+              "url": "https://onmanorama.com/news/india/2022/09/14/goa-congress-legislature-party-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Quint: Goa Assembly Speaker Accepts Merger of Congress Legislature Party Into BJP",
+              "url": "https://www.thequint.com/news/india/goa-assembly-speaker-merger-congress-legislature-party-bjp-defections",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Goan, 2024-11-02: Speaker dismisses plea to disqualify 8 Cong MLAs who joined BJP",
+              "url": "https://thegoan.net/goa-news/speaker-dismisses-plea-to-disqualify-8-cong-mlas-who-joined-bjp/121264.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "goa-aleixo-sequeira",
-      "name": "Aleixo Sequeira"
+      "name": "Aleixo Sequeira",
+      "partyHistory": [
+        {
+          "date": "2022-09-14",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Goa",
+          "description": "One of eight of the 11 Congress MLAs who passed a resolution to merge the Congress Legislature Party into the BJP and joined the BJP; the Speaker accepted the merger, and on 2024-11-02 dismissed a petition seeking their disqualification.",
+          "sources": [
+            {
+              "label": "Onmanorama: Goa ex-CM Digambar Kamat, 7 other Congress MLAs join BJP",
+              "url": "https://onmanorama.com/news/india/2022/09/14/goa-congress-legislature-party-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Quint: Goa Assembly Speaker Accepts Merger of Congress Legislature Party Into BJP",
+              "url": "https://www.thequint.com/news/india/goa-assembly-speaker-merger-congress-legislature-party-bjp-defections",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Goan, 2024-11-02: Speaker dismisses plea to disqualify 8 Cong MLAs who joined BJP",
+              "url": "https://thegoan.net/goa-news/speaker-dismisses-plea-to-disqualify-8-cong-mlas-who-joined-bjp/121264.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "goa-atanasio-monserrate",
@@ -111,7 +289,49 @@
     },
     {
       "id": "goa-delilah-michael-lobo",
-      "name": "Delilah Michael Lobo"
+      "name": "Delilah Michael Lobo",
+      "partyHistory": [
+        {
+          "date": "2022-01-11",
+          "event": "joined",
+          "party": "Indian National Congress",
+          "fromParty": "Bharatiya Janata Party",
+          "state": "Goa",
+          "description": "Joined the Congress along with Michael Lobo; she had been vice-president of the Goa BJP Mahila wing.",
+          "sources": [
+            {
+              "label": "The Quint: 2022 Goa Elections: Michael Lobo and Wife Delilah Lobo Join Congress",
+              "url": "https://www.thequint.com/elections/2022-goa-elections-michael-lobo-and-wife-delilah-lobo-join-congress",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2022-09-14",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Goa",
+          "description": "One of eight of the 11 Congress MLAs who passed a resolution to merge the Congress Legislature Party into the BJP and joined the BJP; the Speaker accepted the merger, and on 2024-11-02 dismissed a petition seeking their disqualification.",
+          "sources": [
+            {
+              "label": "Onmanorama: Goa ex-CM Digambar Kamat, 7 other Congress MLAs join BJP",
+              "url": "https://onmanorama.com/news/india/2022/09/14/goa-congress-legislature-party-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Quint: Goa Assembly Speaker Accepts Merger of Congress Legislature Party Into BJP",
+              "url": "https://www.thequint.com/news/india/goa-assembly-speaker-merger-congress-legislature-party-bjp-defections",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Goan, 2024-11-02: Speaker dismisses plea to disqualify 8 Cong MLAs who joined BJP",
+              "url": "https://thegoan.net/goa-news/speaker-dismisses-plea-to-disqualify-8-cong-mlas-who-joined-bjp/121264.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "goa-subhash-shirodkar",
@@ -123,7 +343,34 @@
     },
     {
       "id": "goa-rodolfo-louis-fernandes",
-      "name": "Rodolfo Louis Fernandes"
+      "name": "Rodolfo Louis Fernandes",
+      "partyHistory": [
+        {
+          "date": "2022-09-14",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Goa",
+          "description": "One of eight of the 11 Congress MLAs who passed a resolution to merge the Congress Legislature Party into the BJP and joined the BJP; the Speaker accepted the merger, and on 2024-11-02 dismissed a petition seeking their disqualification.",
+          "sources": [
+            {
+              "label": "Onmanorama: Goa ex-CM Digambar Kamat, 7 other Congress MLAs join BJP",
+              "url": "https://onmanorama.com/news/india/2022/09/14/goa-congress-legislature-party-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Quint: Goa Assembly Speaker Accepts Merger of Congress Legislature Party Into BJP",
+              "url": "https://www.thequint.com/news/india/goa-assembly-speaker-merger-congress-legislature-party-bjp-defections",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Goan, 2024-11-02: Speaker dismisses plea to disqualify 8 Cong MLAs who joined BJP",
+              "url": "https://thegoan.net/goa-news/speaker-dismisses-plea-to-disqualify-8-cong-mlas-who-joined-bjp/121264.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "goa-jennifer-monserrate",
@@ -143,7 +390,34 @@
     },
     {
       "id": "goa-kedar-naik",
-      "name": "Kedar Naik"
+      "name": "Kedar Naik",
+      "partyHistory": [
+        {
+          "date": "2022-09-14",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Goa",
+          "description": "One of eight of the 11 Congress MLAs who passed a resolution to merge the Congress Legislature Party into the BJP and joined the BJP; the Speaker accepted the merger, and on 2024-11-02 dismissed a petition seeking their disqualification.",
+          "sources": [
+            {
+              "label": "Onmanorama: Goa ex-CM Digambar Kamat, 7 other Congress MLAs join BJP",
+              "url": "https://onmanorama.com/news/india/2022/09/14/goa-congress-legislature-party-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Quint: Goa Assembly Speaker Accepts Merger of Congress Legislature Party Into BJP",
+              "url": "https://www.thequint.com/news/india/goa-assembly-speaker-merger-congress-legislature-party-bjp-defections",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Goan, 2024-11-02: Speaker dismisses plea to disqualify 8 Cong MLAs who joined BJP",
+              "url": "https://thegoan.net/goa-news/speaker-dismisses-plea-to-disqualify-8-cong-mlas-who-joined-bjp/121264.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "goa-krishna-salkar",
@@ -201,6 +475,28 @@
       "name": "Khumukcham Joykisan Singh",
       "aliases": [
         "Khumukcham Joykishan"
+      ],
+      "partyHistory": [
+        {
+          "date": "2022-09-02",
+          "event": "merged",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Janata Dal (United)",
+          "state": "Manipur",
+          "description": "One of five JD(U) MLAs (named in reports as Kh Joykishan) whose merger with the BJP was accepted by the Speaker under the Tenth Schedule.",
+          "sources": [
+            {
+              "label": "Onmanorama: Five JD(U) MLAs join BJP in Manipur",
+              "url": "https://onmanorama.com/news/india/2022/09/03/manipur-janata-dal-united-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "Scroll: Manipur: Five of six JD(U) MLAs merge with BJP",
+              "url": "https://scroll.in/latest/1031951/manipur-five-of-six-jdu-mlas-merge-with-bjp",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
       ]
     },
     {
@@ -228,7 +524,29 @@
     },
     {
       "id": "manipur-thangjam-arunkumar",
-      "name": "Thangjam Arunkumar"
+      "name": "Thangjam Arunkumar",
+      "partyHistory": [
+        {
+          "date": "2022-09-02",
+          "event": "merged",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Janata Dal (United)",
+          "state": "Manipur",
+          "description": "One of five JD(U) MLAs whose merger with the BJP was accepted by the Speaker under the Tenth Schedule.",
+          "sources": [
+            {
+              "label": "Onmanorama: Five JD(U) MLAs join BJP in Manipur",
+              "url": "https://onmanorama.com/news/india/2022/09/03/manipur-janata-dal-united-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "Scroll: Manipur: Five of six JD(U) MLAs merge with BJP",
+              "url": "https://scroll.in/latest/1031951/manipur-five-of-six-jdu-mlas-merge-with-bjp",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "manipur-heikham-dingo-singh",
@@ -349,6 +667,28 @@
       "name": "Md. Achab Uddin",
       "aliases": [
         "Achab Uddin"
+      ],
+      "partyHistory": [
+        {
+          "date": "2022-09-02",
+          "event": "merged",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Janata Dal (United)",
+          "state": "Manipur",
+          "description": "One of five JD(U) MLAs whose merger with the BJP was accepted by the Speaker under the Tenth Schedule.",
+          "sources": [
+            {
+              "label": "Onmanorama: Five JD(U) MLAs join BJP in Manipur",
+              "url": "https://onmanorama.com/news/india/2022/09/03/manipur-janata-dal-united-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "Scroll: Manipur: Five of six JD(U) MLAs merge with BJP",
+              "url": "https://scroll.in/latest/1031951/manipur-five-of-six-jdu-mlas-merge-with-bjp",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
       ]
     },
     {
@@ -418,7 +758,29 @@
     },
     {
       "id": "manipur-ngursanglur-sanate",
-      "name": "Ngursanglur Sanate"
+      "name": "Ngursanglur Sanate",
+      "partyHistory": [
+        {
+          "date": "2022-09-02",
+          "event": "merged",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Janata Dal (United)",
+          "state": "Manipur",
+          "description": "One of five JD(U) MLAs (named in reports as N Sanate) whose merger with the BJP was accepted by the Speaker under the Tenth Schedule.",
+          "sources": [
+            {
+              "label": "Onmanorama: Five JD(U) MLAs join BJP in Manipur",
+              "url": "https://onmanorama.com/news/india/2022/09/03/manipur-janata-dal-united-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "Scroll: Manipur: Five of six JD(U) MLAs merge with BJP",
+              "url": "https://scroll.in/latest/1031951/manipur-five-of-six-jdu-mlas-merge-with-bjp",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "manipur-vungzagin-valte",
@@ -430,7 +792,29 @@
     },
     {
       "id": "manipur-l-m-khaute",
-      "name": "L.M. Khaute"
+      "name": "L.M. Khaute",
+      "partyHistory": [
+        {
+          "date": "2022-09-02",
+          "event": "merged",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Janata Dal (United)",
+          "state": "Manipur",
+          "description": "One of five JD(U) MLAs whose merger with the BJP was accepted by the Speaker under the Tenth Schedule.",
+          "sources": [
+            {
+              "label": "Onmanorama: Five JD(U) MLAs join BJP in Manipur",
+              "url": "https://onmanorama.com/news/india/2022/09/03/manipur-janata-dal-united-mlas-join-bjp.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "Scroll: Manipur: Five of six JD(U) MLAs merge with BJP",
+              "url": "https://scroll.in/latest/1031951/manipur-five-of-six-jdu-mlas-merge-with-bjp",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "manipur-paolienlal-haokip",
@@ -603,6 +987,41 @@
       "name": "Vikramjit Singh Chaudhary",
       "aliases": [
         "Vikramjit Chaudhary"
+      ],
+      "partyHistory": [
+        {
+          "date": "2024-04-24",
+          "event": "suspended",
+          "party": "Indian National Congress",
+          "state": "Punjab",
+          "description": "Suspended by the Congress for anti-party activities.",
+          "sources": [
+            {
+              "label": "The Tribune: Congress suspends Punjab's Phillaur MLA Vikramjit Chaudhary over statements against ex-CM Charanjit Channi",
+              "url": "https://www.tribuneindia.com/news/punjab/congress-suspends-punjabs-phillaur-mla-vikramjit-chaudhary-over-statements-against-ex-cm-charanjit-channi-614209",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2025-06-02",
+          "event": "member",
+          "party": "Indian National Congress",
+          "state": "Punjab",
+          "description": "The Congress revoked his suspension; reports through December 2025 describe him as a Congress MLA.",
+          "sources": [
+            {
+              "label": "The Week (PTI), 2025-06-02: Punjab Phillaur MLA Vikramjit Chaudhary returns to Cong after suspension revoked",
+              "url": "https://www.theweek.in/wire-updates/national/2025/06/02/des38-pb-cong-mla.html",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Tribune, 2025-12-03: Rift comes to fore in Phillaur Cong",
+              "url": "https://www.tribuneindia.com/news/jalandhar/rift-comes-to-fore-in-phillaur-cong/",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
       ]
     },
     {
@@ -682,7 +1101,29 @@
     },
     {
       "id": "punjab-sukhwinder-kumar",
-      "name": "Sukhwinder Kumar"
+      "name": "Sukhwinder Kumar",
+      "partyHistory": [
+        {
+          "date": "2024-08-14",
+          "event": "joined",
+          "party": "Aam Aadmi Party",
+          "fromParty": "Shiromani Akali Dal",
+          "state": "Punjab",
+          "description": "Joined the AAP without resigning his Banga seat; a disqualification petition against him over the move was reported pending before the Speaker in June 2025.",
+          "sources": [
+            {
+              "label": "The Tribune: Setback for SAD as two-time Banga MLA Sukhwinder Sukhi joins AAP",
+              "url": "https://www.tribuneindia.com/news/punjab/setback-for-sad-as-two-time-banga-mla-sukhwinder-sukhi-joins-aap",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Week (PTI), 2025-06-01: Punjab Rebel Akali MLA Sukhi asked to present his side",
+              "url": "https://www.theweek.in/wire-updates/national/2025/06/01/des48-pb-mla-ld-speaker.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "punjab-nachhatar-pal",
@@ -785,7 +1226,58 @@
     },
     {
       "id": "punjab-manpreet-singh-ayali",
-      "name": "Manpreet Singh Ayali"
+      "name": "Manpreet Singh Ayali",
+      "partyHistory": [
+        {
+          "date": "2025-08-11",
+          "event": "member",
+          "party": "Shiromani Akali Dal (Punar Surjit)",
+          "fromParty": "Shiromani Akali Dal",
+          "state": "Punjab",
+          "description": "Led the recruitment committee of the breakaway Akali Dal faction, which chose its president that day.",
+          "sources": [
+            {
+              "label": "ThePrint: Badal's Akali Dal splits. Akal Takht ex-Jathedar Harpreet Singh elected president of rebel faction",
+              "url": "https://theprint.in/politics/akal-takht-ex-jathedar-harpreet-singh-takes-reins-of-akali-dal-rebel-faction-he-helped-create/2718944",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2026-05-20",
+          "event": "left",
+          "party": "Shiromani Akali Dal (Punar Surjit)",
+          "state": "Punjab",
+          "description": "Announced that he had resigned from all posts in SAD (Punar Surjit).",
+          "sources": [
+            {
+              "label": "The Tribune, 2026-05-21: After Rakhra, MLA Manpreet Singh Ayali parts ways with Shiromani Akali Dal (Punar Surjit)",
+              "url": "https://www.tribuneindia.com/news/punjab/after-rakhra-mla-manpreet-singh-ayali-parts-ways-with-shiromani-akali-dal-punar-surjit/",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2026-06",
+          "event": "joined",
+          "party": "Akali Dal (Waris Punjab De)",
+          "fromParty": "Shiromani Akali Dal (Punar Surjit)",
+          "state": "Punjab",
+          "description": "Formally joined Akali Dal (Waris Punjab De) at a ceremony in Chandigarh.",
+          "sources": [
+            {
+              "label": "PTC News, 2026-06-08: Manpreet Singh Ayali to join Waris Punjab De days after parting ways with SAD (Punar Surjeet)",
+              "url": "https://www.ptcnews.tv/punjab-2/manpreet-singh-ayali-to-join-waris-punjab-de-days-after-parting-ways-with-sad-punar-surjeet-4425418",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "News Arena India, 2026-06-09: Rebel Akali MLA Ayali joins Amritpal-led party",
+              "url": "https://newsarenaindia.com/states/rebel-akali-mla-ayali-joins-amritpal-led-party/79499",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "punjab-hakam-singh",
@@ -846,7 +1338,23 @@
     },
     {
       "id": "punjab-sandeep-jakhar",
-      "name": "Sandeep Jakhar"
+      "name": "Sandeep Jakhar",
+      "partyHistory": [
+        {
+          "date": "2023-08-19",
+          "event": "suspended",
+          "party": "Indian National Congress",
+          "state": "Punjab",
+          "description": "Suspended by the Congress Disciplinary Action Committee for anti-party activities; no report was found of the suspension being revoked or of him joining another party.",
+          "sources": [
+            {
+              "label": "ThePrint (PTI): Congress suspends Abohar MLA Sandeep Jakhar for 'anti-party' activities",
+              "url": "https://theprint.in/india/congress-suspends-abohar-mla-sandeep-jakhar-for-anti-party-activities/1721767",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "punjab-amandeep-singh-musafir",
@@ -3581,7 +4089,43 @@
     },
     {
       "id": "gujarat-dr-c-j-chavda",
-      "name": "Dr. C. J. Chavda"
+      "name": "Dr. C. J. Chavda",
+      "partyHistory": [
+        {
+          "date": "2024-01-19",
+          "event": "resigned-seat",
+          "party": "Indian National Congress",
+          "state": "Gujarat",
+          "description": "Submitted his resignation as the Congress MLA for Vijapur to the Speaker.",
+          "sources": [
+            {
+              "label": "DT Next (PTI): Gujarat Cong MLA Chavda resigns, may join BJP",
+              "url": "https://www.dtnext.in/news/national/gujarat-cong-mla-chavda-resigns-may-join-bjp-762140",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "Gujarat Samachar, 2024-03-26: BJP announces five candidates for assembly bye elections in Gujarat",
+              "url": "https://english.gujaratsamachar.com/news/gujarat/bjp-announces-five-candidates-for-assembly-bye-elections-in-gujarat-95554817040",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2024-02-12",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Gujarat",
+          "description": "Joined the BJP, which later named him its candidate for the Vijapur by-election.",
+          "sources": [
+            {
+              "label": "Gujarat Samachar, 2024-03-26: BJP announces five candidates for assembly bye elections in Gujarat",
+              "url": "https://english.gujaratsamachar.com/news/gujarat/bjp-announces-five-candidates-for-assembly-bye-elections-in-gujarat-95554817040",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "gujarat-vinendrasinh-dilipsinh-zala",
@@ -3936,6 +4480,47 @@
       "aliases": [
         "Arjun Modhwadia",
         "Arjun Devabhai Modhwadia"
+      ],
+      "partyHistory": [
+        {
+          "date": "2024-03-04",
+          "event": "resigned-seat",
+          "party": "Indian National Congress",
+          "state": "Gujarat",
+          "description": "Submitted his resignation as the MLA for Porbandar and left the Congress.",
+          "sources": [
+            {
+              "label": "Siasat: Gujarat: Day after quitting Congress, Modhwadia joins BJP",
+              "url": "https://www.siasat.com/gujarat-day-after-quitting-congress-modhwadia-joins-bjp-2987315/amp/",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "The Week (PTI), 2024-03-06: Another Congress MLA resigns from Guj assembly, set to join BJP",
+              "url": "https://www.theweek.in/wire-updates/national/2024/03/06/bom27-gj-cong-mla-resign.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2024-03-05",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Gujarat",
+          "description": "Joined the BJP at the party's Gujarat headquarters.",
+          "sources": [
+            {
+              "label": "Siasat: Gujarat: Day after quitting Congress, Modhwadia joins BJP",
+              "url": "https://www.siasat.com/gujarat-day-after-quitting-congress-modhwadia-joins-bjp-2987315/amp/",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "Gujarat Samachar, 2024-03-26: BJP announces five candidates for assembly bye elections in Gujarat",
+              "url": "https://english.gujaratsamachar.com/news/gujarat/bjp-announces-five-candidates-for-assembly-bye-elections-in-gujarat-95554817040",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
       ]
     },
     {
@@ -3950,6 +4535,37 @@
       "name": "Arvindbhai Jinabhai Ladani",
       "aliases": [
         "Arvind Ladani"
+      ],
+      "partyHistory": [
+        {
+          "date": "2024-03-06",
+          "event": "resigned-seat",
+          "party": "Indian National Congress",
+          "state": "Gujarat",
+          "description": "Resigned as the Congress MLA for Manavadar, submitting his resignation to the Speaker.",
+          "sources": [
+            {
+              "label": "The Week (PTI), 2024-03-06: Another Congress MLA resigns from Guj assembly, set to join BJP",
+              "url": "https://www.theweek.in/wire-updates/national/2024/03/06/bom27-gj-cong-mla-resign.html",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2024-03-14",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Gujarat",
+          "description": "Joined the BJP, which later named him its candidate for the Manavadar by-election.",
+          "sources": [
+            {
+              "label": "Gujarat Samachar, 2024-03-26: BJP announces five candidates for assembly bye elections in Gujarat",
+              "url": "https://english.gujaratsamachar.com/news/gujarat/bjp-announces-five-candidates-for-assembly-bye-elections-in-gujarat-95554817040",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
       ]
     },
     {
@@ -4090,6 +4706,42 @@
       "name": "Chirag Patel",
       "aliases": [
         "Chiragkumar Arvindbhai Patel"
+      ],
+      "partyHistory": [
+        {
+          "date": "2023-12-19",
+          "event": "resigned-seat",
+          "party": "Indian National Congress",
+          "state": "Gujarat",
+          "description": "Resigned as the Congress MLA for Khambhat.",
+          "sources": [
+            {
+              "label": "Outlook: Gujarat: Congress MLA Chirag Patel Resigns From Assembly; Slams Leadership's Way Of Functioning",
+              "url": "https://www.outlookindia.com/national/gujarat-congress-mla-chirag-patel-resigns-from-assembly-slams-leadership-s-way-of-functioning-news-337401",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2024-02-04",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Indian National Congress",
+          "state": "Gujarat",
+          "description": "Joined the BJP after resigning from the Assembly.",
+          "sources": [
+            {
+              "label": "Millennium Post: Gujarat: Former Cong MLA Chirag Patel joins BJP",
+              "url": "https://www.millenniumpost.in/nation/gujarat-former-cong-mla-chirag-patel-joins-bjp-550761",
+              "retrievedAt": "2026-11-16"
+            },
+            {
+              "label": "Gujarat Samachar, 2024-03-26: BJP announces five candidates for assembly bye elections in Gujarat",
+              "url": "https://english.gujaratsamachar.com/news/gujarat/bjp-announces-five-candidates-for-assembly-bye-elections-in-gujarat-95554817040",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
       ]
     },
     {
@@ -4263,6 +4915,51 @@
       "aliases": [
         "Dharmendrasinh Vaghela",
         "Dharmendrasinh Vaghela (Bapu)"
+      ],
+      "partyHistory": [
+        {
+          "date": "2022-11",
+          "event": "suspended",
+          "party": "Bharatiya Janata Party",
+          "state": "Gujarat",
+          "description": "Previously a BJP member, he contested the 2022 Assembly election as an Independent after being denied a BJP ticket and was suspended by the BJP (the source gives no exact date; the month follows the election timeline).",
+          "sources": [
+            {
+              "label": "ThePrint (PTI): Gujarat independent MLA Dharmendrasinh Vaghela resigns to return to BJP",
+              "url": "https://theprint.in/india/gujarat-independent-mla-dharmendrasinh-vaghela-resigns-to-return-to-bjp/1938709",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2024-01-25",
+          "event": "resigned-seat",
+          "party": "Independent",
+          "state": "Gujarat",
+          "description": "Resigned as the Independent MLA for Vaghodia.",
+          "sources": [
+            {
+              "label": "ThePrint (PTI): Gujarat independent MLA Dharmendrasinh Vaghela resigns to return to BJP",
+              "url": "https://theprint.in/india/gujarat-independent-mla-dharmendrasinh-vaghela-resigns-to-return-to-bjp/1938709",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        },
+        {
+          "date": "2024-02-21",
+          "event": "joined",
+          "party": "Bharatiya Janata Party",
+          "fromParty": "Independent",
+          "state": "Gujarat",
+          "description": "Inducted into the BJP, which later named him its candidate for the Vaghodia by-election.",
+          "sources": [
+            {
+              "label": "Gujarat Samachar, 2024-03-26: BJP announces five candidates for assembly bye elections in Gujarat",
+              "url": "https://english.gujaratsamachar.com/news/gujarat/bjp-announces-five-candidates-for-assembly-bye-elections-in-gujarat-95554817040",
+              "retrievedAt": "2026-11-16"
+            }
+          ]
+        }
       ]
     },
     {

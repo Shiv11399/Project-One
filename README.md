@@ -242,6 +242,28 @@ This is manually curated reference data; the ECI announcement feed does not auto
 
 `people` holds one stable identity per person (`id`, name, optional aliases). Election records hold election metadata and a `candidateScope`: `declared_candidates` for the upcoming candidate list or `winners_archive` for a historical winners-only archive. Each candidacy references a person with `candidateId` and has its own party, constituency, status, affidavit, disclosures, result, and source links. The 2027 placeholder records cover Goa, Manipur, Punjab, Uttarakhand, Uttar Pradesh, and Gujarat. Each state also has a 2022 winners archive and, where applicable, by-election winners archives (`type` "State Legislative Assembly by-election", one per year); these cover winners only and are not a complete list of everyone who contested. An archive can set `archiveCompleteness` to `partial` and provide an `archiveNote`; the site shows this warning rather than implying all seats or profiles are represented.
 
+#### Party history
+
+The site builds each person's party history from three things, oldest first: their winning candidacies (2022 Assembly election and any by-elections, using `pollDate`), optional curated `partyHistory` events on their `people` entry, and their current Assembly roster entry in `data/incumbents.json`. Where consecutive entries name different parties, the entry is marked as a change. The comparison shows this as a "Party history" row and an "Affiliation changed" chip. The Assembly roster adds "Elected 2022 as …" when a member's current party differs from the one they were last elected on, and archive winner cards add "Now listed as …".
+
+Curated events record when and how an affiliation changed, and must be sourced:
+
+```json
+"partyHistory": [
+  {
+    "date": "2022-09-14",
+    "event": "merged",
+    "party": "Bharatiya Janata Party",
+    "fromParty": "Indian National Congress",
+    "state": "Goa",
+    "description": "One of eight Congress MLAs whose merger with the BJP legislature party was accepted by the Speaker.",
+    "sources": [{ "label": "Outlet: headline", "url": "https://...", "retrievedAt": "2026-11-16" }]
+  }
+]
+```
+
+`event` is one of `member`, `joined`, `merged`, `left`, `suspended`, `expelled` or `resigned-seat`; `date` is `YYYY-MM-DD`, or `YYYY-MM` when only the month is known; `party` and `fromParty` must be names or abbreviations from `data/parties.json`. `left`, `suspended`, `expelled` and `resigned-seat` end an affiliation without starting a new one. Wording stays factual: a move to Independent is shown as "No longer listed under …" rather than as a party change, because it can follow a suspension or expulsion. `scripts/prepare-pages.js` refuses to deploy an event without a valid date, a known event type, registered parties, a description and at least one HTTPS source.
+
 Keep disclosures tied to source links. Criminal-case `status` is `pending`, `convicted`, `acquitted`, `disposed`, or `unknown`; a disclosed case must not be described as a conviction unless the source records one. Missing values are omitted and shown as not recorded, never inferred as zero.
 
 Each candidacy may include a `verification` map keyed by field (`name`, `party`, `constituency`, `affidavit`, `previousPositions`, `education`, `assets`, `liabilities`, `criminalCases`, or `electionResults`). A verification record contains a `status`, checked date and reviewer where applicable, optional explanatory `note`, and evidence `sources`. Each verification source uses `{ "role": "primary", "label": "...", "url": "..." }` or `{ "role": "secondary", "label": "...", "url": "..." }` and must use HTTPS. `verified` requires primary-source evidence; `cross_checked` requires both primary and independent secondary evidence; `needs_review` requires a note explaining the issue; and `unverified` means the value was collected but has not yet been checked against a reliable source. Only attach a verification record when there is a value to assess. Missing information is not the same as an unverified claim. These statuses are displayed per field, alongside evidence links, and are validated before deployment. Field source records can also include `page`, `retrievedAt`, `reviewer`, and `corrections`.
